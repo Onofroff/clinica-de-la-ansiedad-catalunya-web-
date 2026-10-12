@@ -2,17 +2,18 @@ HASHTAGS Y ENLACE PARA INSTAGRAM (pegar al final de cada texto)
 
 Enlace de la bio: https://www.clinicadelansiedad.com/es/blog
 (En el texto de Instagram los enlaces NO son clicables: por eso se remite a la bio.)
+Los enlaces a artículos /es/blog/... solo funcionan cuando el artículo esté publicado en Contentful con ese mismo slug.
 
 LUNES · Ansiedad funcional
-📖 Más artículos en el blog: enlace en la bio · clinicadelansiedad.com/es/blog
+📖 Lee el artículo completo: enlace en la bio · clinicadelansiedad.com/es/blog/ansiedad-funcional
 #ansiedad #ansiedadfuncional #psicoanalisis #maresme #saludmental
 
 MARTES · Despertar a las 4
-📖 Más artículos en el blog: enlace en la bio · clinicadelansiedad.com/es/blog
+📖 Lee el artículo completo: enlace en la bio · clinicadelansiedad.com/es/blog/despertar-4-de-la-manana-ansiedad
 #insomnio #ansiedad #psicoanalisis #maresme #saludmental
 
 MIÉRCOLES · Doomscrolling
-📖 Más artículos en el blog: enlace en la bio · clinicadelansiedad.com/es/blog
+📖 Lee el artículo completo: enlace en la bio · clinicadelansiedad.com/es/blog/doomscrolling-ansiedad
 #doomscrolling #ansiedad #psicoanalisis #maresme #bienestardigital
 
 JUEVES · Celos
@@ -24,9 +25,9 @@ VIERNES · Crisis de pánico
 #ataquedepanico #crisisdeansiedad #psicoanalisis #maresme #ansiedad
 
 SÁBADO · Culpa por descansar
-📖 Más artículos en el blog: enlace en la bio · clinicadelansiedad.com/es/blog
+📖 Lee el artículo completo: enlace en la bio · clinicadelansiedad.com/es/blog/culpa-por-descansar
 #autoexigencia #culpa #psicoanalisis #maresme #saludmental
 
 DOMINGO · Angustia del domingo
-📖 Más artículos en el blog: enlace en la bio · clinicadelansiedad.com/es/blog
+📖 Lee el artículo completo: enlace en la bio · clinicadelansiedad.com/es/blog/angustia-del-domingo
 #angustia #ansiedad #psicoanalisis #maresme #saludmental
