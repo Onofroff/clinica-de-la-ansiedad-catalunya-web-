@@ -27,19 +27,21 @@
   @keyframes strike { from { width:0 } to { width:100% } }
 
   /* ---------- 1 · Portada ---------- */
+  /* El texto va entre la cara y las manos: deja libre la cara y evita la franja inferior y la columna derecha que tapan los botones de Reels/TikTok. */
+  @keyframes zoomCover { from { transform: scale(1);} to { transform: scale(1.07);} }
   #s1 { animation: sceneFade 4.8s 0s; background: #222; }
-  #s1 .photo { position:absolute; inset:0; background: url(../foto.png) center 30%/cover; animation: zoom 4.8s linear both; }
-  #s1 .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(243,247,244,.96) 0%, rgba(243,247,244,.0) 22%, rgba(26,58,72,0) 45%, rgba(26,58,72,.92) 78%, rgba(26,58,72,.98) 100%); }
-  #s1 .logo { position:absolute; top:60px; left:50%; width:360px; transform: translateX(-50%); }
+  #s1 .photo { position:absolute; inset:0; background: url(../foto.png) 30% 22%/cover; transform-origin: 82% 34%; animation: zoomCover 4.8s linear both; }
+  #s1 .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(243,247,244,.95) 0%, rgba(243,247,244,0) 20%); }
+  #s1 .logo { position:absolute; top:56px; left:50%; width:340px; transform: translateX(-50%); }
   #s1 .logo img { width:100%; display:block; }
-  #s1 .hook { position:absolute; left:80px; right:80px; bottom:250px; color:#fff; }
-  #s1 .kicker { font-size:34px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color: var(--sage-soft); margin-bottom:28px; animation: up .7s .3s both; }
-  #s1 h1 { font-size:96px; line-height:1.04; font-weight:800; letter-spacing:-.02em; }
-  #s1 h1 span { display:block; }
-  #s1 h1 span:nth-child(1) { animation: up .7s .5s both; }
-  #s1 h1 span:nth-child(2) { animation: up .7s .7s both; color: #A9D3C2; }
-  #s1 h1 span:nth-child(3) { animation: up .7s .9s both; }
-  #s1 .sig { position:absolute; left:80px; bottom:130px; font-size:30px; color: rgba(255,255,255,.75); animation: fade .8s 1.4s both; }
+  #s1 .hook { position:absolute; left:56px; top:960px; width:880px; }
+  #s1 .kicker { display:inline-block; font-size:30px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:#fff; background: var(--sage); padding: 12px 24px; border-radius: 999px; margin-bottom:34px; animation: up .7s .3s both; }
+  #s1 h1 { font-size:98px; line-height:1.02; font-weight:800; letter-spacing:-.025em; }
+  #s1 h1 span { display:block; width:fit-content; max-width:880px; padding: 8px 26px 14px; margin-bottom:14px; border-radius: 6px; box-shadow: 0 18px 40px rgba(26,58,72,.18); }
+  #s1 h1 span:nth-child(1) { animation: up .7s .5s both; background: var(--navy); color:#fff; }
+  #s1 h1 span:nth-child(2) { animation: up .7s .7s both; background: #E7A977; color: var(--navy); transform-origin:left; }
+  #s1 h1 span:nth-child(3) { animation: up .7s .9s both; background: var(--navy); color:#fff; }
+  #s1 .sig { position:absolute; left:0; right:0; top:262px; text-align:center; font-size:28px; font-weight:600; color: var(--navy); letter-spacing:.02em; animation: fade .8s 1.2s both; }
 
   /* ---------- 2 · Ya tiene nombre ---------- */
   #s2 { animation: sceneFade 5s 4.6s; background: var(--cream); }
