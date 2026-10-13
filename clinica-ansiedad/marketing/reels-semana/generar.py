@@ -28,8 +28,21 @@ IDIOMAS = {
         "sufijo_dia": "Per pensar",
         "donde": "Maresme · Presencial i en línia · Català / Castellà",
         "cta": "Demana la teva primera visita",
+        "portada": "consulta",
     },
 }
+
+# Portada alternativa: foto de la consulta (diván y sillón) enmarcada arriba y el texto debajo,
+# fuera de la franja inferior y la columna derecha que tapan los botones de Reels/TikTok.
+PORTADA_CONSULTA = """
+  #s1 { background: linear-gradient(180deg, var(--cream) 0%, var(--sage-soft) 100%); }
+  #s1 .photo { inset:auto; left:40px; right:40px; top:330px; height:514px; border-radius:18px;
+    background: url(../consulta.jpg) center/cover; box-shadow: 0 30px 60px rgba(26,58,72,.25);
+    transform-origin: 50% 50%; animation: zoomPortada 4.8s linear both; }
+  @keyframes zoomPortada { from { transform: scale(1);} to { transform: scale(1.03);} }
+  #s1 .shade { display:none; }
+  #s1 .hook { top:930px; }
+"""
 
 
 def cierre(t):
@@ -104,6 +117,8 @@ def main():
     script = resto[resto.index("<script>"):]
     cabecera = cabecera.replace("url(foto.png)", "url(../foto.png)")
     cabecera = cabecera.replace('<html lang="es">', f'<html lang="{t["lang"]}">')
+    if t.get("portada") == "consulta":
+        cabecera = cabecera.replace("</style>", PORTADA_CONSULTA + "</style>")
     salida = t["salida"]
     for imagen in ("foto.png", "logo.png"):
         if not (salida / imagen).exists():
