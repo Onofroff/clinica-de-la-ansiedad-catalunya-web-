@@ -21,14 +21,17 @@ LLEGEIX = """CALENDARI DE LA SETMANA
 =======================
 
 Cada carpeta és un dia. A dins hi ha:
-  - video.mp4    -> el reel
-  - portada.png  -> la portada (per triar-la a Instagram)
-  - textos.txt   -> el text per a Instagram, TikTok, Facebook i Google
+  - <dia>-video.mp4    -> el reel
+  - <dia>-portada.png  -> la portada (per triar-la a Instagram)
+  - <dia>-textos.txt   -> el text per a Instagram, TikTok, Facebook i Google
+  - textos-tots.html   (a l'arrel) -> tots els textos amb botó «Copiar»
+
+Cada arxiu porta el nom del dia: si els passes al mòbil no es barregen.
 
 Com publicar cada dia:
   1. Obre la carpeta del dia.
-  2. Puja video.mp4 a la xarxa.
-  3. Obre textos.txt, copia la part d'aquella xarxa i enganxa-la.
+  2. Puja el vídeo del dia a la xarxa.
+  3. Obre el fitxer de textos del dia, copia la part d'aquella xarxa i enganxa-la.
   4. Marca el dia aquí sota quan estigui publicat.
 
 [ ] 0-IA         (quan vulguis, fora de la setmana)
@@ -51,15 +54,16 @@ def main():
     textos = json.loads((AQUI / "textos-xarxes" / "textos.json").read_text(encoding="utf-8"))
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("LLEGEIX-ME.txt", LLEGEIX)
+        z.write(AQUI / "textos-xarxes" / "textos-xarxes.html", "textos-tots.html")
         for carpeta, reel, r in zip(CARPETAS, reels, textos):
             t = generar.textos(r)
             google = r["facebook"] + "\n\n" + FIRMA_GOOGLE
             bloques = [f"===== {nombre.upper()} =====\n\n{texto}" for nombre, texto in
                        [("Instagram", t["Instagram"]), ("TikTok", t["TikTok"]),
                         ("Facebook", t["Facebook"]), ("Google (sense hashtags ni telèfon)", google)]]
-            z.writestr(f"{carpeta}/textos.txt", f"{r['reel']}\n\n" + "\n\n\n".join(bloques) + "\n")
-            z.write(reel / f"reel-{reel.name}.mp4", f"{carpeta}/video.mp4")
-            z.write(reel / f"portada-{reel.name}.png", f"{carpeta}/portada.png")
+            z.writestr(f"{carpeta}/{carpeta}-textos.txt", f"{r['reel']}\n\n" + "\n\n\n".join(bloques) + "\n")
+            z.write(reel / f"reel-{reel.name}.mp4", f"{carpeta}/{carpeta}-video.mp4")
+            z.write(reel / f"portada-{reel.name}.png", f"{carpeta}/{carpeta}-portada.png")
     print(destino)
 
 
