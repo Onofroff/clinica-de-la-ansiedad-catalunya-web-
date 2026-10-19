@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Reel Silenci</title>
+<style>
+  :root {
+    --cream: #F3F7F4;
+    --navy: #1A3A48;
+    --sage: #6C9D8B;
+    --sage-soft: #DCE8E1;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--cream); }
+  body { font-family: 'Inter', sans-serif; color: var(--navy); -webkit-font-smoothing: antialiased; }
+
+  .scene { position: absolute; inset: 0; opacity: 0; animation-fill-mode: both; animation-timing-function: linear; }
+  .el { animation-fill-mode: both; animation-timing-function: cubic-bezier(.2,.7,.2,1); }
+
+  @keyframes sceneFade { 0% {opacity:0} 6% {opacity:1} 94% {opacity:1} 100% {opacity:0} }
+  @keyframes sceneIn { 0% {opacity:0} 8% {opacity:1} 100% {opacity:1} }
+  @keyframes up { from { opacity:0; transform: translateY(60px);} to { opacity:1; transform:none; } }
+  @keyframes fade { from { opacity:0 } to { opacity:1 } }
+  @keyframes zoom { from { transform: scale(1.04);} to { transform: scale(1.16);} }
+  @keyframes zoomOut { from { transform: scale(1.12);} to { transform: scale(1);} }
+  @keyframes grow { from { transform: scaleX(0);} to { transform: scaleX(1);} }
+  @keyframes strike { from { width:0 } to { width:100% } }
+
+  /* ---------- 1 · Portada ---------- */
+  /* El texto va entre la cara y las manos: deja libre la cara y evita la franja inferior y la columna derecha que tapan los botones de Reels/TikTok. */
+  @keyframes zoomCover { from { transform: scale(1);} to { transform: scale(1.07);} }
+  #s1 { animation: sceneFade 4.8s 0s; background: #222; }
+  #s1 .photo { position:absolute; inset:0; background: url(../foto.png) 30% 22%/cover; transform-origin: 82% 34%; animation: zoomCover 4.8s linear both; }
+  #s1 .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(243,247,244,.95) 0%, rgba(243,247,244,0) 20%); }
+  #s1 .logo { position:absolute; top:56px; left:50%; width:340px; transform: translateX(-50%); }
+  #s1 .logo img { width:100%; display:block; }
+  #s1 .hook { position:absolute; left:56px; top:960px; width:880px; }
+  #s1 .kicker { display:inline-block; font-size:30px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:#fff; background: var(--sage); padding: 12px 24px; border-radius: 999px; margin-bottom:34px; animation: up .7s .3s both; }
+  #s1 h1 { font-size:98px; line-height:1.02; font-weight:800; letter-spacing:-.025em; }
+  #s1 h1 span { display:block; width:fit-content; max-width:880px; padding: 8px 26px 14px; margin-bottom:14px; border-radius: 6px; box-shadow: 0 18px 40px rgba(26,58,72,.18); }
+  #s1 h1 span:nth-child(1) { animation: up .7s .5s both; background: var(--navy); color:#fff; }
+  #s1 h1 span:nth-child(2) { animation: up .7s .7s both; background: #E7A977; color: var(--navy); transform-origin:left; }
+  #s1 h1 span:nth-child(3) { animation: up .7s .9s both; background: var(--navy); color:#fff; }
+  #s1 .sig { position:absolute; left:0; right:0; top:262px; text-align:center; font-size:28px; font-weight:600; color: var(--navy); letter-spacing:.02em; animation: fade .8s 1.2s both; }
+
+  /* ---------- 2 · Ya tiene nombre ---------- */
+  #s2 { animation: sceneFade 5s 4.6s; background: var(--cream); }
+  .center { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding: 0 90px; }
+  .label { font-size:32px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color: var(--sage); }
+  .rule { height:6px; width:140px; background: var(--sage); transform-origin:left; margin: 34px 0 44px; }
+  #s2 .label { animation: up .6s 4.9s both; }
+  #s2 .rule { animation: grow .6s 5.1s both; }
+  #s2 h2 { font-size:120px; line-height:1; font-weight:800; letter-spacing:-.03em; animation: up .8s 5.3s both; }
+  #s2 p { margin-top:56px; font-size:50px; line-height:1.3; font-weight:400; color: #3E5F6B; animation: up .8s 6.1s both; }
+
+  /* ---------- 3 · No es la máquina ---------- */
+  #s3 { animation: sceneFade 5.2s 9.4s; background: var(--navy); color:#fff; }
+  #s3 .label { color:#A9D3C2; animation: up .6s 9.7s both; }
+  #s3 .line { font-size:92px; line-height:1.1; font-weight:800; letter-spacing:-.02em; margin-top:50px; }
+  #s3 .a { animation: up .8s 10s both; }
+  #s3 .b { animation: up .8s 10.4s both; position:relative; display:inline-block; }
+  #s3 .b::after { content:''; position:absolute; left:0; top:55%; height:10px; background:#A9D3C2; animation: strike .7s 11.6s both; }
+  #s3 .c { animation: up .8s 12.4s both; font-size:58px; font-weight:400; color: rgba(255,255,255,.8); margin-top:60px; }
+
+  /* ---------- 4 · Preguntas ---------- */
+  #s4 { animation: sceneFade 6s 14.4s; background: var(--cream); }
+  #s4 .intro { font-size:52px; line-height:1.3; color:#3E5F6B; animation: up .7s 14.7s both; }
+  #s4 .q { font-size:96px; line-height:1.05; font-weight:800; letter-spacing:-.02em; margin-top:70px; }
+  #s4 .q1 { animation: up .8s 15.6s both; }
+  #s4 .q2 { animation: up .8s 17s both; color: var(--sage); }
+  #s4 .q3 { animation: up .8s 18.4s both; }
+
+  /* ---------- 5 · Palabras ---------- */
+  #s5 { animation: sceneFade 5.2s 20.2s; background: var(--sage-soft); }
+  #s5 .t1 { font-size:66px; line-height:1.2; font-weight:400; color:#3E5F6B; animation: up .8s 20.5s both; }
+  #s5 .t2 { font-size:100px; line-height:1.05; font-weight:800; letter-spacing:-.02em; margin-top:80px; animation: up .9s 22s both; }
+  #s5 .t2 em { font-style:normal; color: var(--sage); }
+
+  /* ---------- 6 · Cierre ---------- */
+  #s6 { animation: sceneIn 4s 25.2s; background: var(--cream); }
+  #s6 .wrap { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding: 0 80px; }
+  #s6 .avatar { width:400px; height:400px; border-radius:50%; overflow:hidden; border:10px solid #fff; box-shadow: 0 30px 60px rgba(26,58,72,.18); animation: up .8s 25.4s both; }
+  #s6 .avatar div { width:100%; height:100%; background: url(../foto.png) -284px -152px/680px auto no-repeat; animation: zoomOut 4s 25.2s both; }
+  #s6 .logo { width:520px; margin-top:70px; animation: up .8s 25.8s both; }
+  #s6 .who { font-size:44px; font-weight:600; margin-top:30px; animation: up .8s 26.1s both; }
+  #s6 .where { font-size:36px; color:#3E5F6B; margin-top:14px; animation: up .8s 26.3s both; }
+  #s6 .cta { margin-top:70px; background: var(--navy); color:#fff; font-size:44px; font-weight:700; padding: 34px 64px; border-radius: 999px; animation: up .8s 26.7s both; }
+  #s6 .web { font-size:38px; margin-top:34px; font-weight:600; color: var(--sage); animation: fade .8s 27.1s both; }
+
+  #s1 { background: linear-gradient(180deg, var(--cream) 0%, var(--sage-soft) 100%); }
+  #s1 .photo { inset:auto; left:40px; right:40px; top:330px; height:514px; border-radius:18px;
+    background: url(../consulta.jpg) center/cover; box-shadow: 0 30px 60px rgba(26,58,72,.25);
+    transform-origin: 50% 50%; animation: zoomPortada 4.8s linear both; }
+  @keyframes zoomPortada { from { transform: scale(1);} to { transform: scale(1.03);} }
+  #s1 .shade { display:none; }
+  #s1 .hook { top:930px; }
+  /* Variante: el bloque destacado en la tercera línea y una frase de apoyo bajo el titular. */
+  #s1 h1.acento-3 span:nth-child(2) { background: var(--navy); color:#fff; }
+  #s1 h1.acento-3 span:nth-child(3) { background:#E7A977; color: var(--navy); }
+  #s1 .sub { font-size:40px; line-height:1.3; color: var(--navy); margin-top:22px; max-width:880px; animation: fade .8s 1.2s both; }
+</style>
+</head>
+<body>
+
+<section class="scene" id="s1">
+  <div class="photo"></div>
+  <div class="shade"></div>
+  <div class="logo"><img src="../logo.png" alt=""></div>
+  <div class="hook">
+    <div class="kicker">Per pensar</div>
+    <h1 class="acento-3"><span>Viviu junts</span><span>però cadascú</span><span>va per la seva?</span></h1>
+    <p class="sub">Compartiu casa, però ja no compartiu paraules.</p>
+  </div>
+  <div class="sig">Joan Ramon Soto · Psicoanalista</div>
+</section>
+
+<section class="scene" id="s2">
+  <div class="center">
+    <div class="label">Passa més del que sembla</div>
+    <div class="rule"></div>
+    <h2>La parella en silenci</h2>
+    <p>Parleu de la compra i dels horaris, però ja no de vosaltres.</p>
+  </div>
+</section>
+
+<section class="scene" id="s3">
+  <div class="center">
+    <div class="label">Però compte</div>
+    <div class="line a">El que us separa</div>
+    <div class="line"><span class="b">no és la rutina.</span></div>
+    <div class="line c">És tot el que ja no us dieu.</div>
+  </div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="center">
+    <div class="intro">Sota el silenci solen quedar preguntes pendents:</div>
+    <div class="q q1">Quan vam deixar de parlar?</div>
+    <div class="q q2">Què no m'atreveixo a dir?</div>
+    <div class="q q3">Encara ens triem?</div>
+  </div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="center">
+    <div class="t1">Fer més plans junts no omple aquest silenci.</div>
+    <div class="t2">L'omple <em>tornar a posar-hi paraules.</em></div>
+  </div>
+</section>
+
+<section class="scene" id="s6">
+  <div class="wrap">
+    <div class="avatar"><div></div></div>
+    <img class="logo" src="../logo.png" alt="">
+    <div class="who">Joan Ramon Soto · Psicoanalista</div>
+    <div class="where">Maresme · Presencial i en línia · Català / Castellà</div>
+    <div class="cta">Demana la teva primera visita</div>
+    <div class="web">clinicadelansiedad.com · 613 916 079</div>
+  </div>
+</section>
+
+<script>
+  // Seek every CSS animation to time t (seconds) for deterministic frame capture.
+  document.getAnimations().forEach(a => a.pause());
+  window.seek = t => document.getAnimations().forEach(a => { a.currentTime = t * 1000; });
+  window.seek(0);
+</script>
+</body>
+</html>

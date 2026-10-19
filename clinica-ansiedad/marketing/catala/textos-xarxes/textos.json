@@ -306,5 +306,145 @@
    "#ruptura",
    "#salutmental"
   ]
+ },
+ {
+  "id": "dependencia",
+  "reel": "Per pensar · Dependència emocional",
+  "utm": "dependencia-emocional",
+  "gancho": "Sense aquella persona no saps qui ets? 👇",
+  "cuerpo": "Quan l'altre ho és tot, tu desapareixes. Necessites la seva presència per estar bé, i la idea de perdre-la et desborda. Té nom: dependència emocional.\n\nEl que et lliga no és l'amor. És la por de quedar-te sense lloc.\n\nA sota solen bategar preguntes antigues:\n→ Qui soc sense l'altre?\n→ Per què em fa tanta por la solitud?\n→ Què vaig aprendre de l'amor?\n\nAgafar-te més fort no et dona seguretat. La seguretat neix quan et retrobes a tu.",
+  "pregunta": "T'hi reconeixes? Desa-ho per quan ho necessitis.",
+  "tiktok": "Si sense aquella persona sents que no ets ningú, potser no és amor: és dependència emocional. I la seguretat no la trobaràs agafant-te més fort.",
+  "facebook": "Hi ha relacions en què l'altre ho omple tot. Els plans, l'estat d'ànim, la manera de veure's a un mateix. I quan apareix la possibilitat de perdre'l, tot trontolla.\n\nD'això se'n diu dependència emocional. Sovint el que lliga no és tant l'amor com la por de quedar-se sense lloc, una por que acostuma a venir de molt abans de la relació.\n\nAgafar-se més fort a l'altre no dona seguretat. La seguretat comença quan es pot entendre aquesta por i retrobar-se un mateix.",
+  "ig": [
+   "#dependenciaemocional",
+   "#parella",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#dependenciaemocional",
+   "#parella",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#dependenciaemocional",
+   "#parella"
+  ]
+ },
+ {
+  "id": "compromis",
+  "reel": "Per pensar · Por al compromís",
+  "utm": "por-al-compromis",
+  "gancho": "Quan la relació va bé, tu marxes? 👇",
+  "cuerpo": "Just quan arriba la calma, apareixen les ganes de fugir. Al principi tot és il·lusió; quan la cosa es fa seriosa, et tanques o busques una sortida.\n\nEl que et fa fugir no és l'altre. És la por de perdre't si et quedes.\n\nDarrere de la fugida sol haver-hi una pregunta:\n→ Què passa si m'hi quedo?\n→ I si em fan mal?\n→ De què em protegeixo?\n\nCanviar de persona no fa marxar la por. Marxa quan entens de què et protegeixes.",
+  "pregunta": "Et passa a tu o a algú que coneixes? Explica-ho als comentaris.",
+  "tiktok": "Si cada vegada que una relació va bé tu trobes un motiu per marxar, no és que no hagis trobat la persona adequada. És una por que et protegeix d'alguna cosa.",
+  "facebook": "Hi ha persones que s'il·lusionen molt al principi d'una relació i que, just quan tot comença a anar bé, senten la necessitat de marxar. Troben defectes, es distancien o busquen una sortida.\n\nSovint el que fa fugir no és l'altra persona, sinó la por del que pot passar si s'hi queden: dependre, perdre's, que els facin mal.\n\nCanviar de parella no fa desaparèixer aquesta por. El que ajuda és entendre de què protegeix i d'on ve.",
+  "ig": [
+   "#porcompromis",
+   "#parella",
+   "#psicoanalisi",
+   "#maresme",
+   "#relacions"
+  ],
+  "tt": [
+   "#parella",
+   "#relacions",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#parella",
+   "#relacions"
+  ]
+ },
+ {
+  "id": "silenci",
+  "reel": "Per pensar · La parella en silenci",
+  "utm": "parella-en-silenci",
+  "gancho": "Viviu junts però cadascú va per la seva? 👇",
+  "cuerpo": "Compartiu casa, però ja no compartiu paraules. Parleu de la compra i dels horaris, però ja no de vosaltres.\n\nEl que us separa no és la rutina. És tot el que ja no us dieu.\n\nSota el silenci solen quedar preguntes pendents:\n→ Quan vam deixar de parlar?\n→ Què no m'atreveixo a dir?\n→ Encara ens triem?\n\nFer més plans junts no omple aquest silenci. L'omple tornar a posar-hi paraules.",
+  "pregunta": "Desa-ho i, si t'atreveixes, comparteix-ho amb la teva parella.",
+  "tiktok": "Si amb la teva parella ja només parleu d'horaris i de la compra, el problema no és la rutina. És tot el que heu deixat de dir-vos.",
+  "facebook": "Moltes parelles no es barallen. Simplement, a poc a poc, deixen de parlar-se. Es coordinen bé, comparteixen casa i obligacions, però ja no expliquen què senten ni què els passa.\n\nAquest silenci no ve de la rutina, sinó de tot el que s'ha anat quedant per dir: decepcions, desitjos, pors que no han trobat lloc.\n\nFer més plans junts no l'omple. El que ajuda és tornar a posar-hi paraules, de vegades amb l'ajuda d'algú de fora.",
+  "ig": [
+   "#parella",
+   "#comunicacio",
+   "#psicoanalisi",
+   "#maresme",
+   "#terapiadeparella"
+  ],
+  "tt": [
+   "#parella",
+   "#comunicacio",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#parella",
+   "#terapiadeparella"
+  ]
+ },
+ {
+  "id": "mobil",
+  "reel": "Per pensar · Revisar el mòbil",
+  "utm": "revisar-el-mobil",
+  "gancho": "Li revises el mòbil d'amagat? 👇",
+  "cuerpo": "Cada vegada que mires, la tranquil·litat dura menys. Missatges, connexions, fotos... i encara que no trobis res, la inquietud torna.\n\nEl que busques no és una prova. És calmar una por que ve de dins.\n\nDarrere del control sol haver-hi una pregunta:\n→ I si no soc prou?\n→ I si em deixa?\n→ Per què no em puc refiar?\n\nControlar més no dona confiança. Dona més por. La confiança arriba quan entens d'on ve la por.",
+  "pregunta": "Si et remou, desa-ho. No cal que ho comentis.",
+  "tiktok": "Si revises el mòbil de la teva parella i, tot i no trobar res, no et quedes en pau, el problema no és al mòbil. És una por que ve de dins.",
+  "facebook": "Revisar el mòbil de la parella sol començar com una manera de calmar-se: una mirada ràpida, només per quedar-se en pau. Però la calma dura poc, i la necessitat de tornar a mirar creix.\n\nEl que es busca no és una prova, sinó apaivagar una por que ve de dins: no ser prou, que et deixin, no poder confiar.\n\nPer això controlar més no dona confiança: dona més por. La confiança comença quan es pot entendre d'on ve aquesta por.",
+  "ig": [
+   "#gelosia",
+   "#parella",
+   "#psicoanalisi",
+   "#maresme",
+   "#confianca"
+  ],
+  "tt": [
+   "#gelosia",
+   "#parella",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#gelosia",
+   "#parella"
+  ]
+ },
+ {
+  "id": "tornar",
+  "reel": "Per pensar · Relacions que fan mal",
+  "utm": "relacions-que-fan-mal",
+  "gancho": "Saps que no et convé, però hi tornes? 👇",
+  "cuerpo": "No és falta de voluntat: és una història que es repeteix. Te'n vas, prometes que no tornaràs... i al cap d'un temps hi ets de nou.\n\nEl que et fa tornar no és feblesa. És una ferida antiga que espera ser escoltada.\n\nSota aquest anar i tornar solen bategar preguntes:\n→ Què hi trobo, en aquesta relació?\n→ Què em recorda?\n→ Què em fa por, si no hi torno?\n\nLa força de voluntat sola no trenca el lligam. Es trenca quan entens què et lliga a aquest dolor.\n\n(Si hi ha violència, truca al 016: és gratuït i no deixa rastre a la factura.)",
+  "pregunta": "Comparteix-ho amb algú que ho necessiti.",
+  "tiktok": "Si saps que una relació et fa mal però sempre hi tornes, no és feblesa. És una ferida antiga que espera ser escoltada. Si hi ha violència, truca al 016.",
+  "facebook": "Hi ha relacions que fan mal i que, tot i així, costa molt deixar. Marxes, et promets que no hi tornaràs, i al cap d'un temps hi tornes a ser. Després arriben la culpa i la sensació de no tenir força de voluntat.\n\nPerò sovint no és una qüestió de voluntat. El que fa tornar sol ser una ferida antiga que aquesta relació toca i que espera ser escoltada.\n\nEl lligam es comença a trencar quan es pot entendre què ens uneix a aquest dolor. I si hi ha violència, el primer és demanar ajuda: el 016 és gratuït i no deixa rastre a la factura.",
+  "ig": [
+   "#relacionstoxiques",
+   "#parella",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#relacionstoxiques",
+   "#parella",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#relacions",
+   "#salutmental"
+  ]
  }
 ]
