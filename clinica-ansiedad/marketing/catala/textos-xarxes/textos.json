@@ -1,74 +1,254 @@
 [
- {"id":"ia","reel":"Reel inicial · Ansietat per la IA","utm":"ia-ca",
-  "gancho":"La IA t'angoixa? No és la màquina. És el que desperta en tu. 👇",
-  "cuerpo":"Insomni, pensaments que no s'aturen, sensació de quedar-se enrere. L'ansietat per la intel·ligència artificial no és un diagnòstic, però sí un malestar real.\n\nAl darrere solen amagar-se preguntes molt antigues amb roba nova:\n→ Encara soc necessari?\n→ Quin és el meu lloc?\n→ Què val el que faig?\n\nMés notícies no la calmen. Posar-la en paraules, sí.",
-  "pregunta":"T'ha passat? Explica-m'ho als comentaris.",
-  "tiktok":"La IA no t'angoixa pel que fa. T'angoixa pel que et pregunta: encara soc necessari? Més notícies no ho calmen. Posar-ho en paraules, sí.",
-  "facebook":"Cada setmana llegim que la intel·ligència artificial canviarà feines i rutines. Moltes persones noten que això els treu la son o els deixa una inquietud difícil d'anomenar.\n\nEl que angoixa no és la màquina, sinó les preguntes que desperta: encara soc necessari?, quin és el meu lloc?, què val el que faig? Són preguntes antigues que ara arriben amb roba nova.\n\nPer això llegir més notícies rarament calma. El que ajuda és aturar-se i posar en paraules què s'ha mogut per dins i per què justament ara.",
-  "ig":["#ansietat","#intelligenciaartificial","#psicoanalisi","#maresme","#salutmental"],
-  "tt":["#ansietat","#intelligenciaartificial","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#ansietat","#intelligenciaartificial"]},
- {"id":"dilluns","reel":"Dilluns · Ansietat funcional","utm":"dilluns",
-  "gancho":"Per fora, tot bé. Per dins, no et pots aturar. 👇",
-  "cuerpo":"Compleixes, rendeixes, ajudes a tothom. I tot i així vius amb un motor que no s'apaga. D'això se'n diu ansietat funcional: no paralitza, empeny.\n\nA sota solen bategar preguntes que no es diuen:\n→ I si no soc prou?\n→ Qui soc si m'aturo?\n→ Per a qui rendeixo?\n\nFer-ne més no la calma. Només la tapa.",
-  "pregunta":"T'hi reconeixes? Desa aquest reel per quan el necessitis.",
-  "tiktok":"Si per fora tot va bé però per dins no et pots aturar, potser tens ansietat funcional. No paralitza: empeny. I fer-ne més no la calma, només la tapa.",
-  "facebook":"Hi ha persones que ningú no s'imaginaria en una consulta. Compleixen terminis, cuiden dels altres i ho resolen tot. Però per dins viuen en alerta: el cap no descansa i el cap de setmana s'assembla massa a un dia laborable.\n\nS'ha començat a anomenar ansietat funcional. Costa de veure precisament perquè funciona. A sota sol haver-hi una por antiga de no ser prou, i per això fer-ne més no la calma: només la tapa.\n\nEl que ajuda és poder-ne parlar sense haver de rendir també aquí.",
-  "ig":["#ansietat","#ansietatfuncional","#psicoanalisi","#maresme","#salutmental"],
-  "tt":["#ansietat","#ansiedad","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#ansietat","#salutmental"]},
- {"id":"dimarts","reel":"Dimarts · Despertar a les 4","utm":"dimarts",
-  "gancho":"Et despertes a les 4 i ja no tornes a dormir? 👇",
-  "cuerpo":"Ulls oberts, el cor accelerat i el cap repassant-ho tot. És una de les formes més habituals en què apareix l'ansietat.\n\nEn el silenci de la nit treu el cap el que és pendent:\n→ Ho he fet bé?\n→ Què passarà?\n→ Què estic callant?\n\nEl que et desperta no és l'insomni. És el que de dia no té lloc.\n\n(Si es repeteix, consulta també el teu metge per descartar altres causes.)",
-  "pregunta":"A quina hora et despertes tu? Et llegeixo als comentaris.",
-  "tiktok":"Despertar-te a les 4 amb el cap a mil no és casualitat. De matinada no hi ha res que et distregui i apareix el que de dia no té lloc.",
-  "facebook":"T'adorms sense problema, però a les tres o les quatre els ulls s'obren de cop. El cor va ràpid i la ment repassa tot el que és pendent. La son ja no torna.\n\nDe matinada no hi ha feina, ni converses, ni pantalles. És el moment en què apareix el que durant el dia no ha tingut lloc. Per això mirar el mòbil o barallar-se amb la son rarament funciona.\n\nSi et passa sovint, consulta el teu metge per descartar causes físiques. I si no n'hi ha, ajuda donar de dia un lloc al que apareix de nit.",
-  "ig":["#insomni","#ansietat","#psicoanalisi","#maresme","#salutmental"],
-  "tt":["#insomni","#ansietat","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#insomni","#ansietat"]},
- {"id":"dimecres","reel":"Dimecres · Doomscrolling","utm":"dimecres",
-  "gancho":"Obres el mòbil per calmar-te i acabes pitjor? 👇",
-  "cuerpo":"Té nom: doomscrolling. Lliscar notícies i vídeos sense parar, encara que cadascun t'inquieti més.\n\nEl que hi busques no és informació. Moltes vegades és no sentir el que sents.\n\nDarrere l'scroll infinit sol haver-hi una pregunta:\n→ Què passaria si m'aturo?\n→ Què apareix en el silenci?\n→ De què m'estic distraient?\n\nBloquejar apps ajuda una mica. Escoltar aquest silenci arriba a l'arrel.",
-  "pregunta":"Quanta estona portes avui lliscant? Respon-te amb sinceritat.",
-  "tiktok":"Si estàs veient això lliscant sense parar, aquest vídeo és per a tu. El doomscrolling no busca informació: busca no sentir el que sents.",
-  "facebook":"Agafes el mòbil un moment per desconnectar. Una notícia, una altra, un vídeo més. Quan aixeques la vista ha passat una hora i et sents pitjor que abans.\n\nA aquest hàbit se'n diu doomscrolling. Les aplicacions estan dissenyades per enganxar-nos, però això no ho explica tot: el mòbil també omple un silenci en què podria aparèixer alguna cosa incòmoda.\n\nDesactivar notificacions ajuda. Però el que canvia les coses és atrevir-se a escoltar què apareix quan la pantalla s'apaga.",
-  "ig":["#doomscrolling","#ansietat","#psicoanalisi","#maresme","#benestardigital"],
-  "tt":["#doomscrolling","#ansietat","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#ansietat","#benestardigital"]},
- {"id":"dijous","reel":"Dijous · Gelosia","utm":"dijous",
-  "gancho":"La gelosia et treu la calma? 👇",
-  "cuerpo":"Revisar, preguntar, imaginar. I la sensació de no poder parar.\n\nEl que alimenta la gelosia no és la teva parella. És una por que ve d'abans.\n\nSota la gelosia solen bategar preguntes antigues:\n→ Em deixaran?\n→ Soc prou?\n→ Mereixo que m'estimin?\n\nControlar més no dona seguretat. Dona més por.",
-  "pregunta":"Si t'ha remogut, desa-ho o comparteix-ho amb algú que ho necessiti.",
-  "tiktok":"La gelosia gairebé mai no parla de l'altra persona. Parla d'una por antiga: em deixaran?, soc prou? Controlar més no dona seguretat.",
-  "facebook":"Revisar el mòbil, fer preguntes, imaginar escenes. La gelosia pot ocupar una quantitat enorme d'energia i deixar una sensació de no poder parar.\n\nEl que sol alimentar-la no és el que fa l'altra persona, sinó una por que ve d'abans: que et deixin, no ser prou, no merèixer amor. Per això controlar més no tranquil·litza: fa més por.\n\nLa calma arriba quan es pot entendre d'on ve aquesta por.",
-  "ig":["#gelosia","#parella","#psicoanalisi","#maresme","#ansietat"],
-  "tt":["#gelosia","#parella","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#gelosia","#parella"]},
- {"id":"divendres","reel":"Divendres · Crisi de pànic","utm":"divendres",
-  "gancho":"Cor a mil. Falta d'aire. Por de morir. 👇",
-  "cuerpo":"Una crisi de pànic arriba de cop i espanta moltíssim. Si el metge descarta una altra causa, té nom i té tractament.\n\nDesprés de la primera crisi arriba una altra por:\n→ I si torna?\n→ I si em passa en públic?\n→ Estic perdent el control?\n\nEvitar llocs alleuja avui, però et tanca demà. El pànic cedeix quan se'n pot parlar.",
-  "pregunta":"Has viscut una crisi així? Li passa a molta gent. Explica-ho si et ve de gust.",
-  "tiktok":"Si alguna vegada vas sentir que et mories i el metge et va dir que estaves bé, potser va ser una crisi de pànic. Té nom i es pot tractar.",
-  "facebook":"El cor s'accelera, falta l'aire i apareix una por intensa de morir o de perdre el control. Una crisi de pànic arriba de cop i és una de les experiències més angoixants que hi ha.\n\nDavant de símptomes així, el primer és que un metge descarti altres causes. Si ho fa, convé saber que té nom i que es pot tractar.\n\nDesprés de la primera crisi sol arribar la por que torni, i amb ella la temptació d'evitar llocs. Això alleuja avui, però et tanca demà. El pànic cedeix quan es pot parlar del que el provoca.",
-  "ig":["#atacdepanic","#crisideansietat","#psicoanalisi","#maresme","#ansietat"],
-  "tt":["#atacdepanic","#ansiedad","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#crisideansietat","#ansietat"]},
- {"id":"dissabte","reel":"Dissabte · Culpa per descansar","utm":"dissabte",
-  "gancho":"Descanses i et sents culpable? 👇",
-  "cuerpo":"Arriba el cap de setmana i, en lloc de calma, apareix la inquietud.\n\nEl que no et deixa parar no és el temps. És una veu que sempre n'exigeix més:\n→ M'ho he guanyat?\n→ Estic perdent el temps?\n→ De qui és aquesta veu?\n\nOmplir l'agenda de plans no l'apaga. Es calma quan descobreixes d'on ve.",
-  "pregunta":"Avui, 10 minuts sense fer res. T'hi atreveixes? Explica'm què apareix.",
-  "tiktok":"Si el dissabte et sents culpable per no fer res, escolta això. No és falta de temps: és una veu que sempre n'exigeix més. I té història.",
-  "facebook":"Per fi és dissabte. No hi ha obligacions urgents. I, tanmateix, en lloc de calma apareix la culpa: la sensació d'estar perdent el temps o de no haver-te guanyat el descans.\n\nAquesta culpa no sol venir de la falta de temps, sinó d'una veu interna que sempre n'exigeix més. Moltes vegades repeteix exigències apreses fa molt.\n\nOmplir el cap de setmana de plans no l'apaga. El que alleuja és entendre de qui és aquesta veu. Quan es reconeix, perd força.",
-  "ig":["#autoexigencia","#culpa","#psicoanalisi","#maresme","#salutmental"],
-  "tt":["#autoexigencia","#descans","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#autoexigencia","#salutmental"]},
- {"id":"diumenge","reel":"Diumenge · Angoixa del diumenge","utm":"diumenge",
-  "gancho":"El diumenge a la tarda se t'encongeix alguna cosa per dins? 👇",
-  "cuerpo":"Té nom: l'angoixa del diumenge. Aquella sensació que arriba quan el cap de setmana comença a acabar-se.\n\nEl que angoixa no és el dilluns. És el que el dilluns et recorda:\n→ És aquesta la vida que vull?\n→ Què em pesa de debò?\n→ Què no m'atreveixo a canviar?\n\nDistreure's fins a adormir-se només ho ajorna. Escoltar-ho pot ser el primer canvi.",
-  "pregunta":"A quina hora del diumenge et comença a tu? Et llegeixo.",
-  "tiktok":"Aquest nus del diumenge a la tarda no és pel dilluns. És pel que el dilluns et recorda. Escoltar-ho pot ser el primer canvi.",
-  "facebook":"A mesura que avança la tarda del diumenge, alguna cosa canvia: un nus a l'estómac, certa tristesa, una inquietud sense forma. Moltes persones la coneixen bé: és l'angoixa del diumenge.\n\nEl que angoixa no sol ser el dilluns en si, sinó el que el dilluns recorda: preguntes sobre la vida que portem, el que ens pesa o el que no ens atrevim a canviar.\n\nDistreure's fins a l'hora d'anar a dormir només ho ajorna. Escoltar el que assenyala aquest nus pot ser el primer canvi.",
-  "ig":["#angoixa","#ansietat","#psicoanalisi","#maresme","#salutmental"],
-  "tt":["#diumenge","#ansietat","#salutmental","#psicoanalisi","#tiktokencatala"],
-  "fb":["#ansietat","#salutmental"]}
+ {
+  "id": "ia",
+  "reel": "Reel inicial · Ansietat per la IA",
+  "utm": "ia-ca",
+  "gancho": "La IA t'angoixa? No és la màquina. És el que desperta en tu. 👇",
+  "cuerpo": "Insomni, pensaments que no s'aturen, sensació de quedar-se enrere. L'ansietat per la intel·ligència artificial no és un diagnòstic, però sí un malestar real.\n\nAl darrere solen amagar-se preguntes molt antigues amb roba nova:\n→ Encara soc necessari?\n→ Quin és el meu lloc?\n→ Què val el que faig?\n\nMés notícies no la calmen. Posar-la en paraules, sí.",
+  "pregunta": "T'ha passat? Explica-m'ho als comentaris.",
+  "tiktok": "La IA no t'angoixa pel que fa. T'angoixa pel que et pregunta: encara soc necessari? Més notícies no ho calmen. Posar-ho en paraules, sí.",
+  "facebook": "Cada setmana llegim que la intel·ligència artificial canviarà feines i rutines. Moltes persones noten que això els treu la son o els deixa una inquietud difícil d'anomenar.\n\nEl que angoixa no és la màquina, sinó les preguntes que desperta: encara soc necessari?, quin és el meu lloc?, què val el que faig? Són preguntes antigues que ara arriben amb roba nova.\n\nPer això llegir més notícies rarament calma. El que ajuda és aturar-se i posar en paraules què s'ha mogut per dins i per què justament ara.",
+  "ig": [
+   "#ansietat",
+   "#intelligenciaartificial",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#ansietat",
+   "#intelligenciaartificial",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#ansietat",
+   "#intelligenciaartificial"
+  ]
+ },
+ {
+  "id": "dilluns",
+  "reel": "Dilluns · Ansietat funcional",
+  "utm": "dilluns",
+  "gancho": "Per fora, tot bé. Per dins, no et pots aturar. 👇",
+  "cuerpo": "Compleixes, rendeixes, ajudes a tothom. I tot i així vius amb un motor que no s'apaga. D'això se'n diu ansietat funcional: no paralitza, empeny.\n\nA sota solen bategar preguntes que no es diuen:\n→ I si no soc prou?\n→ Qui soc si m'aturo?\n→ Per a qui rendeixo?\n\nFer-ne més no la calma. Només la tapa.",
+  "pregunta": "T'hi reconeixes? Desa aquest reel per quan el necessitis.",
+  "tiktok": "Si per fora tot va bé però per dins no et pots aturar, potser tens ansietat funcional. No paralitza: empeny. I fer-ne més no la calma, només la tapa.",
+  "facebook": "Hi ha persones que ningú no s'imaginaria en una consulta. Compleixen terminis, cuiden dels altres i ho resolen tot. Però per dins viuen en alerta: el cap no descansa i el cap de setmana s'assembla massa a un dia laborable.\n\nS'ha començat a anomenar ansietat funcional. Costa de veure precisament perquè funciona. A sota sol haver-hi una por antiga de no ser prou, i per això fer-ne més no la calma: només la tapa.\n\nEl que ajuda és poder-ne parlar sense haver de rendir també aquí.",
+  "ig": [
+   "#ansietat",
+   "#ansietatfuncional",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#ansietat",
+   "#ansiedad",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#ansietat",
+   "#salutmental"
+  ]
+ },
+ {
+  "id": "dimarts",
+  "reel": "Dimarts · Despertar a les 4",
+  "utm": "dimarts",
+  "gancho": "Et despertes a les 4 i ja no tornes a dormir? 👇",
+  "cuerpo": "Ulls oberts, el cor accelerat i el cap repassant-ho tot. És una de les formes més habituals en què apareix l'ansietat.\n\nEn el silenci de la nit treu el cap el que és pendent:\n→ Ho he fet bé?\n→ Què passarà?\n→ Què estic callant?\n\nEl que et desperta no és l'insomni. És el que de dia no té lloc.\n\n(Si es repeteix, consulta també el teu metge per descartar altres causes.)",
+  "pregunta": "A quina hora et despertes tu? Et llegeixo als comentaris.",
+  "tiktok": "Despertar-te a les 4 amb el cap a mil no és casualitat. De matinada no hi ha res que et distregui i apareix el que de dia no té lloc.",
+  "facebook": "T'adorms sense problema, però a les tres o les quatre els ulls s'obren de cop. El cor va ràpid i la ment repassa tot el que és pendent. La son ja no torna.\n\nDe matinada no hi ha feina, ni converses, ni pantalles. És el moment en què apareix el que durant el dia no ha tingut lloc. Per això mirar el mòbil o barallar-se amb la son rarament funciona.\n\nSi et passa sovint, consulta el teu metge per descartar causes físiques. I si no n'hi ha, ajuda donar de dia un lloc al que apareix de nit.",
+  "ig": [
+   "#insomni",
+   "#ansietat",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#insomni",
+   "#ansietat",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#insomni",
+   "#ansietat"
+  ]
+ },
+ {
+  "id": "dimecres",
+  "reel": "Dimecres · Doomscrolling",
+  "utm": "dimecres",
+  "gancho": "Obres el mòbil per calmar-te i acabes pitjor? 👇",
+  "cuerpo": "Té nom: doomscrolling. Lliscar notícies i vídeos sense parar, encara que cadascun t'inquieti més.\n\nEl que hi busques no és informació. Moltes vegades és no sentir el que sents.\n\nDarrere l'scroll infinit sol haver-hi una pregunta:\n→ Què passaria si m'aturo?\n→ Què apareix en el silenci?\n→ De què m'estic distraient?\n\nBloquejar apps ajuda una mica. Escoltar aquest silenci arriba a l'arrel.",
+  "pregunta": "Quanta estona portes avui lliscant? Respon-te amb sinceritat.",
+  "tiktok": "Si estàs veient això lliscant sense parar, aquest vídeo és per a tu. El doomscrolling no busca informació: busca no sentir el que sents.",
+  "facebook": "Agafes el mòbil un moment per desconnectar. Una notícia, una altra, un vídeo més. Quan aixeques la vista ha passat una hora i et sents pitjor que abans.\n\nA aquest hàbit se'n diu doomscrolling. Les aplicacions estan dissenyades per enganxar-nos, però això no ho explica tot: el mòbil també omple un silenci en què podria aparèixer alguna cosa incòmoda.\n\nDesactivar notificacions ajuda. Però el que canvia les coses és atrevir-se a escoltar què apareix quan la pantalla s'apaga.",
+  "ig": [
+   "#doomscrolling",
+   "#ansietat",
+   "#psicoanalisi",
+   "#maresme",
+   "#benestardigital"
+  ],
+  "tt": [
+   "#doomscrolling",
+   "#ansietat",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#ansietat",
+   "#benestardigital"
+  ]
+ },
+ {
+  "id": "dijous",
+  "reel": "Dijous · Gelosia",
+  "utm": "dijous",
+  "gancho": "La gelosia et treu la calma? 👇",
+  "cuerpo": "Revisar, preguntar, imaginar. I la sensació de no poder parar.\n\nEl que alimenta la gelosia no és la teva parella. És una por que ve d'abans.\n\nSota la gelosia solen bategar preguntes antigues:\n→ Em deixaran?\n→ Soc prou?\n→ Mereixo que m'estimin?\n\nControlar més no dona seguretat. Dona més por.",
+  "pregunta": "Si t'ha remogut, desa-ho o comparteix-ho amb algú que ho necessiti.",
+  "tiktok": "La gelosia gairebé mai no parla de l'altra persona. Parla d'una por antiga: em deixaran?, soc prou? Controlar més no dona seguretat.",
+  "facebook": "Revisar el mòbil, fer preguntes, imaginar escenes. La gelosia pot ocupar una quantitat enorme d'energia i deixar una sensació de no poder parar.\n\nEl que sol alimentar-la no és el que fa l'altra persona, sinó una por que ve d'abans: que et deixin, no ser prou, no merèixer amor. Per això controlar més no tranquil·litza: fa més por.\n\nLa calma arriba quan es pot entendre d'on ve aquesta por.",
+  "ig": [
+   "#gelosia",
+   "#parella",
+   "#psicoanalisi",
+   "#maresme",
+   "#ansietat"
+  ],
+  "tt": [
+   "#gelosia",
+   "#parella",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#gelosia",
+   "#parella"
+  ]
+ },
+ {
+  "id": "divendres",
+  "reel": "Divendres · Crisi de pànic",
+  "utm": "divendres",
+  "gancho": "Cor a mil. Falta d'aire. Por de morir. 👇",
+  "cuerpo": "Una crisi de pànic arriba de cop i espanta moltíssim. Si el metge descarta una altra causa, té nom i té tractament.\n\nDesprés de la primera crisi arriba una altra por:\n→ I si torna?\n→ I si em passa en públic?\n→ Estic perdent el control?\n\nEvitar llocs alleuja avui, però et tanca demà. El pànic cedeix quan se'n pot parlar.",
+  "pregunta": "Has viscut una crisi així? Li passa a molta gent. Explica-ho si et ve de gust.",
+  "tiktok": "Si alguna vegada vas sentir que et mories i el metge et va dir que estaves bé, potser va ser una crisi de pànic. Té nom i es pot tractar.",
+  "facebook": "El cor s'accelera, falta l'aire i apareix una por intensa de morir o de perdre el control. Una crisi de pànic arriba de cop i és una de les experiències més angoixants que hi ha.\n\nDavant de símptomes així, el primer és que un metge descarti altres causes. Si ho fa, convé saber que té nom i que es pot tractar.\n\nDesprés de la primera crisi sol arribar la por que torni, i amb ella la temptació d'evitar llocs. Això alleuja avui, però et tanca demà. El pànic cedeix quan es pot parlar del que el provoca.",
+  "ig": [
+   "#atacdepanic",
+   "#crisideansietat",
+   "#psicoanalisi",
+   "#maresme",
+   "#ansietat"
+  ],
+  "tt": [
+   "#atacdepanic",
+   "#ansiedad",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#crisideansietat",
+   "#ansietat"
+  ]
+ },
+ {
+  "id": "dissabte",
+  "reel": "Dissabte · Culpa per descansar",
+  "utm": "dissabte",
+  "gancho": "Descanses i et sents culpable? 👇",
+  "cuerpo": "Arriba el cap de setmana i, en lloc de calma, apareix la inquietud.\n\nEl que no et deixa parar no és el temps. És una veu que sempre n'exigeix més:\n→ M'ho he guanyat?\n→ Estic perdent el temps?\n→ De qui és aquesta veu?\n\nOmplir l'agenda de plans no l'apaga. Es calma quan descobreixes d'on ve.",
+  "pregunta": "Avui, 10 minuts sense fer res. T'hi atreveixes? Explica'm què apareix.",
+  "tiktok": "Si el dissabte et sents culpable per no fer res, escolta això. No és falta de temps: és una veu que sempre n'exigeix més. I té història.",
+  "facebook": "Per fi és dissabte. No hi ha obligacions urgents. I, tanmateix, en lloc de calma apareix la culpa: la sensació d'estar perdent el temps o de no haver-te guanyat el descans.\n\nAquesta culpa no sol venir de la falta de temps, sinó d'una veu interna que sempre n'exigeix més. Moltes vegades repeteix exigències apreses fa molt.\n\nOmplir el cap de setmana de plans no l'apaga. El que alleuja és entendre de qui és aquesta veu. Quan es reconeix, perd força.",
+  "ig": [
+   "#autoexigencia",
+   "#culpa",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#autoexigencia",
+   "#descans",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#autoexigencia",
+   "#salutmental"
+  ]
+ },
+ {
+  "id": "diumenge",
+  "reel": "Diumenge · Angoixa del diumenge",
+  "utm": "diumenge",
+  "gancho": "El diumenge a la tarda se t'encongeix alguna cosa per dins? 👇",
+  "cuerpo": "Té nom: l'angoixa del diumenge. Aquella sensació que arriba quan el cap de setmana comença a acabar-se.\n\nEl que angoixa no és el dilluns. És el que el dilluns et recorda:\n→ És aquesta la vida que vull?\n→ Què em pesa de debò?\n→ Què no m'atreveixo a canviar?\n\nDistreure's fins a adormir-se només ho ajorna. Escoltar-ho pot ser el primer canvi.",
+  "pregunta": "A quina hora del diumenge et comença a tu? Et llegeixo.",
+  "tiktok": "Aquest nus del diumenge a la tarda no és pel dilluns. És pel que el dilluns et recorda. Escoltar-ho pot ser el primer canvi.",
+  "facebook": "A mesura que avança la tarda del diumenge, alguna cosa canvia: un nus a l'estómac, certa tristesa, una inquietud sense forma. Moltes persones la coneixen bé: és l'angoixa del diumenge.\n\nEl que angoixa no sol ser el dilluns en si, sinó el que el dilluns recorda: preguntes sobre la vida que portem, el que ens pesa o el que no ens atrevim a canviar.\n\nDistreure's fins a l'hora d'anar a dormir només ho ajorna. Escoltar el que assenyala aquest nus pot ser el primer canvi.",
+  "ig": [
+   "#angoixa",
+   "#ansietat",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#diumenge",
+   "#ansietat",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#ansietat",
+   "#salutmental"
+  ]
+ },
+ {
+  "id": "dilluns-impostor",
+  "reel": "Dilluns · Síndrome de l'impostor",
+  "utm": "dilluns-impostor",
+  "gancho": "I si un dia descobreixen que no en saps tant? 👇",
+  "cuerpo": "Té nom: síndrome de l'impostor. Aconsegueixes coses, et feliciten, però per dins sents que ha estat sort i que algun dia se n'adonaran.\n\nEl que et fa dubtar no són els fets. És una veu antiga que mai no en té prou.\n\nA sota solen bategar preguntes molt íntimes:\n→ Mereixo el que tinc?\n→ I si no soc prou?\n→ De qui és aquesta mirada?\n\nTreballar més per demostrar-ho no la calma. Es calma quan entens d'on ve aquesta veu.",
+  "pregunta": "T'hi reconeixes? Desa aquest reel o envia'l a algú que ho necessiti.",
+  "tiktok": "Si cada èxit et sembla sort i tens por que algun dia descobreixin que no en saps, té nom: síndrome de l'impostor. I no es cura treballant més.",
+  "facebook": "Aconsegueixes un objectiu, et feliciten, i en lloc d'alegria apareix una inquietud: i si ha estat sort?, i si algun dia descobreixen que no en sé tant? Se'n diu síndrome de l'impostor, i és molt més freqüent del que sembla, sobretot en persones exigents i competents.\n\nEl que alimenta aquest dubte no són els fets, sinó una veu antiga que mai no en té prou. Per això treballar més per demostrar-ho no el calma: només el confirma.\n\nEl que ajuda és entendre d'on ve aquesta mirada tan dura i de qui és.",
+  "ig": [
+   "#sindromedelimpostor",
+   "#autoexigencia",
+   "#psicoanalisi",
+   "#maresme",
+   "#salutmental"
+  ],
+  "tt": [
+   "#sindromedelimpostor",
+   "#ansietat",
+   "#salutmental",
+   "#psicoanalisi",
+   "#tiktokencatala"
+  ],
+  "fb": [
+   "#autoexigencia",
+   "#salutmental"
+  ]
+ }
 ]
