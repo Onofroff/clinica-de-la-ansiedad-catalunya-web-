@@ -42,6 +42,10 @@ PORTADA_CONSULTA = """
   @keyframes zoomPortada { from { transform: scale(1);} to { transform: scale(1.03);} }
   #s1 .shade { display:none; }
   #s1 .hook { top:930px; }
+  /* Variante: el bloque destacado en la tercera línea y una frase de apoyo bajo el titular. */
+  #s1 h1.acento-3 span:nth-child(2) { background: var(--navy); color:#fff; }
+  #s1 h1.acento-3 span:nth-child(3) { background:#E7A977; color: var(--navy); }
+  #s1 .sub { font-size:40px; line-height:1.3; color: var(--navy); margin-top:22px; max-width:880px; animation: fade .8s 1.2s both; }
 """
 
 
@@ -63,6 +67,8 @@ def cierre(t):
 def cuerpo(d, t):
     h1, s2, s3, s4, s5 = d["h1"], d["s2"], d["s3"], d["s4"], d["s5"]
     kicker = d.get("kicker") or f'{d["dia"]} · {t["sufijo_dia"]}'
+    clase = ' class="acento-3"' if d.get("acento") == 3 else ""
+    sub = f'\n    <p class="sub">{d["sub"]}</p>' if d.get("sub") else ""
     return f"""
 <section class="scene" id="s1">
   <div class="photo"></div>
@@ -70,7 +76,7 @@ def cuerpo(d, t):
   <div class="logo"><img src="../logo.png" alt=""></div>
   <div class="hook">
     <div class="kicker">{kicker}</div>
-    <h1><span>{h1[0]}</span><span>{h1[1]}</span><span>{h1[2]}</span></h1>
+    <h1{clase}><span>{h1[0]}</span><span>{h1[1]}</span><span>{h1[2]}</span></h1>{sub}
   </div>
   <div class="sig">Joan Ramon Soto · Psicoanalista</div>
 </section>
