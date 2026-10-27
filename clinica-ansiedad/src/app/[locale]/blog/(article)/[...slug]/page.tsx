@@ -5,6 +5,7 @@ import { buildMetadata } from '@/lib/metadata';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/schema';
 import { LOCAL_POSTS, getLocalPost, getLocalPosts } from '@/content/blog';
 import { markdownToHtml, markdownHeadings, markdownReadingTime } from '@/lib/markdown';
+import { getContentfulCa } from '@/content/blog/contentful-ca';
 import BlogCard from '@/components/blog/BlogCard';
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Facebook, Twitter, Linkedin, ChevronDown } from 'lucide-react';
 import { Link } from '@/i18n/routing';
@@ -96,7 +97,8 @@ export async function generateMetadata({ params }: PageProps) {
         type: 'article',
         lang: locale,
         publishedTime: fields.fechaPublicacion || entry.sys.createdAt,
-        modifiedTime: entry.sys.updatedAt
+        modifiedTime: entry.sys.updatedAt,
+        catalan: Boolean(getContentfulCa(slug)),
     });
 }
 

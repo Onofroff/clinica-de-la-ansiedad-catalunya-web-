@@ -18,6 +18,7 @@ export const routing = defineRouting({
     '/terapia-online': '/terapia-online',
     '/taller-gestion-estres-empresas': '/taller-gestion-estres-empresas',
     '/psicologo-maresme': '/psicologo-maresme',
+    '/psicologo-maresme/[municipio]': '/psicologo-maresme/[municipio]',
     '/ansiedad': '/ansiedad',
     '/crisis-de-panico': '/crisis-de-panico',
     '/depresion': '/depresion',

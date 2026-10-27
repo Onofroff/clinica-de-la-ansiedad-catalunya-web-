@@ -21,9 +21,8 @@ export const whatsappUrl = (message: string) =>
 export const GOOGLE_REVIEWS = {
   rating: '5,0',
   count: 158,
-  // Maps URLs API: resuelve a la ficha del negocio (la URL por coordenadas que
-  // había antes abría el mapa, no el listado, así que no llevaba a las reseñas).
-  url: 'https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20de%20la%20Ansiedad%20Catalunya%2C%20Ronda%20Doctor%20Angl%C3%A8s%2074%2C%20Canet%20de%20Mar',
+  // Enlace oficial a la ficha de Google Maps, facilitado por la clínica (27/10/2026).
+  url: 'https://maps.app.goo.gl/ShS87qdy9zPTKJL4A',
 } as const;
 
 // Foto real de Joan Ramon Soto. El blog tiraba de i.pravatar.cc, un generador
@@ -34,6 +33,7 @@ export const AUTHOR_PHOTO = '/images/joanramonsotoimagenweb.webp';
 
 // Perfiles oficiales de la clínica en redes sociales (pie de página y schema "sameAs").
 export const SOCIAL_LINKS = {
+    googleMaps: 'https://maps.app.goo.gl/ShS87qdy9zPTKJL4A',
     instagram: 'https://www.instagram.com/clinicadelansietatcatalunya/',
     tiktok: 'https://www.tiktok.com/@clinica.de.la.ansiedad',
     facebook: 'https://www.facebook.com/share/19fRNjVM1V/',

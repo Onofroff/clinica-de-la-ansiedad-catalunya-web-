@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getEntries } from '@/lib/contentful';
 import { LOCAL_POSTS } from '@/content/blog';
+import { getContentfulCa } from '@/content/blog/contentful-ca';
+import { MUNICIPIOS } from '@/content/municipios';
 
 // Las URLs reales viven bajo www + prefijo de idioma (/es, /ca): el middleware de
 // next-intl no sirve rutas sin prefijo, así que el sitemap debe listar las URLs
@@ -58,11 +60,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         blogPosts = entries
             .map((entry: any) => (entry.fields?.slug || '').replace(/^\/|\/$/g, ''))
             .filter(Boolean)
-            .map((slug: string) => ({
-                path: `/es/blog/${slug}`,
-                freq: 'monthly',
-                priority: 0.85,
-            }));
+            .flatMap((slug: string) => [
+                { path: `/es/blog/${slug}`, freq: 'monthly', priority: 0.85 },
+                // Versión catalana (src/content/blog/contentful-ca.ts)
+                ...(getContentfulCa(slug) ? [{ path: `/ca/blog/${slug}`, freq: 'monthly', priority: 0.8 }] : []),
+            ]);
     } catch {
         // Si Contentful no responde, el sitemap sale sin posts en vez de romperse.
     }
@@ -74,8 +76,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ]);
     const localSlugs = new Set(LOCAL_POSTS.map((p) => `/es/blog/${p.slug}`));
 
+    // Páginas locales del Maresme, en castellano y catalán
+    const municipioPages = LOCALES.flatMap((locale) =>
+        MUNICIPIOS.map((m) => ({
+            path: `/${locale}/psicologo-maresme/${m.slug}`,
+            freq: 'monthly',
+            priority: locale === 'es' ? 0.8 : 0.7,
+        }))
+    );
+
     const allPages: { path: string; freq: string; priority: number; lastModified?: string }[] = [
         ...localizedPages,
+        ...municipioPages,
         ...localPosts,
         ...blogPosts.filter((p) => !localSlugs.has(p.path)),
     ];

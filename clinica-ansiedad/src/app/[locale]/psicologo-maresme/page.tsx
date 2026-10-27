@@ -25,6 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { bookingUrl, GOOGLE_REVIEWS } from "@/lib/constants";
+import { MUNICIPIOS } from "@/content/municipios";
 
 const inView: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -47,6 +48,7 @@ const TOWNS = [
   "Sant Pol de Mar",
   "Calella",
   "Pineda de Mar",
+  "Malgrat de Mar",
   "Sant Cebrià de Vallalta",
   "Caldes d'Estrac",
   "Sant Vicenç de Montalt",
@@ -470,12 +472,22 @@ export default function PsicologoMaresmePage() {
                   <CardBody className="p-8 md:p-10">
                     <p className="text-gold-light text-[10px] font-bold uppercase tracking-[0.2em] mb-6">{t.location.townsLabel}</p>
                     <div className="flex flex-wrap gap-2.5">
-                      {TOWNS.map((town) => (
-                        <span key={town} className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.06] px-3.5 py-2 text-white/85 text-sm">
-                          <MapPin className="w-3.5 h-3.5 text-gold-light shrink-0" />
-                          {town}
-                        </span>
-                      ))}
+                      {TOWNS.map((town) => {
+                        const page = MUNICIPIOS.find((m) => m.name === town);
+                        const chip = "inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.06] px-3.5 py-2 text-white/85 text-sm";
+                        return page ? (
+                          <Link key={town} href={{ pathname: "/psicologo-maresme/[municipio]", params: { municipio: page.slug } }} className={`${chip} hover:border-gold-light/60 hover:text-white transition-colors`}>
+                            <MapPin className="w-3.5 h-3.5 text-gold-light shrink-0" />
+                            {town}
+                            <ArrowUpRight className="w-3 h-3 text-gold-light/70" />
+                          </Link>
+                        ) : (
+                          <span key={town} className={chip}>
+                            <MapPin className="w-3.5 h-3.5 text-gold-light shrink-0" />
+                            {town}
+                          </span>
+                        );
+                      })}
                     </div>
                   </CardBody>
                 </Card>

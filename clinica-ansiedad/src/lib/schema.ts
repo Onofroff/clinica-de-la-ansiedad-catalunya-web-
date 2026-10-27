@@ -76,7 +76,7 @@ export const medicalClinicSchema = {
         "longitude": 2.5771,
         "description": "Ubicación de la clínica presencial"
     },
-    "hasMap": "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+08360+Canet+de+Mar,+Barcelona",
+    "hasMap": "https://maps.app.goo.gl/ShS87qdy9zPTKJL4A",
     // Tarifas publicadas en el sistema de reservas (Setmore).
     "priceRange": "75 € - 100 €",
     "currenciesAccepted": "EUR",
@@ -187,7 +187,6 @@ export const medicalClinicSchema = {
         "Terapia familiar"
     ],
     "sameAs": [
-        "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+Canet+de+Mar",
         ...Object.values(SOCIAL_LINKS)
     ],
     "contactPoint": [

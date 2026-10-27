@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { GOOGLE_REVIEWS, SOCIAL_LINKS } from "@/lib/constants";
 import { Phone, Mail, MapPin, Star, Instagram, Facebook, Linkedin, ArrowUpRight } from "lucide-react";
 
 function TikTokIcon({ className }: { className?: string }) {
@@ -18,7 +19,6 @@ const SOCIALS = [
     { name: "Facebook", href: SOCIAL_LINKS.facebook, Icon: Facebook },
     { name: "LinkedIn", href: SOCIAL_LINKS.linkedin, Icon: Linkedin },
 ];
-import { GOOGLE_REVIEWS, SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Footer() {
     const t = useTranslations('footer');
