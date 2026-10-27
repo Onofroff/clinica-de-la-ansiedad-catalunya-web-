@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getEntries } from '@/lib/contentful';
+import { LOCAL_POSTS } from '@/content/blog';
 
 // Las URLs reales viven bajo www + prefijo de idioma (/es, /ca): el middleware de
 // next-intl no sirve rutas sin prefijo, así que el sitemap debe listar las URLs
@@ -55,11 +56,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         // Si Contentful no responde, el sitemap sale sin posts en vez de romperse.
     }
 
-    const allPages = [...localizedPages, ...blogPosts];
+    // Artículos propios (src/content/blog), con su fecha real de revisión
+    const localPosts = LOCAL_POSTS.map((p) => ({
+        path: `/es/blog/${p.slug}`,
+        freq: 'monthly',
+        priority: 0.85,
+        lastModified: p.updated || p.date,
+    }));
+    const localSlugs = new Set(LOCAL_POSTS.map((p) => `/es/blog/${p.slug}`));
 
-    return allPages.map(({ path, freq, priority }) => ({
+    const allPages: { path: string; freq: string; priority: number; lastModified?: string }[] = [
+        ...localizedPages,
+        ...localPosts,
+        ...blogPosts.filter((p) => !localSlugs.has(p.path)),
+    ];
+
+    return allPages.map(({ path, freq, priority, lastModified }) => ({
         url: `${BASE_URL}${path}`,
-        lastModified: new Date().toISOString().split('T')[0],
+        lastModified: lastModified || new Date().toISOString().split('T')[0],
         changeFrequency: freq as any,
         priority,
     }));

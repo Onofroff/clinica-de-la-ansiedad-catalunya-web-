@@ -12,6 +12,8 @@ import SafeImage from '@/components/ui/SafeImage';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { slugSegments } from '@/lib/blog-slug';
+import { getLocalPosts } from '@/content/blog';
+import { markdownReadingTime } from '@/lib/markdown';
 
 export async function generateMetadata({
   params,
@@ -84,12 +86,31 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
     }
   }).filter(Boolean);
 
-  const allPosts = mappedPosts.length > 0 ? mappedPosts : FALLBACK_POSTS;
-  
+  // Artículos escritos en el propio repositorio (src/content/blog), junto a los de Contentful.
+  const localPosts: BlogPost[] = getLocalPosts(locale).map((p) => ({
+    id: `local-${p.slug}`,
+    title: p.title,
+    excerpt: p.description,
+    content: '',
+    date: p.date,
+    readTime: markdownReadingTime(p.body),
+    category: p.category,
+    image: p.image,
+    author: { name: 'Joan Ramon Soto', role: 'Psicoanalista', image: AUTHOR_PHOTO },
+    slug: p.slug,
+    featured: false,
+  }));
+
+  const combinedPosts = [...localPosts, ...mappedPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  const allPosts = combinedPosts.length > 0 ? combinedPosts : FALLBACK_POSTS;
+
   // Extract all categories explicitly from Contentful to populate the sidebar
-  const contentfulCategories = Array.from(new Set(categoryEntries
-    .map((entry: any) => entry.fields?.nombre)
-    .filter(Boolean)))
+  const contentfulCategories = Array.from(new Set([
+    ...categoryEntries.map((entry: any) => entry.fields?.nombre),
+    ...localPosts.map((post) => post.category),
+  ].filter(Boolean)))
     .sort();
 
   // If using fallbacks or no categories found, extract from posts as fallback

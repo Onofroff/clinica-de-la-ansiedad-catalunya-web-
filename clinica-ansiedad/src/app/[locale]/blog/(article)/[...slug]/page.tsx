@@ -2,8 +2,9 @@ import { getEntries, getEntryBySlug } from '@/lib/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { buildMetadata } from '@/lib/metadata';
-import { blogPostingSchema } from '@/lib/schema';
-import Script from 'next/script';
+import { blogPostingSchema, breadcrumbSchema } from '@/lib/schema';
+import { LOCAL_POSTS, getLocalPost, getLocalPosts } from '@/content/blog';
+import { markdownToHtml, markdownHeadings, markdownReadingTime } from '@/lib/markdown';
 import BlogCard from '@/components/blog/BlogCard';
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Facebook, Twitter, Linkedin, ChevronDown } from 'lucide-react';
 import { Link } from '@/i18n/routing';
@@ -23,14 +24,20 @@ interface PageProps {
 
 export const revalidate = 3600; // Revalidate every hour
 
+const SITE = 'https://www.clinicadelansiedad.com';
+
 export async function generateStaticParams() {
     const entries = await getEntries('blogPost', false, ['-fields.fechaPublicacion']);
     const locales = ['es', 'ca'];
+    const slugs = [
+        ...LOCAL_POSTS.map((p) => p.slug),
+        ...entries.map((entry: any) => entry.fields.slug),
+    ];
 
-    return entries.flatMap((entry: any) =>
+    return slugs.flatMap((s) =>
         locales.map(locale => ({
             locale,
-            slug: slugSegments(entry.fields.slug),
+            slug: slugSegments(s),
         }))
     );
 }
@@ -39,9 +46,25 @@ export async function generateMetadata({ params }: PageProps) {
     const { slug: rawSlug, locale } = await params;
     const slug = slugPath(rawSlug);
 
-    // Safety guard: if slug is somehow empty or "blog" at this level, 
+    // Safety guard: if slug is somehow empty or "blog" at this level,
     // it shouldn't be matching here, but we return early to help Next.js.
     if (!slug || slug === 'blog') return {};
+
+    const local = getLocalPost(slug, locale);
+    if (local) {
+        return buildMetadata({
+            title: local.seoTitle || local.title,
+            description: local.description,
+            path: `/blog/${local.slug}`,
+            keywords: local.keywords,
+            image: `${SITE}${local.image}`,
+            imageAlt: local.imageAlt,
+            type: 'article',
+            lang: locale,
+            publishedTime: local.date,
+            modifiedTime: local.updated || local.date,
+        });
+    }
 
     const entry = await getEntryBySlug('blogPost', slug, false, locale);
 
@@ -76,6 +99,22 @@ export async function generateMetadata({ params }: PageProps) {
         modifiedTime: entry.sys.updatedAt
     });
 }
+
+// Estilos de los artículos en Markdown: los mismos tamaños, colores y espaciados
+// que el renderizado de Contentful de abajo, para que ambos tipos se vean igual.
+const LOCAL_ARTICLE_CLASSES = [
+    '[&_h2]:text-2xl md:[&_h2]:text-3xl [&_h2]:font-serif [&_h2]:text-navy [&_h2]:mt-14 [&_h2]:mb-5 [&_h2]:leading-snug [&_h2]:tracking-tight [&_h2]:scroll-mt-28',
+    '[&_h3]:text-xl md:[&_h3]:text-2xl [&_h3]:font-serif [&_h3]:text-navy/90 [&_h3]:mt-10 [&_h3]:mb-4 [&_h3]:leading-snug [&_h3]:scroll-mt-28',
+    '[&_p]:text-navy/80 [&_p]:text-[17px] [&_p]:leading-[30px] md:[&_p]:text-lg md:[&_p]:leading-8 [&_p]:mb-7 [&_p]:font-light',
+    '[&_strong]:font-semibold [&_strong]:text-navy',
+    '[&_ul]:list-none [&_ul]:pl-0 [&_ul]:mb-8 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-3',
+    "[&_ul>li]:relative [&_ul>li]:pl-7 [&_ul>li]:before:content-[''] [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-[0.7rem] [&_ul>li]:before:w-1.5 [&_ul>li]:before:h-1.5 [&_ul>li]:before:rounded-full [&_ul>li]:before:bg-gold",
+    '[&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-8 [&_ol]:flex [&_ol]:flex-col [&_ol]:gap-3 [&_ol>li]:pl-1 [&_ol>li]:marker:text-gold [&_ol>li]:marker:font-semibold',
+    '[&_li]:text-navy/80 [&_li]:text-[17px] [&_li]:leading-[30px] md:[&_li]:text-lg md:[&_li]:leading-8 [&_li]:font-light',
+    '[&_blockquote]:bg-navy/5 [&_blockquote]:p-8 md:[&_blockquote]:p-10 [&_blockquote]:rounded-[28px] [&_blockquote]:border-l-[6px] [&_blockquote]:border-gold/40 [&_blockquote]:my-12',
+    '[&_blockquote_p]:italic [&_blockquote_p]:font-serif [&_blockquote_p]:text-navy/90 [&_blockquote_p]:text-lg md:[&_blockquote_p]:text-xl [&_blockquote_p]:mb-0',
+    '[&_a]:text-gold [&_a]:font-medium [&_a]:border-b [&_a]:border-gold/30 hover:[&_a]:text-navy hover:[&_a]:border-navy [&_a]:transition-all',
+].join(' ');
 
 // Custom Rich Text Render Options
 const renderOptions = {
@@ -182,48 +221,79 @@ export default async function BlogPostPage({ params }: PageProps) {
 
     if (!slug || slug === 'blog') notFound();
 
-    const entry = await getEntryBySlug('blogPost', slug, false, locale);
+    const local = getLocalPost(slug, locale);
+    const entry = local ? null : await getEntryBySlug('blogPost', slug, false, locale);
 
-    if (!entry) {
+    if (!local && !entry) {
         notFound();
     }
 
-    const fields = entry.fields as any;
-    
-    // Map to normalized structure
-    const post = {
-        id: entry.sys.id,
-        title: fields.titulo || 'Sin título',
-        excerpt: fields.metaDescripcion || '',
-        content: documentToReactComponents(fields.contenido, renderOptions), // Pre-render Rich Text
-        rawContent: fields.contenido, // Keep for schema
-        date: fields.fechaPublicacion || entry.sys.createdAt,
-        readTime: calculateReadingTime(fields.contenido),
-        category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'Psicología',
-        image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
-        author: {
-            name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
-            role: 'Psicoanalista',
-            image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
-        },
-        slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
+    const fields = (entry?.fields || {}) as any;
+    const author = {
+        name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
+        role: 'Psicoanalista',
+        image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
     };
 
-    // TOC Headings
-    const headings = extractHeadings(fields.contenido);
+    // Estructura común para artículos propios (Markdown) y de Contentful (Rich Text)
+    const post = local
+        ? {
+            id: `local-${local.slug}`,
+            title: local.title,
+            excerpt: local.description,
+            content: (
+                <div
+                    className={LOCAL_ARTICLE_CLASSES}
+                    dangerouslySetInnerHTML={{ __html: markdownToHtml(local.body) }}
+                />
+            ),
+            date: local.date,
+            modified: local.updated || local.date,
+            readTime: markdownReadingTime(local.body),
+            category: local.category,
+            image: local.image,
+            imageAlt: local.imageAlt,
+            author,
+            slug: local.slug,
+            headings: markdownHeadings(local.body),
+            faq: local.faq || [],
+        }
+        : {
+            id: entry!.sys.id,
+            title: fields.titulo || 'Sin título',
+            excerpt: fields.metaDescripcion || '',
+            content: documentToReactComponents(fields.contenido, renderOptions), // Pre-render Rich Text
+            date: fields.fechaPublicacion || entry!.sys.createdAt,
+            modified: entry!.sys.updatedAt,
+            readTime: calculateReadingTime(fields.contenido),
+            category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'Psicología',
+            image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
+            imageAlt: fields.titulo || 'Imagen del artículo',
+            author,
+            slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
+            headings: extractHeadings(fields.contenido),
+            faq: [] as { question: string; answer: string }[],
+        };
 
-    // Grab latest 2 posts as related for now
-    const allEntries = await getEntries('blogPost', false, ['-fields.fechaPublicacion'], locale);
-    
-    // Find neighbors for next/prev
-    const currentIndex = allEntries.findIndex((e) => e.sys.id === post.id);
-    const prevEntry = currentIndex > 0 ? (allEntries[currentIndex - 1] as any) : null;
-    const nextEntry = currentIndex < allEntries.length - 1 ? (allEntries[currentIndex + 1] as any) : null;
+    const headings = post.headings;
 
-    const relatedPosts: BlogPost[] = allEntries
-        .filter((e) => e.sys.id !== post.id)
-        .slice(0, 2)
-        .map((e) => {
+    // Todos los artículos (propios + Contentful) ordenados por fecha, para anterior/siguiente y relacionados
+    const contentfulEntries = await getEntries('blogPost', false, ['-fields.fechaPublicacion'], locale);
+    const allPosts: BlogPost[] = [
+        ...getLocalPosts(locale).map((p) => ({
+            id: `local-${p.slug}`,
+            title: p.title,
+            excerpt: p.description,
+            content: '',
+            date: p.date,
+            readTime: markdownReadingTime(p.body),
+            category: p.category,
+            image: p.image,
+            author: { name: 'Joan Ramon Soto', role: 'Psicoanalista', image: AUTHOR_PHOTO },
+            slug: p.slug,
+            featured: false,
+        })),
+        ...contentfulEntries.map((e) => {
             const f = e.fields as any;
             return {
                 id: e.sys.id,
@@ -242,22 +312,75 @@ export default async function BlogPostPage({ params }: PageProps) {
                 slug: (f.slug || '').replace(/^\/|\/$/g, ''),
                 featured: false,
             };
-        });
+        }),
+    ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-    // Generate BlogPosting schema for SEO
-    const postSchema = blogPostingSchema({
-        title: post.title,
-        description: post.excerpt,
-        content: typeof post.rawContent === 'string' ? post.rawContent : post.excerpt, // Fallback string for schema
-        author: post.author.name,
-        datePublished: post.date,
-        dateModified: entry.sys.updatedAt,
-        image: post.image,
-        url: `https://www.clinicadelansiedad.com/${locale}/blog/${slug}`
-    });
+    // Find neighbors for next/prev
+    const currentIndex = allPosts.findIndex((p) => p.id === post.id);
+    const prevEntry = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+    const nextEntry = currentIndex >= 0 && currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
+
+    // Relacionados: primero de la misma categoría, luego los más recientes
+    const others = allPosts.filter((p) => p.id !== post.id);
+    const relatedPosts: BlogPost[] = [
+        ...others.filter((p) => p.category === post.category),
+        ...others.filter((p) => p.category !== post.category),
+    ].slice(0, 2);
+
+    const pageUrl = `${SITE}/${locale}/blog/${slug}`;
+    const absoluteImage = post.image.startsWith('http') ? post.image : `${SITE}${post.image}`;
+
+    // Datos estructurados: artículo, migas de pan y, si hay, preguntas frecuentes
+    const postSchema = {
+        ...blogPostingSchema({
+            title: post.title,
+            description: post.excerpt,
+            content: post.excerpt,
+            author: post.author.name,
+            datePublished: post.date,
+            dateModified: post.modified,
+            image: absoluteImage,
+            url: pageUrl,
+        }),
+        author: {
+            '@type': 'Person',
+            name: 'Joan Ramon Soto',
+            jobTitle: 'Psicoanalista',
+            url: `${SITE}/es/sobre-mi`,
+            memberOf: {
+                '@type': 'Organization',
+                name: "Col·legi Oficial de Psicòlegs de Catalunya",
+            },
+        },
+        ...(local ? {
+            keywords: local.keywords.join(', '),
+            articleSection: local.category,
+            about: { '@type': 'MedicalCondition', name: locale === 'ca' ? 'Ansietat' : 'Ansiedad' },
+            inLanguage: locale === 'ca' ? 'ca' : 'es',
+        } : {}),
+    };
+    const structuredData: object[] = [
+        postSchema,
+        breadcrumbSchema([
+            { name: locale === 'ca' ? 'Inici' : 'Inicio', url: `${SITE}/${locale}` },
+            { name: 'Blog', url: `${SITE}/${locale}/blog` },
+            { name: post.title, url: pageUrl },
+        ]),
+    ];
+    if (post.faq.length > 0) {
+        structuredData.push({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: post.faq.map((f) => ({
+                '@type': 'Question',
+                name: f.question,
+                acceptedAnswer: { '@type': 'Answer', text: f.answer },
+            })),
+        });
+    }
 
     // Social Sharing Intents
-    const shareUrl = `https://www.clinicadelansiedad.com/${locale}/blog/${slug}`;
+    const shareUrl = pageUrl;
     const shareTitle = post.title;
     const socialLinks = [
         { Icon: Facebook, url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}` },
@@ -267,12 +390,15 @@ export default async function BlogPostPage({ params }: PageProps) {
 
     return (
         <div className="min-h-screen bg-cream">
-            <Script
-                id={`blog-schema-${slug}`}
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }}
-                strategy="afterInteractive"
-            />
+            {/* JSON-LD en el HTML inicial (no tras hidratar) para que lo lean
+                Google y los asistentes de IA que no ejecutan JavaScript. */}
+            {structuredData.map((data, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }}
+                />
+            ))}
             <Navbar />
             <main className="bg-[#FDFBF7]">
                 {/* Post Header (Hero) */}
@@ -336,7 +462,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                             <div className="w-full h-full rounded-[32px] overflow-hidden">
                                 <SafeImage
                                     src={post.image}
-                                    alt={post.title}
+                                    alt={post.imageAlt}
                                     className="w-full h-full object-cover"
                                     fallbackSrc="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200"
                                 />
@@ -404,6 +530,42 @@ export default async function BlogPostPage({ params }: PageProps) {
                                 {post.content}
                             </div>
 
+                            {/* Preguntas frecuentes: visibles en la página porque el
+                                schema FAQPage debe coincidir con lo que lee el usuario. */}
+                            {post.faq.length > 0 && (
+                                <section className="mt-16" aria-labelledby="preguntas-frecuentes">
+                                    <h2 id="preguntas-frecuentes" className="text-2xl md:text-3xl font-serif text-navy mb-6 leading-snug tracking-tight scroll-mt-28">
+                                        {locale === 'ca' ? 'Preguntes freqüents' : 'Preguntas frecuentes'}
+                                    </h2>
+                                    <div className="flex flex-col gap-3">
+                                        {post.faq.map((f) => (
+                                            <details key={f.question} className="group/faq rounded-2xl border border-navy/10 bg-white px-6 py-5">
+                                                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-lg text-navy marker:content-['']">
+                                                    {f.question}
+                                                    <ChevronDown className="mt-1 w-4 h-4 shrink-0 text-gold transition-transform duration-300 group-open/faq:rotate-180" />
+                                                </summary>
+                                                <p className="mt-4 text-navy/80 text-[17px] leading-[30px] font-light">{f.answer}</p>
+                                            </details>
+                                        ))}
+                                    </div>
+                                </section>
+                            )}
+
+                            {local && (
+                                <p className="mt-12 text-sm text-navy/60 font-light border-t border-navy/10 pt-6">
+                                    {locale === 'ca' ? 'Escrit i revisat per ' : 'Escrito y revisado por '}
+                                    <Link href="/sobre-mi" className="text-navy font-medium hover:text-gold">Joan Ramon Soto</Link>
+                                    {locale === 'ca'
+                                        ? ', psicoanalista col·legiat al COPC (núm. 3852), amb consulta a Canet de Mar i teràpia en línia per a tot Espanya.'
+                                        : ', psicoanalista colegiado en el COPC (nº 3852), con consulta en Canet de Mar y terapia online para toda España.'}
+                                    {locale === 'ca' ? ' Darrera revisió: ' : ' Última revisión: '}
+                                    {new Date(post.modified).toLocaleDateString(locale === 'ca' ? 'ca-ES' : 'es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}.
+                                    {locale === 'ca'
+                                        ? ' Aquest article és divulgatiu i no substitueix una valoració professional.'
+                                        : ' Este artículo es divulgativo y no sustituye una valoración profesional.'}
+                                </p>
+                            )}
+
                             {/* Post Footer: Categories & Author Bio */}
                             <div className="mt-24 pt-16 border-t border-navy/10">
                                 <div className="flex flex-wrap items-center justify-between gap-6 mb-16">
@@ -457,25 +619,25 @@ export default async function BlogPostPage({ params }: PageProps) {
                                 <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-navy/10 pt-16">
                                     {prevEntry ? (
                                         <Link 
-                                            href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(prevEntry.fields.slug) } }}
+                                            href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(prevEntry.slug) } }}
                                             className="group p-8 rounded-[32px] bg-white border border-navy/5 hover:border-gold/30 transition-all text-left flex flex-col gap-2"
                                         >
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-navy/40 flex items-center gap-2">
                                                 <ArrowLeft className="w-3.5 h-3.5" /> Anterior
                                             </span>
-                                            <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{prevEntry.fields.titulo}</span>
+                                            <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{prevEntry.title}</span>
                                         </Link>
                                     ) : <div />}
                                     
                                     {nextEntry ? (
                                         <Link 
-                                            href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(nextEntry.fields.slug) } }}
+                                            href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(nextEntry.slug) } }}
                                             className="group p-8 rounded-[32px] bg-white border border-navy/5 hover:border-gold/30 transition-all text-right flex flex-col items-end gap-2"
                                         >
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-navy/40 flex items-center gap-2">
                                                 Siguiente <ArrowRight className="w-3.5 h-3.5" />
                                             </span>
-                                            <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{nextEntry.fields.titulo}</span>
+                                            <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{nextEntry.title}</span>
                                         </Link>
                                     ) : <div />}
                                 </div>
