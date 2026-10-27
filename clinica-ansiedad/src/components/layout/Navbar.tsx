@@ -83,6 +83,8 @@ export default function Navbar({ theme = "light" }: { theme?: "light" | "dark" }
                 }`}
             maxWidth="full"
             position="sticky"
+            // Más alta que la de serie (64 px) para que quepa el logo vertical.
+            classNames={{ wrapper: "h-16 md:h-[5.5rem]" }}
         >
             <NavbarContent className="sm:hidden">
                 <button
@@ -99,12 +101,12 @@ export default function Navbar({ theme = "light" }: { theme?: "light" | "dark" }
             </NavbarContent>
 
             <NavbarBrand as={Link} href="/" className="flex items-center gap-0 flex-1 sm:flex-none">
-                {/* Logo horizontal (cabezas + texto) para que se lea a la altura de la barra.
-                    Sin filtros CSS: la senyera roja debe conservar su color. */}
+                {/* Logo vertical original (cabezas arriba, nombre debajo), tal como lo
+                    diseñó la clínica. Sin filtros CSS: la senyera roja conserva su color. */}
                 <img
-                    src={onDark ? "/images/logo-horizontal-white.png" : "/images/logo-horizontal.png"}
+                    src={onDark ? "/images/logo-vertical-white.png" : "/images/logo.png"}
                     alt="Clínica de la Ansiedad Catalunya"
-                    className="h-9 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
+                    className="h-14 md:h-[72px] w-auto object-contain"
                 />
             </NavbarBrand>
 
