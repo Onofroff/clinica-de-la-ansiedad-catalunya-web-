@@ -141,7 +141,7 @@ export default function AnsiedadPage() {
                   &ldquo;La ansiedad no es tu enemiga. Es la solución desesperada que tu psiquismo encontró cuando no tenía otros recursos.&rdquo;
                 </p>
                 <p className="mt-4 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto · Psicoanalista
+                  Joan Ramon Soto · Psicoanalista / Psicoterapeuta
                 </p>
               </div>
             </motion.div>

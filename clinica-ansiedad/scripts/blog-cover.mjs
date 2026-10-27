@@ -43,7 +43,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
 <div class="wrap">
   <div class="cat"><span class="dot"></span>${esc(category)}</div>
   <div><div class="rule"></div><h1>${esc(title)}</h1></div>
-  <div class="foot"><span class="brand">Clínica de la Ansiedad Catalunya</span><span>Joan Ramon Soto · Psicoanalista</span></div>
+  <div class="foot"><span class="brand">Clínica de la Ansiedad Catalunya</span><span>Joan Ramon Soto · Psicoanalista / Psicoterapeuta</span></div>
 </div></body></html>`;
 
 const browser = await chromium.launch();

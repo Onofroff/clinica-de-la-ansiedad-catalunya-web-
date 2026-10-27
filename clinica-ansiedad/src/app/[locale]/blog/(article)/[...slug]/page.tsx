@@ -231,7 +231,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     const fields = (entry?.fields || {}) as any;
     const author = {
         name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
-        role: 'Psicoanalista',
+        role: 'Psicoanalista / Psicoterapeuta',
         image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
     };
 
@@ -289,7 +289,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             readTime: markdownReadingTime(p.body),
             category: p.category,
             image: p.image,
-            author: { name: 'Joan Ramon Soto', role: 'Psicoanalista', image: AUTHOR_PHOTO },
+            author: { name: 'Joan Ramon Soto', role: 'Psicoanalista / Psicoterapeuta', image: AUTHOR_PHOTO },
             slug: p.slug,
             featured: false,
         })),
@@ -306,7 +306,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 image: f.imagenDestacada?.fields?.file?.url ? `https:${f.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
                 author: {
                     name: f.autor?.fields?.nombre || 'Joan Ramon Soto',
-                    role: 'Psicoanalista',
+                    role: 'Psicoanalista / Psicoterapeuta',
                     image: f.autor?.fields?.avatar?.fields?.file?.url ? `https:${f.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
                 },
                 slug: (f.slug || '').replace(/^\/|\/$/g, ''),
@@ -345,7 +345,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         author: {
             '@type': 'Person',
             name: 'Joan Ramon Soto',
-            jobTitle: 'Psicoanalista',
+            jobTitle: 'Psicoanalista / Psicoterapeuta',
             url: `${SITE}/es/sobre-mi`,
             memberOf: {
                 '@type': 'Organization',
@@ -556,8 +556,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                                     {locale === 'ca' ? 'Escrit i revisat per ' : 'Escrito y revisado por '}
                                     <Link href="/sobre-mi" className="text-navy font-medium hover:text-gold">Joan Ramon Soto</Link>
                                     {locale === 'ca'
-                                        ? ', psicoanalista col·legiat al COPC (núm. 3852), amb consulta a Canet de Mar i teràpia en línia per a tot Espanya.'
-                                        : ', psicoanalista colegiado en el COPC (nº 3852), con consulta en Canet de Mar y terapia online para toda España.'}
+                                        ? ', psicoanalista / psicoterapeuta col·legiat al COPC (núm. 3852), amb consulta a Canet de Mar i teràpia en línia per a tot Espanya.'
+                                        : ', psicoanalista / psicoterapeuta colegiado en el COPC (nº 3852), con consulta en Canet de Mar y terapia online para toda España.'}
                                     {locale === 'ca' ? ' Darrera revisió: ' : ' Última revisión: '}
                                     {new Date(post.modified).toLocaleDateString(locale === 'ca' ? 'ca-ES' : 'es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}.
                                     {locale === 'ca'

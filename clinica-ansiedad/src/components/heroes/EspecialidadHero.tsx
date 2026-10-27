@@ -142,7 +142,7 @@ export default function EspecialidadHero({
               {quote}
             </p>
             <p className="mt-6 text-[10px] font-bold uppercase tracking-[0.2em] text-navy/35">
-              Joan Ramon Soto · Psicoanalista
+              Joan Ramon Soto · Psicoanalista / Psicoterapeuta
             </p>
           </div>
 

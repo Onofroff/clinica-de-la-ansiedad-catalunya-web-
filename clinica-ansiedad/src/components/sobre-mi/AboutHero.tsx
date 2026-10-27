@@ -26,7 +26,7 @@ export default function AboutHero() {
                         <div className="w-20 h-1 bg-gold mb-10" />
 
                         <p className="text-xl md:text-2xl text-navy font-medium leading-relaxed mb-8 text-balance">
-                            Soy Joan Ramon Soto Cifuente, psicoanalista en Canet de Mar (Maresme), con atención online, especialista en ansiedad y fundador de la Clínica de la Ansiedad Catalunya, con más de 30 años de experiencia clínica.
+                            Soy Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta en Canet de Mar (Maresme), con atención online, especialista en ansiedad y fundador de la Clínica de la Ansiedad Catalunya, con más de 30 años de experiencia clínica.
                         </p>
                         <p className="text-lg text-text/80 leading-relaxed max-w-2xl text-balance mb-8">
                             Desde mi consulta en Canet de Mar (comarca del Maresme, Barcelona) y mediante terapia online, mi trabajo se centra en el abordaje clínico riguroso para descifrar las causas profundas del sufrimiento emocional. No buscamos solo paliar el síntoma, sino resolver el conflicto que lo genera. Atiendo pacientes de toda Catalunya y España.

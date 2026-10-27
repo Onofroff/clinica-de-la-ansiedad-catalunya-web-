@@ -145,7 +145,7 @@ export default function TerapiaOnlinePage() {
                   &ldquo;La distancia física nunca ha sido un obstáculo para la profundidad clínica. Lo que cura es el vínculo terapéutico, y ese vínculo se construye con escucha, rigor y compromiso —no con proximidad geográfica.&rdquo;
                 </p>
                 <p className="mt-5 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto Cifuente · Pionero en terapia online desde 1993
+                  Joan Ramon Soto Cifuentes · Pionero en terapia online desde 1993
                 </p>
               </div>
             </motion.div>

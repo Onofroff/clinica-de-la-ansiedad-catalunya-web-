@@ -180,7 +180,7 @@ export default function TerapiaDeParejaPage() {
                   &ldquo;Intervenir en una crisis de pareja requiere neutralidad absoluta, pericia clínica para no caer en alianzas destructivas, y la empatía necesaria para validar el dolor de ambas partes.&rdquo;
                 </p>
                 <p className="mt-4 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto Cifuente · Psicoanalista
+                  Joan Ramon Soto Cifuentes · Psicoanalista / Psicoterapeuta
                 </p>
               </div>
             </motion.div>

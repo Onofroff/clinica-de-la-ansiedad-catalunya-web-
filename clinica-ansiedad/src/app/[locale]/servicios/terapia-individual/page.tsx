@@ -222,7 +222,7 @@ export default function TerapiaIndividualPage() {
                     &ldquo;Dar el primer paso y pedir ayuda indica un acto de valentía extraordinario. Nuestro compromiso es recibir ese acto con rigor clínico y confidencialidad absoluta.&rdquo;
                   </p>
                   <p className="mt-5 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                    Joan Ramon Soto Cifuente · Psicoanalista
+                    Joan Ramon Soto Cifuentes · Psicoanalista / Psicoterapeuta
                   </p>
                   <p className="mt-3 text-navy/60 text-sm leading-relaxed">
                     En la primera sesión no te someteremos a cuestionarios fríos ni tests mecánicos. Tendremos una conversación clínica profunda para entender tu visión y el origen de tu malestar.

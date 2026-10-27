@@ -145,7 +145,7 @@ const content = {
         },
         {
           q: "¿Sois psicólogos o psicoanalistas?",
-          a: "Psicoanalistas. Joan Ramon Soto es psicoanalista, con formación y práctica psicoanalítica desde 1993. Si lo que buscas es un psicólogo para tratar tu ansiedad, esto es lo que ofrecemos: en lugar de gestionar el síntoma con técnicas, buscamos comprender y resolver el conflicto que lo genera.",
+          a: "Psicoanalistas. Joan Ramon Soto es psicoanalista / psicoterapeuta, con formación y práctica psicoanalítica desde 1993. Si lo que buscas es un psicólogo para tratar tu ansiedad, esto es lo que ofrecemos: en lugar de gestionar el síntoma con técnicas, buscamos comprender y resolver el conflicto que lo genera.",
         },
         {
           q: "¿Qué municipios del Maresme atendéis?",
@@ -270,7 +270,7 @@ const content = {
         },
         {
           q: "Sou psicòlegs o psicoanalistes?",
-          a: "Psicoanalistes. Joan Ramon Soto és psicoanalista, amb formació i pràctica psicoanalítica des de 1993. Si el que busques és un psicòleg per tractar l'ansietat, això és el que oferim: en lloc de gestionar el símptoma amb tècniques, busquem comprendre i resoldre el conflicte que el genera.",
+          a: "Psicoanalistes. Joan Ramon Soto és psicoanalista / psicoterapeuta, amb formació i pràctica psicoanalítica des de 1993. Si el que busques és un psicòleg per tractar l'ansietat, això és el que oferim: en lloc de gestionar el símptoma amb tècniques, busquem comprendre i resoldre el conflicte que el genera.",
         },
         {
           q: "Quins municipis del Maresme ateneu?",
@@ -323,7 +323,7 @@ export default function PsicologoMaresmePage() {
     email: "contacto@clinicadelansiedad.com",
     priceRange: "€€",
     image: "https://www.clinicadelansiedad.com/images/centreclinicansiedad.jpeg",
-    founder: { "@type": "Person", name: "Joan Ramon Soto", jobTitle: "Psicoanalista" },
+    founder: { "@type": "Person", name: "Joan Ramon Soto", jobTitle: "Psicoanalista / Psicoterapeuta" },
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ronda Dr. Anglès 74",

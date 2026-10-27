@@ -193,7 +193,7 @@ export default function LudopatiaPage() {
                   &ldquo;Una adicción no existe sin un sujeto previo. Tratar la ludopatía significa entender qué conflicto psíquico encontró en el juego su única salida posible.&rdquo;
                 </p>
                 <p className="mt-4 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto · Psicoanalista
+                  Joan Ramon Soto · Psicoanalista / Psicoterapeuta
                 </p>
               </div>
             </motion.div>

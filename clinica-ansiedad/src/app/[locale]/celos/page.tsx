@@ -223,7 +223,7 @@ export default function CelosPage() {
                   &ldquo;Los celos no son una debilidad moral ni una señal de amor intenso. Son la expresión de una herida que lleva demasiado tiempo sin ser atendida.&rdquo;
                 </p>
                 <p className="mt-4 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto · Psicoanalista
+                  Joan Ramon Soto · Psicoanalista / Psicoterapeuta
                 </p>
               </div>
             </motion.div>

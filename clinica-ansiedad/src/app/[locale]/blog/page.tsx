@@ -74,7 +74,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
           image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
           author: {
             name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
-            role: 'Psicoanalista',
+            role: 'Psicoanalista / Psicoterapeuta',
             image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
           },
           slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
@@ -96,7 +96,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
     readTime: markdownReadingTime(p.body),
     category: p.category,
     image: p.image,
-    author: { name: 'Joan Ramon Soto', role: 'Psicoanalista', image: AUTHOR_PHOTO },
+    author: { name: 'Joan Ramon Soto', role: 'Psicoanalista / Psicoterapeuta', image: AUTHOR_PHOTO },
     slug: p.slug,
     featured: false,
   }));

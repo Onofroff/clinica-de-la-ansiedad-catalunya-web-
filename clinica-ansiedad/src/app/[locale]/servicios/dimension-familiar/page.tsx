@@ -174,7 +174,7 @@ export default function DimensionFamiliarPage() {
                   &ldquo;Ningún síntoma individual se produce en un vacío. La familia es siempre el contexto y, con frecuencia, también parte de la solución.&rdquo;
                 </p>
                 <p className="mt-4 font-bold tracking-[0.2em] uppercase text-xs text-navy/50">
-                  Joan Ramon Soto Cifuente · Psicoanalista
+                  Joan Ramon Soto Cifuentes · Psicoanalista / Psicoterapeuta
                 </p>
               </div>
             </motion.div>

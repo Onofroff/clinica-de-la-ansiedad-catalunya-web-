@@ -18,7 +18,7 @@ export const medicalClinicSchema = {
         "Clínica de la Ansiedad Maresme",
         "Clínica de l'Ansietat Catalunya",
         "Clínica de l'Ansietat Maresme",
-        "Joan Ramon Soto - Psicoanalista"
+        "Joan Ramon Soto - Psicoanalista / Psicoterapeuta"
     ],
     "headline": "Psicoanalista Especializado en Ansiedad, Depresión y Crisis de Pánico en Canet de Mar",
     "description": "Consulta psicoanalítica especializada en síntomas de ansiedad, trastorno de ansiedad generalizada, depresión, TOC, crisis de pánico y fobia social desde 1993. Atención presencial en Canet de Mar (Maresme) y terapia online para toda España.",
@@ -33,7 +33,7 @@ export const medicalClinicSchema = {
         "name": "Joan Ramon Soto",
         "givenName": "Joan Ramon",
         "familyName": "Soto",
-        "jobTitle": "Psicoanalista",
+        "jobTitle": "Psicoanalista / Psicoterapeuta",
         "image": "https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp",
         "sameAs": [
             "https://www.linkedin.com/in/joan-ramon-soto",
@@ -222,7 +222,7 @@ export const personSchema = {
     "name": "Joan Ramon Soto",
     "givenName": "Joan Ramon",
     "familyName": "Soto",
-    "jobTitle": "Psicoanalista",
+    "jobTitle": "Psicoanalista / Psicoterapeuta",
     "description": "Especialista en psicoterapia psicoanalítica con 31 años de experiencia tratando ansiedad, depresión y conflictos emocionales profundos.",
     "url": "https://www.clinicadelansiedad.com",
     "image": "https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp",

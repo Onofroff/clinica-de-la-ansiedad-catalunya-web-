@@ -61,7 +61,7 @@ export default function BrandManifestoSection() {
                         <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-md">
                             <Image
                                 src="/images/joanramonsotoimagenweb.webp"
-                                alt="Joan Ramon Soto, psicoanalista"
+                                alt="Joan Ramon Soto, psicoanalista / psicoterapeuta"
                                 fill
                                 sizes="64px"
                                 className="object-cover object-top"
@@ -69,7 +69,7 @@ export default function BrandManifestoSection() {
                         </div>
                         <div>
                             <p className="text-navy font-black tracking-[0.2em] uppercase text-sm">Joan Ramon Soto</p>
-                            <p className="text-gold text-xs tracking-[0.2em] uppercase font-bold mt-1 opacity-80">Psicoanalista · Fundador</p>
+                            <p className="text-gold text-xs tracking-[0.2em] uppercase font-bold mt-1 opacity-80">Psicoanalista / Psicoterapeuta · Fundador</p>
                         </div>
                     </motion.div>
 
