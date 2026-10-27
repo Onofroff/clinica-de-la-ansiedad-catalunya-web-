@@ -91,7 +91,7 @@ export default function BrandManifestoSection() {
                         {[
                             "Col·legiat COPC nº 3852",
                             t("Ejerciendo desde 1993", "Exercint des de 1993"),
-                            `${GOOGLE_REVIEWS.rating} en Google (${GOOGLE_REVIEWS.count} reseñas)`,
+                            t(`${GOOGLE_REVIEWS.rating} en Google (${GOOGLE_REVIEWS.count} reseñas)`, `${GOOGLE_REVIEWS.rating} a Google (${GOOGLE_REVIEWS.count} ressenyes)`),
                             t("Psicoanálisis Directo", "Psicoanàlisi directa"),
                         ].map((pill) => (
                             <span

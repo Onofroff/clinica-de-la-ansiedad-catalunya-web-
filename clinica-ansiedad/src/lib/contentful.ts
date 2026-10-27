@@ -1,4 +1,5 @@
 import { createClient } from 'contentful';
+import { getContentfulCa, categoryCa } from '@/content/blog/contentful-ca';
 
 // Validate that environment variables are set
 if (!process.env.CONTENTFUL_SPACE_ID) {
@@ -55,6 +56,27 @@ export interface BlogPost {
   categoria?: any[]; // Entry links
 }
 
+// Contentful només té els textos en castellà: a /ca se substitueixen pel
+// títol, la descripció i el cos (Markdown) de src/content/blog/contentful-ca.ts.
+function localizeEntryCa(entry: any): any {
+  const f = entry?.fields || {};
+  const tr = getContentfulCa(f.slug || '');
+  const categoria = Array.isArray(f.categoria)
+    ? f.categoria.map((c: any) =>
+        c?.fields?.nombre ? { ...c, fields: { ...c.fields, nombre: categoryCa(c.fields.nombre) } } : c
+      )
+    : f.categoria;
+  return {
+    ...entry,
+    fields: {
+      ...f,
+      categoria,
+      ...(typeof f.nombre === 'string' ? { nombre: categoryCa(f.nombre) } : {}),
+      ...(tr ? { titulo: tr.title, metaDescripcion: tr.description, caBody: tr.body } : {}),
+    },
+  };
+}
+
 // Generic fetching function with preview support
 export const getEntries = async (contentType: string, preview = false, order: string[] = ['-sys.createdAt'], locale = 'es') => {
   try {
@@ -69,7 +91,7 @@ export const getEntries = async (contentType: string, preview = false, order: st
       order: order as any,
       locale: contentfulLocale,
     });
-    return response.items;
+    return locale === 'ca' ? response.items.map(localizeEntryCa) : response.items;
   } catch (error) {
     console.error(`Error fetching entries for ${contentType}:`, error);
     return [];

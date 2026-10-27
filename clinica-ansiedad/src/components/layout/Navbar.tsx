@@ -90,7 +90,7 @@ export default function Navbar({ theme = "light" }: { theme?: "light" | "dark" }
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     className={`p-2 transition-colors ${onDark ? "text-white hover:text-gold-light" : "text-navy hover:text-gold"}`}
-                    aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+                    aria-label={locale === "ca" ? (isMenuOpen ? "Tancar menú" : "Obrir menú") : (isMenuOpen ? "Cerrar menú" : "Abrir menú")}
                 >
                     {isMenuOpen ? (
                         <X className="w-6 h-6" />

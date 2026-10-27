@@ -18,7 +18,7 @@ export default function ProblemSection() {
                         whileInView={{ opacity: 1 }}
                         className="text-gold font-bold text-[10px] tracking-[0.3em] uppercase mb-4 block"
                     >
-                        Comprender el sufrimiento
+                        {t('eyebrow')}
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

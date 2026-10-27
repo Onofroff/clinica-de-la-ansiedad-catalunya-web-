@@ -13,7 +13,7 @@ export default function WhyUsSection() {
       { num: "1993", label: t("Año de fundación", "Any de fundació") },
       { num: "+30", label: t("Años de trayectoria", "Anys de trajectòria") },
       { num: "+1K", label: t("Pacientes atendidos", "Pacients atesos") },
-      { num: `${GOOGLE_REVIEWS.rating}★`, label: `${GOOGLE_REVIEWS.count} reseñas Google` },
+      { num: `${GOOGLE_REVIEWS.rating}★`, label: t(`${GOOGLE_REVIEWS.count} reseñas Google`, `${GOOGLE_REVIEWS.count} ressenyes a Google`) },
   ];
   const differentiators = [
       {

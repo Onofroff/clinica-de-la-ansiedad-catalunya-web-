@@ -90,8 +90,8 @@ export default function Footer() {
                     <p>© {currentYear} Clínica de la Ansiedad Catalunya. {t('rights')}</p>
                     <div className="flex flex-wrap gap-4">
                         <Link href={"/privacidad" as any} className="hover:text-white transition-colors">{t('privacy')}</Link>
-                        <Link href={"/aviso-legal" as any} className="hover:text-white transition-colors">Aviso legal</Link>
-                        <Link href={"/politica-de-cookies" as any} className="hover:text-white transition-colors">Política de cookies</Link>
+                        <Link href={"/aviso-legal" as any} className="hover:text-white transition-colors">{t('legal_notice')}</Link>
+                        <Link href={"/politica-de-cookies" as any} className="hover:text-white transition-colors">{t('cookie_policy')}</Link>
                         <button
                             onClick={() => window.dispatchEvent(new Event("open-cookie-banner"))}
                             className="hover:text-white transition-colors cursor-pointer"

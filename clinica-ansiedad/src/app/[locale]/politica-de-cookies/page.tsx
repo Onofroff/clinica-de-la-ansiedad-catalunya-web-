@@ -12,7 +12,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
     const { locale } = await params;
     const isCa = locale === 'ca';
-    const title = isCa ? 'Política de cookies | Clínica de la Ansiedad' : 'Política de cookies | Clínica de la Ansiedad';
+    const title = isCa ? "Política de galetes | Clínica de l'Ansietat" : 'Política de cookies | Clínica de la Ansiedad';
     const description = isCa
         ? "Informació sobre les cookies que utilitza aquest web, la seva finalitat i com acceptar-les, rebutjar-les o retirar el consentiment."
         : 'Información sobre las cookies que utiliza esta web, su finalidad y cómo aceptarlas, rechazarlas o retirar el consentimiento.';

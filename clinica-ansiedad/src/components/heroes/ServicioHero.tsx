@@ -5,6 +5,7 @@ import { Button, Chip } from "@heroui/react";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { bookingUrl } from "@/lib/constants";
 
@@ -53,6 +54,7 @@ export default function ServicioHero({
 }: ServicioHeroProps) {
   // Atribución por página: hero-terapia-individual, hero-terapia-de-pareja...
   const pathname = usePathname();
+  const isCa = useLocale() === "ca";
   const slug = (pathname || "").split("/").filter(Boolean).pop() || "servicio";
 
   return (
@@ -137,7 +139,7 @@ export default function ServicioHero({
               variant="bordered"
               className="border-navy/15 text-navy hover:bg-navy/5 font-bold px-10 py-7 rounded-full text-xs uppercase tracking-widest cursor-pointer transition-colors"
             >
-              Nuestro Método
+              {isCa ? "El nostre mètode" : "Nuestro Método"}
             </Button>
           </motion.div>
 

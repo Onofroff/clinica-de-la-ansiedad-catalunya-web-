@@ -544,7 +544,7 @@ export default function TallerEmpresasPage() {
                   <div className="relative rounded-[2rem] overflow-hidden border-4 border-white shadow-[0_30px_80px_-25px_rgba(26,58,72,0.45)] aspect-[4/3.4]">
                     <Image
                       src="/images/centreclinicansiedad.jpeg"
-                      alt="Clínica de la Ansiedad, centro en Canet de Mar (Maresme)"
+                      alt={locale === "ca" ? "Clínica de l'Ansietat, centre a Canet de Mar (Maresme)" : "Clínica de la Ansiedad, centro en Canet de Mar (Maresme)"}
                       fill
                       priority
                       sizes="(max-width:1024px) 100vw, 520px"
@@ -599,7 +599,7 @@ export default function TallerEmpresasPage() {
                 <div className="relative rounded-[2rem] overflow-hidden border border-navy/5 shadow-xl aspect-[4/3.1]">
                   <Image
                     src="/images/brand-atmosphere.png"
-                    alt="Entorno de trabajo cercano y participativo"
+                    alt={locale === "ca" ? "Entorn de treball proper i participatiu" : "Entorno de trabajo cercano y participativo"}
                     fill
                     sizes="(max-width:1024px) 100vw, 560px"
                     className="object-cover"
@@ -792,7 +792,7 @@ export default function TallerEmpresasPage() {
                   <div className="relative rounded-[2rem] overflow-hidden border-4 border-white shadow-xl aspect-[4/5]">
                     <Image
                       src="/images/joanramonsotoimagenweb.webp"
-                      alt="Joan Ramon Soto, especialista en ansiedad"
+                      alt={locale === "ca" ? "Joan Ramon Soto, especialista en ansietat" : "Joan Ramon Soto, especialista en ansiedad"}
                       fill
                       sizes="(max-width:1024px) 70vw, 320px"
                       className="object-cover object-top"

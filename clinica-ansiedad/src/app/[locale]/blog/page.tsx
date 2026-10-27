@@ -82,7 +82,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
           content: '', 
           date: fields.fechaPublicacion || entry.sys.createdAt,
           readTime: '5 min de lectura', 
-          category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'Psicología',
+          category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : (locale === 'ca' ? 'Psicologia' : 'Psicología'),
           image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
           author: {
             name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',

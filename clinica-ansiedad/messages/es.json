@@ -58,7 +58,9 @@
     "online": "Terapia online",
     "family": "Dimensión familiar",
     "privacy": "Política de privacidad",
-    "cookie_settings": "Configurar cookies"
+    "cookie_settings": "Configurar cookies",
+    "legal_notice": "Aviso legal",
+    "cookie_policy": "Política de cookies"
   },
   "problem": {
     "h2": "¿Te sientes <accent>atrapado</accent> en alguno de estos escenarios?",
@@ -70,7 +72,8 @@
       "Sientes que repites siempre los mismos errores en tus relaciones.",
       "Evitas planes o lugares por miedo a que aparezca la ansiedad."
     ],
-    "quote": "La ansiedad no es el enemigo, sino <accent>la señal</accent> de un conflicto que necesita ser escuchado."
+    "quote": "La ansiedad no es el enemigo, sino <accent>la señal</accent> de un conflicto que necesita ser escuchado.",
+    "eyebrow": "Comprender el sufrimiento"
   },
   "approach": {
     "eyebrow": "Nuestro Enfoque",

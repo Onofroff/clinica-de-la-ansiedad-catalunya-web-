@@ -86,11 +86,10 @@ export async function generateMetadata({ params }: PageProps) {
         description: fields.metaDescripcion || '',
         path: `/blog/${slug}`,
         keywords: [
-            fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'psicología',
-            'psicoanálisis',
-            'ansiedad',
-            'salud mental',
-            'psicoterapia',
+            fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : (locale === 'ca' ? 'psicologia' : 'psicología'),
+            ...(locale === 'ca'
+                ? ['psicoanàlisi', 'ansietat', 'salut mental', 'psicoteràpia']
+                : ['psicoanálisis', 'ansiedad', 'salud mental', 'psicoterapia']),
         ],
         image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : undefined,
         imageAlt: fields.titulo,
@@ -264,16 +263,21 @@ export default async function BlogPostPage({ params }: PageProps) {
             id: entry!.sys.id,
             title: fields.titulo || 'Sin título',
             excerpt: fields.metaDescripcion || '',
-            content: documentToReactComponents(fields.contenido, renderOptions), // Pre-render Rich Text
+            content: fields.caBody ? (
+                <div
+                    className={LOCAL_ARTICLE_CLASSES}
+                    dangerouslySetInnerHTML={{ __html: markdownToHtml(fields.caBody) }}
+                />
+            ) : documentToReactComponents(fields.contenido, renderOptions), // Pre-render Rich Text
             date: fields.fechaPublicacion || entry!.sys.createdAt,
             modified: entry!.sys.updatedAt,
-            readTime: calculateReadingTime(fields.contenido),
+            readTime: fields.caBody ? markdownReadingTime(fields.caBody) : calculateReadingTime(fields.contenido),
             category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'Psicología',
             image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
             imageAlt: fields.titulo || 'Imagen del artículo',
             author,
             slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
-            headings: extractHeadings(fields.contenido),
+            headings: fields.caBody ? markdownHeadings(fields.caBody) : extractHeadings(fields.contenido),
             faq: [] as { question: string; answer: string }[],
         };
 
@@ -303,7 +307,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 excerpt: f.metaDescripcion || '',
                 content: '',
                 date: f.fechaPublicacion || e.sys.createdAt,
-                readTime: calculateReadingTime(f.contenido),
+                readTime: f.caBody ? markdownReadingTime(f.caBody) : calculateReadingTime(f.contenido),
                 category: f.categoria && f.categoria[0]?.fields?.nombre ? f.categoria[0].fields.nombre : 'Psicología',
                 image: f.imagenDestacada?.fields?.file?.url ? `https:${f.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
                 author: {

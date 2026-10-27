@@ -58,7 +58,9 @@
     "online": "Teràpia en línia",
     "family": "Dimensió familiar",
     "privacy": "Política de privacitat",
-    "cookie_settings": "Configurar galetes"
+    "cookie_settings": "Configurar galetes",
+    "legal_notice": "Avís legal",
+    "cookie_policy": "Política de galetes"
   },
   "problem": {
     "h2": "Et sents <accent>atrapat</accent> en algun d'aquests escenaris?",
@@ -70,7 +72,8 @@
       "Sents que repeteixes sempre els mateixos errors en les teves relacions.",
       "Evites plans o llocs per por que aparegui l'ansietat."
     ],
-    "quote": "L'ansietat no és l'enemic, sinó <accent>el senyal</accent> d'un conflicte que necessita ser escoltat."
+    "quote": "L'ansietat no és l'enemic, sinó <accent>el senyal</accent> d'un conflicte que necessita ser escoltat.",
+    "eyebrow": "Comprendre el patiment"
   },
   "approach": {
     "eyebrow": "El nostre Enfocament",
