@@ -2,8 +2,23 @@
 import React from 'react';
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Phone, Mail, MapPin, Star, Instagram, Facebook, Twitter, Linkedin, ArrowUpRight, ShieldCheck, Heart } from "lucide-react";
-import { GOOGLE_REVIEWS } from "@/lib/constants";
+import { Phone, Mail, MapPin, Star, Instagram, Facebook, Linkedin, ArrowUpRight } from "lucide-react";
+
+function TikTokIcon({ className }: { className?: string }) {
+    return (
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
+            <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 0 1-2.59-2.59 2.59 2.59 0 0 1 3.37-2.47V9.68a5.7 5.7 0 0 0-.78-.05A5.69 5.69 0 0 0 4.17 15.3 5.69 5.69 0 0 0 9.86 21a5.69 5.69 0 0 0 5.69-5.69V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.28 4.28 0 0 1-3.25-1.48Z" />
+        </svg>
+    );
+}
+
+const SOCIALS = [
+    { name: "Instagram", href: SOCIAL_LINKS.instagram, Icon: Instagram },
+    { name: "TikTok", href: SOCIAL_LINKS.tiktok, Icon: TikTokIcon },
+    { name: "Facebook", href: SOCIAL_LINKS.facebook, Icon: Facebook },
+    { name: "LinkedIn", href: SOCIAL_LINKS.linkedin, Icon: Linkedin },
+];
+import { GOOGLE_REVIEWS, SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Footer() {
     const t = useTranslations('footer');
@@ -33,6 +48,23 @@ export default function Footer() {
                             <Star className="w-4 h-4 text-gold fill-gold" />
                             <span className="text-sm font-medium">{t('reviews', { rating: GOOGLE_REVIEWS.rating, count: GOOGLE_REVIEWS.count })}</span>
                         </div>
+
+                        <ul className="flex items-center gap-3 mt-6">
+                            {SOCIALS.map(({ name, href, Icon }) => (
+                                <li key={name}>
+                                    <a
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={name}
+                                        title={name}
+                                        className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white/80 hover:bg-gold hover:text-navy transition-colors"
+                                    >
+                                        <Icon className="w-4 h-4" />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                     {/* Nav Col */}

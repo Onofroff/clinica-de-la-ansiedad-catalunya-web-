@@ -1,3 +1,4 @@
+import { SOCIAL_LINKS } from './constants';
 /**
  * Schema Markup para SEO y indexación por IA
  * Optimizado para Google, Bing, ChatGPT, Claude y otros LLMs
@@ -187,9 +188,7 @@ export const medicalClinicSchema = {
     ],
     "sameAs": [
         "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+Canet+de+Mar",
-        "https://www.facebook.com/clinicadelansiedad",
-        "https://www.instagram.com/clinicadelansiedad",
-        "https://www.linkedin.com/company/clinica-de-la-ansiedad-catalunya"
+        ...Object.values(SOCIAL_LINKS)
     ],
     "contactPoint": [
         {
@@ -535,9 +534,7 @@ export const organizationSchema = {
     "logo": "https://www.clinicadelansiedad.com/logo.png",
     "description": "Clínica especializada en psicoterapia psicoanalítica para tratamiento de ansiedad desde 1993",
     "sameAs": [
-        "https://www.facebook.com/clinicadelansiedad",
-        "https://www.instagram.com/clinicadelansiedad",
-        "https://www.linkedin.com/company/clinica-de-la-ansiedad-catalunya"
+        ...Object.values(SOCIAL_LINKS)
     ],
     "contactPoint": {
         "@type": "ContactPoint",
