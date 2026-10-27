@@ -381,7 +381,7 @@ Los LLMs indexan y entienden mejor tu web si:
   "reviewCount": 156,
   "contact": {
     "phone": "+34629794365",
-    "email": "joanramonsoto@gmail.com"
+    "email": "contacto@clinicadelansiedad.com"
   }
 }
 ```

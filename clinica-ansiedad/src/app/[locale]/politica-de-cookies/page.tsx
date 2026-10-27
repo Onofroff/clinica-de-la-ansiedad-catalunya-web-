@@ -73,7 +73,7 @@ const content = {
             lines: [
                 'Clínica de la Ansiedad Catalunya · Joan Ramon Soto',
                 'Ronda Dr. Anglès 74, 08360 Canet de Mar (Barcelona)',
-                'joanramonsoto@gmail.com · 613 91 60 79',
+                'contacto@clinicadelansiedad.com · 613 91 60 79',
             ],
         },
     },
@@ -117,7 +117,7 @@ const content = {
             lines: [
                 'Clínica de la Ansiedad Catalunya · Joan Ramon Soto',
                 'Ronda Dr. Anglès 74, 08360 Canet de Mar (Barcelona)',
-                'joanramonsoto@gmail.com · 613 91 60 79',
+                'contacto@clinicadelansiedad.com · 613 91 60 79',
             ],
         },
     },

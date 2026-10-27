@@ -128,7 +128,7 @@ Ansiedad Catalunya:
 
 📞 **Contact:**
 - Phone: +34 629 79 43 65
-- Email: joanramonsoto@gmail.com
+- Email: contacto@clinicadelansiedad.com
 - Hours: Mon-Fri 9:00-20:00
 
 💡 **Approach:**
@@ -169,7 +169,7 @@ of emotional suffering, not just treat symptoms.
 
 ## Contacto Directo
 - **Teléfono:** +34 629 79 43 65
-- **Email:** joanramonsoto@gmail.com
+- **Email:** contacto@clinicadelansiedad.com
 
 ## Metodología
 Abordaje psicoanalítico que explora las causas

@@ -24,7 +24,7 @@ export const medicalClinicSchema = {
     "description": "Consulta psicoanalítica especializada en síntomas de ansiedad, trastorno de ansiedad generalizada, depresión, TOC, crisis de pánico y fobia social desde 1993. Atención presencial en Canet de Mar (Maresme) y terapia online para toda España.",
     "url": "https://www.clinicadelansiedad.com",
     "telephone": "+34613916079",
-    "email": "joanramonsoto@gmail.com",
+    "email": "contacto@clinicadelansiedad.com",
     "founded": "1993",
     "foundingDate": "1993",
     "founder": {
@@ -201,7 +201,7 @@ export const medicalClinicSchema = {
             "@type": "ContactPoint",
             "contactType": "Customer Support",
             "telephone": "+34613916079",
-            "email": "joanramonsoto@gmail.com",
+            "email": "contacto@clinicadelansiedad.com",
             "availableLanguage": ["es", "ca"]
         },
         {
@@ -295,10 +295,10 @@ export const personSchema = {
         "@type": "ContactPoint",
         "contactType": "Professional",
         "telephone": "+34613916079",
-        "email": "joanramonsoto@gmail.com"
+        "email": "contacto@clinicadelansiedad.com"
     },
     "telephone": "+34613916079",
-    "email": "joanramonsoto@gmail.com",
+    "email": "contacto@clinicadelansiedad.com",
     "sameAs": [
         "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+Canet+de+Mar",
         "https://www.facebook.com/joanramonsoto",
@@ -566,7 +566,7 @@ export const organizationSchema = {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "telephone": "+34613916079",
-        "email": "joanramonsoto@gmail.com"
+        "email": "contacto@clinicadelansiedad.com"
     }
 };
 

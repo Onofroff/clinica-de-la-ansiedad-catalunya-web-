@@ -320,7 +320,7 @@ export default function PsicologoMaresmePage() {
     description: t.hero.description,
     url: `https://www.clinicadelansiedad.com/${locale}/psicologo-maresme`,
     telephone: "+34613916079",
-    email: "joanramonsoto@gmail.com",
+    email: "contacto@clinicadelansiedad.com",
     priceRange: "€€",
     image: "https://www.clinicadelansiedad.com/images/centreclinicansiedad.jpeg",
     founder: { "@type": "Person", name: "Joan Ramon Soto", jobTitle: "Psicoanalista" },
