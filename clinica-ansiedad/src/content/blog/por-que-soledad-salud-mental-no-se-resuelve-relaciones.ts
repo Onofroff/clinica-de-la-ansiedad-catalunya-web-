@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "por-que-soledad-salud-mental-no-se-resuelve-relaciones",
     title: "Soledad y salud mental: la epidemia silenciosa del siglo XXI",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Ansiedad",
     date: "2026-04-10",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/5grZKLrtUAmO4h0fxOso45/2e0079b6dce2049ffde1698db52c5d75/Soledad_y_salud_mental__la_epidemia_silenciosa_del_siglo_XXI.png",
+    image: "/images/blog/soledad-y-salud-mental.webp",
     imageAlt: "Soledad y salud mental: la epidemia silenciosa del siglo XXI",
     body: `
 En mi experiencia, veo constantemente que pacientes que aparentemente “lo tienen todo” —trabajo estable, vida social activa, incluso pareja— describen una sensación persistente de vacío difícil de explicar. Recuerdo especialmente a un caso que decía: “No estoy solo, pero me siento completamente desconectado”. Este tipo de malestar no suele identificarse inmediatamente como un problema de ansiedad o de salud mental, pero es precisamente ahí donde empieza a tomar forma. Existe la creencia de que la soledad es simplemente la ausencia de compañía. La mayoría de enfoques psicológicos plantean que basta con aumentar la interacción social para resolverla: salir más, conocer gente, mantenerse ocupado. Sin embargo, esta idea confunde una condición externa con una experiencia interna mucho más compleja.

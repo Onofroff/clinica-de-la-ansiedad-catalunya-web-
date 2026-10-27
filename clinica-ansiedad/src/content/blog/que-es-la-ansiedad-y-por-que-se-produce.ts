@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "que-es-la-ansiedad-y-por-que-se-produce",
     title: "¿Qué es la ansiedad y por qué se produce?",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Ansiedad",
     date: "2026-04-21",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/IR8IeSmCBcp7k2ecC7gbY/6c410f1d2fa1c026d5dde9e69ac0f288/ChatGPT_Image_20_d%C3%A2__abr._del_2026__09_55_03.png",
+    image: "/images/blog/que-es-la-ansiedad-y-por-que-se-produce.webp",
     imageAlt: "¿Qué es la ansiedad y por qué se produce?",
     body: `
 En mi experiencia clínica, veo constantemente que muchas personas llegan diciendo “tengo ansiedad” sin comprender realmente qué les ocurre. Han probado técnicas rápidas, consejos en redes o intentos de controlar la mente, pero siguen con taquicardia, anticipación constante o una sensación de peligro sin causa clara. Lo más frecuente es que confundan el síntoma con el origen.

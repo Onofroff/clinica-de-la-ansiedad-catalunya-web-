@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "cuando-acudir-terapia-de-pareja",
     title: "¿Cuándo acudir a terapia de pareja? 5 señales de alerta",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Dimensión Familiar",
     date: "2026-03-19",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/2HeSmS3FQH16VxkHLeeRoz/61ddbb7ad30f7be3336a0a5507211803/Gemini_Generated_Image_uva2bquva2bquva2.png",
+    image: "/images/blog/cuando-acudir-terapia-de-pareja.webp",
     imageAlt: "¿Cuándo acudir a terapia de pareja? 5 señales de alerta",
     body: `
 Todas las relaciones pasan por altibajos. Es completamente normal que existan desacuerdos, etapas de estrés o momentos en los que la rutina parece apoderarse del día a día. Sin embargo, hay una gran diferencia entre atravesar un bache temporal y estar atrapados en una dinámica tóxica o dolorosa que amenaza con romper el vínculo.

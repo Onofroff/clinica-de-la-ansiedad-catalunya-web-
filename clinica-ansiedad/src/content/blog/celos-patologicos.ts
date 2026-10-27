@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "celos-patologicos",
     title: "Celos patológicos: cuando los celos se convierten en un problema",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Celos",
     date: "2026-09-15",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/7igwdowhvZaixmSnWsXwVX/158f9bc847635ef5c2a17f7edbf3a9f4/celos-patologicos.png",
+    image: "/images/blog/celos-patologicos.webp",
     imageAlt: "Celos patológicos: cuando los celos se convierten en un problema",
     body: `
 Los celos patológicos son una preocupación obsesiva e incontrolable por una supuesta infidelidad de la pareja, sostenida por sospechas sin pruebas y acompañada de conductas de comprobación, control y ansiedad intensa. Se diferencian de los celos normales en que no responden a un hecho real, no se calman con explicaciones y ocupan buena parte de la vida mental de quien los sufre. No son un problema de confianza ni de carácter: son un síntoma que apunta a un conflicto inconsciente que puede tratarse con Psicoanálisis Directo.

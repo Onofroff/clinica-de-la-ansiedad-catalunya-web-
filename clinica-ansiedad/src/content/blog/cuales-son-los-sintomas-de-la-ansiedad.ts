@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "cuales-son-los-sintomas-de-la-ansiedad",
     title: "¿Cuáles son los síntomas de la ansiedad? Guía completa",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Ansiedad",
     date: "2026-03-17",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/1gXUYXz0d4lPLwU3b5Xotn/146615b845b3e940353cebfc88405a09/Gemini_Generated_Image_k5rnzqk5rnzqk5rn.png",
+    image: "/images/blog/cuales-son-los-sintomas-de-la-ansiedad.webp",
     imageAlt: "¿Cuáles son los síntomas de la ansiedad? Guía completa",
     body: `
 Sentir ansiedad en ciertos momentos de la vida es una experiencia completamente humana. Sin embargo, cuando esa sensación de alerta se vuelve constante, el cuerpo y la mente empiezan a enviar señales de agotamiento. Muchas personas llegan a nuestra consulta abrumadas porque no entienden qué les está pasando físicamente, sin saber que lo que experimentan son los **síntomas de la ansiedad**.

@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "terapia-familiar",
     title: "Terapia familiar: cuando el problema afecta a toda la familia",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Dimensión Familiar",
     date: "2026-04-21",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/7gkYv3rM3wc65AuYqMHZWp/621c4ea9acc6d841680c2ff0bb9d6342/Terapia_familiar__cuando_el_problema_afecta_a_toda_la_familia.png",
+    image: "/images/blog/terapia-familiar.webp",
     imageAlt: "Terapia familiar: cuando el problema afecta a toda la familia",
     body: `
 En mi experiencia clínica, veo constantemente que muchas familias consultan pensando que “el problema” está en una sola persona: el hijo con ansiedad, la pareja conflictiva, el adolescente rebelde o quien somatiza. Sin embargo, al escuchar la historia completa, aparece otra realidad: el síntoma individual muchas veces expresa un malestar que atraviesa a todo el sistema familiar.

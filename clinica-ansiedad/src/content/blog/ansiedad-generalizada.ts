@@ -1,7 +1,6 @@
 import type { LocalPost } from './types';
 
 // Migrado desde Contentful el 27/10/2026 (mismo slug y fecha de publicación).
-// La imagen sigue en el CDN de Contentful: moverla a /public antes de dar de baja el espacio.
 const post: LocalPost = {
     slug: "problemas/ansiedad-generalizada",
     title: "Trastorno de ansiedad generalizada (TAG): guía completa de síntomas, diagnóstico y tratamiento",
@@ -10,7 +9,7 @@ const post: LocalPost = {
     category: "Ansiedad",
     date: "2026-09-17",
     updated: '2026-10-27',
-    image: "https://images.ctfassets.net/q4hlbl22np70/1vR1YG9qJDEmo29gVJAKMG/42770882aa2a68b657388c87a40a4071/problemas-ansiedad-generalizada.png",
+    image: "/images/blog/ansiedad-generalizada.webp",
     imageAlt: "Trastorno de ansiedad generalizada (TAG): guía completa de síntomas, diagnóstico y tratamiento",
     body: `
 El trastorno de ansiedad generalizada (TAG) es un cuadro clínico caracterizado por una preocupación excesiva, difícil de controlar y presente la mayoría de los días durante al menos seis meses, acompañada de síntomas físicos como tensión muscular, insomnio, fatiga e irritabilidad. A diferencia de otros trastornos de ansiedad, en el TAG la inquietud no se fija en un objeto concreto: salta de un tema a otro, del trabajo a la salud, de los hijos al dinero. Desde el psicoanálisis, esa preocupación flotante no es un defecto del carácter, sino la señal de un conflicto inconsciente que aún no ha encontrado palabras.
