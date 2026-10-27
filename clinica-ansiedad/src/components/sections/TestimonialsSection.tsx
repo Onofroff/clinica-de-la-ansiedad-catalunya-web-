@@ -7,24 +7,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
-const testimonials = [
-    {
-        text: "Después de años medicada por la ansiedad y sin ver mejoría real, decidí probar aquí. En pocos meses entendí por qué me pasaba; y al entenderlo bien y trabajarlo desde la raíz, pude ir dejando atrás la medicación.",
-        author: "Marta C.",
-        time: "Hace 3 meses"
-    },
-    {
-        text: "Joan Ramon es un profesional extraordinario. Sentí que su aproximación no era de 'arreglar lo que estaba roto' rápido, sino de ayudarme verdaderamente a comprenderme. Me devolvió la tranquilidad que creía perdida.",
-        author: "David R.",
-        time: "Hace 6 meses"
-    },
-    {
-        text: "Llegué a la clínica con ataques de pánico que no me permitían llevar una vida normal. El trato cálido y a la vez riguroso de Joan Ramon ha sido definitivo. La opción online es comodísima y me hace sentir arropada a la distancia.",
-        author: "Laura V.",
-        time: "Hace 1 año"
-    }
-];
-
 export default function TestimonialsSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -52,32 +34,6 @@ export default function TestimonialsSection() {
                             {reviewCount} reseñas en Google
                         </p>
                     </motion.div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                    {testimonials.map((testimonio, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={isInView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ delay: 0.3 + (i * 0.1) }}
-                            className="bg-navy p-8 rounded-2xl border border-white/10 shadow-xl relative"
-                        >
-                            <Star className="w-5 h-5 fill-gold text-gold mb-6 opacity-50" />
-                            <p className="text-white/80 leading-relaxed font-sans mb-8">
-                                "{testimonio.text}"
-                            </p>
-                            <div className="mt-auto border-t border-white/10 pt-4 flex justify-between items-center">
-                                <div>
-                                    <p className="text-white font-serif font-bold">{testimonio.author}</p>
-                                    <p className="text-white/40 text-xs">{testimonio.time}</p>
-                                </div>
-                                <div className="flex gap-0.5">
-                                    {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 fill-gold text-gold" />)}
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
                 </div>
 
                 <div className="text-center">
