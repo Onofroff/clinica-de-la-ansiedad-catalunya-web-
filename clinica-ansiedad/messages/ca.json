@@ -47,7 +47,18 @@
     "services_title": "Serveis",
     "contact_title": "Contacte",
     "legal_title": "Legal",
-    "rights": "Tots els drets reservats."
+    "rights": "Tots els drets reservats.",
+    "since": "Espai Psicoanalític des de 1993",
+    "reviews": "{rating} a Google · {count} ressenyes",
+    "approach": "El nostre enfocament",
+    "maresme": "Psicoanalista al Maresme",
+    "faq": "Preguntes freqüents",
+    "individual": "Teràpia individual",
+    "couple": "Teràpia de parella",
+    "online": "Teràpia en línia",
+    "family": "Dimensió familiar",
+    "privacy": "Política de privacitat",
+    "cookie_settings": "Configurar galetes"
   },
   "problem": {
     "h2": "Et sents <accent>atrapat</accent> en algun d'aquests escenaris?",

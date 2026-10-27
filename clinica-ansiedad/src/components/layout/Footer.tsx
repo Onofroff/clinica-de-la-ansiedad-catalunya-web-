@@ -22,7 +22,7 @@ export default function Footer() {
                             className="h-32 w-auto max-w-full object-contain mb-4"
                         />
                         <p className="text-gold text-sm tracking-widest uppercase mb-4">
-                            Espacio Psicoanalítico desde 1993
+                            {t('since')}
                         </p>
                         <p className="text-white/80 text-sm mb-6">
                             Joan Ramon Soto<br />
@@ -31,7 +31,7 @@ export default function Footer() {
 
                         <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full w-fit">
                             <Star className="w-4 h-4 text-gold fill-gold" />
-                            <span className="text-sm font-medium">{GOOGLE_REVIEWS.rating} en Google · {GOOGLE_REVIEWS.count} reseñas</span>
+                            <span className="text-sm font-medium">{t('reviews', { rating: GOOGLE_REVIEWS.rating, count: GOOGLE_REVIEWS.count })}</span>
                         </div>
                     </div>
 
@@ -39,10 +39,10 @@ export default function Footer() {
                     <div>
                         <h3 className="font-sans font-bold text-lg mb-4 text-white">{t('nav_title')}</h3>
                         <ul className="space-y-3 text-sm text-white/90">
-                            <li><Link href="/enfoque" className="text-white/80 hover:text-gold transition-colors">Nuestro enfoque</Link></li>
+                            <li><Link href="/enfoque" className="text-white/80 hover:text-gold transition-colors">{t('approach')}</Link></li>
                             <li><Link href="/sobre-mi" className="text-white/80 hover:text-gold transition-colors">Joan Ramon Soto</Link></li>
-                            <li><Link href={"/psicologo-maresme" as any} className="text-white/80 hover:text-gold transition-colors">Psicoanalista en el Maresme</Link></li>
-                            <li><Link href={"/#faq" as any} className="text-white/80 hover:text-gold transition-colors">Preguntas frecuentes</Link></li>
+                            <li><Link href={"/psicologo-maresme" as any} className="text-white/80 hover:text-gold transition-colors">{t('maresme')}</Link></li>
+                            <li><Link href={"/#faq" as any} className="text-white/80 hover:text-gold transition-colors">{t('faq')}</Link></li>
                             <li><Link href={"/#contacto" as any} className="text-white/80 hover:text-gold transition-colors font-bold flex items-center gap-2 group">{t('contact_title')} <ArrowUpRight className="w-4 h-4 text-gold group-hover:translate-x-1 transition-transform" /></Link></li>
                         </ul>
                     </div>
@@ -51,10 +51,10 @@ export default function Footer() {
                     <div>
                         <h3 className="font-sans font-bold text-lg mb-4 text-white">{t('services_title')}</h3>
                         <ul className="space-y-3 text-sm text-white/90">
-                            <li><Link href="/servicios/terapia-individual" className="hover:text-gold transition-colors">Terapia individual</Link></li>
-                            <li><Link href="/servicios/terapia-de-pareja" className="hover:text-gold transition-colors">Terapia de pareja</Link></li>
-                            <li><Link href="/terapia-online" className="hover:text-gold transition-colors">Terapia online</Link></li>
-                            <li><Link href="/servicios/dimension-familiar" className="hover:text-gold transition-colors">Dimensión familiar</Link></li>
+                            <li><Link href="/servicios/terapia-individual" className="hover:text-gold transition-colors">{t('individual')}</Link></li>
+                            <li><Link href="/servicios/terapia-de-pareja" className="hover:text-gold transition-colors">{t('couple')}</Link></li>
+                            <li><Link href="/terapia-online" className="hover:text-gold transition-colors">{t('online')}</Link></li>
+                            <li><Link href="/servicios/dimension-familiar" className="hover:text-gold transition-colors">{t('family')}</Link></li>
                         </ul>
                     </div>
 
@@ -89,14 +89,14 @@ export default function Footer() {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
                     <p>© {currentYear} Clínica de la Ansiedad Catalunya. {t('rights')}</p>
                     <div className="flex flex-wrap gap-4">
-                        <Link href={"/privacidad" as any} className="hover:text-white transition-colors">Política de privacidad</Link>
+                        <Link href={"/privacidad" as any} className="hover:text-white transition-colors">{t('privacy')}</Link>
                         <Link href={"/aviso-legal" as any} className="hover:text-white transition-colors">Aviso legal</Link>
                         <Link href={"/politica-de-cookies" as any} className="hover:text-white transition-colors">Política de cookies</Link>
                         <button
                             onClick={() => window.dispatchEvent(new Event("open-cookie-banner"))}
                             className="hover:text-white transition-colors cursor-pointer"
                         >
-                            Configurar cookies
+                            {t('cookie_settings')}
                         </button>
                     </div>
                 </div>

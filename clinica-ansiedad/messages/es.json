@@ -47,7 +47,18 @@
     "services_title": "Servicios",
     "contact_title": "Contacto",
     "legal_title": "Legal",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "since": "Espacio Psicoanalítico desde 1993",
+    "reviews": "{rating} en Google · {count} reseñas",
+    "approach": "Nuestro enfoque",
+    "maresme": "Psicoanalista en el Maresme",
+    "faq": "Preguntas frecuentes",
+    "individual": "Terapia individual",
+    "couple": "Terapia de pareja",
+    "online": "Terapia online",
+    "family": "Dimensión familiar",
+    "privacy": "Política de privacidad",
+    "cookie_settings": "Configurar cookies"
   },
   "problem": {
     "h2": "¿Te sientes <accent>atrapado</accent> en alguno de estos escenarios?",
