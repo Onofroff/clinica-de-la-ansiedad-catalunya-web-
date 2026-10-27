@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
     },
     async redirects() {
         return [
+            // Artículo retirado (27/10/2026): se titulaba «¿Qué es la depresión?» pero
+            // su texto trataba de ansiedad generalizada. Su URL va a la página de Depresión.
+            { source: '/blog/depresion-sintomas', destination: '/es/depresion', statusCode: 301 },
+            { source: '/:locale(es|ca)/blog/depresion-sintomas', destination: '/:locale/depresion', statusCode: 301 },
+
             // La raíz NO se redirige: el middleware la reescribe a /es y devuelve
             // 200 con el contenido en castellano. Redirigir sumaba un tercer salto
             // a los dos que ya pone Vercel (http->https y sin-www->www), que no se

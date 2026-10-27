@@ -123,6 +123,8 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
     ...categoryEntries.map((entry: any) => entry.fields?.nombre),
     ...localPosts.map((post) => post.category),
   ].filter(Boolean)))
+    // Solo categorías con algún artículo: una categoría vacía lleva a un listado vacío
+    .filter((name) => combinedPosts.some((post) => post.category === name))
     .sort();
 
   // If using fallbacks or no categories found, extract from posts as fallback

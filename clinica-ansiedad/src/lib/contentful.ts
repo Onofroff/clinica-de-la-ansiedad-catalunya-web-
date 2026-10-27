@@ -77,6 +77,12 @@ function localizeEntryCa(entry: any): any {
   };
 }
 
+// Artículos de Contentful retirados de la web aunque sigan publicados allí.
+// Su URL redirige (ver next.config.ts). Para recuperarlos, quitarlos de aquí.
+const HIDDEN_SLUGS = new Set<string>([
+  'depresion-sintomas', // título de depresión, texto sobre ansiedad generalizada
+]);
+
 // Generic fetching function with preview support
 export const getEntries = async (contentType: string, preview = false, order: string[] = ['-sys.createdAt'], locale = 'es') => {
   try {
@@ -91,7 +97,8 @@ export const getEntries = async (contentType: string, preview = false, order: st
       order: order as any,
       locale: contentfulLocale,
     });
-    return locale === 'ca' ? response.items.map(localizeEntryCa) : response.items;
+    const items = response.items.filter((e: any) => !HIDDEN_SLUGS.has((e.fields?.slug || '').replace(/^\/|\/$/g, '')));
+    return locale === 'ca' ? items.map(localizeEntryCa) : items;
   } catch (error) {
     console.error(`Error fetching entries for ${contentType}:`, error);
     return [];
