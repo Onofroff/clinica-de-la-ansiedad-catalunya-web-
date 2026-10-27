@@ -221,6 +221,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     const slug = slugPath(rawSlug);
 
     if (!slug || slug === 'blog') notFound();
+    const ca = locale === 'ca';
 
     const local = getLocalPost(slug, locale);
     const entry = local ? null : await getEntryBySlug('blogPost', slug, false, locale);
@@ -416,7 +417,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                             href="/blog"
                             className="inline-flex items-center gap-2 text-navy/60 hover:text-gold transition-colors mb-12 group uppercase tracking-widest text-xs font-bold"
                         >
-                            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Volver a la Biblioteca
+                            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> {ca ? 'Tornar a la biblioteca' : 'Volver a la Biblioteca'}
                         </Link>
 
                         <div className="mb-10 w-full flex flex-col items-center">
@@ -492,7 +493,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                             {headings.length > 0 && (
                                 <details className="group/toc mb-10 rounded-2xl border border-gold/15 bg-gold/5 px-5 py-4">
                                     <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[11px] font-bold uppercase tracking-[0.18em] text-navy/50 hover:text-navy transition-colors marker:content-['']">
-                                        En este artículo
+                                        {ca ? 'En aquest article' : 'En este artículo'}
                                         <ChevronDown className="w-4 h-4 shrink-0 transition-transform duration-300 group-open/toc:rotate-180" />
                                     </summary>
                                     <nav className="mt-4 flex flex-col gap-2 border-t border-gold/15 pt-4">
@@ -512,7 +513,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                             {/* Floating Share Buttons (Destkop Only, Side) */}
                             <div className="hidden xl:block absolute -left-24 top-20 h-full">
                                 <div className="sticky top-40 flex flex-col gap-4">
-                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-navy/30 origin-left -rotate-90 translate-y-8 -translate-x-4 mb-8">Compartir</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-navy/30 origin-left -rotate-90 translate-y-8 -translate-x-4 mb-8">{ca ? 'Compartir' : 'Compartir'}</span>
                                     {socialLinks.map(({ Icon, url }, i) => (
                                         <a 
                                             key={i} 
@@ -571,7 +572,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                             <div className="mt-24 pt-16 border-t border-navy/10">
                                 <div className="flex flex-wrap items-center justify-between gap-6 mb-16">
                                     <div className="flex items-center gap-4">
-                                        <span className="text-navy/40 font-bold text-[10px] uppercase tracking-widest">Publicado en</span>
+                                        <span className="text-navy/40 font-bold text-[10px] uppercase tracking-widest">{ca ? 'Publicat a' : 'Publicado en'}</span>
                                         <span className="bg-gold/10 text-gold px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] border border-gold/20">
                                             {post.category}
                                         </span>
@@ -606,10 +607,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                                         <p className="text-gold font-bold text-[10px] uppercase tracking-[0.2em] mb-2 font-sans">{post.author.role}</p>
                                         <h4 className="font-serif text-3xl text-navy mb-4">{post.author.name}</h4>
                                         <p className="text-muted text-lg leading-relaxed italic mb-6">
-                                            "Acompaño a las personas en el proceso de descifrar el mensaje oculto tras sus síntomas, transformando la ansiedad en una vía hacia el autoconocimiento."
+                                            {ca ? '“Acompanyo les persones en el procés de desxifrar el missatge amagat darrere dels seus símptomes, transformant l\'ansietat en una via cap a l\'autoconeixement.”' : '“Acompaño a las personas en el proceso de descifrar el mensaje oculto tras sus síntomas, transformando la ansiedad en una vía hacia el autoconocimiento.”'}
                                         </p>
                                         <Link href="/sobre-mi" className="inline-flex items-center gap-2 bg-navy text-white px-8 py-3 rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-gold transition-all shadow-lg hover:shadow-gold/20">
-                                            Leer biografía completa <ArrowRight className="w-3.5 h-3.5" />
+                                            {ca ? 'Llegir la biografia completa' : 'Leer biografía completa'} <ArrowRight className="w-3.5 h-3.5" />
                                         </Link>
                                     </div>
                                 </div>
@@ -624,7 +625,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                                             className="group p-8 rounded-[32px] bg-white border border-navy/5 hover:border-gold/30 transition-all text-left flex flex-col gap-2"
                                         >
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-navy/40 flex items-center gap-2">
-                                                <ArrowLeft className="w-3.5 h-3.5" /> Anterior
+                                                <ArrowLeft className="w-3.5 h-3.5" /> {ca ? 'Anterior' : 'Anterior'}
                                             </span>
                                             <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{prevEntry.title}</span>
                                         </Link>
@@ -636,7 +637,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                                             className="group p-8 rounded-[32px] bg-white border border-navy/5 hover:border-gold/30 transition-all text-right flex flex-col items-end gap-2"
                                         >
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-navy/40 flex items-center gap-2">
-                                                Siguiente <ArrowRight className="w-3.5 h-3.5" />
+                                                {ca ? 'Següent' : 'Siguiente'} <ArrowRight className="w-3.5 h-3.5" />
                                             </span>
                                             <span className="font-serif text-lg text-navy group-hover:text-gold transition-colors line-clamp-1">{nextEntry.title}</span>
                                         </Link>
@@ -653,11 +654,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                         <div className="max-w-7xl mx-auto">
                             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                                 <div>
-                                    <h2 className="text-3xl md:text-5xl font-serif text-navy mb-4">Continuar Leyendo</h2>
+                                    <h2 className="text-3xl md:text-5xl font-serif text-navy mb-4">{ca ? 'Continuar llegint' : 'Continuar Leyendo'}</h2>
                                     <div className="h-1.5 w-24 bg-gold rounded-full" />
                                 </div>
                                 <Link href="/blog" className="inline-flex flex-shrink-0 items-center gap-2 bg-white text-navy px-8 py-4 rounded-full font-bold hover:bg-navy hover:text-white border border-navy/10 transition-all shadow-sm uppercase tracking-widest text-xs group">
-                                    Ver biblioteca <ArrowLeft className="w-4 h-4 rotate-180 transition-transform group-hover:translate-x-1" />
+                                    {ca ? 'Veure la biblioteca' : 'Ver biblioteca'} <ArrowLeft className="w-4 h-4 rotate-180 transition-transform group-hover:translate-x-1" />
                                 </Link>
                             </div>
 
@@ -680,10 +681,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                           </div>
                           
                           <h3 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white mb-6 relative z-10 leading-tight">
-                              ¿Buscas un espacio <span className="italic text-gold">para hablar?</span>
+                              {ca ? 'Busques un espai ' : '¿Buscas un espacio '}<span className="italic text-gold">{ca ? 'per parlar?' : 'para hablar?'}</span>
                           </h3>
                           <p className="text-white/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed font-light relative z-10">
-                              Si te sientes identificado con alguno de estos temas o necesitas apoyo especializado para gestionar tu ansiedad, estoy aquí para escucharte y ayudarte a dar sentido a este escenario.
+                              {ca ? "Si et sents identificat amb algun d'aquests temes o necessites suport especialitzat per gestionar la teva ansietat, soc aquí per escoltar-te i ajudar-te a donar sentit al que estàs vivint." : 'Si te sientes identificado con alguno de estos temas o necesitas apoyo especializado para gestionar tu ansiedad, estoy aquí para escucharte y ayudarte a dar sentido a este escenario.'}
                           </p>
                           <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                               <a
@@ -692,13 +693,13 @@ export default async function BlogPostPage({ params }: PageProps) {
                                   rel="noopener noreferrer"
                                   className="bg-gold text-white px-10 py-5 rounded-full font-bold hover:bg-gold-light transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] text-sm uppercase tracking-[0.2em]"
                               >
-                                  Pedir Cita Online
+                                  {ca ? 'Demanar cita' : 'Pedir Cita Online'}
                               </a>
                               <Link
                                   href="/servicios"
                                   className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold hover:bg-white/20 transition-all text-sm uppercase tracking-[0.2em]"
                               >
-                                  Ver Tratamientos
+                                  {ca ? 'Veure els tractaments' : 'Ver Tratamientos'}
                               </Link>
                           </div>
                        </div>

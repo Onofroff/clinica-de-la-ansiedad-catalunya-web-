@@ -1,27 +1,30 @@
 "use client";
-import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
+
+import { Link } from "@/i18n/routing";import { motion } from "framer-motion";
 import { Button } from "@heroui/react";
 import { Phone, CalendarCheck, Sparkles } from "lucide-react";
-import Link from "next/link";
 
 export default function ProcessSection() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
     const steps = [
         {
             number: "01",
-            title: "Toma de Contacto",
-            desc: "Escríbenos o llámanos para explicar tu situación brevemente. Te escucharemos y agendaremos un espacio confidencial para ti.",
+            title: t("Toma de Contacto", "Primer contacte"),
+            desc: t("Escríbenos o llámanos para explicar tu situación brevemente. Te escucharemos y agendaremos un espacio confidencial para ti.", "Escriu-nos o truca'ns per explicar breument la teva situació. T'escoltarem i reservarem un espai confidencial per a tu."),
             icon: Phone
         },
         {
             number: "02",
-            title: "Primera Consulta",
-            desc: "Una entrevista inicial de evaluación en la que nos conoceremos, analizaremos tu demanda y propondremos las bases del tratamiento.",
+            title: t("Primera Consulta", "Primera consulta"),
+            desc: t("Una entrevista inicial de evaluación en la que nos conoceremos, analizaremos tu demanda y propondremos las bases del tratamiento.", "Una entrevista inicial d'avaluació en què ens coneixerem, analitzarem la teva demanda i proposarem les bases del tractament."),
             icon: CalendarCheck
         },
         {
             number: "03",
-            title: "Inicia tu Proceso",
-            desc: "Sesiones regulares, presenciales u online, trabajando en profundidad hacia la resolución de la sintomatología y sus causas.",
+            title: t("Inicia tu Proceso", "Comença el teu procés"),
+            desc: t("Sesiones regulares, presenciales u online, trabajando en profundidad hacia la resolución de la sintomatología y sus causas.", "Sessions regulars, presencials o en línia, treballant en profunditat la simptomatologia i les seves causes."),
             icon: Sparkles
         }
     ];
@@ -40,7 +43,7 @@ export default function ProcessSection() {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy/5 border border-navy/10 mb-6"
                     >
-                        <span className="text-xs font-bold tracking-widest text-navy uppercase">Nuestra Metodología</span>
+                        <span className="text-xs font-bold tracking-widest text-navy uppercase">{t("Nuestra Metodología", "La nostra metodologia")}</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -48,7 +51,7 @@ export default function ProcessSection() {
                         viewport={{ once: true }}
                         className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-navy mb-6"
                     >
-                        Empezar es más sencillo de lo que crees
+                        {t("Empezar es más sencillo de lo que crees", "Començar és més senzill del que creus")}
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -57,7 +60,7 @@ export default function ProcessSection() {
                         transition={{ delay: 0.1 }}
                         className="text-lg md:text-xl text-navy/70 max-w-2xl mx-auto font-light"
                     >
-                        Un proceso claro, empático y estructurado para acompañarte desde el primer instante.
+                        {t("Un proceso claro, empático y estructurado para acompañarte desde el primer instante.", "Un procés clar, empàtic i estructurat per acompanyar-te des del primer moment.")}
                     </motion.p>
                 </div>
 
@@ -114,7 +117,7 @@ export default function ProcessSection() {
                         size="lg"
                         className="bg-navy hover:bg-navy-light text-white font-bold px-12 py-8 rounded-full text-lg shadow-[0_10px_30px_rgba(44,95,120,0.3)] hover:shadow-[0_15px_40px_rgba(44,95,120,0.4)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto overflow-hidden group relative isolate"
                     >
-                        <span className="relative z-10">Dar el primer paso</span>
+                        <span className="relative z-10">{t("Dar el primer paso", "Fer el primer pas")}</span>
                         {/* Hover effect overlay */}
                         <div className="absolute inset-0 bg-gradient-to-r from-gold/0 via-gold/10 to-gold/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 z-0 ease-in-out" />
                     </Button>

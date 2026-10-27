@@ -23,9 +23,9 @@ export async function generateMetadata({
     path: '/crisis-de-panico',
     keywords: [
       'crisis de ansiedad sintomas', 'ataques de panico sintomas', 'crisis de pánico',
-      'ataque de pánico psicólogo', 'palpitaciones por ansiedad', 'hiperventilacion',
-      'como se cura la ansiedad', 'psicólogo crisis de pánico', 'terapia pánico psicoanalítica',
-      'ataques de pánico tratamiento Barcelona', 'crisis de pánico psicólogo Catalunya',
+      'ataque de pánico psicoterapeuta', 'palpitaciones por ansiedad', 'hiperventilacion',
+      'como se cura la ansiedad', 'psicoterapeuta crisis de pánico', 'terapia pánico psicoanalítica',
+      'ataques de pánico tratamiento Barcelona', 'crisis de pánico psicoterapeuta Catalunya',
       'pánico tratamiento Maresme', 'ataques de pánico Girona'
     ],
     lang: locale,

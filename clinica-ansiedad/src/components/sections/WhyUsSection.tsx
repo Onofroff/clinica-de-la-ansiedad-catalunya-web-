@@ -1,39 +1,42 @@
 "use client";
+import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Globe, ShieldQuestion, Handshake, MapPin } from "lucide-react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
-const stats = [
-    { num: "1993", label: "Año de fundación" },
-    { num: "+30", label: "Años de trayectoria" },
-    { num: "+1K", label: "Pacientes atendidos" },
-    { num: `${GOOGLE_REVIEWS.rating}★`, label: `${GOOGLE_REVIEWS.count} reseñas Google` },
-];
 
-const differentiators = [
-    {
-        icon: <ShieldQuestion className="w-6 h-6" />,
-        title: "Resolvemos causas, no síntomas",
-        desc: "Vamos a la raíz psicológica del problema para evitar recaídas. Sin parches temporales.",
-    },
-    {
-        icon: <Globe className="w-6 h-6" />,
-        title: "Pioneros en terapia online",
-        desc: "+25 años de experiencia en terapia online para toda España, mucho antes del auge digital.",
-    },
-    {
-        icon: <Handshake className="w-6 h-6" />,
-        title: "Proceso humano y personalizado",
-        desc: "Acompañamiento directo por Joan Ramon Soto. Ético, riguroso y continuo.",
-    },
-    {
-        icon: <MapPin className="w-6 h-6" />,
-        title: "Presencia en Maresme y toda España",
-        desc: "Consulta presencial en Canet de Mar (Barcelona) y terapia online para toda Catalunya y España.",
-    },
-];
 
 export default function WhyUsSection() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
+  const stats = [
+      { num: "1993", label: t("Año de fundación", "Any de fundació") },
+      { num: "+30", label: t("Años de trayectoria", "Anys de trajectòria") },
+      { num: "+1K", label: t("Pacientes atendidos", "Pacients atesos") },
+      { num: `${GOOGLE_REVIEWS.rating}★`, label: `${GOOGLE_REVIEWS.count} reseñas Google` },
+  ];
+  const differentiators = [
+      {
+          icon: <ShieldQuestion className="w-6 h-6" />,
+          title: t("Resolvemos causas, no síntomas", "Resolem causes, no símptomes"),
+          desc: t("Vamos a la raíz psicológica del problema. Sin parches temporales.", "Anem a l'arrel psicològica del problema. Sense pegats temporals."),
+      },
+      {
+          icon: <Globe className="w-6 h-6" />,
+          title: t("Pioneros en terapia a distancia", "Pioners en teràpia a distància"),
+          desc: t("Más de 30 años atendiendo a distancia: primero por teléfono, hoy por videollamada.", "Més de 30 anys atenent a distància: primer per telèfon, avui per videotrucada."),
+      },
+      {
+          icon: <Handshake className="w-6 h-6" />,
+          title: t("Proceso humano y personalizado", "Procés humà i personalitzat"),
+          desc: t("Acompañamiento directo por Joan Ramon Soto. Ético, riguroso y continuo.", "Acompanyament directe de Joan Ramon Soto. Ètic, rigorós i continuat."),
+      },
+      {
+          icon: <MapPin className="w-6 h-6" />,
+          title: t("Presencia en Maresme y toda España", "Presència al Maresme i a tot Espanya"),
+          desc: t("Consulta presencial en Canet de Mar (Barcelona) y terapia online para toda Catalunya y España.", "Consulta presencial a Canet de Mar (Barcelona) i teràpia en línia per a tot Catalunya i Espanya."),
+      },
+  ];
     return (
         <section className="bg-cream py-28 px-6 border-b border-navy/5">
             <div className="max-w-7xl mx-auto">
@@ -48,14 +51,14 @@ export default function WhyUsSection() {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <div className="w-12 h-[1px] bg-gold" />
-                            <span className="text-gold text-sm tracking-widest uppercase font-bold">Por qué elegirnos</span>
+                            <span className="text-gold text-sm tracking-widest uppercase font-bold">{t("Por qué elegirnos", "Per què escollir-nos")}</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-navy mb-6 leading-tight">
-                            Treinta años de<br />
-                            <span className="text-gold italic font-medium">historia y resultados</span>
+                            {t("Treinta años de", "Trenta anys d'")}<br />
+                            <span className="text-gold italic font-medium">{t("historia", "història")}</span>
                         </h2>
                         <p className="text-navy/70 text-lg leading-relaxed mb-12 font-light">
-                            Somos una de las clínicas de referencia en psicología clínica especializada en ansiedad en Cataluña. Nuestra trayectoria habla por sí sola.
+                            {t("Una clínica especializada en ansiedad desde 1993, con consulta en Canet de Mar y pacientes de toda Catalunya y España.", "Una clínica especialitzada en ansietat des de 1993, amb consulta a Canet de Mar i pacients de tot Catalunya i Espanya.")}
                         </p>
 
                         {/* Stats grid */}

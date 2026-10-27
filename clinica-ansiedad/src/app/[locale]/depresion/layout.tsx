@@ -23,10 +23,10 @@ export async function generateMetadata({
     path: '/depresion',
     keywords: [
       'depresion ansiedad', 'ansiedad y depresion', 'tratamiento depresión Barcelona',
-      'psicólogo depresión', 'terapia depresión psicoanalítica', 'superar la depresión',
-      'síntomas depresión', 'psicólogo depresión Catalunya',
-      'psicólogo depresión Barcelona', 'depresión y ansiedad tratamiento',
-      'terapia depresión Maresme', 'psicólogo depresión Girona',
+      'psicoterapeuta depresión', 'terapia depresión psicoanalítica', 'superar la depresión',
+      'síntomas depresión', 'psicoterapeuta depresión Catalunya',
+      'psicoterapeuta depresión Barcelona', 'depresión y ansiedad tratamiento',
+      'terapia depresión Maresme', 'psicoterapeuta depresión Girona',
       'depresión tratamiento Lleida', 'depresión tratamiento Tarragona'
     ],
     lang: locale,

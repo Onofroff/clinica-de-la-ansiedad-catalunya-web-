@@ -1,4 +1,5 @@
 "use client";
+import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { Button } from "@heroui/react";
@@ -8,6 +9,8 @@ import { useRef } from "react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 export default function TestimonialsSection() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
     const reviewCount = useAnimatedNumber(GOOGLE_REVIEWS.count, 2, isInView);
@@ -31,7 +34,7 @@ export default function TestimonialsSection() {
                             <span className="text-gold">{GOOGLE_REVIEWS.rating}</span> ★
                         </h2>
                         <p className="text-white/70 tracking-widest uppercase text-sm font-bold">
-                            {reviewCount} reseñas en Google
+                            {reviewCount} {t("reseñas en Google", "ressenyes a Google")}
                         </p>
                     </motion.div>
                 </div>
@@ -45,7 +48,7 @@ export default function TestimonialsSection() {
                         variant="bordered"
                         className="border-gold text-gold hover:bg-gold hover:text-navy px-8 py-6 rounded-full font-bold uppercase tracking-widest text-xs transition-colors"
                     >
-                        Ver todas las reseñas en Google
+                        {t("Ver todas las reseñas en Google", "Veure totes les ressenyes a Google")}
                     </Button>
                 </div>
             </div>

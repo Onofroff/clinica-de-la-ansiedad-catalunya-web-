@@ -15,20 +15,33 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (locale === 'ca') {
+    return buildMetadata({
+      title: 'Joan Ramon Soto | Psicoanalista / Psicoterapeuta a Canet de Mar',
+      description: "Joan Ramon Soto, psicoanalista / psicoterapeuta amb més de 30 anys d'experiència i fundador de la Clínica de la Ansiedad Catalunya. Consulta a Canet de Mar (Maresme) i en línia.",
+      path: '/sobre-mi',
+      keywords: ['Joan Ramon Soto', 'psicoanalista ansietat', 'psicoterapeuta Catalunya', 'psicoteràpia psicoanalítica', 'psicoterapeuta Canet de Mar', 'psicoanalista Maresme'],
+      image: 'https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp',
+      imageAlt: 'Joan Ramon Soto - Psicoanalista / Psicoterapeuta a Canet de Mar (Maresme)',
+      lang: locale,
+      catalan: true,
+    });
+  }
   return buildMetadata({
+      catalan: true,
       title: 'Joan Ramon Soto | Psicoanalista / Psicoterapeuta en Canet de Mar',
       description: 'Joan Ramon Soto, psicoanalista / psicoterapeuta con más de 30 años de experiencia y fundador de la Clínica de la Ansiedad. Consulta en Canet de Mar (Maresme) y online.',
       path: '/sobre-mi',
       keywords: [
           'Joan Ramon Soto',
           'psicoanalista ansiedad',
-          'psicólogo Barcelona',
-          'consulta psicologica',
-          'psicólogo especialista ansiedad',
+          'psicoanalista Barcelona',
+          'consulta de psicoterapia',
+          'psicoterapeuta especialista ansiedad',
           'psicoterapia psicoanalítica',
           'clínica de la ansiedad director',
           'psicoterapeuta ansiedad Barcelona', 'psicoterapeuta Canet de Mar',
-          'psicólogo Maresme', 'psicoterapeuta Catalunya'
+          'psicoanalista Maresme', 'psicoterapeuta Catalunya'
       ],
       image: 'https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp',
       imageAlt: 'Joan Ramon Soto - Psicoanalista / Psicoterapeuta en Canet de Mar (Maresme)',

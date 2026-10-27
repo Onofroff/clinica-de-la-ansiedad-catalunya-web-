@@ -21,9 +21,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (locale === 'ca') {
+    return buildMetadata({
+      title: "Blog sobre ansietat i salut mental | Clínica de l'Ansietat",
+      description: "Articles sobre símptomes d'ansietat, crisis de pànic, depressió i tractament psicològic, escrits per Joan Ramon Soto, psicoanalista / psicoterapeuta.",
+      path: '/blog',
+      keywords: ['blog ansietat', 'articles psicologia', 'psicoteràpia psicoanalítica', 'salut mental', 'Joan Ramon Soto'],
+      lang: locale,
+      catalan: true,
+    });
+  }
   return buildMetadata({
+    catalan: true,
     title: 'Blog sobre ansiedad y salud mental | Clínica de la Ansiedad',
-    description: 'Artículos sobre síntomas de ansiedad, crisis de pánico, depresión y tratamiento psicológico por el Joan Ramon Soto.',
+    description: 'Artículos sobre síntomas de ansiedad, crisis de pánico, depresión y tratamiento psicológico, escritos por Joan Ramon Soto, psicoanalista / psicoterapeuta.',
     path: '/blog',
     keywords: [
       'blog ansiedad',
@@ -41,6 +52,7 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default async function BlogPage({ params, searchParams }: { params: Promise<{ locale: string }>, searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const { locale } = await params;
+  const ca = locale === 'ca';
   console.log(`[BlogPage] Rendering for locale: ${locale}`);
   
   let contentfulEntries: any[] = [];
@@ -150,13 +162,13 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
               <div className="lg:col-span-7 flex flex-col">
                 <div className="inline-flex items-center gap-2 bg-gold/10 backdrop-blur-md border border-gold/20 text-navy px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-8 w-fit shadow-sm">
                     <BookOpen className="w-3.5 h-3.5 text-gold" />
-                    Biblioteca Clínica · Vol. 2024
+                    {ca ? 'Biblioteca clínica' : 'Biblioteca Clínica'}
                 </div>
 
                 <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-serif text-navy leading-[1.05] tracking-tight mb-8">
-                    Palabras para <br />
+                    {ca ? 'Paraules per' : 'Palabras para'} <br />
                     <span className="text-gold italic font-medium relative inline-block">
-                       entenderte
+                       {ca ? "entendre't" : 'entenderte'}
                        <svg className="absolute w-[110%] h-auto -left-[5%] -bottom-2 md:-bottom-4 text-gold/20 -z-10" viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M2 18C45 -2 150 -2 198 18" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
                        </svg>
@@ -164,7 +176,9 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                 </h1>
 
                 <p className="text-navy/70 text-lg md:text-xl max-w-xl leading-relaxed font-light mb-10 border-l-2 border-gold/30 pl-6 py-2">
-                    Reflexiones, recursos y técnica clínica sobre ansiedad y pánico. Un espacio de lectura pausada para dar sentido al malestar contemporáneo.
+                    {ca
+                      ? "Reflexions, recursos i tècnica clínica sobre l'ansietat i el pànic. Un espai de lectura pausada per donar sentit al malestar contemporani."
+                      : 'Reflexiones, recursos y técnica clínica sobre ansiedad y pánico. Un espacio de lectura pausada para dar sentido al malestar contemporáneo.'}
                 </p>
 
                 <div className="flex items-center gap-6">
@@ -172,7 +186,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                    {/* Se retiran tres caras de i.pravatar.cc con alt="Lector": eran
                        fotos de desconocidos presentados como lectores de la clínica.
                        El dato de lectores se mantiene tal cual estaba. */}
-                   <span className="text-[10px] text-navy/60 font-bold uppercase tracking-widest">+5.000 lectores mensuales</span>
+                   <span className="text-[10px] text-navy/60 font-bold uppercase tracking-widest">{ca ? '+5.000 lectors mensuals' : '+5.000 lectores mensuales'}</span>
                 </div>
               </div>
 
@@ -198,7 +212,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                       <div className="absolute inset-x-0 bottom-0 p-8 md:p-10 z-20">
                         <div className="flex items-center gap-3 mb-4 text-gold text-[10px] font-bold uppercase tracking-[0.2em] bg-white/10 backdrop-blur-md w-fit px-3 py-1.5 rounded-lg border border-white/10">
                           <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-                          Lo más leído
+                          {ca ? 'Destacat' : 'Destacado'}
                         </div>
                         <h2 className="text-2xl md:text-3xl font-serif text-white mb-4 leading-tight group-hover:text-gold transition-colors">
                           {featuredPost.title}
@@ -208,7 +222,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                              {featuredPost.readTime}
                           </span>
                           <span className="flex items-center gap-2 group-hover:text-white transition-colors">
-                            Leer ahora <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                            {ca ? 'Llegir ara' : 'Leer ahora'} <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                           </span>
                         </div>
                       </div>
@@ -235,7 +249,7 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                     <div className="relative w-full">
                         <input
                             type="text"
-                            placeholder="Buscar artículos..."
+                            placeholder={ca ? 'Cerca articles...' : 'Buscar artículos...'}
                             className="w-full bg-white border border-navy/10 rounded-2xl px-6 py-4 pl-14 focus:outline-none focus:ring-2 focus:ring-gold/50 shadow-sm font-sans text-navy placeholder:text-navy/40 transition-all"
                         />
                         <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-navy/40 w-5 h-5" />
@@ -249,18 +263,18 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                     {/* Mini Newsletter (Optional replacing the massive one) */}
                     <div className="bg-navy rounded-3xl p-6 md:p-8 text-center relative overflow-hidden shadow-xl">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full blur-2xl translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-                        <h4 className="font-serif text-xl text-white mb-2 relative z-10">Únete a nuestra carta clínica</h4>
+                        <h4 className="font-serif text-xl text-white mb-2 relative z-10">{ca ? 'Uneix-te a la nostra carta clínica' : 'Únete a nuestra carta clínica'}</h4>
                         <p className="text-white/70 text-sm mb-6 relative z-10 font-sans">
-                            Recibe reflexiones mensuales directamente en tu bandeja de entrada.
+                            {ca ? "Rep reflexions mensuals directament a la teva safata d'entrada." : 'Recibe reflexiones mensuales directamente en tu bandeja de entrada.'}
                         </p>
                         <form className="flex flex-col gap-3 relative z-10">
                             <input
                                 type="email"
-                                placeholder="Tu email"
+                                placeholder={ca ? 'El teu correu' : 'Tu email'}
                                 className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:bg-white/20 transition-all text-sm font-sans text-center"
                             />
                             <button type="button" className="w-full bg-gold text-white px-4 py-3 rounded-xl font-bold hover:bg-gold-light transition-all shadow-lg uppercase tracking-widest text-xs">
-                                Suscribirme
+                                {ca ? "Subscriure'm" : 'Suscribirme'}
                             </button>
                         </form>
                     </div>
@@ -270,14 +284,14 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
                 <div className="w-full lg:w-3/4 flex flex-col gap-16">
                     {filteredPosts.length === 0 ? (
                         <div className="bg-white rounded-[40px] p-20 text-center shadow-glass border border-navy/5">
-                            <h3 className="text-2xl font-serif text-navy mb-4">No se encontraron artículos</h3>
-                            <p className="text-muted">No hay artículos publicados en esta categoría por el momento.</p>
+                            <h3 className="text-2xl font-serif text-navy mb-4">{ca ? "No s'han trobat articles" : 'No se encontraron artículos'}</h3>
+                            <p className="text-muted">{ca ? 'De moment no hi ha articles publicats en aquesta categoria.' : 'No hay artículos publicados en esta categoría por el momento.'}</p>
                         </div>
                     ) : (
                         <>
                             {/* Posts Grid */}
                             <div className="flex items-center gap-4 mb-8">
-                                <h2 className="text-3xl font-serif text-navy">Publicaciones Recientes</h2>
+                                <h2 className="text-3xl font-serif text-navy">{ca ? 'Publicacions recents' : 'Publicaciones Recientes'}</h2>
                                 <div className="h-[1px] flex-grow bg-navy/10" />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">

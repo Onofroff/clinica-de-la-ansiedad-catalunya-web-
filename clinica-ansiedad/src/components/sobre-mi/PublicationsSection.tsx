@@ -1,42 +1,45 @@
-'use client';
+"use client";
+import { useLocale } from "next-intl";
 
 import { motion } from 'framer-motion';
 import { BookOpen, ExternalLink, Newspaper, Quote, ArrowRight } from 'lucide-react';
 
-const publications = [
-    {
-        title: "¿Por qué tenemos miedo al Coronavirus? Claves para manejarlo",
-        year: "2020",
-        source: "Mundopsicologos",
-        category: "Análisis Social"
-    },
-    {
-        title: "El sexo tras la cuarentena: nuevas dinámicas vinculares",
-        year: "2020",
-        source: "Vogue",
-        category: "Psicología de Pareja"
-    },
-    {
-        title: "Los famosos y temidos gatillazos: ¿por qué se producen y cómo evitarlos?",
-        year: "2019",
-        source: "Huffington Post",
-        category: "Salud Mental"
-    },
-    {
-        title: "Por qué los españoles acatan tan bien las órdenes e ignoran los consejos",
-        year: "2021",
-        source: "Mundopsicologos",
-        category: "Psicomorfología"
-    },
-    {
-        title: "Qué es la ansiedad anticipatoria: el mecanismo que puede paralizarte",
-        year: "2022",
-        source: "Grupo Cero",
-        category: "Trastornos de Ansiedad"
-    }
-];
 
 export default function PublicationsSection() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
+  const publications = [
+      {
+          title: t("¿Por qué tenemos miedo al Coronavirus? Claves para manejarlo", "Per què tenim por del coronavirus? Claus per gestionar-la"),
+          year: "2020",
+          source: "Mundopsicologos",
+          category: t("Análisis Social", "Anàlisi social")
+      },
+      {
+          title: t("El sexo tras la cuarentena: nuevas dinámicas vinculares", "El sexe després de la quarantena: noves dinàmiques vinculars"),
+          year: "2020",
+          source: "Vogue",
+          category: t("Psicología de Pareja", "Psicologia de parella")
+      },
+      {
+          title: t("Los famosos y temidos gatillazos: ¿por qué se producen y cómo evitarlos?", "Els famosos i temuts gatillassos: per què es produeixen i com evitar-los?"),
+          year: "2019",
+          source: "Huffington Post",
+          category: t("Salud Mental", "Salut mental")
+      },
+      {
+          title: t("Por qué los españoles acatan tan bien las órdenes e ignoran los consejos", "Per què els espanyols acaten tan bé les ordres i ignoren els consells"),
+          year: "2021",
+          source: "Mundopsicologos",
+          category: t("Psicomorfología", "Psicomorfologia")
+      },
+      {
+          title: t("Qué es la ansiedad anticipatoria: el mecanismo que puede paralizarte", "Què és l'ansietat anticipatòria: el mecanisme que et pot paralitzar"),
+          year: "2022",
+          source: "Grupo Cero",
+          category: t("Trastornos de Ansiedad", "Trastorns d'ansietat")
+      }
+  ];
     return (
         <section className="py-24 lg:py-32 bg-navy text-white relative overflow-hidden">
             {/* Artistic Background Elements */}
@@ -53,7 +56,7 @@ export default function PublicationsSection() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8"
                         >
                             <BookOpen className="w-4 h-4 text-gold-light" />
-                            <span className="text-[10px] font-black tracking-[0.3em] text-sage uppercase">Divulgación Clínica</span>
+                            <span className="text-[10px] font-black tracking-[0.3em] text-sage uppercase">{t("Divulgación Clínica", "Divulgació clínica")}</span>
                         </motion.div>
                         <motion.h2
                             initial={{ opacity: 0, y: 30 }}
@@ -61,7 +64,7 @@ export default function PublicationsSection() {
                             viewport={{ once: true }}
                             className="font-serif text-5xl md:text-7xl font-bold mb-8 leading-[0.9] tracking-tighter"
                         >
-                            Voz de autoridad en <span className="text-gold-light italic font-light">primeros medios</span>
+                            {t("Voz de autoridad en", "Veu d'autoritat als")} <span className="text-gold-light italic font-light">{t("primeros medios", "principals mitjans")}</span>
                         </motion.h2>
                     </div>
                     <motion.div
@@ -72,7 +75,7 @@ export default function PublicationsSection() {
                         className="lg:pb-4"
                     >
                         <p className="text-white/50 text-xl font-light leading-relaxed max-w-md border-l border-gold/30 pl-8">
-                            Colaboraciones habituales aportando la perspectiva del psicoanálisis directo a los conflictos de la vida contemporánea.
+                            {t("Colaboraciones habituales aportando la perspectiva del psicoanálisis directo a los conflictos de la vida contemporánea.", "Col·laboracions habituals que aporten la perspectiva de la psicoanàlisi directa als conflictes de la vida contemporània.")}
                         </p>
                     </motion.div>
                 </div>
@@ -124,10 +127,10 @@ export default function PublicationsSection() {
                     >
                         <div className="h-full bg-gold border border-gold p-10 rounded-[2rem] flex flex-col justify-center items-center text-center group cursor-pointer hover:bg-gold/90 transition-all shadow-xl shadow-gold/10">
                             <Newspaper className="w-12 h-12 text-navy mb-6" />
-                            <h3 className="font-serif text-3xl font-bold text-navy mb-4">Sala de Prensa</h3>
-                            <p className="text-navy/70 text-sm font-medium mb-8">Accede a nuestro archivo completo de intervenciones en radio, prensa y TV.</p>
+                            <h3 className="font-serif text-3xl font-bold text-navy mb-4">{t("Sala de Prensa", "Sala de premsa")}</h3>
+                            <p className="text-navy/70 text-sm font-medium mb-8">{t("Accede a nuestro archivo completo de intervenciones en radio, prensa y TV.", "Accedeix al nostre arxiu complet d'intervencions a la ràdio, la premsa i la televisió.")}</p>
                             <div className="flex items-center gap-2 text-navy font-black text-[10px] tracking-widest uppercase border-b-2 border-navy/20 pb-1 group-hover:border-navy transition-all">
-                                Ver todo <ArrowRight className="w-3 h-3" />
+                                {t("Ver todo", "Veure-ho tot")} <ArrowRight className="w-3 h-3" />
                             </div>
                         </div>
                     </motion.div>

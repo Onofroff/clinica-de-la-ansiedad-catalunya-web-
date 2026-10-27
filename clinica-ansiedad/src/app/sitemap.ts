@@ -31,7 +31,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Solo se listan en /ca las páginas con texto realmente traducido al catalán.
     // Las demás /ca/... canonizan a /es (ver buildMetadata) y no deben ir aquí.
-    const CATALAN_PAGES = new Set(['', '/ansiedad', '/terapia-online', '/psicologo-maresme', '/taller-gestion-estres-empresas']);
+    const CATALAN_PAGES = new Set([
+        '', '/ansiedad', '/servicios', '/crisis-de-panico', '/depresion', '/celos', '/ludopatia',
+        '/enfoque', '/terapia-online', '/taller-gestion-estres-empresas', '/psicologo-maresme',
+        '/servicios/terapia-individual', '/servicios/terapia-de-pareja', '/servicios/dimension-familiar',
+        '/sobre-mi', '/blog', '/politica-de-cookies',
+    ]);
 
     // Páginas estáticas en ambos idiomas: /es/... y /ca/...
     const localizedPages = LOCALES.flatMap((locale) =>

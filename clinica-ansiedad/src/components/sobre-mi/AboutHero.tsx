@@ -1,9 +1,12 @@
-'use client';
+"use client";
+import { useLocale } from "next-intl";
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function AboutHero() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
     return (
         <section className="relative pt-32 pb-24 overflow-hidden bg-cream">
             <div className="absolute inset-0 z-0 opacity-[0.02] pointer-events-none"
@@ -18,18 +21,18 @@ export default function AboutHero() {
                         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     >
                         <span className="text-gold font-bold text-[10px] tracking-[0.3em] uppercase mb-4 block">
-                            Fundador & Director
+                            {t("Fundador & Director", "Fundador i director")}
                         </span>
                         <h1 className="font-serif text-5xl md:text-7xl font-bold text-navy mb-8 tracking-tight">
-                            ¿Quién <span className="italic text-gold font-medium">soy?</span>
+                            {t("¿Quién", "Qui")} <span className="italic text-gold font-medium">{t("soy?", "soc?")}</span>
                         </h1>
                         <div className="w-20 h-1 bg-gold mb-10" />
 
                         <p className="text-xl md:text-2xl text-navy font-medium leading-relaxed mb-8 text-balance">
-                            Soy Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta en Canet de Mar (Maresme), con atención online, especialista en ansiedad y fundador de la Clínica de la Ansiedad Catalunya, con más de 30 años de experiencia clínica.
+                            {t("Soy Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta en Canet de Mar (Maresme), con atención online, especialista en ansiedad y fundador de la Clínica de la Ansiedad Catalunya, con más de 30 años de experiencia clínica.", "Soc Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta a Canet de Mar (Maresme), amb atenció en línia, especialista en ansietat i fundador de la Clínica de la Ansiedad Catalunya, amb més de 30 anys d'experiència clínica.")}
                         </p>
                         <p className="text-lg text-text/80 leading-relaxed max-w-2xl text-balance mb-8">
-                            Desde mi consulta en Canet de Mar (comarca del Maresme, Barcelona) y mediante terapia online, mi trabajo se centra en el abordaje clínico riguroso para descifrar las causas profundas del sufrimiento emocional. No buscamos solo paliar el síntoma, sino resolver el conflicto que lo genera. Atiendo pacientes de toda Catalunya y España.
+                            {t("Desde mi consulta en Canet de Mar (comarca del Maresme, Barcelona) y mediante terapia online, mi trabajo se centra en el abordaje clínico riguroso para descifrar las causas profundas del sufrimiento emocional. No buscamos solo paliar el síntoma, sino resolver el conflicto que lo genera. Atiendo pacientes de toda Catalunya y España.", "Des de la meva consulta de Canet de Mar (Maresme) i mitjançant la teràpia en línia, la meva feina se centra en un abordatge clínic rigorós per desxifrar les causes profundes del patiment emocional. No busquem només alleujar el símptoma, sinó resoldre el conflicte que el genera. Atenc pacients de tot Catalunya i d'Espanya.")}
                         </p>
                     </motion.div>
 

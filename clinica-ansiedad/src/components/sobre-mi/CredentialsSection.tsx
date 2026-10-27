@@ -1,30 +1,33 @@
-'use client';
+"use client";
+import { useLocale } from "next-intl";
 
 import { motion } from 'framer-motion';
 import { Award, Shield, CheckCircle2 } from 'lucide-react';
 
-const credentials = [
-    {
-        icon: <Award className="w-8 h-8 text-gold" />,
-        title: "Doctorado en Psicología Psicoanalítica",
-        org: "Centro Internacional de Psicología (2001)",
-        detail: "Especialización en estructuras clínicas complejas."
-    },
-    {
-        icon: <Shield className="w-8 h-8 text-gold" />,
-        title: "Psicoanalista Directo",
-        org: "The Direct Psychoanalytic Institute (EE.UU.)",
-        detail: "Certificación internacional en metodología de intervención directa."
-    },
-    {
-        icon: <CheckCircle2 className="w-8 h-8 text-gold" />,
-        title: "Fundador del Espacio EPDO",
-        org: "Espacio Psicoanálisis Directo Online (2022)",
-        detail: "Liderazgo en la digitalización de la clínica analítica de alta fidelidad."
-    }
-];
 
 export default function CredentialsSection() {
+  const locale = useLocale();
+  const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
+  const credentials = [
+      {
+          icon: <Award className="w-8 h-8 text-gold" />,
+          title: t("Doctorado en Psicología Psicoanalítica", "Doctorat en Psicologia Psicoanalítica"),
+          org: t("Centro Internacional de Psicología (2001)", "Centre Internacional de Psicologia (2001)"),
+          detail: t("Especialización en estructuras clínicas complejas.", "Especialització en estructures clíniques complexes.")
+      },
+      {
+          icon: <Shield className="w-8 h-8 text-gold" />,
+          title: t("Psicoanalista Directo", "Psicoanalista directe"),
+          org: t("The Direct Psychoanalytic Institute (EE.UU.)", "The Direct Psychoanalytic Institute (EUA)"),
+          detail: t("Certificación internacional en metodología de intervención directa.", "Certificació internacional en metodologia d'intervenció directa.")
+      },
+      {
+          icon: <CheckCircle2 className="w-8 h-8 text-gold" />,
+          title: t("Fundador del Espacio EPDO", "Fundador de l'Espai EPDO"),
+          org: t("Espacio Psicoanálisis Directo Online (2022)", "Espacio Psicoanálisis Directo Online (2022)"),
+          detail: t("Liderazgo en la digitalización de la clínica analítica de alta fidelidad.", "Lideratge en la digitalització de la clínica analítica d'alta fidelitat.")
+      }
+  ];
     return (
         <section className="py-24 bg-white relative overflow-hidden">
             {/* Subtle background glow */}
@@ -38,7 +41,7 @@ export default function CredentialsSection() {
                         viewport={{ once: true }}
                         className="text-gold font-black text-[10px] tracking-[0.3em] uppercase mb-4 block"
                     >
-                        Autorización & Rigor
+                        {t("Autorización & Rigor", "Acreditació i rigor")}
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -46,7 +49,7 @@ export default function CredentialsSection() {
                         viewport={{ once: true }}
                         className="font-serif text-4xl md:text-6xl text-navy font-bold mb-6"
                     >
-                        Licencias y <span className="text-gold italic font-light">Certificados</span>
+                        {t("Licencias y", "Títols i")} <span className="text-gold italic font-light">{t("Certificados", "certificats")}</span>
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -55,7 +58,7 @@ export default function CredentialsSection() {
                         className="w-20 h-1 bg-gold mx-auto mb-8"
                     />
                     <p className="text-lg text-navy/50 max-w-2xl mx-auto font-light leading-relaxed">
-                        Avales profesionales que fundamentan una práctica clínica de más de tres décadas.
+                        {t("Avales profesionales que fundamentan una práctica clínica de más de tres décadas.", "Avals professionals que fonamenten una pràctica clínica de més de tres dècades.")}
                     </p>
                 </div>
 

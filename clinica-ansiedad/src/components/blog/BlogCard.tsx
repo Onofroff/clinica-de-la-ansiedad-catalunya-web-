@@ -4,6 +4,7 @@ import { Link } from '@/i18n/routing';
 import { BlogPost } from '@/lib/blog-data';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLocale } from 'next-intl';
 import SafeImage from '@/components/ui/SafeImage';
 import { slugSegments } from '@/lib/blog-slug';
 
@@ -13,6 +14,7 @@ interface BlogCardProps {
 }
 
 export default function BlogCard({ post, index }: BlogCardProps) {
+    const ca = useLocale() === 'ca';
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +43,7 @@ export default function BlogCard({ post, index }: BlogCardProps) {
                 <div className="flex items-center gap-4 text-muted text-sm mb-4">
                     <div className="flex items-center gap-1.5">
                         <Calendar className="w-4 h-4" />
-                        <span>{new Date(post.date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                        <span>{new Date(post.date).toLocaleDateString(ca ? 'ca-ES' : 'es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
                         <Clock className="w-4 h-4" />
@@ -70,7 +72,7 @@ export default function BlogCard({ post, index }: BlogCardProps) {
                         href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(post.slug) } }}
                         className="text-gold font-bold text-sm uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all"
                     >
-                        Leer más <ArrowRight className="w-4 h-4" />
+                        {ca ? 'Llegir més' : 'Leer más'} <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
             </div>

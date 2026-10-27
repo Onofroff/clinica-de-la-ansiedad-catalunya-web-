@@ -22,10 +22,10 @@ export async function generateMetadata({
     description: 'Tratamiento psicoanalítico de los celos patológicos en Canet de Mar (Maresme), presencial y online. Los celos tienen un origen profundo —y tienen solución.',
     path: '/celos',
     keywords: [
-      'celos patológicos', 'tratamiento celos', 'celos en pareja', 'psicólogo celos',
+      'celos patológicos', 'tratamiento celos', 'celos en pareja', 'psicoterapeuta celos',
       'celos ansiedad', 'terapia celos Barcelona', 'celos retroactivos',
       'celos enfermizos tratamiento', 'celos patológicos tratamiento Barcelona',
-      'psicólogo celos Catalunya', 'terapia celos Maresme'
+      'psicoterapeuta celos Catalunya', 'terapia celos Maresme'
     ],
     lang: locale,
   });

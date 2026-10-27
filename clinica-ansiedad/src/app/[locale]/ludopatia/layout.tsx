@@ -22,10 +22,10 @@ export async function generateMetadata({
     description: 'Tratamiento psicoanalítico de la ludopatía y la adicción al juego en Canet de Mar (Maresme), presencial y online. Abordamos el origen, no solo el síntoma.',
     path: '/ludopatia',
     keywords: [
-      'ludopatía tratamiento', 'adicción al juego', 'psicólogo ludopatía',
+      'ludopatía tratamiento', 'adicción al juego', 'psicoterapeuta ludopatía',
       'terapia ludopatía Barcelona', 'adicción juego online', 'juego patológico',
       'tratamiento adicciones psicoanalítico', 'ludopatía tratamiento Barcelona',
-      'psicólogo ludopatía Catalunya', 'adicción juego Maresme'
+      'psicoterapeuta ludopatía Catalunya', 'adicción juego Maresme'
     ],
     lang: locale,
   });
