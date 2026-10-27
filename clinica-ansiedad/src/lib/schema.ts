@@ -51,14 +51,11 @@ export const medicalClinicSchema = {
             "Terapia individual",
             "Análisis personal"
         ],
-        "hasCredential": {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Licenciado en Psicología",
-            "name": "Licencia profesional de Psicología Clínica",
-            "issuingOrganization": {
-                "@type": "CollegeOrUniversity",
-                "name": "Universitat de Barcelona"
-            }
+        // Sin licenciatura universitaria: no la tiene. Colegiado en el COPC (nº 3852).
+        "memberOf": {
+            "@type": "Organization",
+            "name": "Col·legi Oficial de Psicòlegs de Catalunya (COPC)",
+            "identifier": "3852"
         },
         "yearsOfExperience": YEARS_OF_EXPERIENCE,
         "url": "https://www.clinicadelansiedad.com"
@@ -89,14 +86,8 @@ export const medicalClinicSchema = {
             "opens": "09:00",
             "closes": "20:00",
             "description": "Horario de atención presencial y online"
-        },
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday", "Sunday"],
-            "opens": "10:00",
-            "closes": "14:00",
-            "description": "Consultas previa cita"
         }
+        // Sábados y domingos cerrado.
     ],
     "image": "https://www.clinicadelansiedad.com/images/centreclinicansiedad.jpeg",
     "logo": "https://www.clinicadelansiedad.com/logo.png",
@@ -271,29 +262,11 @@ export const personSchema = {
         "Estrés crónico",
         "Fobias"
     ],
-    "hasCredential": [
-        {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Licenciado",
-            "name": "Licenciado en Psicología Clínica",
-            "issuingOrganization": {
-                "@type": "CollegeOrUniversity",
-                "name": "Universitat de Barcelona"
-            }
-        },
-        {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Especialista",
-            "name": "Especialista en Psicoterapia Psicoanalítica",
-            "issuingOrganization": {
-                "@type": "ProfessionalService",
-                "name": "Colegio Profesional de Psicólogos de Catalunya (COPC)"
-            }
-        }
-    ],
+    // Sin "hasCredential": la licenciatura en Psicología por la UB no es real.
     "memberOf": {
-        "@type": "ProfessionalService",
-        "name": "Colegio Profesional de Psicólogos de Catalunya (COPC)"
+        "@type": "Organization",
+        "name": "Col·legi Oficial de Psicòlegs de Catalunya (COPC)",
+        "identifier": "3852"
     },
     "contactPoint": {
         "@type": "ContactPoint",

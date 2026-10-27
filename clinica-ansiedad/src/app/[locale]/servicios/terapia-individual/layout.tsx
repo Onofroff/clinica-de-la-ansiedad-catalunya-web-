@@ -12,7 +12,7 @@ export async function generateMetadata({
     path: '/servicios/terapia-individual',
     keywords: [
       'terapia individual', 'consulta psicologica', 'primera visita',
-      'síntomas de ansiedad', 'como se cura la ansiedad', 'psicólogo ansiedad',
+      'síntomas de ansiedad', 'como se cura la ansiedad', 'psicoterapeuta ansiedad',
       'terapia ansiedad', 'depresión', 'hipocondria', 'TOC',
       'terapia individual Barcelona', 'psicólogo Barcelona', 'consulta psicológica Catalunya',
       'psicólogo Maresme', 'terapia individual Canet de Mar'

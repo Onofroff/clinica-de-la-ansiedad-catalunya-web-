@@ -24,7 +24,7 @@ export default function TerapiaIndividualHero() {
       stats={[
         { value: "30+", label: "Años de experiencia" },
         { value: "+1K", label: "Pacientes tratados" },
-        { value: "80%", label: "Alta en 6 meses" },
+        { value: "5,0★", label: "Valoración en Google" },
       ]}
     />
   );

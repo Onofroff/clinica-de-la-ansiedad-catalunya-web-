@@ -1,9 +1,26 @@
 "use client";
 import { AlertCircle } from "lucide-react";
+import { useLocale } from "next-intl";
 import EspecialidadHero from "./EspecialidadHero";
 
 export default function LudopatiaHero() {
-  return (
+  const ca = useLocale() === "ca";
+  return ca ? (
+    <EspecialidadHero
+      chip="Ludopatia · Tractament a Canet de Mar i en línia"
+      chipIcon={<AlertCircle className="w-3.5 h-3.5" />}
+      title="Ludopatia a Canet de Mar (Maresme):"
+      titleAccent="una addicció que ve de dins."
+      description="La ludopatia és una addicció vinculada al joc. Però una addicció no existeix sense un subjecte previ. El joc no és el problema real: és la solució que va trobar el teu psiquisme per gestionar alguna cosa que no podia afrontar d'una altra manera. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia."
+      ctaText="Reservar cita · 75 €"
+      quote="Una addicció no existeix sense un subjecte previ. Tractar la ludopatia vol dir entendre quin conflicte psíquic va trobar en el joc la seva única sortida possible."
+      stats={[
+        { value: "30+", label: "Anys tractant addiccions" },
+        { value: "+1K", label: "Pacients tractats" },
+        { value: "5,0★", label: "Valoració a Google" },
+      ]}
+    />
+  ) : (
     <EspecialidadHero
       chip="Ludopatía · Tratamiento en Canet de Mar & Online"
       chipIcon={<AlertCircle className="w-3.5 h-3.5" />}
@@ -15,7 +32,7 @@ export default function LudopatiaHero() {
       stats={[
         { value: "30+", label: "Años tratando adicciones" },
         { value: "+1K", label: "Pacientes tratados" },
-        { value: "80%", label: "Alta en 6 meses" },
+        { value: "5,0★", label: "Valoración en Google" },
       ]}
     />
   );

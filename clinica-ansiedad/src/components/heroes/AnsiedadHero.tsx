@@ -18,7 +18,7 @@ export default function AnsiedadHero() {
       stats={[
         { value: "30+", label: "Anys d'experiència" },
         { value: "+1K", label: "Pacients tractats" },
-        { value: "80%", label: "Alta en 6 mesos" },
+        { value: "5,0★", label: "Valoració a Google" },
       ]}
     />
   ) : (
@@ -33,7 +33,7 @@ export default function AnsiedadHero() {
       stats={[
         { value: "30+", label: "Años de experiencia" },
         { value: "+1K", label: "Pacientes tratados" },
-        { value: "80%", label: "Alta en 6 meses" },
+        { value: "5,0★", label: "Valoración en Google" },
       ]}
     />
   );

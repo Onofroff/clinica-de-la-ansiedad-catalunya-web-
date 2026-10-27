@@ -61,12 +61,12 @@ const CONTENT = {
     benefits: [
       { title: "Autonomía Real", desc: "Dejarás de depender de técnicas de evitación. Desarrollarás una fortaleza interna que no necesita muletas." },
       { title: "Tu Cuerpo en Paz", desc: "Las palpitaciones, la hiperventilación, el insomnio —se desvanecen cuando se resuelve lo que los origina." },
-      { title: "Sin Recaídas", desc: "Al trabajar sobre la estructura, los cambios son permanentes. No se trata de controlar la ansiedad, sino de que deje de producirse." },
+      { title: "Cambios Duraderos", desc: "Al trabajar sobre la estructura y no solo sobre el síntoma, el objetivo no es controlar la ansiedad, sino que deje de ser necesaria." },
     ],
     stats: [
       { stat: "30+", label: "Años de experiencia" },
       { stat: "1000+", label: "Pacientes tratados" },
-      { stat: "80%", label: "Alta en menos de 6 meses" },
+      { stat: "5,0★", label: "Valoración en Google" },
     ],
     understandChip: "Comprender",
     understandTitle: "¿Qué es realmente la ansiedad?",
@@ -170,12 +170,12 @@ const CONTENT = {
     benefits: [
       { title: "Autonomia real", desc: "Deixaràs de dependre de tècniques d'evitació. Desenvoluparàs una fortalesa interna que no necessita crosses." },
       { title: "El teu cos en pau", desc: "Les palpitacions, la hiperventilació, l'insomni... s'esvaeixen quan es resol el que els origina." },
-      { title: "Sense recaigudes", desc: "Com que es treballa sobre l'estructura, els canvis són permanents. No es tracta de controlar l'ansietat, sinó que deixi de produir-se." },
+      { title: "Canvis duradors", desc: "Com que es treballa sobre l'estructura i no només sobre el símptoma, l'objectiu no és controlar l'ansietat, sinó que deixi de ser necessària." },
     ],
     stats: [
       { stat: "30+", label: "Anys d'experiència" },
       { stat: "1000+", label: "Pacients tractats" },
-      { stat: "80%", label: "Alta en menys de 6 mesos" },
+      { stat: "5,0★", label: "Valoració a Google" },
     ],
     understandChip: "Comprendre",
     understandTitle: "Què és realment l'ansietat?",

@@ -21,13 +21,13 @@ export async function generateMetadata({
       path: '/sobre-mi',
       keywords: [
           'Joan Ramon Soto',
-          'psicólogo ansiedad',
+          'psicoanalista ansiedad',
           'psicólogo Barcelona',
           'consulta psicologica',
           'psicólogo especialista ansiedad',
           'psicoterapia psicoanalítica',
           'clínica de la ansiedad director',
-          'psicólogo ansiedad Barcelona', 'psicólogo Canet de Mar',
+          'psicoterapeuta ansiedad Barcelona', 'psicoterapeuta Canet de Mar',
           'psicólogo Maresme', 'psicoterapeuta Catalunya'
       ],
       image: 'https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp',

@@ -1,9 +1,26 @@
 "use client";
 import { Heart } from "lucide-react";
+import { useLocale } from "next-intl";
 import EspecialidadHero from "./EspecialidadHero";
 
 export default function CelosHero() {
-  return (
+  const ca = useLocale() === "ca";
+  return ca ? (
+    <EspecialidadHero
+      chip="Especialistes en gelosia · Canet de Mar i en línia"
+      chipIcon={<Heart className="w-3.5 h-3.5" />}
+      title="Gelosia patològica a Canet de Mar:"
+      titleAccent="la que no pots controlar."
+      description="La gelosia és un estat afectiu que tots hem experimentat. Quan es torna patològica, destrueix vincles i genera un patiment continu. Té un origen, i té tractament. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia."
+      ctaText="Reservar cita · 75 €"
+      quote="La gelosia no és una feblesa moral. És l'expressió d'una ferida que necessita ser compresa."
+      stats={[
+        { value: "30+", label: "Anys d'experiència" },
+        { value: "+1K", label: "Pacients tractats" },
+        { value: "5,0★", label: "Valoració a Google" },
+      ]}
+    />
+  ) : (
     <EspecialidadHero
       chip="Especialistas en Celos · Canet de Mar & Online"
       chipIcon={<Heart className="w-3.5 h-3.5" />}
@@ -15,7 +32,7 @@ export default function CelosHero() {
       stats={[
         { value: "30+", label: "Años de experiencia" },
         { value: "+1K", label: "Pacientes tratados" },
-        { value: "80%", label: "Alta en 6 meses" },
+        { value: "5,0★", label: "Valoración en Google" },
       ]}
     />
   );

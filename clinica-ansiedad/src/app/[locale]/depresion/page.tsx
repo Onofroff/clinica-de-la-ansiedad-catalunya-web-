@@ -74,8 +74,8 @@ const benefits = [
   },
   {
     Icon: ShieldCheck,
-    title: "Sin Recaídas",
-    desc: "Al trabajar desde el origen, se construye una estructura psíquica sólida que previene futuros episodios.",
+    title: "Cambios Duraderos",
+    desc: "Trabajar desde el origen busca construir una base psíquica más sólida frente a futuros episodios.",
   },
 ];
 

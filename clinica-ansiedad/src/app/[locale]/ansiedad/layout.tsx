@@ -14,7 +14,7 @@ export async function generateMetadata({
       keywords: [
         "símptomes d'ansietat", 'ansietat símptomes', "què és l'ansietat",
         "causes de l'ansietat", 'ansietat generalitzada', "crisi d'ansietat",
-        'palpitacions per ansietat', 'psicòleg ansietat', 'psicòleg ansietat Maresme',
+        'palpitacions per ansietat', 'psicoanalista ansietat', 'psicoterapeuta ansietat Maresme',
         'tractament ansietat Barcelona', "com es cura l'ansietat",
         'teràpia ansietat Catalunya', 'teràpia ansietat Girona', 'teràpia ansietat Lleida',
         'teràpia ansietat Tarragona', 'psicoanalista Canet de Mar'
@@ -37,10 +37,10 @@ export async function generateMetadata({
     keywords: [
       'sintomas de ansiedad', 'ansiedad sintomas', 'que es ansiedad',
       'causas de la ansiedad', 'ansiedad generalizada', 'crisis de ansiedad sintomas',
-      'palpitaciones por ansiedad', 'hiperventilacion', 'psicólogo ansiedad',
+      'palpitaciones por ansiedad', 'hiperventilacion', 'psicoanalista ansiedad',
       'tratamiento ansiedad Barcelona', 'como se cura la ansiedad',
-      'psicólogo ansiedad Barcelona', 'clínica ansiedad Barcelona',
-      'ansiedad generalizada tratamiento Catalunya', 'psicólogo ansiedad Maresme',
+      'psicoterapeuta ansiedad', 'clínica ansiedad Barcelona',
+      'ansiedad generalizada tratamiento Catalunya', 'psicoterapeuta ansiedad Maresme',
       'terapia ansiedad Girona', 'terapia ansiedad Lleida', 'terapia ansiedad Tarragona'
     ],
     lang: locale,

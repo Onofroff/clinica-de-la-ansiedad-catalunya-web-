@@ -15,7 +15,7 @@ export async function generateMetadata({
       path: '/terapia-online',
       keywords: [
         'teràpia en línia ansietat', 'teràpia online ansietat', 'psicoanalista en línia',
-        'psicòleg online Catalunya', 'teràpia online Barcelona', 'teràpia online Girona',
+        'psicoterapeuta en línia Catalunya', 'teràpia online Barcelona', 'teràpia online Girona',
         'teràpia online Lleida', 'teràpia online Tarragona', 'teràpia online Maresme',
         'teràpia en català', 'crisis de pànic', 'depressió'
       ],
