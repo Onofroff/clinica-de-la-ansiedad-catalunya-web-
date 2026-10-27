@@ -15,10 +15,31 @@ import ZonasSection from '@/components/sections/ZonasSection';
 import InlineBookingCTA from '@/components/sections/InlineBookingCTA';
 import Footer from '@/components/layout/Footer';
 import StickyBookingButton from '@/components/servicios/StickyBookingButton';
+import { getTranslations } from 'next-intl/server';
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+
+    // FAQPage con exactamente las preguntas que se ven en FAQSection, en el idioma de la página.
+    const t = await getTranslations({ locale, namespace: 'faq' });
+    const faqs = t.raw('list') as Array<{ title: string; content: string }>;
+    const faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        inLanguage: locale === 'ca' ? 'ca' : 'es',
+        mainEntity: faqs.map((f) => ({
+            '@type': 'Question',
+            name: f.title,
+            acceptedAnswer: { '@type': 'Answer', text: f.content },
+        })),
+    };
+
     return (
         <div className="min-h-screen bg-cream selection:bg-gold/20 selection:text-navy">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
+            />
             <Navbar />
             <main>
                 <Hero />

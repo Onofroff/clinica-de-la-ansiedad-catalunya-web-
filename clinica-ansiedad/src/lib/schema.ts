@@ -4,6 +4,9 @@
  * Última actualización: 2026-03-07
  */
 
+// Años de práctica desde 1993, calculados para que no se queden desfasados.
+const YEARS_OF_EXPERIENCE = new Date().getFullYear() - 1993;
+
 // ============================================
 // 1. ORGANIZACIÓN - Datos de la clínica
 // ============================================
@@ -57,7 +60,7 @@ export const medicalClinicSchema = {
                 "name": "Universitat de Barcelona"
             }
         },
-        "yearsOfExperience": 31,
+        "yearsOfExperience": YEARS_OF_EXPERIENCE,
         "url": "https://www.clinicadelansiedad.com"
     },
     "address": {
@@ -130,7 +133,7 @@ export const medicalClinicSchema = {
             "@id": "https://www.clinicadelansiedad.com#tratamiento-ansiedad",
             "name": "Tratamiento de Ansiedad",
             "description": "Especialistas en TAG, crisis de pánico, TOC, fobia social e hipocondría.",
-            "serviceType": "Psychiatry"
+            "serviceType": "Psychotherapy"
         }
     ],
     // Área de servicio presencial: la comarca del Maresme, con sede en Canet de Mar.
@@ -172,7 +175,8 @@ export const medicalClinicSchema = {
             "name": "España"
         }
     ],
-    "medicalSpecialty": ["Psychiatry", "Psychotherapy", "Clinical Psychology"],
+    // Sin "Psychiatry": la consulta no es psiquiátrica (no prescribe medicación).
+    "medicalSpecialty": ["Psychotherapy"],
     "knowsAbout": [
         "Ansiedad generalizada",
         "Crisis de pánico",
@@ -223,7 +227,7 @@ export const personSchema = {
     "givenName": "Joan Ramon",
     "familyName": "Soto",
     "jobTitle": "Psicoanalista / Psicoterapeuta",
-    "description": "Especialista en psicoterapia psicoanalítica con 31 años de experiencia tratando ansiedad, depresión y conflictos emocionales profundos.",
+    "description": `Especialista en psicoterapia psicoanalítica con ${YEARS_OF_EXPERIENCE} años de experiencia tratando ansiedad, depresión y conflictos emocionales profundos.`,
     "url": "https://www.clinicadelansiedad.com",
     "image": "https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp",
     "worksFor": {

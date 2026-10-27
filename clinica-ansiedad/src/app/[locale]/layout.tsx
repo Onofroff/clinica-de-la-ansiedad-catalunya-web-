@@ -3,7 +3,7 @@ import { Figtree, Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import Script from 'next/script';
-import { medicalClinicSchema, faqSchema, personSchema, organizationSchema, websiteSchema } from '@/lib/schema';
+import { medicalClinicSchema, personSchema, organizationSchema, websiteSchema } from '@/lib/schema';
 import { NextIntlClientProvider } from 'next-intl';
 import CookieConsent from '@/components/CookieConsent';
 import AnalyticsEvents from '@/components/AnalyticsEvents';
@@ -136,7 +136,9 @@ export default async function RootLayout({
                     cualquier rastreador que no ejecute JS (Bing, LLMs, previsualizaciones)
                     no veía nada del marcado. */}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalClinicSchema) }} />
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+                {/* El FAQPage ya no va aquí: se generaba en castellano en todas las
+                    páginas aunque las preguntas solo se ven en la portada. Ahora lo
+                    emite la portada, en su idioma (src/app/[locale]/page.tsx). */}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />

@@ -29,9 +29,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         { path: '/politica-de-cookies', freq: 'yearly', priority: 0.3 },
     ];
 
+    // Solo se listan en /ca las páginas con texto realmente traducido al catalán.
+    // Las demás /ca/... canonizan a /es (ver buildMetadata) y no deben ir aquí.
+    const CATALAN_PAGES = new Set(['', '/ansiedad', '/terapia-online', '/psicologo-maresme', '/taller-gestion-estres-empresas']);
+
     // Páginas estáticas en ambos idiomas: /es/... y /ca/...
     const localizedPages = LOCALES.flatMap((locale) =>
-        staticPages.map(({ path, freq, priority }) => ({
+        staticPages
+        .filter(({ path }) => locale === 'es' || CATALAN_PAGES.has(path))
+        .map(({ path, freq, priority }) => ({
             path: `/${locale}${path}`,
             freq,
             // El catalán ligeramente por debajo del castellano
@@ -57,12 +63,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // Artículos propios (src/content/blog), con su fecha real de revisión
-    const localPosts = LOCAL_POSTS.map((p) => ({
-        path: `/es/blog/${p.slug}`,
-        freq: 'monthly',
-        priority: 0.85,
-        lastModified: p.updated || p.date,
-    }));
+    const localPosts = LOCAL_POSTS.flatMap((p) => [
+        { path: `/es/blog/${p.slug}`, freq: 'monthly', priority: 0.85, lastModified: p.updated || p.date },
+        ...(p.ca ? [{ path: `/ca/blog/${p.slug}`, freq: 'monthly', priority: 0.8, lastModified: p.updated || p.date }] : []),
+    ]);
     const localSlugs = new Set(LOCAL_POSTS.map((p) => `/es/blog/${p.slug}`));
 
     const allPages: { path: string; freq: string; priority: number; lastModified?: string }[] = [

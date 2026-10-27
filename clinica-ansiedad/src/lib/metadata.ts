@@ -9,6 +9,13 @@ export interface MetadataProps {
     publishedTime?: string;
     modifiedTime?: string;
     lang?: string;
+    /**
+     * true solo si la página tiene texto realmente traducido al catalán.
+     * Si es false, /ca/... muestra el mismo texto en castellano: su canonical
+     * apunta a /es/... y no se anuncia hreflang "ca", para que Google no la trate
+     * como un duplicado ni como una página catalana que no lo es.
+     */
+    catalan?: boolean;
 }
 
 // Host canónico: www. El servidor redirige sin-www → www con un 308,
@@ -25,13 +32,15 @@ export function buildMetadata({
     type = 'website',
     publishedTime,
     modifiedTime,
-    lang = 'es'
+    lang = 'es',
+    catalan = false,
 }: MetadataProps) {
     const locale = lang === 'ca' ? 'ca' : 'es';
+    const canonicalLocale = catalan ? locale : 'es';
     const ogConfig: any = {
         title,
         description,
-        url: `${BASE}/${locale}${path}`,
+        url: `${BASE}/${canonicalLocale}${path}`,
         siteName: 'Clínica de la Ansiedad Catalunya',
         locale: lang === 'ca' ? 'ca_ES' : 'es_ES',
         type,
@@ -57,13 +66,19 @@ export function buildMetadata({
         keywords: keywords.length > 0 ? keywords : ['clínica ansiedad', 'psicólogo barcelona', 'psicoterapia'],
         robots: 'index, follow',
         alternates: {
-            // cada página canoniza a SÍ MISMA: www + prefijo de su idioma
-            canonical: `${BASE}/${locale}${path}`,
-            languages: {
-                'es': `${BASE}/es${path}`,
-                'ca': `${BASE}/ca${path}`,
-                'x-default': `${BASE}/es${path}`
-            }
+            // Página traducida: cada idioma canoniza a sí mismo y se anuncian ambos.
+            // Página sin traducir: las dos URLs canonizan a /es.
+            canonical: `${BASE}/${canonicalLocale}${path}`,
+            languages: catalan
+                ? {
+                    'es': `${BASE}/es${path}`,
+                    'ca': `${BASE}/ca${path}`,
+                    'x-default': `${BASE}/es${path}`
+                }
+                : {
+                    'es': `${BASE}/es${path}`,
+                    'x-default': `${BASE}/es${path}`
+                }
         },
         openGraph: ogConfig,
         twitter: {

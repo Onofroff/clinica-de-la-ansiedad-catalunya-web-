@@ -63,6 +63,7 @@ export async function generateMetadata({ params }: PageProps) {
             lang: locale,
             publishedTime: local.date,
             modifiedTime: local.updated || local.date,
+            catalan: Boolean(LOCAL_POSTS.find((p) => p.slug === local.slug)?.ca),
         });
     }
 

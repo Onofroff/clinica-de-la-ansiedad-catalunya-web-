@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Button, Chip } from "@heroui/react";
 import { ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { bookingUrl } from "@/lib/constants";
 
@@ -45,6 +46,7 @@ export default function EspecialidadHero({
   // Atribución por página: cada hero de especialidad manda su propio utm_content
   // (hero-ansiedad, hero-depresion...) en vez del genérico BOOKING_URL.
   const pathname = usePathname();
+  const ca = useLocale() === "ca";
   const slug = (pathname || "").split("/").filter(Boolean).pop() || "especialidad";
 
   return (
@@ -123,7 +125,7 @@ export default function EspecialidadHero({
               variant="bordered"
               className="border-navy/15 text-navy hover:bg-navy/5 font-bold px-8 py-7 rounded-xl text-xs uppercase tracking-widest cursor-pointer"
             >
-              Nuestro Método
+              {ca ? "El nostre mètode" : "Nuestro Método"}
             </Button>
           </motion.div>
         </div>

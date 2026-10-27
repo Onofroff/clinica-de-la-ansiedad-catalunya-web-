@@ -6,7 +6,25 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (locale === 'ca') {
+    return buildMetadata({
+      title: "Ansietat a Canet de Mar (Maresme) | Clínica de l'Ansietat",
+      description: "Tractament de l'ansietat des de l'arrel amb un psicoanalista especialista. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia per a tot Catalunya.",
+      path: '/ansiedad',
+      keywords: [
+        "símptomes d'ansietat", 'ansietat símptomes', "què és l'ansietat",
+        "causes de l'ansietat", 'ansietat generalitzada', "crisi d'ansietat",
+        'palpitacions per ansietat', 'psicòleg ansietat', 'psicòleg ansietat Maresme',
+        'tractament ansietat Barcelona', "com es cura l'ansietat",
+        'teràpia ansietat Catalunya', 'teràpia ansietat Girona', 'teràpia ansietat Lleida',
+        'teràpia ansietat Tarragona', 'psicoanalista Canet de Mar'
+      ],
+      lang: locale,
+      catalan: true,
+    });
+  }
   return buildMetadata({
+    catalan: true,
     // Modificador local delante: la consulta está en Canet de Mar (Maresme),
     // no en la ciudad de Barcelona. Barcelona queda solo como provincia y
     // como origen de parte de los pacientes.
