@@ -31,7 +31,7 @@ export const CONTENTFUL_CA: Record<string, ContentfulTranslation> = {
     'que-es-la-ansiedad-y-por-que-se-produce': {
         title: "Què és l'ansietat i per què es produeix?",
         description:
-            "Què és l'ansietat i quina és la seva causa real? Psicoanalista a Barcelona i en línia. Entén els símptomes, el conflicte intern i la solució d'arrel.",
+            "Què és l'ansietat i quina és la seva causa real? Psicoanalista a Canet de Mar (Maresme) i en línia. Entén els símptomes, el conflicte intern i la solució d'arrel.",
         body: `
 En la meva experiència clínica, veig constantment que moltes persones arriben dient "tinc ansietat" sense comprendre realment què els passa. Han provat tècniques ràpides, consells a les xarxes o intents de controlar la ment, però continuen amb taquicàrdia, anticipació constant o una sensació de perill sense causa clara. El més freqüent és que confonguin el símptoma amb l'origen.
 
@@ -111,9 +111,9 @@ Quan es comprèn:
 
 La solució real no sempre consisteix a lluitar contra l'ansietat, sinó a entendre per què va aparèixer.
 
-## Psicoanalista a Barcelona i en línia
+## Psicoanalista a Canet de Mar i en línia
 
-Treballo amb persones que pateixen ansietat, crisis de pànic, pensaments repetitius i bloqueig emocional a Barcelona i també en format en línia, des d'una orientació centrada en la causa i no només en el símptoma.
+Treballo amb persones que pateixen ansietat, crisis de pànic, pensaments repetitius i bloqueig emocional a la consulta de Canet de Mar (Maresme) i també en format en línia, des d'una orientació centrada en la causa i no només en el símptoma.
 
 ## Primera visita
 
@@ -128,7 +128,7 @@ Si l'ansietat insisteix una vegada i una altra, està avisant d'un perill extern
     'terapia-familiar': {
         title: 'Teràpia familiar: quan el problema afecta tota la família',
         description:
-            "Quan anar a teràpia familiar? Psicoanalista a Barcelona i en línia. Entén els conflictes, l'ansietat i les dinàmiques familiars des de la causa arrel.",
+            "Quan anar a teràpia familiar? Psicoanalista a Canet de Mar (Maresme) i en línia. Entén els conflictes, l'ansietat i les dinàmiques familiars des de la causa arrel.",
         body: `
 En la meva experiència clínica, veig constantment que moltes famílies consulten pensant que "el problema" és en una sola persona: el fill amb ansietat, la parella conflictiva, l'adolescent rebel o qui somatitza. Tanmateix, en escoltar la història completa, apareix una altra realitat: el símptoma individual moltes vegades expressa un malestar que travessa tot el sistema familiar.
 
@@ -199,9 +199,9 @@ Es treballa observant:
 
 L'objectiu no és imposar normes externes, sinó permetre moviments nous allà on tot semblava fix.
 
-## Teràpia familiar a Barcelona i en línia
+## Teràpia familiar a Canet de Mar i en línia
 
-Ofereixo teràpia familiar a **Barcelona** i en format **en línia** per a famílies que travessen conflictes persistents, ansietat compartida o situacions que afecten l'equilibri de la llar.
+Ofereixo teràpia familiar a **Canet de Mar (Maresme)** i en format **en línia** per a famílies que travessen conflictes persistents, ansietat compartida o situacions que afecten l'equilibri de la llar.
 
 ## Primera visita
 
@@ -216,7 +216,7 @@ Si tota la família gira al voltant del símptoma d'un, el problema és en aquel
     'por-que-soledad-salud-mental-no-se-resuelve-relaciones': {
         title: 'Soledat i salut mental: l\'epidèmia silenciosa del segle XXI',
         description:
-            "Sents soledat fins i tot acompanyat? Un psicoanalista a Barcelona analitza la causa arrel de l'aïllament emocional més enllà del símptoma. Entén què passa.",
+            "Sents soledat fins i tot acompanyat? Un psicoanalista del Maresme analitza la causa arrel de l'aïllament emocional més enllà del símptoma. Entén què passa.",
         body: `
 En la meva experiència, veig constantment que pacients que aparentment "ho tenen tot" —feina estable, vida social activa, fins i tot parella— descriuen una sensació persistent de buit difícil d'explicar. Recordo especialment un cas que deia: "No estic sol, però em sento completament desconnectat". Aquest tipus de malestar no se sol identificar immediatament com un problema d'ansietat o de salut mental, però és precisament aquí on comença a prendre forma.
 
@@ -380,7 +380,7 @@ No espereu que la distància sigui insalvable. De vegades, unes poques sessions 
     'depresion-sintomas': {
         title: 'Què és la depressió? Símptomes, tipus i diferència amb la tristesa',
         description:
-            "Què és el trastorn d'ansietat generalitzada i quina és la seva causa real? Psicoanalista a Barcelona i en línia. Entén els símptomes, l'arrel i el tractament.",
+            "Què és el trastorn d'ansietat generalitzada i quina és la seva causa real? Psicoanalista a Canet de Mar (Maresme) i en línia. Entén els símptomes, l'arrel i el tractament.",
         body: `
 En la meva experiència clínica, veig constantment que moltes persones arriben a la consulta després d'anys convivint amb una preocupació constant que consideren "normal". Ho revisen tot dues vegades, anticipen problemes que encara no existeixen i senten un esgotament mental diari. Sovint han llegit sobre l'ansietat, han provat tècniques ràpides o medicació puntual, però continuen atrapades en el mateix circuit intern.
 
@@ -479,9 +479,9 @@ L'enfocament psicoanalític busca comprendre:
 
 Quan s'interpreta la lògica interna del símptoma, l'ansietat deixa de ser un enemic misteriós i comença a perdre força.
 
-## Psicoanalista a Barcelona i en línia
+## Psicoanalista a Canet de Mar i en línia
 
-Treballo amb persones que pateixen ansietat persistent, pensaments repetitius i esgotament mental, tant a **Barcelona** com en format **en línia**, des d'una orientació clínica centrada en la causa i no només en el símptoma.
+Treballo amb persones que pateixen ansietat persistent, pensaments repetitius i esgotament mental, tant a **Canet de Mar (Maresme)** com en format **en línia**, des d'una orientació clínica centrada en la causa i no només en el símptoma.
 
 ## La pregunta real és…
 
