@@ -99,10 +99,12 @@ export default function Navbar({ theme = "light" }: { theme?: "light" | "dark" }
             </NavbarContent>
 
             <NavbarBrand as={Link} href="/" className="flex items-center gap-0 flex-1 sm:flex-none">
+                {/* Logo horizontal (cabezas + texto) para que se lea a la altura de la barra.
+                    Sin filtros CSS: la senyera roja debe conservar su color. */}
                 <img
-                    src="/images/logo.png"
-                    alt="Clínica de la Ansiedad Maresme - Canet de Mar"
-                    className={`h-9 sm:h-10 md:h-12 w-auto object-contain ${onDark ? "brightness-0 invert" : "brightness-0"}`}
+                    src={onDark ? "/images/logo-horizontal-white.png" : "/images/logo-horizontal.png"}
+                    alt="Clínica de la Ansiedad Catalunya"
+                    className="h-9 sm:h-10 md:h-12 w-auto object-contain"
                 />
             </NavbarBrand>
 
