@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import LegalPage, { legalMetadata, type LegalSection } from '@/components/LegalPage';
 
 // Aviso legal (art. 10 LSSI-CE).
-// PENDIENTE: añadir el NIF del titular en la sección "Titular" cuando lo facilite.
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
@@ -26,6 +25,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Titular de la web',
                 items: [
                     'Titular: Joan Ramon Soto Cifuentes, que ejerce bajo el nombre comercial «Clínica de la Ansiedad Catalunya».',
+                    'NIF: 77606911N',
                     'Domicilio: Ronda Doctor Anglès 74, 08360 Canet de Mar (Barcelona).',
                     'Correo electrónico: contacto@clinicadelansiedad.com',
                     'Teléfono: 613 91 60 79',
@@ -86,6 +86,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Titular del web',
                 items: [
                     "Titular: Joan Ramon Soto Cifuentes, que exerceix amb el nom comercial «Clínica de la Ansiedad Catalunya».",
+                    'NIF: 77606911N',
                     'Domicili: Ronda Doctor Anglès 74, 08360 Canet de Mar (Barcelona).',
                     'Correu electrònic: contacto@clinicadelansiedad.com',
                     'Telèfon: 613 91 60 79',
