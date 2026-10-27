@@ -3,7 +3,6 @@ import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { Button } from "@heroui/react";
-import { useAnimatedNumber } from "../../hooks/useAnimatedNumber";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
@@ -13,7 +12,9 @@ export default function TestimonialsSection() {
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
-    const reviewCount = useAnimatedNumber(GOOGLE_REVIEWS.count, 2, isInView);
+    // Número fijo, sin animación: el contador animado empezaba en 0 y en el HTML
+    // que leen Google y las IA ponía «0 reseñas en Google».
+    const reviewCount = GOOGLE_REVIEWS.count;
 
     return (
         <section className="bg-navy-light py-24 px-6 border-t border-white/5" ref={ref}>
