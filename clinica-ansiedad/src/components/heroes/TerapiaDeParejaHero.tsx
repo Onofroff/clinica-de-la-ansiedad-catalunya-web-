@@ -8,8 +8,8 @@ export default function TerapiaDeParejaHero() {
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
   return (
     <ServicioHero
-      image="/images/centreclinicansiedad.jpeg"
-      imageAlt={t("Consulta de Terapia de Pareja en Canet de Mar (Maresme)", "Consulta de teràpia de parella a Canet de Mar (Maresme)")}
+      image="/images/clinica-ansiedad-catalunya-espacio.jpeg"
+      imageAlt={t("Espacio de calma (imagen ilustrativa)", "Espai de calma (imatge il·lustrativa)")}
       imagePosition="left"
       bg="white"
       chip={t("Resolución de Conflictos · Desde 1993", "Resolució de conflictes · Des de 1993")}

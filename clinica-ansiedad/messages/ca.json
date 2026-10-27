@@ -39,7 +39,8 @@
     "cta_note": "Et responem personalment. Sense pagar res per escriure.",
     "cta_method": "Veure el nostre mètode",
     "wa_message": "Hola, m'agradaria que m'expliquéssiu com funciona la primera sessió.",
-    "reviews_label": "{count} ressenyes a Google"
+    "reviews_label": "{count} ressenyes a Google",
+    "image_alt": "Espai de calma (imatge il·lustrativa)"
   },
   "footer": {
     "brand_claim": "Psicoteràpia psicoanalítica rigorosa per desarticular el patiment des de l'arrel.",

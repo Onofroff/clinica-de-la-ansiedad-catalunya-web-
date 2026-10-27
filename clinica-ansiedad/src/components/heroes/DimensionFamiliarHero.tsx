@@ -8,8 +8,8 @@ export default function DimensionFamiliarHero() {
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
   return (
     <ServicioHero
-      image="/images/centreclinicansiedad.jpeg"
-      imageAlt={t("Consulta de Terapia Familiar en Canet de Mar (Maresme)", "Consulta de teràpia familiar a Canet de Mar (Maresme)")}
+      image="/images/clinica-ansiedad-catalunya-espacio.jpeg"
+      imageAlt={t("Espacio de calma (imagen ilustrativa)", "Espai de calma (imatge il·lustrativa)")}
       imagePosition="right"
       bg="cream"
       chip={t("Intervención Sistémica · Desde 1993", "Intervenció sistèmica · Des de 1993")}

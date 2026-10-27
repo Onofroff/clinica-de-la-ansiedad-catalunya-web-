@@ -87,7 +87,7 @@ export const medicalClinicSchema = {
         }
         // Sábados y domingos cerrado.
     ],
-    "image": "https://www.clinicadelansiedad.com/images/centreclinicansiedad.jpeg",
+    "image": "https://www.clinicadelansiedad.com/logo.png",
     "logo": "https://www.clinicadelansiedad.com/logo.png",
     // Sin aggregateRating ni review: las reseñas de la clínica viven en su ficha de
     // Google. Marcarlas aquí sería contenido autogestionado, que la guía de datos

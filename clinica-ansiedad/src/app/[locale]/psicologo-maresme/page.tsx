@@ -324,7 +324,7 @@ export default function PsicologoMaresmePage() {
     telephone: "+34613916079",
     email: "contacto@clinicadelansiedad.com",
     priceRange: "€€",
-    image: "https://www.clinicadelansiedad.com/images/centreclinicansiedad.jpeg",
+    image: "https://www.clinicadelansiedad.com/images/clinica-ansiedad-catalunya-espacio.jpeg",
     founder: { "@type": "Person", name: "Joan Ramon Soto", jobTitle: "Psicoanalista / Psicoterapeuta" },
     address: {
       "@type": "PostalAddress",
@@ -404,7 +404,7 @@ export default function PsicologoMaresmePage() {
                 <div className="relative max-w-lg mx-auto lg:mx-0 lg:ml-auto">
                   <div aria-hidden className="absolute -inset-3 bg-gold/15 rounded-[2.5rem] blur-2xl" />
                   <div className="relative rounded-[2rem] overflow-hidden border-4 border-white shadow-[0_30px_80px_-25px_rgba(26,58,72,0.45)] aspect-[4/3.4]">
-                    <Image src="/images/brand-atmosphere.png" alt="Consulta psicoanalítica en Canet de Mar, Maresme" fill priority sizes="(max-width:1024px) 100vw, 520px" className="object-cover" />
+                    <Image src="/images/brand-atmosphere.png" alt={locale === "ca" ? "Espai de calma (imatge il·lustrativa)" : "Espacio de calma (imagen ilustrativa)"} fill priority sizes="(max-width:1024px) 100vw, 520px" className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
                   </div>
                   <div className="absolute -bottom-6 -left-2 sm:-left-6 bg-white rounded-2xl shadow-xl border border-navy/5 p-5 max-w-[250px]">

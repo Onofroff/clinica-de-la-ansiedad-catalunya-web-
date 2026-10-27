@@ -62,10 +62,10 @@ export async function generateMetadata({
       siteName: 'Clínica de la Ansiedad Catalunya',
       images: [
         {
-          url: `${BASE}/images/centreclinicansiedad.jpeg`,
+          url: `${BASE}/images/clinica-ansiedad-catalunya-espacio.jpeg`,
           width: 1200,
           height: 630,
-          alt: 'Consulta de la Clínica de la Ansiedad en Canet de Mar, Maresme',
+          alt: 'Espacio de calma (imagen ilustrativa)',
         },
       ],
     },
@@ -73,7 +73,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: m.title,
       description: m.description,
-      images: [`${BASE}/images/centreclinicansiedad.jpeg`],
+      images: [`${BASE}/images/clinica-ansiedad-catalunya-espacio.jpeg`],
     },
   };
 }

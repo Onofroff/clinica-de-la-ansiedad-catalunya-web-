@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: PageProps) {
             locale === "ca"
                 ? [`psicòleg ${m.name}`, `psicoanalista ${m.name}`, `teràpia ansietat ${m.name}`, "psicoanalista Maresme", "psicoanalista Canet de Mar"]
                 : [`psicólogo ${m.name}`, `psicoanalista ${m.name}`, `terapia ansiedad ${m.name}`, "psicoanalista Maresme", "psicoanalista Canet de Mar"],
-        image: `${BASE}/images/centreclinicansiedad.jpeg`,
-        imageAlt: locale === "ca" ? "Consulta de la Clínica de l'Ansietat a Canet de Mar" : "Consulta de la Clínica de la Ansiedad en Canet de Mar",
+        image: `${BASE}/images/clinica-ansiedad-catalunya-espacio.jpeg`,
+        imageAlt: locale === "ca" ? "Espai de calma (imatge il·lustrativa)" : "Espacio de calma (imagen ilustrativa)",
         lang: locale,
         catalan: true,
     });
@@ -66,7 +66,7 @@ const UI = {
         ctaTitle: "¿Hablamos?",
         ctaText: "La primera visita es una conversación clínica, sin tests ni cuestionarios. Puedes reservar directamente o escribirnos antes por WhatsApp.",
         home: "Inicio",
-        mapAlt: "Consulta psicoanalítica en Canet de Mar, Maresme",
+        mapAlt: "Espacio de calma (imagen ilustrativa)",
     },
     ca: {
         eyebrow: "Consulta presencial a Canet de Mar · Maresme",
@@ -95,7 +95,7 @@ const UI = {
         ctaTitle: "En parlem?",
         ctaText: "La primera visita és una conversa clínica, sense tests ni qüestionaris. Pots reservar directament o escriure'ns abans per WhatsApp.",
         home: "Inici",
-        mapAlt: "Consulta psicoanalítica a Canet de Mar, Maresme",
+        mapAlt: "Espai de calma (imatge il·lustrativa)",
     },
 };
 
@@ -202,7 +202,7 @@ export default async function MunicipioPage({ params }: PageProps) {
                             </div>
                             <div className="relative min-w-0">
                                 <div className="relative max-w-lg mx-auto lg:mx-0 lg:ml-auto rounded-[2rem] overflow-hidden border-4 border-white shadow-[0_30px_80px_-25px_rgba(26,58,72,0.45)] aspect-[4/3.4]">
-                                    <Image src="/images/centreclinicansiedad.jpeg" alt={ui.mapAlt} fill priority sizes="(max-width:1024px) 100vw, 520px" className="object-cover" />
+                                    <Image src="/images/clinica-ansiedad-catalunya-espacio.jpeg" alt={ui.mapAlt} fill priority sizes="(max-width:1024px) 100vw, 520px" className="object-cover" />
                                 </div>
                             </div>
                         </div>

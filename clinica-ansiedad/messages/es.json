@@ -39,7 +39,8 @@
     "cta_note": "Te respondemos personalmente. Sin pagar nada por escribir.",
     "cta_method": "Ver nuestro método",
     "wa_message": "Hola, me gustaría que me contarais cómo funciona la primera sesión.",
-    "reviews_label": "{count} reseñas en Google"
+    "reviews_label": "{count} reseñas en Google",
+    "image_alt": "Espacio de calma (imagen ilustrativa)"
   },
   "footer": {
     "brand_claim": "Psicoterapia psicoanalítica rigurosa para desarticular el sufrimiento desde la raíz.",
