@@ -13,11 +13,12 @@ const YEARS_OF_EXPERIENCE = new Date().getFullYear() - 1993;
 // ============================================
 export const medicalClinicSchema = {
     "@context": "https://schema.org",
-    "@type": ["MedicalClinic", "LocalBusiness", "HealthAndBeautyBusiness"],
+    "@type": ["MedicalClinic", "LocalBusiness"],
     "@id": "https://www.clinicadelansiedad.com",
     // Mismo nombre que la ficha de Google Business Profile (coherencia NAP).
     // La ubicación (Canet de Mar, Maresme) lo separa de la clínica homónima de Barcelona.
     "name": "Clínica de la Ansiedad Catalunya",
+    "disambiguatingDescription": "Consulta de psicoanálisis de Joan Ramon Soto en Canet de Mar (Maresme, Barcelona), en clinicadelansiedad.com. Sin relación con «Clínica de la Ansiedad» (clinicadeansiedad.com), con sede en Barcelona y Madrid.",
     "alternateName": [
         "Clínica de la Ansiedad Maresme",
         "Clínica de l'Ansietat Catalunya",
@@ -39,10 +40,6 @@ export const medicalClinicSchema = {
         "familyName": "Soto",
         "jobTitle": "Psicoanalista / Psicoterapeuta",
         "image": "https://www.clinicadelansiedad.com/images/joanramonsotoimagenweb.webp",
-        "sameAs": [
-            "https://www.linkedin.com/in/joan-ramon-soto",
-            "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+Canet+de+Mar"
-        ],
         "knowsAbout": [
             "Psicoterapia psicoanalítica",
             "Tratamiento de la ansiedad",
@@ -274,11 +271,8 @@ export const personSchema = {
     },
     "telephone": "+34613916079",
     "email": "contacto@clinicadelansiedad.com",
-    "sameAs": [
-        "https://www.google.com/maps/place/Ronda+Dr+Anglès+74,+Canet+de+Mar",
-        "https://www.facebook.com/joanramonsoto",
-        "https://www.instagram.com/joanramonsoto"
-    ]
+    // Sin "sameAs": los perfiles que había (linkedin/facebook/instagram "joanramonsoto")
+    // no eran suyos. Añadir aquí solo perfiles personales reales y verificados.
 };
 
 // ============================================

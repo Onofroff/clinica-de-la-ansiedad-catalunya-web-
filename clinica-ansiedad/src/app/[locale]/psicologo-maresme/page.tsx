@@ -317,7 +317,7 @@ export default function PsicologoMaresmePage() {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": ["Psychoanalyst", "MedicalBusiness", "LocalBusiness"],
+    "@type": ["MedicalBusiness", "LocalBusiness"],
     name: "Clínica de la Ansiedad Catalunya — Canet de Mar (Maresme)",
     description: t.hero.description,
     url: `https://www.clinicadelansiedad.com/${locale}/psicologo-maresme`,

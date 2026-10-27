@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/sobre-mi', freq: 'monthly', priority: 0.8 },
         { path: '/blog', freq: 'weekly', priority: 0.85 },
         { path: '/politica-de-cookies', freq: 'yearly', priority: 0.3 },
+        { path: '/privacidad', freq: 'yearly', priority: 0.3 },
+        { path: '/aviso-legal', freq: 'yearly', priority: 0.3 },
     ];
 
     // Solo se listan en /ca las páginas con texto realmente traducido al catalán.
@@ -35,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '', '/ansiedad', '/servicios', '/crisis-de-panico', '/depresion', '/celos', '/ludopatia',
         '/enfoque', '/terapia-online', '/taller-gestion-estres-empresas', '/psicologo-maresme',
         '/servicios/terapia-individual', '/servicios/terapia-de-pareja', '/servicios/dimension-familiar',
-        '/sobre-mi', '/blog', '/politica-de-cookies',
+        '/sobre-mi', '/blog', '/politica-de-cookies', '/privacidad', '/aviso-legal',
     ]);
 
     // Páginas estáticas en ambos idiomas: /es/... y /ca/...

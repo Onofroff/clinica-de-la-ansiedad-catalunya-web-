@@ -4,6 +4,7 @@ import type { LocalPost } from './types';
 const post: LocalPost = {
     slug: "problemas/ansiedad-generalizada",
     title: "Trastorno de ansiedad generalizada (TAG): guía completa de síntomas, diagnóstico y tratamiento",
+    seoTitle: "Ansiedad generalizada (TAG): síntomas y tratamiento",
     description: "Trastorno de ansiedad generalizada (TAG): qué es, síntomas físicos y psicológicos, criterios DSM-5, diferencias con otros trastornos y tratamiento.",
     keywords: ["trastorno de ansiedad generalizada", "TAG", "síntomas TAG", "criterios DSM-5 TAG", "tratamiento ansiedad generalizada"],
     category: "Ansiedad",
@@ -142,6 +143,7 @@ Es una conversación clínica real, sin cuestionarios ni tests mecánicos. El ps
 `,
     ca: {
         title: "Trastorn d'ansietat generalitzada (TAG): guia completa de símptomes, diagnòstic i tractament",
+        seoTitle: "Ansietat generalitzada (TAG): símptomes i tractament",
         description: "Trastorn d'ansietat generalitzada (TAG): què és, símptomes físics i psicològics, criteris DSM-5, diferències amb altres trastorns i tractament.",
         keywords: ["trastorn d'ansietat generalitzada", "TAG", "símptomes TAG", "criteris DSM-5 TAG", "tractament ansietat generalitzada"],
         category: "Ansietat",
