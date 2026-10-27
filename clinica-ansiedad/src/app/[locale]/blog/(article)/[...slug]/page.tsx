@@ -1,11 +1,7 @@
-import { getEntries, getEntryBySlug } from '@/lib/contentful';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { buildMetadata } from '@/lib/metadata';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/schema';
 import { LOCAL_POSTS, getLocalPost, getLocalPosts } from '@/content/blog';
 import { markdownToHtml, markdownHeadings, markdownReadingTime } from '@/lib/markdown';
-import { getContentfulCa } from '@/content/blog/contentful-ca';
 import BlogCard from '@/components/blog/BlogCard';
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Facebook, Twitter, Linkedin, ChevronDown } from 'lucide-react';
 import { Link } from '@/i18n/routing';
@@ -14,8 +10,6 @@ import SafeImage from '@/components/ui/SafeImage';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { BlogPost } from '@/lib/blog-data';
-import { calculateReadingTime, extractHeadings } from '@/lib/blog-utils';
-import OptimizedImage from '@/components/OptimizedImage';
 import { bookingUrl, AUTHOR_PHOTO } from '@/lib/constants';
 import { slugSegments, slugPath } from '@/lib/blog-slug';
 
@@ -28,12 +22,8 @@ export const revalidate = 3600; // Revalidate every hour
 const SITE = 'https://www.clinicadelansiedad.com';
 
 export async function generateStaticParams() {
-    const entries = await getEntries('blogPost', false, ['-fields.fechaPublicacion']);
     const locales = ['es', 'ca'];
-    const slugs = [
-        ...LOCAL_POSTS.map((p) => p.slug),
-        ...entries.map((entry: any) => entry.fields.slug),
-    ];
+    const slugs = LOCAL_POSTS.map((p) => p.slug);
 
     return slugs.flatMap((s) =>
         locales.map(locale => ({
@@ -58,7 +48,7 @@ export async function generateMetadata({ params }: PageProps) {
             description: local.description,
             path: `/blog/${local.slug}`,
             keywords: local.keywords,
-            image: `${SITE}${local.image}`,
+            image: local.image.startsWith('http') ? local.image : `${SITE}${local.image}`,
             imageAlt: local.imageAlt,
             type: 'article',
             lang: locale,
@@ -68,42 +58,15 @@ export async function generateMetadata({ params }: PageProps) {
         });
     }
 
-    const entry = await getEntryBySlug('blogPost', slug, false, locale);
-
-    if (!entry) return buildMetadata({
+    return buildMetadata({
         title: 'Post no encontrado',
         description: 'El artículo que buscas no existe o ha sido movido.',
         path: '/blog',
         lang: locale
     });
-
-    const fields = entry.fields as any;
-
-    // El sufijo "| Blog Clínica de la Ansiedad" gastaba 28 de los ~60 caracteres
-    // que Google muestra, así que los cinco artículos salían truncados y perdían
-    // justo el final del titular. La marca ya sale en el dominio de la SERP.
-    return buildMetadata({
-        title: fields.titulo,
-        description: fields.metaDescripcion || '',
-        path: `/blog/${slug}`,
-        keywords: [
-            fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : (locale === 'ca' ? 'psicologia' : 'psicología'),
-            ...(locale === 'ca'
-                ? ['psicoanàlisi', 'ansietat', 'salut mental', 'psicoteràpia']
-                : ['psicoanálisis', 'ansiedad', 'salud mental', 'psicoterapia']),
-        ],
-        image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : undefined,
-        imageAlt: fields.titulo,
-        type: 'article',
-        lang: locale,
-        publishedTime: fields.fechaPublicacion || entry.sys.createdAt,
-        modifiedTime: entry.sys.updatedAt,
-        catalan: Boolean(getContentfulCa(slug)),
-    });
 }
 
-// Estilos de los artículos en Markdown: los mismos tamaños, colores y espaciados
-// que el renderizado de Contentful de abajo, para que ambos tipos se vean igual.
+// Estilos de los artículos (Markdown).
 const LOCAL_ARTICLE_CLASSES = [
     '[&_h2]:text-2xl md:[&_h2]:text-3xl [&_h2]:font-serif [&_h2]:text-navy [&_h2]:mt-14 [&_h2]:mb-5 [&_h2]:leading-snug [&_h2]:tracking-tight [&_h2]:scroll-mt-28',
     '[&_h3]:text-xl md:[&_h3]:text-2xl [&_h3]:font-serif [&_h3]:text-navy/90 [&_h3]:mt-10 [&_h3]:mb-4 [&_h3]:leading-snug [&_h3]:scroll-mt-28',
@@ -115,107 +78,11 @@ const LOCAL_ARTICLE_CLASSES = [
     '[&_li]:text-navy/80 [&_li]:text-[17px] [&_li]:leading-[30px] md:[&_li]:text-lg md:[&_li]:leading-8 [&_li]:font-light',
     '[&_blockquote]:bg-navy/5 [&_blockquote]:p-8 md:[&_blockquote]:p-10 [&_blockquote]:rounded-[28px] [&_blockquote]:border-l-[6px] [&_blockquote]:border-gold/40 [&_blockquote]:my-12',
     '[&_blockquote_p]:italic [&_blockquote_p]:font-serif [&_blockquote_p]:text-navy/90 [&_blockquote_p]:text-lg md:[&_blockquote_p]:text-xl [&_blockquote_p]:mb-0',
+    '[&_table]:w-full [&_table]:my-10 [&_table]:text-[15px] [&_table]:leading-relaxed [&_table]:border-collapse',
+    '[&_th]:text-left [&_th]:align-bottom [&_th]:bg-navy/5 [&_th]:text-navy [&_th]:p-3 [&_td]:p-3 [&_td]:align-top [&_td]:text-navy/80 [&_tr]:border-b [&_tr]:border-navy/10',
+    '[&_hr]:my-12 [&_hr]:border-navy/10',
     '[&_a]:text-gold [&_a]:font-medium [&_a]:border-b [&_a]:border-gold/30 hover:[&_a]:text-navy hover:[&_a]:border-navy [&_a]:transition-all',
 ].join(' ');
-
-// Custom Rich Text Render Options
-const renderOptions = {
-    renderNode: {
-        [BLOCKS.HEADING_2]: (node: any, children: any) => {
-            const text = children[0];
-            const id = typeof text === 'string' ? text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : undefined;
-            return (
-                <h2 id={id} className="text-2xl md:text-3xl font-serif text-navy mt-14 mb-5 leading-snug tracking-tight scroll-mt-28">
-                    {children}
-                </h2>
-            );
-        },
-        [BLOCKS.HEADING_3]: (node: any, children: any) => {
-            const text = children[0];
-            const id = typeof text === 'string' ? text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : undefined;
-            return (
-                <h3 id={id} className="text-xl md:text-2xl font-serif text-navy/90 mt-10 mb-4 leading-snug scroll-mt-28">
-                    {children}
-                </h3>
-            );
-        },
-        [BLOCKS.PARAGRAPH]: (node: any, children: any) => (
-            <p className="text-navy/80 text-[17px] leading-[30px] md:text-lg md:leading-8 mb-7 font-light">
-                {children}
-            </p>
-        ),
-        [BLOCKS.UL_LIST]: (node: any, children: any) => (
-            <ul className="list-none pl-0 mb-8 flex flex-col gap-3">
-                {children}
-            </ul>
-        ),
-        [BLOCKS.LIST_ITEM]: (node: any, children: any) => (
-            <li className="relative pl-7 text-navy/80 text-[17px] leading-[30px] md:text-lg md:leading-8 font-light before:content-[''] before:absolute before:left-0 before:top-[0.7rem] before:w-1.5 before:h-1.5 before:rounded-full before:bg-gold">
-                {children}
-            </li>
-        ),
-        [BLOCKS.QUOTE]: (node: any, children: any) => (
-            <blockquote className="border-l-0 bg-navy/5 p-8 md:p-10 rounded-[28px] italic text-navy/90 text-lg md:text-xl font-serif my-12 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-2 h-full bg-gold/30" />
-                <span className="absolute top-2 left-4 text-4xl text-gold/20 font-serif">"</span>
-                {children}
-            </blockquote>
-        ),
-        [INLINES.HYPERLINK]: (node: any, children: any) => (
-            <a 
-                href={node.data.uri} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gold font-medium border-b border-gold/30 hover:text-navy hover:border-navy transition-all no-underline"
-            >
-                {children}
-            </a>
-        ),
-        [BLOCKS.EMBEDDED_ASSET]: (node: any) => {
-            const asset = node.data.target;
-            const url = asset?.fields?.file?.url;
-            const title = asset?.fields?.title || 'Imagen del artículo';
-            
-            if (!url) return null;
-
-            return (
-                <div className="my-20 w-full rounded-[40px] overflow-hidden shadow-2xl bg-white p-2 text-center">
-                    <OptimizedImage 
-                        src={`https:${url}`} 
-                        alt={title} 
-                        width={1200} 
-                        height={675} 
-                        className="w-full h-auto object-cover rounded-[32px]" 
-                    />
-                </div>
-            );
-        },
-        [BLOCKS.EMBEDDED_ENTRY]: (node: any) => {
-            const contentType = node.data.target?.sys?.contentType?.sys?.id;
-            const fields = node.data.target?.fields;
-
-            if (!fields) return null;
-
-            if (contentType === 'blogPost') {
-                return (
-                    <div className="my-16 border border-navy/10 rounded-[32px] p-8 bg-white shadow-sm flex flex-col md:flex-row gap-8 items-center no-prose">
-                        <div className="w-full md:w-1/3 aspect-video rounded-2xl overflow-hidden shadow-md">
-                             <SafeImage src={`https:${fields.imagenDestacada?.fields?.file?.url}`} alt={fields.titulo} className="w-full h-full object-cover" />
-                        </div>
-                        <div className="flex-grow text-left">
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-gold mb-2 block">Artículo Relacionado</span>
-                            <h4 className="font-serif text-2xl text-navy mb-4 leading-tight">{fields.titulo}</h4>
-                            <Link href={{ pathname: '/blog/[...slug]', params: { slug: slugSegments(fields.slug) } }} className="text-navy font-bold text-xs uppercase tracking-widest hover:text-gold transition-all inline-flex items-center gap-2 group">
-                                Continuar leyendo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                            </Link>
-                        </div>
-                    </div>
-                );
-            }
-            return null;
-        }
-    }
-};
 
 export default async function BlogPostPage({ params }: PageProps) {
     const { slug: rawSlug, locale } = await params;
@@ -225,103 +92,52 @@ export default async function BlogPostPage({ params }: PageProps) {
     const ca = locale === 'ca';
 
     const local = getLocalPost(slug, locale);
-    const entry = local ? null : await getEntryBySlug('blogPost', slug, false, locale);
+    if (!local) notFound();
 
-    if (!local && !entry) {
-        notFound();
-    }
-
-    const fields = (entry?.fields || {}) as any;
     const author = {
-        name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
+        name: 'Joan Ramon Soto',
         role: 'Psicoanalista / Psicoterapeuta',
-        image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
+        image: AUTHOR_PHOTO,
     };
 
-    // Estructura común para artículos propios (Markdown) y de Contentful (Rich Text)
-    const post = local
-        ? {
-            id: `local-${local.slug}`,
-            title: local.title,
-            excerpt: local.description,
-            content: (
-                <div
-                    className={LOCAL_ARTICLE_CLASSES}
-                    dangerouslySetInnerHTML={{ __html: markdownToHtml(local.body) }}
-                />
-            ),
-            date: local.date,
-            modified: local.updated || local.date,
-            readTime: markdownReadingTime(local.body),
-            category: local.category,
-            image: local.image,
-            imageAlt: local.imageAlt,
-            author,
-            slug: local.slug,
-            headings: markdownHeadings(local.body),
-            faq: local.faq || [],
-        }
-        : {
-            id: entry!.sys.id,
-            title: fields.titulo || 'Sin título',
-            excerpt: fields.metaDescripcion || '',
-            content: fields.caBody ? (
-                <div
-                    className={LOCAL_ARTICLE_CLASSES}
-                    dangerouslySetInnerHTML={{ __html: markdownToHtml(fields.caBody) }}
-                />
-            ) : documentToReactComponents(fields.contenido, renderOptions), // Pre-render Rich Text
-            date: fields.fechaPublicacion || entry!.sys.createdAt,
-            modified: entry!.sys.updatedAt,
-            readTime: fields.caBody ? markdownReadingTime(fields.caBody) : calculateReadingTime(fields.contenido),
-            category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : 'Psicología',
-            image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
-            imageAlt: fields.titulo || 'Imagen del artículo',
-            author,
-            slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
-            headings: fields.caBody ? markdownHeadings(fields.caBody) : extractHeadings(fields.contenido),
-            faq: [] as { question: string; answer: string }[],
-        };
+    const post = {
+        id: `local-${local.slug}`,
+        title: local.title,
+        excerpt: local.description,
+        content: (
+            <div
+                className={LOCAL_ARTICLE_CLASSES}
+                dangerouslySetInnerHTML={{ __html: markdownToHtml(local.body) }}
+            />
+        ),
+        date: local.date,
+        modified: local.updated || local.date,
+        readTime: markdownReadingTime(local.body),
+        category: local.category,
+        image: local.image,
+        imageAlt: local.imageAlt,
+        author,
+        slug: local.slug,
+        headings: markdownHeadings(local.body),
+        faq: local.faq || [],
+    };
 
     const headings = post.headings;
 
-    // Todos los artículos (propios + Contentful) ordenados por fecha, para anterior/siguiente y relacionados
-    const contentfulEntries = await getEntries('blogPost', false, ['-fields.fechaPublicacion'], locale);
-    const allPosts: BlogPost[] = [
-        ...getLocalPosts(locale).map((p) => ({
-            id: `local-${p.slug}`,
-            title: p.title,
-            excerpt: p.description,
-            content: '',
-            date: p.date,
-            readTime: markdownReadingTime(p.body),
-            category: p.category,
-            image: p.image,
-            author: { name: 'Joan Ramon Soto', role: 'Psicoanalista / Psicoterapeuta', image: AUTHOR_PHOTO },
-            slug: p.slug,
-            featured: false,
-        })),
-        ...contentfulEntries.map((e) => {
-            const f = e.fields as any;
-            return {
-                id: e.sys.id,
-                title: f.titulo || 'Sin título',
-                excerpt: f.metaDescripcion || '',
-                content: '',
-                date: f.fechaPublicacion || e.sys.createdAt,
-                readTime: f.caBody ? markdownReadingTime(f.caBody) : calculateReadingTime(f.contenido),
-                category: f.categoria && f.categoria[0]?.fields?.nombre ? f.categoria[0].fields.nombre : 'Psicología',
-                image: f.imagenDestacada?.fields?.file?.url ? `https:${f.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
-                author: {
-                    name: f.autor?.fields?.nombre || 'Joan Ramon Soto',
-                    role: 'Psicoanalista / Psicoterapeuta',
-                    image: f.autor?.fields?.avatar?.fields?.file?.url ? `https:${f.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
-                },
-                slug: (f.slug || '').replace(/^\/|\/$/g, ''),
-                featured: false,
-            };
-        }),
-    ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    // Todos los artículos ordenados por fecha, para anterior/siguiente y relacionados
+    const allPosts: BlogPost[] = getLocalPosts(locale).map((p) => ({
+        id: `local-${p.slug}`,
+        title: p.title,
+        excerpt: p.description,
+        content: '',
+        date: p.date,
+        readTime: markdownReadingTime(p.body),
+        category: p.category,
+        image: p.image,
+        author: { name: 'Joan Ramon Soto', role: 'Psicoanalista / Psicoterapeuta', image: AUTHOR_PHOTO },
+        slug: p.slug,
+        featured: false,
+    })).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     // Find neighbors for next/prev
     const currentIndex = allPosts.findIndex((p) => p.id === post.id);

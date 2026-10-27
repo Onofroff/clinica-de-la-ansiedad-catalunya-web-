@@ -1,7 +1,6 @@
 import { buildMetadata } from '@/lib/metadata';
 import { collectionSchema } from '@/lib/schema';
 import { BLOG_POSTS as FALLBACK_POSTS, BlogPost } from '@/lib/blog-data';
-import { getEntries } from '@/lib/contentful';
 import { AUTHOR_PHOTO } from '@/lib/constants';
 import Script from 'next/script';
 import BlogCard from '@/components/blog/BlogCard';
@@ -53,52 +52,10 @@ export const revalidate = 3600; // Revalidate every hour
 export default async function BlogPage({ params, searchParams }: { params: Promise<{ locale: string }>, searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const { locale } = await params;
   const ca = locale === 'ca';
-  console.log(`[BlogPage] Rendering for locale: ${locale}`);
-  
-  let contentfulEntries: any[] = [];
-  let categoryEntries: any[] = [];
-  
-  try {
-      console.log('[BlogPage] Fetching entries from Contentful...');
-      [contentfulEntries, categoryEntries] = await Promise.all([
-          getEntries('blogPost', false, ['-fields.fechaPublicacion'], locale),
-          getEntries('category', false, [], locale)
-      ]);
-      console.log(`[BlogPage] Fetched ${contentfulEntries.length} posts and ${categoryEntries.length} categories`);
-  } catch (err) {
-      console.error('[BlogPage] Error fetching from Contentful:', err);
-  }
-  
   const sp = await searchParams;
   const currentCategory = sp.category as string | undefined;
-  
-  const mappedPosts: BlogPost[] = (contentfulEntries || []).map((entry) => {
-    try {
-        const fields = entry.fields as any;
-        return {
-          id: entry.sys.id,
-          title: fields.titulo || 'Sin título',
-          excerpt: fields.metaDescripcion || 'Sin descripción',
-          content: '', 
-          date: fields.fechaPublicacion || entry.sys.createdAt,
-          readTime: '5 min de lectura', 
-          category: fields.categoria && fields.categoria[0]?.fields?.nombre ? fields.categoria[0].fields.nombre : (locale === 'ca' ? 'Psicologia' : 'Psicología'),
-          image: fields.imagenDestacada?.fields?.file?.url ? `https:${fields.imagenDestacada.fields.file.url}` : '/images/default-blog.jpg',
-          author: {
-            name: fields.autor?.fields?.nombre || 'Joan Ramon Soto',
-            role: 'Psicoanalista / Psicoterapeuta',
-            image: fields.autor?.fields?.avatar?.fields?.file?.url ? `https:${fields.autor.fields.avatar.fields.file.url}` : AUTHOR_PHOTO,
-          },
-          slug: (fields.slug || '').replace(/^\/|\/$/g, ''),
-          featured: false, 
-        };
-    } catch (e) {
-        console.error('[BlogPage] Error mapping entry:', entry.sys?.id, e);
-        return null as any;
-    }
-  }).filter(Boolean);
 
-  // Artículos escritos en el propio repositorio (src/content/blog), junto a los de Contentful.
+  // Todos los artículos viven en el repositorio (src/content/blog).
   const localPosts: BlogPost[] = getLocalPosts(locale).map((p) => ({
     id: `local-${p.slug}`,
     title: p.title,
@@ -113,19 +70,11 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
     featured: false,
   }));
 
-  const combinedPosts = [...localPosts, ...mappedPosts].sort(
+  const combinedPosts = [...localPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
   const allPosts = combinedPosts.length > 0 ? combinedPosts : FALLBACK_POSTS;
-
-  // Extract all categories explicitly from Contentful to populate the sidebar
-  const contentfulCategories = Array.from(new Set([
-    ...categoryEntries.map((entry: any) => entry.fields?.nombre),
-    ...localPosts.map((post) => post.category),
-  ].filter(Boolean)))
-    // Solo categorías con algún artículo: una categoría vacía lleva a un listado vacío
-    .filter((name) => combinedPosts.some((post) => post.category === name))
-    .sort();
+  const contentfulCategories = Array.from(new Set(combinedPosts.map((post) => post.category))).sort();
 
   // If using fallbacks or no categories found, extract from posts as fallback
   const categories = contentfulCategories.length > 0 

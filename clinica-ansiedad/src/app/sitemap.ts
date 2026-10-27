@@ -1,7 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getEntries } from '@/lib/contentful';
 import { LOCAL_POSTS } from '@/content/blog';
-import { getContentfulCa } from '@/content/blog/contentful-ca';
 import { MUNICIPIOS } from '@/content/municipios';
 
 // Las URLs reales viven bajo www + prefijo de idioma (/es, /ca): el middleware de
@@ -10,7 +8,7 @@ import { MUNICIPIOS } from '@/content/municipios';
 const BASE_URL = 'https://www.clinicadelansiedad.com';
 const LOCALES = ['es', 'ca'] as const;
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
     const staticPages = [
         { path: '', freq: 'weekly', priority: 1.0 },
         { path: '/ansiedad', freq: 'monthly', priority: 0.95 },
@@ -52,29 +50,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         }))
     );
 
-    // Posts del blog desde Contentful (la fuente real — los slugs hardcodeados de
-    // blog-data.ts son fallbacks que no existen como entradas y daban 404).
-    let blogPosts: { path: string; freq: string; priority: number }[] = [];
-    try {
-        const entries = await getEntries('blogPost', false, ['-fields.fechaPublicacion']);
-        blogPosts = entries
-            .map((entry: any) => (entry.fields?.slug || '').replace(/^\/|\/$/g, ''))
-            .filter(Boolean)
-            .flatMap((slug: string) => [
-                { path: `/es/blog/${slug}`, freq: 'monthly', priority: 0.85 },
-                // Versión catalana (src/content/blog/contentful-ca.ts)
-                ...(getContentfulCa(slug) ? [{ path: `/ca/blog/${slug}`, freq: 'monthly', priority: 0.8 }] : []),
-            ]);
-    } catch {
-        // Si Contentful no responde, el sitemap sale sin posts en vez de romperse.
-    }
-
     // Artículos propios (src/content/blog), con su fecha real de revisión
     const localPosts = LOCAL_POSTS.flatMap((p) => [
         { path: `/es/blog/${p.slug}`, freq: 'monthly', priority: 0.85, lastModified: p.updated || p.date },
         ...(p.ca ? [{ path: `/ca/blog/${p.slug}`, freq: 'monthly', priority: 0.8, lastModified: p.updated || p.date }] : []),
     ]);
-    const localSlugs = new Set(LOCAL_POSTS.map((p) => `/es/blog/${p.slug}`));
 
     // Páginas locales del Maresme, en castellano y catalán
     const municipioPages = LOCALES.flatMap((locale) =>
@@ -89,7 +69,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ...localizedPages,
         ...municipioPages,
         ...localPosts,
-        ...blogPosts.filter((p) => !localSlugs.has(p.path)),
     ];
 
     return allPages.map(({ path, freq, priority, lastModified }) => ({
