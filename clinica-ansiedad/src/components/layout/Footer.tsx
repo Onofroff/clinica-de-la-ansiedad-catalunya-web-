@@ -17,9 +17,9 @@ export default function Footer() {
                     {/* Brand Col */}
                     <div className="col-span-1 md:col-span-1">
                         <img
-                            src="/images/logo-vertical-white.png"
+                            src="/images/logo-horizontal-white.png"
                             alt="Clínica de la Ansiedad Catalunya"
-                            className="h-28 w-auto object-contain mb-4"
+                            className="h-14 w-auto max-w-full object-contain mb-4"
                         />
                         <p className="text-gold text-sm tracking-widest uppercase mb-4">
                             Espacio Psicoanalítico desde 1993

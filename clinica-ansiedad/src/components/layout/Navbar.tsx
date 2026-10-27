@@ -104,7 +104,7 @@ export default function Navbar({ theme = "light" }: { theme?: "light" | "dark" }
                 <img
                     src={onDark ? "/images/logo-horizontal-white.png" : "/images/logo-horizontal.png"}
                     alt="Clínica de la Ansiedad Catalunya"
-                    className="h-9 sm:h-10 md:h-12 w-auto object-contain"
+                    className="h-9 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
                 />
             </NavbarBrand>
 
