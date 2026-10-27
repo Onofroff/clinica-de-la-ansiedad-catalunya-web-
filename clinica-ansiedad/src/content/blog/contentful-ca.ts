@@ -718,7 +718,7 @@ No cal arribar al límit per consultar. Convé demanar ajuda quan la preocupaci�
 
 Atenc a Canet de Mar, al Maresme, i també en línia per a la resta de Catalunya i Espanya, en català o en castellà. Si es reconeix en el que ha llegit, una primera conversa pot aclarir molt més del que s'imagina. No cal arribar amb les idees ordenades: precisament d'això es tracta el treball.
 
-Soc Joan Ramon Soto Cifuentes, psicoanalista, col·legiat COPC núm. 3852. Fundador i director de la Clínica de l'Ansietat Catalunya des del 1993. Tinc més de 30 anys de pràctica clínica i la clínica té una valoració de 5,0★ amb més de 130 ressenyes a Google.
+Soc Joan Ramon Soto Cifuentes, psicoanalista, col·legiat COPC núm. 3852. Fundador i director de la Clínica de l'Ansietat Catalunya des del 1993. Tinc més de 30 anys de pràctica clínica i la clínica té una valoració de 5,0★ amb més de 150 ressenyes a Google.
 
 ## Preguntes freqüents
 
