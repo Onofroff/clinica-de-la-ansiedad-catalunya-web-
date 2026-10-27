@@ -7,6 +7,7 @@ import cuandoAcudirTerapiaDePareja from './cuando-acudir-terapia-de-pareja';
 import porQueSoledadSaludMentalNoSeResuelveRelaciones from './por-que-soledad-salud-mental-no-se-resuelve-relaciones';
 import celosPatologicos from './celos-patologicos';
 import ansiedadGeneralizada from './ansiedad-generalizada';
+import ataqueDeAnsiedadQueHacer from './ataque-de-ansiedad-que-hacer';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 export const LOCAL_POSTS: LocalPost[] = [
@@ -18,6 +19,7 @@ export const LOCAL_POSTS: LocalPost[] = [
     porQueSoledadSaludMentalNoSeResuelveRelaciones,
     celosPatologicos,
     ansiedadGeneralizada,
+    ataqueDeAnsiedadQueHacer,
 ];
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
