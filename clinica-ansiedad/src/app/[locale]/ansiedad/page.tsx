@@ -73,6 +73,8 @@ const CONTENT = {
     understand1: "No es estar nervioso. No es ser débil. La ansiedad es la forma que tiene tu psiquismo de gritar cuando carga con algo que no puede procesar solo. Es una señal —intensa, molesta, a veces aterradora— pero una señal al fin y al cabo. Y tiene tratamiento. En nuestra clínica de Canet de Mar (Maresme), como psicoanalista especialista en ansiedad, llevamos más de tres décadas tratando el trastorno de ansiedad generalizada y sus múltiples manifestaciones en pacientes de toda Catalunya.",
     understand2a: "En treinta años de consulta —primero en Barcelona y ahora en nuestra sede de Canet de Mar (Maresme)— he visto a cientos de personas convencidas de que su ansiedad era un defecto de carácter. La realidad es otra: cuando los ",
     symptomsLink: "síntomas de ansiedad",
+    attackA: "Si estás viviendo una crisis ahora mismo, aquí tienes ",
+    attackLink: "qué hacer durante un ataque de ansiedad",
     understand2b: " invaden tu día a día, hay ",
     deepConflicts: "conflictos emocionales profundos",
     understand2c: " que están alimentando esa respuesta. Mientras no se aborden, la ansiedad seguirá encontrando la manera de hacerse oír. Cuando la ansiedad escala, puede derivar en ",
@@ -182,6 +184,8 @@ const CONTENT = {
     understand1: "No és estar nerviós. No és ser feble. L'ansietat és la manera que té el teu psiquisme de cridar quan carrega amb alguna cosa que no pot processar sol. És un senyal —intens, molest, de vegades aterridor—, però un senyal al capdavall. I té tractament. A la nostra clínica de Canet de Mar (Maresme), com a psicoanalista especialista en ansietat, fa més de tres dècades que tractem el trastorn d'ansietat generalitzada i les seves múltiples manifestacions en pacients de tot Catalunya.",
     understand2a: "En trenta anys de consulta —primer a Barcelona i ara a la nostra seu de Canet de Mar (Maresme)— he vist centenars de persones convençudes que la seva ansietat era un defecte de caràcter. La realitat és una altra: quan els ",
     symptomsLink: "símptomes d'ansietat",
+    attackA: "Si ara mateix estàs vivint una crisi, aquí tens ",
+    attackLink: "què fer durant un atac d'ansietat",
     understand2b: " envaeixen el teu dia a dia, hi ha ",
     deepConflicts: "conflictes emocionals profunds",
     understand2c: " que alimenten aquesta resposta. Mentre no s'abordin, l'ansietat continuarà trobant la manera de fer-se sentir. Quan l'ansietat escala, pot derivar en ",
@@ -292,6 +296,10 @@ export default function AnsiedadPage() {
                 <LocaleLink href="/crisis-de-panico" className={inlineLink}>{c.panic}</LocaleLink>
                 {c.understand2d}
                 <LocaleLink href="/depresion" className={inlineLink}>{c.depression}</LocaleLink>.
+              </motion.p>
+              <motion.p variants={inView}>
+                {c.attackA}
+                <LocaleLink href={{ pathname: '/blog/[...slug]', params: { slug: ['ataque-de-ansiedad-que-hacer'] } }} className={strongLink}>{c.attackLink}</LocaleLink>.
               </motion.p>
             </motion.div>
 

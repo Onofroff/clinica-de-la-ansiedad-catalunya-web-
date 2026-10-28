@@ -16,7 +16,7 @@ const post: LocalPost = {
         'síntomas ataque de ansiedad',
     ],
     category: 'Ansiedad',
-    date: '2026-11-02',
+    date: '2026-10-28',
     image: '/images/og-default.png',
     imageAlt: 'Ataque de ansiedad: qué hacer en el momento — Clínica de la Ansiedad Catalunya',
     body: `
