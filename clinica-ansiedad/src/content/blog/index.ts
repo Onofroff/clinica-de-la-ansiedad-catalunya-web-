@@ -9,6 +9,8 @@ import celosPatologicos from './celos-patologicos';
 import ansiedadGeneralizada from './ansiedad-generalizada';
 import ataqueDeAnsiedadQueHacer from './ataque-de-ansiedad-que-hacer';
 import queEsLaDepresion from './que-es-la-depresion';
+import dolorPechoAnsiedadOInfarto from './dolor-pecho-ansiedad-o-infarto';
+import despertarseMadrugadaAnsiedad from './despertarse-madrugada-ansiedad';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 export const LOCAL_POSTS: LocalPost[] = [
@@ -22,6 +24,8 @@ export const LOCAL_POSTS: LocalPost[] = [
     ansiedadGeneralizada,
     ataqueDeAnsiedadQueHacer,
     queEsLaDepresion,
+    dolorPechoAnsiedadOInfarto,
+    despertarseMadrugadaAnsiedad,
 ];
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
