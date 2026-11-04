@@ -134,10 +134,10 @@ export default async function BlogPage({ params, searchParams }: { params: Promi
 
                 <div className="flex items-center gap-6">
                    <div className="h-[1px] w-12 bg-navy/20" />
-                   {/* Se retiran tres caras de i.pravatar.cc con alt="Lector": eran
-                       fotos de desconocidos presentados como lectores de la clínica.
-                       El dato de lectores se mantiene tal cual estaba. */}
-                   <span className="text-[10px] text-navy/60 font-bold uppercase tracking-widest">{ca ? '+5.000 lectors mensuals' : '+5.000 lectores mensuales'}</span>
+                   {/* Se retira la cifra «+5.000 lectores mensuales»: no estaba respaldada
+                       por ningún dato medido. Si se vuelve a poner, que sea con la cifra real
+                       de Google Analytics. */}
+                   <span className="text-[10px] text-navy/60 font-bold uppercase tracking-widest">{ca ? 'Joan Ramon Soto · Psicoanalista / Psicoterapeuta' : 'Joan Ramon Soto · Psicoanalista / Psicoterapeuta'}</span>
                 </div>
               </div>
 
