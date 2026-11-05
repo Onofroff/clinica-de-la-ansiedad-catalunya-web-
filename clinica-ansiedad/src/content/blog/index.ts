@@ -11,6 +11,9 @@ import ataqueDeAnsiedadQueHacer from './ataque-de-ansiedad-que-hacer';
 import queEsLaDepresion from './que-es-la-depresion';
 import dolorPechoAnsiedadOInfarto from './dolor-pecho-ansiedad-o-infarto';
 import despertarseMadrugadaAnsiedad from './despertarse-madrugada-ansiedad';
+import burnoutSintomasEmpresa from './burnout-sintomas-empresa';
+import gestionarEmocionesTrabajo from './gestionar-emociones-trabajo';
+import presionTrabajoAnsiedad from './presion-trabajo-ansiedad';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 export const LOCAL_POSTS: LocalPost[] = [
@@ -26,6 +29,9 @@ export const LOCAL_POSTS: LocalPost[] = [
     queEsLaDepresion,
     dolorPechoAnsiedadOInfarto,
     despertarseMadrugadaAnsiedad,
+    burnoutSintomasEmpresa,
+    gestionarEmocionesTrabajo,
+    presionTrabajoAnsiedad,
 ];
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
