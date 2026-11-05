@@ -37,5 +37,5 @@ export const SOCIAL_LINKS = {
     instagram: 'https://www.instagram.com/clinicadelansietatcatalunya/',
     tiktok: 'https://www.tiktok.com/@clinica.de.la.ansiedad',
     facebook: 'https://www.facebook.com/share/19fRNjVM1V/',
-    linkedin: 'https://www.linkedin.com/in/cl%C3%ADnica-de-la-ansiedad-catalunya-388450424/',
+    linkedin: 'https://www.linkedin.com/in/joan-ramon-soto-388450424/',
 } as const;
