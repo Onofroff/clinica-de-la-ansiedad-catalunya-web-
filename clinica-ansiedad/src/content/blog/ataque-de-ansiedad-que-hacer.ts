@@ -4,9 +4,9 @@ const post: LocalPost = {
     editorialRef: '#10',
     slug: 'ataque-de-ansiedad-que-hacer',
     title: 'Ataque de ansiedad: qué hacer en el momento y por qué aparece',
-    seoTitle: 'Ataque de ansiedad: qué hacer en el momento',
+    seoTitle: 'Ataque de ansiedad: qué hacer ahora en 6 pasos',
     description:
-        'Qué hacer durante un ataque de ansiedad, cómo distinguirlo de otros problemas, cuánto dura y por qué vuelve. Explicado por un psicoanalista con más de 30 años de experiencia.',
+        '¿Tienes un ataque de ansiedad ahora? 6 pasos sencillos para atravesarlo en minutos, cuándo llamar al 112 y por qué vuelve. Por un psicoanalista con 30 años de experiencia.',
     keywords: [
         'ataque de ansiedad',
         'qué hacer en un ataque de ansiedad',
@@ -98,9 +98,9 @@ Atiendo la ansiedad y las crisis de pánico desde 1993, de forma **presencial en
     ],
     ca: {
         title: "Atac d'ansietat: què fer en el moment i per què apareix",
-        seoTitle: "Atac d'ansietat: què fer en el moment",
+        seoTitle: "Atac d'ansietat: què fer ara en 6 passos",
         description:
-            "Què fer durant un atac d'ansietat, com distingir-lo d'altres problemes, quant dura i per què torna. Explicat per un psicoanalista amb més de 30 anys d'experiència.",
+            "Tens un atac d'ansietat ara? 6 passos senzills per travessar-lo en minuts, quan trucar al 112 i per què torna. Per un psicoanalista amb 30 anys d'experiència.",
         keywords: [
             "atac d'ansietat",
             "què fer en un atac d'ansietat",
