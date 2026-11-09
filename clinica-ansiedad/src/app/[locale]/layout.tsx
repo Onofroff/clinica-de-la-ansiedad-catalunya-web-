@@ -12,7 +12,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
 // Google tag (gtag.js) — GA4. Va en el layout raíz para cubrir todas las páginas.
-const GA_ID = 'G-9XELH4BME5';
+const GA_ID = 'G-YXGD3M2RN6';
 
 const figtree = Figtree({
     subsets: ['latin'],
