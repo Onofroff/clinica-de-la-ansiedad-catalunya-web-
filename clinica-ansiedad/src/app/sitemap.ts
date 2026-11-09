@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { LOCAL_POSTS } from '@/content/blog';
+import { getPublishedPosts } from '@/content/blog';
 import { MUNICIPIOS } from '@/content/municipios';
 
 // Las URLs reales viven bajo www + prefijo de idioma (/es, /ca): el middleware de
@@ -7,6 +7,9 @@ import { MUNICIPIOS } from '@/content/municipios';
 // canónicas exactas o Google acaba rastreando 404s.
 const BASE_URL = 'https://www.clinicadelansiedad.com';
 const LOCALES = ['es', 'ca'] as const;
+
+// Se regenera cada hora para incluir los artículos programados el día que salen.
+export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticPages = [
@@ -53,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
 
     // Artículos propios (src/content/blog), con su fecha real de revisión
-    const localPosts = LOCAL_POSTS.flatMap((p) => [
+    const localPosts = getPublishedPosts().flatMap((p) => [
         { path: `/es/blog/${p.slug}`, freq: 'monthly', priority: 0.85, lastModified: p.updated || p.date },
         ...(p.ca ? [{ path: `/ca/blog/${p.slug}`, freq: 'monthly', priority: 0.8, lastModified: p.updated || p.date }] : []),
     ]);

@@ -18,9 +18,18 @@ import terapiaOnlineAnsiedad from './terapia-online-ansiedad';
 import comoElegirTerapeutaOnlineAnsiedad from './como-elegir-terapeuta-online-ansiedad';
 import ataqueDePanico from './ataque-de-panico';
 import comoAyudarAtaqueDeAnsiedad from './como-ayudar-ataque-de-ansiedad';
+import comoCalmarLaAnsiedad from './como-calmar-la-ansiedad';
+import ansiedadSocial from './ansiedad-social';
+import mareosPorAnsiedad from './mareos-por-ansiedad';
+import agorafobia from './agorafobia';
+import hipocondriaAnsiedadPorLaSalud from './hipocondria-ansiedad-por-la-salud';
+import pensamientosIntrusivos from './pensamientos-intrusivos';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
-export const LOCAL_POSTS: LocalPost[] = [
+// Publicación programada: un artículo con `date` futura no aparece en la web
+// (blog, artículo, sitemap, llms.txt) hasta ese día (hora de Madrid). Las páginas
+// se regeneran cada hora (revalidate = 3600), así que salen solas.
+const ALL_POSTS: LocalPost[] = [
     causasDeLaAnsiedad,
     terapiaFamiliar,
     queEsLaAnsiedadYPorQueSeProduce,
@@ -40,16 +49,37 @@ export const LOCAL_POSTS: LocalPost[] = [
     comoElegirTerapeutaOnlineAnsiedad,
     ataqueDePanico,
     comoAyudarAtaqueDeAnsiedad,
+    // Programados: uno cada 2 días (se publican solos en su fecha)
+    comoCalmarLaAnsiedad,
+    ansiedadSocial,
+    mareosPorAnsiedad,
+    agorafobia,
+    hipocondriaAnsiedadPorLaSalud,
+    pensamientosIntrusivos,
 ];
+
+function todayInMadrid(): string {
+    // 'sv-SE' da el formato YYYY-MM-DD.
+    return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Madrid' }).format(new Date());
+}
+
+export function isPublished(post: LocalPost): boolean {
+    return post.date.slice(0, 10) <= todayInMadrid();
+}
+
+/** Artículos ya publicados (fecha de hoy o anterior). */
+export function getPublishedPosts(): LocalPost[] {
+    return ALL_POSTS.filter(isPublished);
+}
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
     const clean = slug.replace(/^\/|\/$/g, '');
-    const post = LOCAL_POSTS.find((p) => p.slug === clean);
+    const post = getPublishedPosts().find((p) => p.slug === clean);
     return post ? localizePost(post, locale) : undefined;
 }
 
 export function getLocalPosts(locale = 'es'): LocalPost[] {
-    return LOCAL_POSTS.map((p) => localizePost(p, locale));
+    return getPublishedPosts().map((p) => localizePost(p, locale));
 }
 
 export type { LocalPost, LocalPostFaq, LocalPostTranslation } from './types';

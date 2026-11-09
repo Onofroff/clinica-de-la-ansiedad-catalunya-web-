@@ -1,6 +1,6 @@
 import { buildMetadata } from '@/lib/metadata';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/schema';
-import { LOCAL_POSTS, getLocalPost, getLocalPosts } from '@/content/blog';
+import { getPublishedPosts, getLocalPost, getLocalPosts } from '@/content/blog';
 import { markdownToHtml, markdownHeadings, markdownReadingTime } from '@/lib/markdown';
 import BlogCard from '@/components/blog/BlogCard';
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Facebook, Twitter, Linkedin, ChevronDown } from 'lucide-react';
@@ -23,7 +23,7 @@ const SITE = 'https://www.clinicadelansiedad.com';
 
 export async function generateStaticParams() {
     const locales = ['es', 'ca'];
-    const slugs = LOCAL_POSTS.map((p) => p.slug);
+    const slugs = getPublishedPosts().map((p) => p.slug);
 
     return slugs.flatMap((s) =>
         locales.map(locale => ({
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: PageProps) {
             lang: locale,
             publishedTime: local.date,
             modifiedTime: local.updated || local.date,
-            catalan: Boolean(LOCAL_POSTS.find((p) => p.slug === local.slug)?.ca),
+            catalan: Boolean(getPublishedPosts().find((p) => p.slug === local.slug)?.ca),
         });
     }
 

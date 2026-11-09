@@ -1,16 +1,18 @@
 // /llms.txt: resumen de la web para asistentes de IA (formato llmstxt.org).
 // Se genera desde los mismos datos que la web, así que los artículos y las
 // páginas locales nuevas aparecen solos.
-import { LOCAL_POSTS } from '@/content/blog';
+import { getPublishedPosts } from '@/content/blog';
 import { MUNICIPIOS } from '@/content/municipios';
 import { GOOGLE_REVIEWS, SOCIAL_LINKS } from '@/lib/constants';
 
 const SITE = 'https://www.clinicadelansiedad.com';
 
 export const dynamic = 'force-static';
+// Se regenera cada hora para incluir los artículos programados el día que salen.
+export const revalidate = 3600;
 
 export function GET() {
-    const posts = [...LOCAL_POSTS].sort((a, b) => b.date.localeCompare(a.date));
+    const posts = [...getPublishedPosts()].sort((a, b) => b.date.localeCompare(a.date));
 
     const text = `# Clínica de la Ansiedad Catalunya
 
