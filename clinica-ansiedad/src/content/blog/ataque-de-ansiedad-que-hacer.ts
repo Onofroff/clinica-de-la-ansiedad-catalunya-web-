@@ -6,7 +6,7 @@ const post: LocalPost = {
     title: 'Ataque de ansiedad: qué hacer en el momento y por qué aparece',
     seoTitle: 'Ataque de ansiedad: qué hacer ahora en 6 pasos',
     description:
-        '¿Tienes un ataque de ansiedad ahora? 6 pasos sencillos para atravesarlo en minutos, cuándo llamar al 112 y por qué vuelve. Por un psicoanalista con 30 años de experiencia.',
+        '¿Tienes un ataque de ansiedad ahora? 6 pasos para atravesarlo en minutos, cuándo llamar al 112 y por qué vuelve. Explicado por un psicoanalista.',
     keywords: [
         'ataque de ansiedad',
         'qué hacer en un ataque de ansiedad',
@@ -56,6 +56,8 @@ Lo que sigue no cura la ansiedad, pero ayuda a atravesar el momento sin añadirl
 
 Llama al 112 si es la primera vez que te ocurre, si tienes dolor en el pecho que se extiende al brazo, la mandíbula o la espalda, si los síntomas no bajan, si tienes una enfermedad del corazón o si simplemente no estás seguro de que sea ansiedad. Descartar una causa médica no es exagerar: es lo responsable.
 
+Si eres tú quien acompaña a alguien en plena crisis, lee [cómo ayudar a alguien con un ataque de ansiedad](/es/blog/como-ayudar-ataque-de-ansiedad). Y si los ataques se repiten sin motivo aparente, te puede interesar [ataque de pánico: por qué da y si se cura](/es/blog/ataque-de-panico).
+
 ## Por qué aparece un ataque de ansiedad
 
 Muchas personas sienten que el ataque «sale de la nada»: estaban tranquilas, viendo la televisión o en el supermercado. Pero que no haya un motivo visible no significa que no haya un motivo.
@@ -100,7 +102,7 @@ Atiendo la ansiedad y las crisis de pánico desde 1993, de forma **presencial en
         title: "Atac d'ansietat: què fer en el moment i per què apareix",
         seoTitle: "Atac d'ansietat: què fer ara en 6 passos",
         description:
-            "Tens un atac d'ansietat ara? 6 passos senzills per travessar-lo en minuts, quan trucar al 112 i per què torna. Per un psicoanalista amb 30 anys d'experiència.",
+            "Tens un atac d'ansietat ara? 6 passos per travessar-lo en minuts, quan trucar al 112 i per què torna. Explicat per un psicoanalista.",
         keywords: [
             "atac d'ansietat",
             "què fer en un atac d'ansietat",
@@ -147,6 +149,8 @@ El que segueix no cura l'ansietat, però ajuda a travessar el moment sense afegi
 ### Quan trucar al 112
 
 Truca al 112 si és la primera vegada que et passa, si tens dolor al pit que s'estén al braç, la mandíbula o l'esquena, si els símptomes no baixen, si tens una malaltia del cor o si simplement no estàs segur que sigui ansietat. Descartar una causa mèdica no és exagerar: és el que toca.
+
+Si ets tu qui acompanya algú en plena crisi, llegeix [com ajudar algú amb un atac d'ansietat](/ca/blog/como-ayudar-ataque-de-ansiedad). I si els atacs es repeteixen sense motiu aparent, et pot interessar [atac de pànic: per què apareix i si es cura](/ca/blog/ataque-de-panico).
 
 ## Per què apareix un atac d'ansietat
 

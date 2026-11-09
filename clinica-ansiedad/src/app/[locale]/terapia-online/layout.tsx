@@ -10,8 +10,8 @@ export async function generateMetadata({
   // "Psicoanalista Barcelona" (Barcelona aparece como zona atendida online).
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Teràpia en línia per a l'ansietat | Catalunya i Espanya",
-      description: "Teràpia en línia per a l'ansietat, el pànic i la depressió amb un psicoanalista amb més de 30 anys d'experiència. En català i castellà, per a tot Catalunya.",
+      title: "Teràpia en línia per a l'ansietat des de qualsevol ciutat",
+      description: "Teràpia en línia per a l'ansietat i el pànic des de Barcelona, Girona, Lleida, Tarragona o qualsevol ciutat. Psicoanalista amb 30 anys d'experiència. En català i castellà.",
       path: '/terapia-online',
       keywords: [
         'teràpia en línia ansietat', 'teràpia online ansietat', 'psicoanalista en línia',
@@ -24,8 +24,8 @@ export async function generateMetadata({
     });
   }
   return buildMetadata({
-    title: 'Terapia online para la ansiedad | Catalunya y toda España',
-    description: 'Terapia online para la ansiedad, el pánico y la depresión con un psicoanalista con más de 30 años de experiencia. En castellano y catalán, para toda España.',
+    title: 'Terapia online para la ansiedad desde cualquier ciudad',
+    description: 'Terapia online para la ansiedad y el pánico desde Madrid, Barcelona, Valencia o cualquier ciudad de España. Psicoanalista con 30 años de experiencia. En castellano y catalán.',
     path: '/terapia-online',
     keywords: [
       'terapia online ansiedad', 'terapia de ansiedad online', 'psicoanalista online',

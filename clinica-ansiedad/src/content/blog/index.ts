@@ -16,6 +16,8 @@ import gestionarEmocionesTrabajo from './gestionar-emociones-trabajo';
 import presionTrabajoAnsiedad from './presion-trabajo-ansiedad';
 import terapiaOnlineAnsiedad from './terapia-online-ansiedad';
 import comoElegirTerapeutaOnlineAnsiedad from './como-elegir-terapeuta-online-ansiedad';
+import ataqueDePanico from './ataque-de-panico';
+import comoAyudarAtaqueDeAnsiedad from './como-ayudar-ataque-de-ansiedad';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 export const LOCAL_POSTS: LocalPost[] = [
@@ -36,6 +38,8 @@ export const LOCAL_POSTS: LocalPost[] = [
     presionTrabajoAnsiedad,
     terapiaOnlineAnsiedad,
     comoElegirTerapeutaOnlineAnsiedad,
+    ataqueDePanico,
+    comoAyudarAtaqueDeAnsiedad,
 ];
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
