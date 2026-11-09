@@ -20,7 +20,7 @@ export const whatsappUrl = (message: string) =>
 // la ficha. Al actualizar, cambiar solo aquí. Comprobado el 13/09/2026: 5,0 (158).
 export const GOOGLE_REVIEWS = {
   rating: '5,0',
-  count: 158,
+  count: 159,
   // Enlace oficial a la ficha de Google Maps, facilitado por la clínica (27/10/2026).
   url: 'https://maps.app.goo.gl/ShS87qdy9zPTKJL4A',
 } as const;

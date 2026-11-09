@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     // Se retira "primera valoración sin compromiso": la reserva exige pago previo,
     // así que la promesa no se sostenía.
     const descriptions: Record<string, string> = {
-        es: 'Psicoanalista para la ansiedad, la depresión y las crisis de pánico en Canet de Mar (Maresme). Consulta presencial y terapia online. Desde 1993.',
-        ca: 'Psicoanalista per a l\'ansietat, la depressió i les crisis de pànic a Canet de Mar (Maresme). Consulta presencial i teràpia online. Des del 1993.'
+        es: 'Psicoanalista para la ansiedad, la depresión y las crisis de pánico. Presencial en Canet de Mar (Maresme) y terapia online para toda España. Desde 1993.',
+        ca: 'Psicoanalista per a l\'ansietat, la depressió i les crisis de pànic. Presencial a Canet de Mar (Maresme) i teràpia en línia per a tot l\'Estat. Des del 1993.'
     };
 
     return {
@@ -150,6 +150,12 @@ export default async function RootLayout({
                     </Providers>
                     <CookieConsent />
                     <AnalyticsEvents />
+                    {/* Vercel Web Analytics (sin cookies): visitas por país, página y origen.
+                        Script oficial sin dependencia npm; hay que activarlo en Vercel → Analytics. */}
+                    <Script id="vercel-va" strategy="afterInteractive">
+                        {`window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`}
+                    </Script>
+                    <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
                 </NextIntlClientProvider>
             </body>
         </html>
