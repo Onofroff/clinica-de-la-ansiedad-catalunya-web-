@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["qué es la ansiedad", "por qué se produce la ansiedad", "tipos de ansiedad", "ansiedad psicoanálisis", "causas de la ansiedad"],
     category: "Ansiedad",
     date: "2026-04-21",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/que-es-la-ansiedad-y-por-que-se-produce.webp",
     imageAlt: "¿Qué es la ansiedad y por qué se produce?",
     body: `
@@ -101,7 +101,38 @@ La primera consulta permite situar qué tipo de ansiedad estás viviendo, qué l
 ## La pregunta real es…
 
 Si la ansiedad insiste una y otra vez, ¿está avisando de un peligro externo… o de una verdad interna que lleva tiempo sin escucharse?
+
+## Sigue leyendo
+
+- [¿Cuáles son los síntomas de la ansiedad?](/es/blog/cuales-son-los-sintomas-de-la-ansiedad)
+- [Causas de la ansiedad: por qué aparece y qué la mantiene](/es/blog/causas-de-la-ansiedad)
+- [Trastorno de ansiedad generalizada (TAG)](/es/blog/problemas/ansiedad-generalizada)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
+
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 `,
+    faq: [
+        {
+            question: "¿Qué es la ansiedad en pocas palabras?",
+            answer:
+                "Es una respuesta de alerta del cuerpo y la mente ante un peligro. Se convierte en un problema cuando se activa sin un peligro real, con demasiada intensidad o durante demasiado tiempo.",
+        },
+        {
+            question: "¿Por qué se produce la ansiedad?",
+            answer:
+                "Suele combinar factores: épocas de sobrecarga, cambios o pérdidas, conflictos que no se han podido elaborar y una forma aprendida de vivir las amenazas. Rara vez tiene una sola causa.",
+        },
+        {
+            question: "¿La ansiedad se cura?",
+            answer:
+                "En la mayoría de los casos mejora mucho con tratamiento. Cuando se entiende qué la sostiene, los síntomas dejan de ser necesarios y suelen remitir.",
+        },
+        {
+            question: "¿Hace falta ir a consulta o puede hacerse online?",
+            answer:
+                "Puede hacerse de las dos formas. La terapia online por videollamada tiene resultados comparables a la presencial para la ansiedad y evita desplazamientos.",
+        },
+    ],
     ca: {
         title: "Què és l'ansietat i per què es produeix?",
         description: "Què és l'ansietat i quina és la seva causa real? Psicoanalista a Canet de Mar (Maresme) i en línia. Entén els símptomes, el conflicte intern i la solució d'arrel.",
@@ -198,7 +229,38 @@ La primera consulta permet situar quin tipus d'ansietat estàs vivint, què la s
 ## La pregunta real és…
 
 Si l'ansietat insisteix una vegada i una altra, està avisant d'un perill extern… o d'una veritat interna que fa temps que no s'escolta?
+
+## Continua llegint
+
+- [Quins són els símptomes de l'ansietat?](/ca/blog/cuales-son-los-sintomas-de-la-ansiedad)
+- [Causes de l'ansietat: per què apareix i què la manté](/ca/blog/causas-de-la-ansiedad)
+- [Trastorn d'ansietat generalitzada (TAG)](/ca/blog/problemas/ansiedad-generalizada)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
+
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 `,
+        faq: [
+            {
+                question: "Què és l'ansietat en poques paraules?",
+                answer:
+                    "És una resposta d'alerta del cos i la ment davant d'un perill. Esdevé un problema quan s'activa sense un perill real, amb massa intensitat o durant massa temps.",
+            },
+            {
+                question: "Per què es produeix l'ansietat?",
+                answer:
+                    "Sol combinar factors: èpoques de sobrecàrrega, canvis o pèrdues, conflictes que no s'han pogut elaborar i una manera apresa de viure les amenaces. Rarament té una sola causa.",
+            },
+            {
+                question: "L'ansietat es cura?",
+                answer:
+                    "En la majoria dels casos millora molt amb tractament. Quan s'entén què la sosté, els símptomes deixen de ser necessaris i solen remetre.",
+            },
+            {
+                question: "Cal anar a la consulta o es pot fer en línia?",
+                answer:
+                    "Es pot fer de les dues maneres. La teràpia en línia per videotrucada té resultats comparables a la presencial per a l'ansietat i estalvia desplaçaments.",
+            },
+        ],
     },
 };
 

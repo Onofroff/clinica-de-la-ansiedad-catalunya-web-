@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["síntomas de la ansiedad", "síntomas físicos ansiedad", "señales de ansiedad", "ansiedad normal y patológica"],
     category: "Ansiedad",
     date: "2026-03-17",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/cuales-son-los-sintomas-de-la-ansiedad.webp",
     imageAlt: "¿Cuáles son los síntomas de la ansiedad? Guía completa",
     body: `
@@ -64,8 +64,39 @@ Es común intentar ignorar el malestar o automedicarse para silenciar los sínto
 
 No tienes que acostumbrarte a vivir con miedo o agotamiento. Pedir ayuda profesional te permitirá contar con un espacio seguro para desenredar el origen de estos síntomas y recuperar tu bienestar.
 
+## Sigue leyendo
+
+- [¿Qué es la ansiedad y por qué se produce?](/es/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Ataque de ansiedad: qué hacer en el momento](/es/blog/ataque-de-ansiedad-que-hacer)
+- [Dolor en el pecho por ansiedad o infarto: cómo distinguirlos](/es/blog/dolor-pecho-ansiedad-o-infarto)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
+
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
+
 **¿Sientes que la ansiedad está limitando tu vida?** No esperes a que los síntomas empeoren. [**Reserva aquí tu primera consulta**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) y comencemos a trabajar juntos para que recuperes tu tranquilidad.
 `,
+    faq: [
+        {
+            question: "¿Cuáles son los síntomas físicos más habituales de la ansiedad?",
+            answer:
+                "Palpitaciones, presión en el pecho, falta de aire, tensión muscular, mareo, nudo en el estómago, sudoración y cansancio. Si aparecen por primera vez o son intensos, conviene que un médico descarte otras causas.",
+        },
+        {
+            question: "¿La ansiedad puede dar síntomas aunque no me sienta nervioso?",
+            answer:
+                "Sí. Muchas personas notan primero el cuerpo (insomnio, problemas digestivos, contracturas) y solo después se dan cuenta de que detrás hay ansiedad.",
+        },
+        {
+            question: "¿Cuándo los síntomas de ansiedad dejan de ser normales?",
+            answer:
+                "Cuando duran semanas, aparecen sin un motivo claro, son desproporcionados o empiezan a limitar tu vida: evitas sitios, duermes mal o te cuesta trabajar.",
+        },
+        {
+            question: "¿Puedo tratar la ansiedad online?",
+            answer:
+                "Sí. La terapia por videollamada funciona para la mayoría de cuadros de ansiedad y permite empezar desde cualquier ciudad, en castellano o catalán.",
+        },
+    ],
     ca: {
         title: "Quins són els símptomes de l'ansietat? Guia completa",
         description: "Sents palpitacions, pressió al pit o por constant? Coneix els principals símptomes físics i psicològics de l'ansietat, i quan demanar ajuda.",
@@ -125,8 +156,39 @@ Si en llegir aquest article has reconegut diversos d'aquests senyals d'ansietat 
 
 No t'has d'acostumar a viure amb por o esgotament. Demanar ajuda professional et permetrà comptar amb un espai segur per desembolicar l'origen d'aquests símptomes i recuperar el teu benestar.
 
+## Continua llegint
+
+- [Què és l'ansietat i per què es produeix?](/ca/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Atac d'ansietat: què fer en el moment](/ca/blog/ataque-de-ansiedad-que-hacer)
+- [Dolor al pit per ansietat o infart: com distingir-los](/ca/blog/dolor-pecho-ansiedad-o-infarto)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
+
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
+
 **Sents que l'ansietat t'està limitant la vida?** No esperis que els símptomes empitjorin. [**Reserva aquí la teva primera consulta**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) i comencem a treballar junts perquè recuperis la tranquil·litat.
 `,
+        faq: [
+            {
+                question: "Quins són els símptomes físics més habituals de l'ansietat?",
+                answer:
+                    "Palpitacions, pressió al pit, falta d'aire, tensió muscular, mareig, nus a l'estómac, suor i cansament. Si apareixen per primera vegada o són intensos, convé que un metge descarti altres causes.",
+            },
+            {
+                question: "L'ansietat pot donar símptomes encara que no em senti nerviós?",
+                answer:
+                    "Sí. Moltes persones noten primer el cos (insomni, problemes digestius, contractures) i només després s'adonen que al darrere hi ha ansietat.",
+            },
+            {
+                question: "Quan deixen de ser normals els símptomes d'ansietat?",
+                answer:
+                    "Quan duren setmanes, apareixen sense un motiu clar, són desproporcionats o comencen a limitar-te la vida: evites llocs, dorms malament o et costa treballar.",
+            },
+            {
+                question: "Puc tractar l'ansietat en línia?",
+                answer:
+                    "Sí. La teràpia per videotrucada funciona per a la majoria de quadres d'ansietat i permet començar des de qualsevol ciutat, en català o castellà.",
+            },
+        ],
     },
 };
 

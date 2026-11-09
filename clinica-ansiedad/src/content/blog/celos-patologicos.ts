@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["celos patológicos", "celos obsesivos", "celos enfermizos", "celos y ansiedad", "tratamiento celos"],
     category: "Celos",
     date: "2026-09-15",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/celos-patologicos.webp",
     imageAlt: "Celos patológicos: cuando los celos se convierten en un problema",
     body: `
@@ -103,32 +103,46 @@ Pedir ayuda por celos patológicos no es reconocer un defecto de carácter. Es h
 
 Joan Ramon Soto Cifuentes, psicoanalista, colegiado COPC nº 3852, fundador y director de la Clínica de la Ansiedad Catalunya (Canet de Mar, Barcelona), en funcionamiento desde 1993. Consulta presencial y online.
 
-## Preguntas frecuentes
+## Sigue leyendo
 
-### ¿Qué son exactamente los celos patológicos?
+- [¿Cuándo acudir a terapia de pareja?](/es/blog/cuando-acudir-terapia-de-pareja)
+- [¿Qué es la ansiedad y por qué se produce?](/es/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-Los celos patológicos son una preocupación obsesiva e intrusiva por la posible infidelidad de la pareja que se mantiene sin pruebas reales y no se calma con explicaciones. Suelen acompañarse de conductas repetidas de comprobación y control, como revisar el móvil o interrogar, y de síntomas de ansiedad como insomnio y taquicardia. Se consideran un síntoma clínico tratable, no un rasgo de carácter.
-
-### ¿Cómo sé si mis celos son normales o patológicos?
-
-Los celos normales aparecen ante un hecho concreto, se pueden hablar y se disuelven al contrastarlos con la realidad. Los celos patológicos surgen sin hechos, resisten a cualquier explicación, ocupan horas de pensamiento al día y llevan a comprobar o vigilar aunque la propia persona sepa que está exagerando. Si la duda vuelve siempre al mismo punto pese a las pruebas, conviene consultar.
-
-### ¿Los celos patológicos tienen que ver con la ansiedad?
-
-Sí. Los celos obsesivos funcionan como una fábrica de ansiedad anticipatoria: la traición se imagina una y otra vez y el cuerpo responde como si ya hubiese ocurrido, con taquicardia, tensión, insomnio e irritabilidad. Muchas personas llegan a consulta creyendo que su problema es solo ansiedad y descubren que el motor es un cuadro de celos enfermizos instalado desde años atrás.
-
-### ¿Se pueden curar los celos patológicos o solo controlarse?
-
-Los celos patológicos se pueden tratar en su origen, no solo contener. Cuando se trabaja el conflicto inconsciente que sostiene la sospecha, la duda deja de cumplir su función y el síntoma pierde fuerza de forma estable. En la Clínica de la Ansiedad Catalunya trabajo con Psicoanálisis Directo buscando ese cambio estructural, con el objetivo de reducir el riesgo de recaída.
-
-### ¿El tratamiento de los celos patológicos requiere que vaya la pareja?
-
-No es necesario. El proceso se realiza con la persona que sufre los celos, porque el conflicto que los origina es individual y suele ser anterior a la relación actual. La pareja puede notar los cambios en la convivencia a medida que avanza el trabajo, pero no se trata de una terapia de pareja.
-
-### ¿Cómo es la primera sesión y cuánto suele durar el proceso?
-
-La primera visita es una conversación clínica real, sin cuestionarios ni tests mecánicos, en la que se explora cuándo aparecieron los celos, cómo se comportan y qué historia afectiva hay detrás. En mi experiencia de más de treinta años y más de mil pacientes atendidos, alrededor del 80% de los procesos se cierran con alta en menos de seis meses. Atiendo presencialmente en Canet de Mar y online para toda Catalunya y España.
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 `,
+    faq: [
+        {
+            question: "¿Qué son exactamente los celos patológicos?",
+            answer:
+                "Los celos patológicos son una preocupación obsesiva e intrusiva por la posible infidelidad de la pareja que se mantiene sin pruebas reales y no se calma con explicaciones. Suelen acompañarse de conductas repetidas de comprobación y control, como revisar el móvil o interrogar, y de síntomas de ansiedad como insomnio y taquicardia. Se consideran un síntoma clínico tratable, no un rasgo de carácter.",
+        },
+        {
+            question: "¿Cómo sé si mis celos son normales o patológicos?",
+            answer:
+                "Los celos normales aparecen ante un hecho concreto, se pueden hablar y se disuelven al contrastarlos con la realidad. Los celos patológicos surgen sin hechos, resisten a cualquier explicación, ocupan horas de pensamiento al día y llevan a comprobar o vigilar aunque la propia persona sepa que está exagerando. Si la duda vuelve siempre al mismo punto pese a las pruebas, conviene consultar.",
+        },
+        {
+            question: "¿Los celos patológicos tienen que ver con la ansiedad?",
+            answer:
+                "Sí. Los celos obsesivos funcionan como una fábrica de ansiedad anticipatoria: la traición se imagina una y otra vez y el cuerpo responde como si ya hubiese ocurrido, con taquicardia, tensión, insomnio e irritabilidad. Muchas personas llegan a consulta creyendo que su problema es solo ansiedad y descubren que el motor es un cuadro de celos enfermizos instalado desde años atrás.",
+        },
+        {
+            question: "¿Se pueden curar los celos patológicos o solo controlarse?",
+            answer:
+                "Los celos patológicos se pueden tratar en su origen, no solo contener. Cuando se trabaja el conflicto inconsciente que sostiene la sospecha, la duda deja de cumplir su función y el síntoma pierde fuerza de forma estable. En la Clínica de la Ansiedad Catalunya trabajo con Psicoanálisis Directo buscando ese cambio estructural, con el objetivo de reducir el riesgo de recaída.",
+        },
+        {
+            question: "¿El tratamiento de los celos patológicos requiere que vaya la pareja?",
+            answer:
+                "No es necesario. El proceso se realiza con la persona que sufre los celos, porque el conflicto que los origina es individual y suele ser anterior a la relación actual. La pareja puede notar los cambios en la convivencia a medida que avanza el trabajo, pero no se trata de una terapia de pareja.",
+        },
+        {
+            question: "¿Cómo es la primera sesión y cuánto suele durar el proceso?",
+            answer:
+                "La primera visita es una conversación clínica real, sin cuestionarios ni tests mecánicos, en la que se explora cuándo aparecieron los celos, cómo se comportan y qué historia afectiva hay detrás. En mi experiencia de más de treinta años y más de mil pacientes atendidos, alrededor del 80% de los procesos se cierran con alta en menos de seis meses. Atiendo presencialmente en Canet de Mar y online para toda Catalunya y España.",
+        },
+    ],
     ca: {
         title: "Gelosia patològica: quan la gelosia es converteix en un problema",
         description: "Gelosia patològica: què és, en què es diferencia de la gelosia normal, quins símptomes i conductes implica, i la seva relació amb l'ansietat i l'aferrament insegur.",
@@ -227,32 +241,46 @@ Demanar ajuda per gelosia patològica no és reconèixer un defecte de caràcter
 
 Joan Ramon Soto Cifuentes, psicoanalista, col·legiat COPC núm. 3852, fundador i director de la Clínica de l'Ansietat Catalunya (Canet de Mar, Barcelona), en funcionament des del 1993. Consulta presencial i en línia.
 
-## Preguntes freqüents
+## Continua llegint
 
-### Què és exactament la gelosia patològica?
+- [Quan anar a teràpia de parella?](/ca/blog/cuando-acudir-terapia-de-pareja)
+- [Què és l'ansietat i per què es produeix?](/ca/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-La gelosia patològica és una preocupació obsessiva i intrusiva per la possible infidelitat de la parella que es manté sense proves reals i no es calma amb explicacions. Sol anar acompanyada de conductes repetides de comprovació i control, com revisar el mòbil o interrogar, i de símptomes d'ansietat com l'insomni i la taquicàrdia. Es considera un símptoma clínic tractable, no un tret de caràcter.
-
-### Com sé si la meva gelosia és normal o patològica?
-
-La gelosia normal apareix davant d'un fet concret, se'n pot parlar i es dissol en contrastar-la amb la realitat. La gelosia patològica sorgeix sense fets, resisteix qualsevol explicació, ocupa hores de pensament al dia i porta a comprovar o vigilar encara que la mateixa persona sàpiga que està exagerant. Si el dubte torna sempre al mateix punt malgrat les proves, convé consultar.
-
-### La gelosia patològica té a veure amb l'ansietat?
-
-Sí. La gelosia obsessiva funciona com una fàbrica d'ansietat anticipatòria: la traïció s'imagina una vegada i una altra i el cos respon com si ja hagués passat, amb taquicàrdia, tensió, insomni i irritabilitat. Moltes persones arriben a la consulta creient que el seu problema és només ansietat i descobreixen que el motor és un quadre de gelosia malaltissa instal·lat des de fa anys.
-
-### Es pot curar la gelosia patològica o només controlar-la?
-
-La gelosia patològica es pot tractar en el seu origen, no només contenir. Quan es treballa el conflicte inconscient que sosté la sospita, el dubte deixa de complir la seva funció i el símptoma perd força de manera estable. A la Clínica de l'Ansietat Catalunya treballo amb Psicoanàlisi Directa buscant aquest canvi estructural, amb l'objectiu de reduir el risc de recaiguda.
-
-### El tractament de la gelosia patològica requereix que vingui la parella?
-
-No cal. El procés es fa amb la persona que pateix la gelosia, perquè el conflicte que l'origina és individual i sol ser anterior a la relació actual. La parella pot notar els canvis en la convivència a mesura que avança el treball, però no es tracta d'una teràpia de parella.
-
-### Com és la primera sessió i quant sol durar el procés?
-
-La primera visita és una conversa clínica real, sense qüestionaris ni tests mecànics, en què s'explora quan va aparèixer la gelosia, com es comporta i quina història afectiva hi ha al darrere. En la meva experiència de més de trenta anys i més de mil pacients atesos, al voltant del 80% dels processos es tanquen amb l'alta en menys de sis mesos. Atenc presencialment a Canet de Mar i en línia per a tot Catalunya i Espanya.
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 `,
+        faq: [
+            {
+                question: "Què és exactament la gelosia patològica?",
+                answer:
+                    "La gelosia patològica és una preocupació obsessiva i intrusiva per la possible infidelitat de la parella que es manté sense proves reals i no es calma amb explicacions. Sol anar acompanyada de conductes repetides de comprovació i control, com revisar el mòbil o interrogar, i de símptomes d'ansietat com l'insomni i la taquicàrdia. Es considera un símptoma clínic tractable, no un tret de caràcter.",
+            },
+            {
+                question: "Com sé si la meva gelosia és normal o patològica?",
+                answer:
+                    "La gelosia normal apareix davant d'un fet concret, se'n pot parlar i es dissol en contrastar-la amb la realitat. La gelosia patològica sorgeix sense fets, resisteix qualsevol explicació, ocupa hores de pensament al dia i porta a comprovar o vigilar encara que la mateixa persona sàpiga que està exagerant. Si el dubte torna sempre al mateix punt malgrat les proves, convé consultar.",
+            },
+            {
+                question: "La gelosia patològica té a veure amb l'ansietat?",
+                answer:
+                    "Sí. La gelosia obsessiva funciona com una fàbrica d'ansietat anticipatòria: la traïció s'imagina una vegada i una altra i el cos respon com si ja hagués passat, amb taquicàrdia, tensió, insomni i irritabilitat. Moltes persones arriben a la consulta creient que el seu problema és només ansietat i descobreixen que el motor és un quadre de gelosia malaltissa instal·lat des de fa anys.",
+            },
+            {
+                question: "Es pot curar la gelosia patològica o només controlar-la?",
+                answer:
+                    "La gelosia patològica es pot tractar en el seu origen, no només contenir. Quan es treballa el conflicte inconscient que sosté la sospita, el dubte deixa de complir la seva funció i el símptoma perd força de manera estable. A la Clínica de l'Ansietat Catalunya treballo amb Psicoanàlisi Directa buscant aquest canvi estructural, amb l'objectiu de reduir el risc de recaiguda.",
+            },
+            {
+                question: "El tractament de la gelosia patològica requereix que vingui la parella?",
+                answer:
+                    "No cal. El procés es fa amb la persona que pateix la gelosia, perquè el conflicte que l'origina és individual i sol ser anterior a la relació actual. La parella pot notar els canvis en la convivència a mesura que avança el treball, però no es tracta d'una teràpia de parella.",
+            },
+            {
+                question: "Com és la primera sessió i quant sol durar el procés?",
+                answer:
+                    "La primera visita és una conversa clínica real, sense qüestionaris ni tests mecànics, en què s'explora quan va aparèixer la gelosia, com es comporta i quina història afectiva hi ha al darrere. En la meva experiència de més de trenta anys i més de mil pacients atesos, al voltant del 80% dels processos es tanquen amb l'alta en menys de sis mesos. Atenc presencialment a Canet de Mar i en línia per a tot Catalunya i Espanya.",
+            },
+        ],
     },
 };
 

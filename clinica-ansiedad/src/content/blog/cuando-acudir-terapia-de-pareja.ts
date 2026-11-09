@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["cuándo ir a terapia de pareja", "terapia de pareja", "crisis de pareja", "señales de alerta pareja"],
     category: "Dimensión Familiar",
     date: "2026-03-19",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/cuando-acudir-terapia-de-pareja.webp",
     imageAlt: "¿Cuándo acudir a terapia de pareja? 5 señales de alerta",
     body: `
@@ -52,8 +52,38 @@ Existe el falso mito de que ir al psicólogo de parejas significa que la relaci�
 
 No esperéis a que la distancia sea insalvable. A veces, unas pocas sesiones son suficientes para reajustar las dinámicas y volver a caminar en la misma dirección.
 
+## Sigue leyendo
+
+- [Celos patológicos](/es/blog/celos-patologicos)
+- [Terapia familiar](/es/blog/terapia-familiar)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
+
+**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse [por videollamada](/es/terapia-online), en castellano o catalán.
+
 **¿Os reconocéis en alguna de estas señales?** En consulta os escucharé sin juicios. [**Reserva vuestra primera visita aquí**](https://clinicadelaansiedad.setmore.com/) y dad el primer paso para recuperar el bienestar en vuestra relación.
 `,
+    faq: [
+        {
+            question: "¿Cuándo es el momento de ir a terapia de pareja?",
+            answer:
+                "Cuando las discusiones se repiten sin resolverse, cuando hay distancia o falta de intimidad, tras una infidelidad o cuando uno de los dos piensa a menudo en separarse.",
+        },
+        {
+            question: "¿Tienen que querer ir los dos?",
+            answer:
+                "Es lo ideal, pero no imprescindible. Si solo uno está dispuesto, puede empezar solo y eso ya cambia la dinámica de la pareja.",
+        },
+        {
+            question: "¿La terapia de pareja sirve para separarse bien?",
+            answer:
+                "Sí. No siempre el objetivo es seguir juntos; a veces es separarse con menos daño, sobre todo cuando hay hijos.",
+        },
+        {
+            question: "¿Se puede hacer terapia de pareja online?",
+            answer:
+                "Sí, por videollamada, incluso si cada miembro de la pareja se conecta desde un lugar distinto.",
+        },
+    ],
     ca: {
         title: "Quan anar a teràpia de parella? 5 senyals d'alerta",
         description: "Sents desconnexió, hi ha discussions constants o problemes de confiança? Descobreix els 5 senyals que indiquen que és el moment d'anar a teràpia de parella.",
@@ -101,8 +131,38 @@ Hi ha el fals mite que anar al psicòleg de parelles vol dir que la relació ha 
 
 No espereu que la distància sigui insalvable. De vegades, unes poques sessions són suficients per reajustar les dinàmiques i tornar a caminar en la mateixa direcció.
 
+## Continua llegint
+
+- [Gelosia patològica](/ca/blog/celos-patologicos)
+- [Teràpia familiar](/ca/blog/terapia-familiar)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
+
+**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer [per videotrucada](/ca/terapia-online), en català o castellà.
+
 **Us reconeixeu en algun d'aquests senyals?** A la consulta us escoltaré sense judicis. [**Reserveu aquí la vostra primera visita**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) i feu el primer pas per recuperar el benestar en la vostra relació.
 `,
+        faq: [
+            {
+                question: "Quan és el moment d'anar a teràpia de parella?",
+                answer:
+                    "Quan les discussions es repeteixen sense resoldre's, quan hi ha distància o manca d'intimitat, després d'una infidelitat o quan un dels dos pensa sovint a separar-se.",
+            },
+            {
+                question: "Hi han de voler anar tots dos?",
+                answer:
+                    "És l'ideal, però no imprescindible. Si només un hi està disposat, pot començar sol i això ja canvia la dinàmica de la parella.",
+            },
+            {
+                question: "La teràpia de parella serveix per separar-se bé?",
+                answer:
+                    "Sí. No sempre l'objectiu és continuar junts; de vegades és separar-se amb menys dany, sobretot quan hi ha fills.",
+            },
+            {
+                question: "Es pot fer teràpia de parella en línia?",
+                answer:
+                    "Sí, per videotrucada, fins i tot si cada membre de la parella es connecta des d'un lloc diferent.",
+            },
+        ],
     },
 };
 

@@ -9,7 +9,7 @@ const post: LocalPost = {
     keywords: ["trastorno de ansiedad generalizada", "TAG", "síntomas TAG", "criterios DSM-5 TAG", "tratamiento ansiedad generalizada"],
     category: "Ansiedad",
     date: "2026-09-17",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/ansiedad-generalizada.webp",
     imageAlt: "Trastorno de ansiedad generalizada (TAG): guía completa de síntomas, diagnóstico y tratamiento",
     body: `
@@ -115,32 +115,47 @@ Atiendo en Canet de Mar, en el Maresme, y también online para el resto de Catal
 
 Soy Joan Ramon Soto Cifuentes, psicoanalista, colegiado COPC nº 3852. Fundador y director de la Clínica de la Ansiedad Catalunya desde 1993. Tengo más de 30 años de práctica clínica y la clínica cuenta con una valoración de 5,0★ con más de 150 reseñas en Google.
 
-## Preguntas frecuentes
+## Sigue leyendo
 
-### ¿Qué es el trastorno de ansiedad generalizada (TAG)?
+- [¿Cuáles son los síntomas de la ansiedad?](/es/blog/cuales-son-los-sintomas-de-la-ansiedad)
+- [Causas de la ansiedad: por qué aparece y qué la mantiene](/es/blog/causas-de-la-ansiedad)
+- [Despertarse de madrugada con ansiedad](/es/blog/despertarse-madrugada-ansiedad)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-El trastorno de ansiedad generalizada es un cuadro clínico en el que la persona experimenta una preocupación excesiva y difícil de controlar la mayoría de los días durante al menos seis meses, acompañada de síntomas físicos como tensión muscular, fatiga, irritabilidad e insomnio. Su rasgo distintivo es que la ansiedad no se dirige a un objeto concreto, sino que salta de un tema a otro. Por eso muchas personas dicen estar en alerta constante sin poder explicar por qué.
-
-### ¿Cuáles son los síntomas de la ansiedad generalizada?
-
-Los síntomas físicos más frecuentes son tensión muscular en cuello y espalda, fatiga persistente, insomnio, molestias digestivas, palpitaciones y cefaleas tensionales. En el plano psicológico aparecen preocupación continua, anticipación de escenarios negativos, irritabilidad, dificultad de concentración y necesidad de tenerlo todo previsto. Es habitual que la persona haya pasado por múltiples pruebas médicas con resultados normales antes de consultar.
-
-### ¿Cómo se diagnostica el TAG según el DSM-5?
-
-El DSM-5 requiere ansiedad y preocupación excesivas sobre diversos acontecimientos, presentes la mayoría de los días durante al menos seis meses, con dificultad para controlarlas y al menos tres síntomas asociados como inquietud, fatiga, irritabilidad, tensión muscular, problemas de concentración o alteraciones del sueño. Además debe existir malestar significativo o deterioro en la vida laboral, social o familiar. Estos criterios describen la forma del cuadro, pero no explican su causa, que es lo que se trabaja en consulta.
-
-### ¿En qué se diferencia el TAG de las crisis de pánico?
-
-La crisis de pánico es un episodio agudo y breve, de inicio brusco, con síntomas físicos intensos y miedo a morir o perder el control. El trastorno de ansiedad generalizada es un estado sostenido de tensión y preocupación de menor intensidad pero mucha mayor duración. Ambos pueden coexistir: es frecuente que una ansiedad generalizada mantenida durante años desemboque en una primera crisis de pánico.
-
-### ¿Cómo se trata el trastorno de ansiedad generalizada desde el psicoanálisis?
-
-En la Clínica de la Ansiedad Catalunya, Joan Ramon Soto, psicoanalista, trabaja con Psicoanálisis Directo, un método que va al conflicto inconsciente que origina el síntoma en lugar de enseñar técnicas para gestionarlo. El objetivo es que la ansiedad deje de ser necesaria para el psiquismo, no que la persona aprenda a convivir con ella. Alrededor del 80% de los procesos terminan en alta en menos de seis meses, aunque cada historia tiene su propio ritmo.
-
-### ¿Cómo es la primera visita en la Clínica de la Ansiedad Catalunya?
-
-Es una conversación clínica real, sin cuestionarios ni tests mecánicos. El psicoanalista Joan Ramon Soto escucha el motivo de consulta, cuándo apareció, en qué momento vital lo hizo y qué se mueve alrededor, y al final suele poder ofrecer una orientación sobre qué sostiene el cuadro y cómo sería el trabajo. Atiende presencialmente en Canet de Mar, en el Maresme, y online para toda Catalunya y España, en catalán o castellano.
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 `,
+    faq: [
+        {
+            question: "¿Qué es el trastorno de ansiedad generalizada (TAG)?",
+            answer:
+                "El trastorno de ansiedad generalizada es un cuadro clínico en el que la persona experimenta una preocupación excesiva y difícil de controlar la mayoría de los días durante al menos seis meses, acompañada de síntomas físicos como tensión muscular, fatiga, irritabilidad e insomnio. Su rasgo distintivo es que la ansiedad no se dirige a un objeto concreto, sino que salta de un tema a otro. Por eso muchas personas dicen estar en alerta constante sin poder explicar por qué.",
+        },
+        {
+            question: "¿Cuáles son los síntomas de la ansiedad generalizada?",
+            answer:
+                "Los síntomas físicos más frecuentes son tensión muscular en cuello y espalda, fatiga persistente, insomnio, molestias digestivas, palpitaciones y cefaleas tensionales. En el plano psicológico aparecen preocupación continua, anticipación de escenarios negativos, irritabilidad, dificultad de concentración y necesidad de tenerlo todo previsto. Es habitual que la persona haya pasado por múltiples pruebas médicas con resultados normales antes de consultar.",
+        },
+        {
+            question: "¿Cómo se diagnostica el TAG según el DSM-5?",
+            answer:
+                "El DSM-5 requiere ansiedad y preocupación excesivas sobre diversos acontecimientos, presentes la mayoría de los días durante al menos seis meses, con dificultad para controlarlas y al menos tres síntomas asociados como inquietud, fatiga, irritabilidad, tensión muscular, problemas de concentración o alteraciones del sueño. Además debe existir malestar significativo o deterioro en la vida laboral, social o familiar. Estos criterios describen la forma del cuadro, pero no explican su causa, que es lo que se trabaja en consulta.",
+        },
+        {
+            question: "¿En qué se diferencia el TAG de las crisis de pánico?",
+            answer:
+                "La crisis de pánico es un episodio agudo y breve, de inicio brusco, con síntomas físicos intensos y miedo a morir o perder el control. El trastorno de ansiedad generalizada es un estado sostenido de tensión y preocupación de menor intensidad pero mucha mayor duración. Ambos pueden coexistir: es frecuente que una ansiedad generalizada mantenida durante años desemboque en una primera crisis de pánico.",
+        },
+        {
+            question: "¿Cómo se trata el trastorno de ansiedad generalizada desde el psicoanálisis?",
+            answer:
+                "En la Clínica de la Ansiedad Catalunya, Joan Ramon Soto, psicoanalista, trabaja con Psicoanálisis Directo, un método que va al conflicto inconsciente que origina el síntoma en lugar de enseñar técnicas para gestionarlo. El objetivo es que la ansiedad deje de ser necesaria para el psiquismo, no que la persona aprenda a convivir con ella. Alrededor del 80% de los procesos terminan en alta en menos de seis meses, aunque cada historia tiene su propio ritmo.",
+        },
+        {
+            question: "¿Cómo es la primera visita en la Clínica de la Ansiedad Catalunya?",
+            answer:
+                "Es una conversación clínica real, sin cuestionarios ni tests mecánicos. El psicoanalista Joan Ramon Soto escucha el motivo de consulta, cuándo apareció, en qué momento vital lo hizo y qué se mueve alrededor, y al final suele poder ofrecer una orientación sobre qué sostiene el cuadro y cómo sería el trabajo. Atiende presencialmente en Canet de Mar, en el Maresme, y online para toda Catalunya y España, en catalán o castellano.",
+        },
+    ],
     ca: {
         title: "Trastorn d'ansietat generalitzada (TAG): guia completa de símptomes, diagnòstic i tractament",
         seoTitle: "Ansietat generalitzada (TAG): símptomes i tractament",
@@ -251,32 +266,47 @@ Atenc a Canet de Mar, al Maresme, i també en línia per a la resta de Catalunya
 
 Soc Joan Ramon Soto Cifuentes, psicoanalista, col·legiat COPC núm. 3852. Fundador i director de la Clínica de l'Ansietat Catalunya des del 1993. Tinc més de 30 anys de pràctica clínica i la clínica té una valoració de 5,0★ amb més de 150 ressenyes a Google.
 
-## Preguntes freqüents
+## Continua llegint
 
-### Què és el trastorn d'ansietat generalitzada (TAG)?
+- [Quins són els símptomes de l'ansietat?](/ca/blog/cuales-son-los-sintomas-de-la-ansiedad)
+- [Causes de l'ansietat: per què apareix i què la manté](/ca/blog/causas-de-la-ansiedad)
+- [Despertar-se de matinada amb ansietat](/ca/blog/despertarse-madrugada-ansiedad)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-El trastorn d'ansietat generalitzada és un quadre clínic en què la persona experimenta una preocupació excessiva i difícil de controlar la majoria dels dies durant almenys sis mesos, acompanyada de símptomes físics com tensió muscular, fatiga, irritabilitat i insomni. El seu tret distintiu és que l'ansietat no es dirigeix a un objecte concret, sinó que salta d'un tema a un altre. Per això moltes persones diuen que estan en alerta constant sense poder explicar per què.
-
-### Quins són els símptomes de l'ansietat generalitzada?
-
-Els símptomes físics més freqüents són tensió muscular al coll i a l'esquena, fatiga persistent, insomni, molèsties digestives, palpitacions i cefalees tensionals. En el pla psicològic apareixen preocupació contínua, anticipació d'escenaris negatius, irritabilitat, dificultat de concentració i necessitat de tenir-ho tot previst. És habitual que la persona hagi passat per múltiples proves mèdiques amb resultats normals abans de consultar.
-
-### Com es diagnostica el TAG segons el DSM-5?
-
-El DSM-5 requereix ansietat i preocupació excessives sobre diversos esdeveniments, presents la majoria dels dies durant almenys sis mesos, amb dificultat per controlar-les i almenys tres símptomes associats com inquietud, fatiga, irritabilitat, tensió muscular, problemes de concentració o alteracions del son. A més, hi ha d'haver un malestar significatiu o un deteriorament en la vida laboral, social o familiar. Aquests criteris descriuen la forma del quadre, però no n'expliquen la causa, que és el que es treballa a la consulta.
-
-### En què es diferencia el TAG de les crisis de pànic?
-
-La crisi de pànic és un episodi agut i breu, d'inici brusc, amb símptomes físics intensos i por de morir o de perdre el control. El trastorn d'ansietat generalitzada és un estat sostingut de tensió i preocupació de menys intensitat però de molta més durada. Tots dos poden coexistir: és freqüent que una ansietat generalitzada mantinguda durant anys desemboqui en una primera crisi de pànic.
-
-### Com es tracta el trastorn d'ansietat generalitzada des de la psicoanàlisi?
-
-A la Clínica de l'Ansietat Catalunya, Joan Ramon Soto, psicoanalista, treballa amb Psicoanàlisi Directa, un mètode que va al conflicte inconscient que origina el símptoma en lloc d'ensenyar tècniques per gestionar-lo. L'objectiu és que l'ansietat deixi de ser necessària per al psiquisme, no que la persona aprengui a conviure-hi. Al voltant del 80% dels processos acaben en alta en menys de sis mesos, tot i que cada història té el seu propi ritme.
-
-### Com és la primera visita a la Clínica de l'Ansietat Catalunya?
-
-És una conversa clínica real, sense qüestionaris ni tests mecànics. El psicoanalista Joan Ramon Soto escolta el motiu de consulta, quan va aparèixer, en quin moment vital ho va fer i què es mou al voltant, i al final sol poder oferir una orientació sobre què sosté el quadre i com seria el treball. Atén presencialment a Canet de Mar, al Maresme, i en línia per a tot Catalunya i Espanya, en català o castellà.
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 `,
+        faq: [
+            {
+                question: "Què és el trastorn d'ansietat generalitzada (TAG)?",
+                answer:
+                    "El trastorn d'ansietat generalitzada és un quadre clínic en què la persona experimenta una preocupació excessiva i difícil de controlar la majoria dels dies durant almenys sis mesos, acompanyada de símptomes físics com tensió muscular, fatiga, irritabilitat i insomni. El seu tret distintiu és que l'ansietat no es dirigeix a un objecte concret, sinó que salta d'un tema a un altre. Per això moltes persones diuen que estan en alerta constant sense poder explicar per què.",
+            },
+            {
+                question: "Quins són els símptomes de l'ansietat generalitzada?",
+                answer:
+                    "Els símptomes físics més freqüents són tensió muscular al coll i a l'esquena, fatiga persistent, insomni, molèsties digestives, palpitacions i cefalees tensionals. En el pla psicològic apareixen preocupació contínua, anticipació d'escenaris negatius, irritabilitat, dificultat de concentració i necessitat de tenir-ho tot previst. És habitual que la persona hagi passat per múltiples proves mèdiques amb resultats normals abans de consultar.",
+            },
+            {
+                question: "Com es diagnostica el TAG segons el DSM-5?",
+                answer:
+                    "El DSM-5 requereix ansietat i preocupació excessives sobre diversos esdeveniments, presents la majoria dels dies durant almenys sis mesos, amb dificultat per controlar-les i almenys tres símptomes associats com inquietud, fatiga, irritabilitat, tensió muscular, problemes de concentració o alteracions del son. A més, hi ha d'haver un malestar significatiu o un deteriorament en la vida laboral, social o familiar. Aquests criteris descriuen la forma del quadre, però no n'expliquen la causa, que és el que es treballa a la consulta.",
+            },
+            {
+                question: "En què es diferencia el TAG de les crisis de pànic?",
+                answer:
+                    "La crisi de pànic és un episodi agut i breu, d'inici brusc, amb símptomes físics intensos i por de morir o de perdre el control. El trastorn d'ansietat generalitzada és un estat sostingut de tensió i preocupació de menys intensitat però de molta més durada. Tots dos poden coexistir: és freqüent que una ansietat generalitzada mantinguda durant anys desemboqui en una primera crisi de pànic.",
+            },
+            {
+                question: "Com es tracta el trastorn d'ansietat generalitzada des de la psicoanàlisi?",
+                answer:
+                    "A la Clínica de l'Ansietat Catalunya, Joan Ramon Soto, psicoanalista, treballa amb Psicoanàlisi Directa, un mètode que va al conflicte inconscient que origina el símptoma en lloc d'ensenyar tècniques per gestionar-lo. L'objectiu és que l'ansietat deixi de ser necessària per al psiquisme, no que la persona aprengui a conviure-hi. Al voltant del 80% dels processos acaben en alta en menys de sis mesos, tot i que cada història té el seu propi ritme.",
+            },
+            {
+                question: "Com és la primera visita a la Clínica de l'Ansietat Catalunya?",
+                answer:
+                    "És una conversa clínica real, sense qüestionaris ni tests mecànics. El psicoanalista Joan Ramon Soto escolta el motiu de consulta, quan va aparèixer, en quin moment vital ho va fer i què es mou al voltant, i al final sol poder oferir una orientació sobre què sosté el quadre i com seria el treball. Atén presencialment a Canet de Mar, al Maresme, i en línia per a tot Catalunya i Espanya, en català o castellà.",
+            },
+        ],
     },
 };
 

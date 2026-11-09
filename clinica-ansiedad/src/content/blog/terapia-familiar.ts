@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["terapia familiar", "cuándo ir a terapia familiar", "conflictos familiares", "ansiedad en la familia", "psicoanalista Maresme"],
     category: "Dimensión Familiar",
     date: "2026-04-21",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/terapia-familiar.webp",
     imageAlt: "Terapia familiar: cuando el problema afecta a toda la familia",
     body: `
@@ -92,7 +92,37 @@ La primera consulta permite entender qué está ocurriendo, cómo se sostiene el
 ## La pregunta real es…
 
 Si toda la familia gira alrededor del síntoma de uno, ¿el problema está en esa persona… o en una dinámica que nadie ha podido nombrar todavía?
+
+## Sigue leyendo
+
+- [¿Cuándo acudir a terapia de pareja?](/es/blog/cuando-acudir-terapia-de-pareja)
+- [Causas de la ansiedad: por qué aparece y qué la mantiene](/es/blog/causas-de-la-ansiedad)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
+
+**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse [por videollamada](/es/terapia-online), en castellano o catalán.
 `,
+    faq: [
+        {
+            question: "¿Cuándo conviene hacer terapia familiar?",
+            answer:
+                "Cuando los conflictos en casa se repiten sin salida, cuando un hijo o un miembro de la familia tiene síntomas que afectan a todos o tras una crisis como una separación, una enfermedad o un duelo.",
+        },
+        {
+            question: "¿Tienen que venir todos los miembros de la familia?",
+            answer:
+                "No siempre. Según el caso se trabaja con toda la familia, con una parte o con una sola persona, y se decide en la primera visita.",
+        },
+        {
+            question: "¿Cuánto dura la terapia familiar?",
+            answer:
+                "Depende de la situación. Algunas familias necesitan pocas sesiones para desbloquear una dinámica; otras, un proceso más largo.",
+        },
+        {
+            question: "¿Se puede hacer terapia familiar online?",
+            answer:
+                "Sí, por videollamada, también cuando los miembros de la familia viven en ciudades distintas.",
+        },
+    ],
     ca: {
         title: "Teràpia familiar: quan el problema afecta tota la família",
         description: "Quan anar a teràpia familiar? Psicoanalista a Canet de Mar (Maresme) i en línia. Entén els conflictes, l'ansietat i les dinàmiques familiars des de la causa arrel.",
@@ -180,7 +210,37 @@ La primera consulta permet entendre què està passant, com se sosté el problem
 ## La pregunta real és…
 
 Si tota la família gira al voltant del símptoma d'un, el problema és en aquella persona… o en una dinàmica que ningú no ha pogut anomenar encara?
+
+## Continua llegint
+
+- [Quan anar a teràpia de parella?](/ca/blog/cuando-acudir-terapia-de-pareja)
+- [Causes de l'ansietat: per què apareix i què la manté](/ca/blog/causas-de-la-ansiedad)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
+
+**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer [per videotrucada](/ca/terapia-online), en català o castellà.
 `,
+        faq: [
+            {
+                question: "Quan convé fer teràpia familiar?",
+                answer:
+                    "Quan els conflictes a casa es repeteixen sense sortida, quan un fill o un membre de la família té símptomes que afecten tothom o després d'una crisi com una separació, una malaltia o un dol.",
+            },
+            {
+                question: "Hi han de venir tots els membres de la família?",
+                answer:
+                    "No sempre. Segons el cas es treballa amb tota la família, amb una part o amb una sola persona, i es decideix a la primera visita.",
+            },
+            {
+                question: "Quant dura la teràpia familiar?",
+                answer:
+                    "Depèn de la situació. Algunes famílies necessiten poques sessions per desbloquejar una dinàmica; d'altres, un procés més llarg.",
+            },
+            {
+                question: "Es pot fer teràpia familiar en línia?",
+                answer:
+                    "Sí, per videotrucada, també quan els membres de la família viuen en ciutats diferents.",
+            },
+        ],
     },
 };
 

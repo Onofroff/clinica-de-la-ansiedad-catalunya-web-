@@ -8,7 +8,7 @@ const post: LocalPost = {
     keywords: ["soledad y salud mental", "sentirse solo acompañado", "soledad crónica", "vacío emocional"],
     category: "Ansiedad",
     date: "2026-04-10",
-    updated: '2026-10-27',
+    updated: '2026-11-09',
     image: "/images/blog/soledad-y-salud-mental.webp",
     imageAlt: "Soledad y salud mental: la epidemia silenciosa del siglo XXI",
     body: `
@@ -44,7 +44,37 @@ Sin embargo, reducirlo a factores externos sería simplificar el problema. Dos p
 ## Qué puede hacer la psicología (y dónde suele fallar)
 
 El problema con muchos enfoques actuales es que intentan intervenir directamente sobre la conducta: fomentar actividades sociales, habilidades comunicativas o pensamiento positivo. Estas estrategias pueden generar alivio temporal, pero no abordan la causa raíz. Muchos pacientes llegan después de haber intentado “llenar” la soledad con actividades, relaciones o distracciones. El resultado suele ser el mismo: una sensación persistente de desconexión. Desde una perspectiva de psicoanálisis directo, la pregunta no es cuántas relaciones tienes, sino cómo te posicionas en ellas. ¿Qué lugar ocupas? ¿Qué evitas? ¿Qué se repite? La soledad, en este sentido, no es el problema, sino una señal de algo que no ha podido articularse de otra forma. La pregunta real es: si rodearte de personas no ha resuelto la soledad… ¿qué parte de ti sigue quedando fuera del vínculo?
+
+## Sigue leyendo
+
+- [¿Qué es la depresión?](/es/blog/que-es-la-depresion)
+- [¿Qué es la ansiedad y por qué se produce?](/es/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
+
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 `,
+    faq: [
+        {
+            question: "¿Qué diferencia hay entre estar solo y sentirse solo?",
+            answer:
+                "Estar solo es una situación; sentirse solo es una vivencia. Se puede tener pareja, familia y amigos y sentirse profundamente solo.",
+        },
+        {
+            question: "¿La soledad puede causar ansiedad o depresión?",
+            answer:
+                "La soledad mantenida se asocia a más ansiedad, tristeza y problemas de sueño. A menudo es a la vez causa y consecuencia de ese malestar.",
+        },
+        {
+            question: "¿Por qué tener más relaciones no quita la sensación de soledad?",
+            answer:
+                "Porque el problema no suele ser la cantidad de vínculos, sino el lugar que ocupas en ellos: lo que callas, lo que evitas o lo que se repite.",
+        },
+        {
+            question: "¿Cuándo pedir ayuda por soledad?",
+            answer:
+                "Cuando dura meses, te quita las ganas de hacer cosas o va acompañada de tristeza persistente. Puedes empezar online desde cualquier ciudad.",
+        },
+    ],
     ca: {
         title: "Soledat i salut mental: l'epidèmia silenciosa del segle XXI",
         description: "Sents soledat fins i tot acompanyat? Un psicoanalista del Maresme analitza la causa arrel de l'aïllament emocional més enllà del símptoma. Entén què passa.",
@@ -98,7 +128,37 @@ Des d'una perspectiva de psicoanàlisi directa, la pregunta no és quantes relac
 La soledat, en aquest sentit, no és el problema, sinó el senyal d'alguna cosa que no s'ha pogut articular d'una altra manera.
 
 La pregunta real és: si envoltar-te de persones no ha resolt la soledat… quina part de tu continua quedant fora del vincle?
+
+## Continua llegint
+
+- [Què és la depressió?](/ca/blog/que-es-la-depresion)
+- [Què és l'ansietat i per què es produeix?](/ca/blog/que-es-la-ansiedad-y-por-que-se-produce)
+- [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
+
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 `,
+        faq: [
+            {
+                question: "Quina diferència hi ha entre estar sol i sentir-se sol?",
+                answer:
+                    "Estar sol és una situació; sentir-se sol és una vivència. Es pot tenir parella, família i amics i sentir-se profundament sol.",
+            },
+            {
+                question: "La soledat pot causar ansietat o depressió?",
+                answer:
+                    "La soledat mantinguda s'associa a més ansietat, tristesa i problemes de son. Sovint és alhora causa i conseqüència d'aquest malestar.",
+            },
+            {
+                question: "Per què tenir més relacions no treu la sensació de soledat?",
+                answer:
+                    "Perquè el problema no sol ser la quantitat de vincles, sinó el lloc que hi ocupes: el que calles, el que evites o el que es repeteix.",
+            },
+            {
+                question: "Quan demanar ajuda per soledat?",
+                answer:
+                    "Quan dura mesos, et treu les ganes de fer coses o va acompanyada de tristesa persistent. Pots començar en línia des de qualsevol ciutat.",
+            },
+        ],
     },
 };
 
