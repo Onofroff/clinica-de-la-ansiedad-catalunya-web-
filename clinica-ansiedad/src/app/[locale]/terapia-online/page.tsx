@@ -335,6 +335,18 @@ export default function TerapiaOnlinePage() {
               <LocaleLink href="/psicologo-maresme" className={footLinkClass}>{c.local}</LocaleLink>
               {c.related4}
             </p>
+            {/* Artículos que responden a dudas sobre el formato online (enlazado interno hacia el blog). */}
+            <p className="text-navy/50 text-sm leading-relaxed mt-4">
+              {locale === "ca" ? "Per llegir abans de començar: " : "Para leer antes de empezar: "}
+              <LocaleLink href={{ pathname: '/blog/[...slug]', params: { slug: ['terapia-online-ansiedad'] } }} className={footLinkClass}>
+                {locale === "ca" ? "com funciona la teràpia en línia i si és eficaç" : "cómo funciona la terapia online y si es eficaz"}
+              </LocaleLink>
+              {locale === "ca" ? " i " : " y "}
+              <LocaleLink href={{ pathname: '/blog/[...slug]', params: { slug: ['como-elegir-terapeuta-online-ansiedad'] } }} className={footLinkClass}>
+                {locale === "ca" ? "com triar terapeuta en línia" : "cómo elegir terapeuta online"}
+              </LocaleLink>
+              .
+            </p>
           </div>
         </section>
 

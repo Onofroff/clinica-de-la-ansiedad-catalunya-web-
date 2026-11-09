@@ -14,6 +14,8 @@ import despertarseMadrugadaAnsiedad from './despertarse-madrugada-ansiedad';
 import burnoutSintomasEmpresa from './burnout-sintomas-empresa';
 import gestionarEmocionesTrabajo from './gestionar-emociones-trabajo';
 import presionTrabajoAnsiedad from './presion-trabajo-ansiedad';
+import terapiaOnlineAnsiedad from './terapia-online-ansiedad';
+import comoElegirTerapeutaOnlineAnsiedad from './como-elegir-terapeuta-online-ansiedad';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 export const LOCAL_POSTS: LocalPost[] = [
@@ -32,6 +34,8 @@ export const LOCAL_POSTS: LocalPost[] = [
     burnoutSintomasEmpresa,
     gestionarEmocionesTrabajo,
     presionTrabajoAnsiedad,
+    terapiaOnlineAnsiedad,
+    comoElegirTerapeutaOnlineAnsiedad,
 ];
 
 export function getLocalPost(slug: string, locale = 'es'): LocalPost | undefined {
