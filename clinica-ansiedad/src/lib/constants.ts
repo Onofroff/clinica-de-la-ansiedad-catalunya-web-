@@ -2,8 +2,11 @@ const SETMORE_BASE = 'https://clinicadelaansiedad.setmore.com';
 
 // Enlace de reserva con atribución por ubicación del CTA (utm_content),
 // para poder medir en analítica qué botón convierte.
+// Prueba 10/11/2026: los botones llevan a la página personal de Joan en Setmore
+// (/joan, un paso menos). Para volver a la página general, dejar BOOKING_PATH = ''.
+const BOOKING_PATH = '/joan';
 export const bookingUrl = (ctaLocation: string) =>
-  `${SETMORE_BASE}?utm_source=web&utm_medium=cta&utm_content=${ctaLocation}`;
+  `${SETMORE_BASE}${BOOKING_PATH}?utm_source=web&utm_medium=cta&utm_content=${ctaLocation}`;
 
 // Compat: enlace genérico usado por páginas que aún no atribuyen ubicación.
 export const BOOKING_URL = bookingUrl('general');
