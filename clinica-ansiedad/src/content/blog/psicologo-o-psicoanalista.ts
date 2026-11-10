@@ -18,7 +18,7 @@ const post: LocalPost = {
         'a quién acudir con ansiedad',
     ],
     category: 'Terapia',
-    date: '2026-11-23',
+    date: '2026-11-10',
     image: '/images/blog/como-elegir-terapeuta-online-ansiedad.webp',
     imageAlt: 'Ilustración sobre cómo elegir profesional para la ansiedad — Clínica de la Ansiedad Catalunya',
     editorialRef: 'ES-11',
