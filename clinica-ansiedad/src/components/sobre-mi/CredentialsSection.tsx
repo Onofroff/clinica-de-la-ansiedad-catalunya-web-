@@ -11,8 +11,9 @@ export default function CredentialsSection() {
   const credentials = [
       {
           icon: <Award className="w-8 h-8 text-gold" />,
-          title: t("Doctorado en Psicología Psicoanalítica", "Doctorat en Psicologia Psicoanalítica"),
-          org: t("Centro Internacional de Psicología (2001)", "Centre Internacional de Psicologia (2001)"),
+          // No es un doctorado universitario: el C.I.P. es un centro de formación privado.
+          title: t("Formación en Psicoanálisis", "Formació en Psicoanàlisi"),
+          org: t("Centro Internacional de Psicología, Barcelona (2001)", "Centre Internacional de Psicologia, Barcelona (2001)"),
           detail: t("Especialización en estructuras clínicas complejas.", "Especialització en estructures clíniques complexes.")
       },
       {
