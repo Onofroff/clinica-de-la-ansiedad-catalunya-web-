@@ -9,20 +9,15 @@ export default function EducationTimeline() {
   const locale = useLocale();
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
   const education = [
-      { year: "2020", title: t("Postgrado En Duelo y Acompañamiento", "Postgrau en dol i acompanyament") },
-      { year: "2012", title: "Community Manager (U.O.C)" },
-      { year: "2010", title: t("Máster en Hipno-Psicoterapeuta", "Màster en hipnopsicoteràpia") },
-      { year: "2010", title: t("Certificado American Association of Professional Hypnotherapist", "Certificat American Association of Professional Hypnotherapists") },
+      // 10/11/2026: sin hipnosis (Joan Ramon no quiere asociarse a ella) y sin
+      // "Dr./doctorado": la formación del C.I.P. es privada, no un doctorado universitario.
+      { year: "2020", title: t("Postgrado en Duelo y Acompañamiento", "Postgrau en dol i acompanyament") },
       { year: "2010", title: t("Postgrado en Coaching Personal Profesional (Centro Mitikum)", "Postgrau en coaching personal professional (Centre Mitikum)") },
-      { year: "2006", title: t("P.N.L. Aplicada a las ventas", "PNL aplicada a les vendes") },
-      { year: "2001", title: t("Dr. Psicología Psicoanalítica (C.I.D)", "Dr. en Psicologia Psicoanalítica (C.I.D)") },
-      { year: "2001", title: t("Psicoanalista Directo", "Psicoanalista directe") },
-      { year: "2000", title: t("Seminarios Sigmund Freud & Jacques Lacan (Ibiza)", "Seminaris Sigmund Freud i Jacques Lacan (Eivissa)") },
-      { year: "1999", title: "Psicoterapeuta (C.I.D)" },
-      { year: "1996", title: t("Training in Ericksonian Hypnotherapy con Jeffrey k Zeig", "Training in Ericksonian Hypnotherapy amb Jeffrey K. Zeig") },
-      { year: "1995", title: t("Máster en Programación Neuro Lingüística", "Màster en programació neurolingüística") },
-      { year: "1993", title: t("Máster en Psicología Analógica e Hipnosis Dinámica", "Màster en psicologia analògica i hipnosi dinàmica") },
-      { year: "1991", title: t("Master en Psicoterapia Integral por el Estudio de Bioinformación", "Màster en psicoteràpia integral per l'Estudi de Bioinformació") },
+      { year: "2001", title: t("Formación en psicoanálisis (Centro Internacional de Psicología, C.I.P.)", "Formació en psicoanàlisi (Centre Internacional de Psicologia, C.I.P.)") },
+      { year: "2001", title: t("Psicoanálisis Directo (The Direct Psychoanalytic Institute)", "Psicoanàlisi Directa (The Direct Psychoanalytic Institute)") },
+      { year: "2000", title: t("Seminarios Sigmund Freud y Jacques Lacan (Escuela de Psicoanálisis de Ibiza)", "Seminaris Sigmund Freud i Jacques Lacan (Escola de Psicoanàlisi d'Eivissa)") },
+      { year: "1999", title: t("Formación en psicoterapia (C.I.P.)", "Formació en psicoteràpia (C.I.P.)") },
+      { year: "1991", title: t("Máster en Psicoterapia Integral (Estudio de Bioinformación)", "Màster en psicoteràpia integral (Estudi de Bioinformació)") },
   ].reverse();
     return (
         <section className="py-24 bg-[#FDFBF7] relative overflow-hidden">
