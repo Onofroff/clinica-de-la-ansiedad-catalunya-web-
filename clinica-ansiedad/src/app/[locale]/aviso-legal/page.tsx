@@ -36,6 +36,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Datos profesionales',
                 items: [
                     'Profesión: psicoanalista / psicoterapeuta.',
+                    'Centro inscrito en el Registre de Centres, Serveis i Establiments Sanitaris de Catalunya con el código 9319.',
                 ],
             },
             {
@@ -95,6 +96,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Dades professionals',
                 items: [
                     'Professió: psicoanalista / psicoterapeuta.',
+                    'Centre inscrit al Registre de Centres, Serveis i Establiments Sanitaris de Catalunya amb el codi 9319.',
                 ],
             },
             {

@@ -18,6 +18,13 @@ export const medicalClinicSchema = {
     // Mismo nombre que la ficha de Google Business Profile (coherencia NAP).
     // La ubicación (Canet de Mar, Maresme) lo separa de la clínica homónima de Barcelona.
     "name": "Clínica de la Ansiedad Catalunya",
+    // Código de inscripción del centro en el Registre de Centres, Serveis i Establiments
+    // Sanitaris (RCESS) de la Generalitat. Es del CENTRO, no una colegiación personal.
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Registre de Centres, Serveis i Establiments Sanitaris de Catalunya",
+        "value": "9319"
+    },
     "disambiguatingDescription": "Consulta de psicoanálisis de Joan Ramon Soto en Canet de Mar (Maresme, Barcelona), en clinicadelansiedad.com. Sin relación con «Clínica de la Ansiedad» (clinicadeansiedad.com), con sede en Barcelona y Madrid.",
     "alternateName": [
         "Clínica de la Ansiedad Maresme",
