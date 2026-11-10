@@ -12,6 +12,7 @@ const post: LocalPost = {
         'técnicas para calmar la ansiedad',
         'calmar la ansiedad rápido',
         'quitar la ansiedad',
+        "psicólogo para la ansiedad",
     ],
     category: 'Ansiedad',
     date: '2026-11-11',
@@ -80,6 +81,11 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             answer:
                 'Sí. Para la ansiedad, la terapia por videollamada obtiene resultados comparables a la presencial y permite empezar desde cualquier ciudad de España.',
         },
+        {
+            question: "¿Necesito un psicólogo para la ansiedad o puedo controlarla solo?",
+            answer:
+                "Si estas técnicas te bastan, no. Si necesitas usarlas a diario o la ansiedad vuelve una y otra vez, conviene la psicoterapia con un profesional especializado en ansiedad (psicólogo clínico, psicoterapeuta o psicoanalista), que ayuda a entender la causa y no solo a calmar el síntoma.",
+        },
     ],
     ca: {
         title: "Com calmar l'ansietat: 7 tècniques que funcionen i quan ja no n'hi ha prou",
@@ -91,6 +97,7 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             "com controlar l'ansietat",
             "tècniques per calmar l'ansietat",
             "calmar l'ansietat ràpid",
+            "psicòleg per a l'ansietat",
         ],
         category: 'Ansietat',
         image: '/images/blog/com-calmar-l-ansietat.webp',
@@ -156,6 +163,11 @@ Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot
                 question: "Serveix la teràpia en línia per a l'ansietat?",
                 answer:
                     "Sí. Per a l'ansietat, la teràpia per videotrucada obté resultats comparables a la presencial i permet començar des de qualsevol ciutat.",
+            },
+            {
+                question: "Necessito un psicòleg per a l'ansietat o la puc controlar sol?",
+                answer:
+                    "Si aquestes tècniques et basten, no. Si les has de fer servir cada dia o l'ansietat torna una vegada i una altra, convé la psicoteràpia amb un professional especialitzat en ansietat (psicòleg clínic, psicoterapeuta o psicoanalista), que ajuda a entendre la causa i no només a calmar el símptoma.",
             },
         ],
     },

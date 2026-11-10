@@ -12,6 +12,7 @@ const post: LocalPost = {
         'miedo a salir de casa',
         'agorafobia tratamiento',
         'agorafobia terapia online',
+        "psicólogo agorafobia",
     ],
     category: 'Ansiedad',
     date: '2026-11-17',
@@ -85,13 +86,18 @@ Atiendo [**online para toda España**](/es/terapia-online) y de forma presencial
             answer:
                 'Muy a menudo la agorafobia empieza tras uno o varios ataques de pánico: la persona evita los lugares donde teme que vuelva a ocurrir y el miedo se extiende.',
         },
+        {
+            question: "¿Qué especialista trata la agorafobia?",
+            answer:
+                "Se trata con psicoterapia, a cargo de un psicólogo clínico, un psicoterapeuta o un psicoanalista con experiencia en pánico y ansiedad. Si hace falta medicación, la pauta el psiquiatra o el médico de cabecera.",
+        },
     ],
     ca: {
         title: "Agorafòbia: la por de sortir de casa i com la teràpia en línia permet començar sense moure't",
         seoTitle: 'Agorafòbia: què és, símptomes i tractament en línia',
         description:
             "Què és l'agorafòbia, com es relaciona amb els atacs de pànic, quines situacions s'eviten i per què la teràpia en línia és el punt de partida ideal per a qui no pot sortir de casa.",
-        keywords: ['agorafòbia', 'agorafòbia què és', 'por de sortir de casa', 'agorafòbia tractament', 'agorafòbia teràpia en línia'],
+        keywords: ['agorafòbia', 'agorafòbia què és', 'por de sortir de casa', 'agorafòbia tractament', 'agorafòbia teràpia en línia', 'psicòleg agorafòbia'],
         category: 'Ansietat',
         image: '/images/blog/agorafobia-ca.webp',
         imageAlt: "Il·lustració d'una porta oberta i un portàtil amb una sessió de teràpia per videotrucada — Clínica de l'Ansietat Catalunya",
@@ -161,6 +167,11 @@ Atenc [**en línia per a tot l'Estat**](/ca/terapia-online) i de manera presenci
                 question: 'Quina relació hi ha entre agorafòbia i atacs de pànic?',
                 answer:
                     "Molt sovint l'agorafòbia comença després d'un o diversos atacs de pànic: la persona evita els llocs on tem que torni a passar i la por s'estén.",
+            },
+            {
+                question: "Quin especialista tracta l'agorafòbia?",
+                answer:
+                    "Es tracta amb psicoteràpia, a càrrec d'un psicòleg clínic, un psicoterapeuta o un psicoanalista amb experiència en pànic i ansietat. Si cal medicació, la pauta el psiquiatre o el metge de capçalera.",
             },
         ],
     },

@@ -24,6 +24,7 @@ import mareosPorAnsiedad from './mareos-por-ansiedad';
 import agorafobia from './agorafobia';
 import hipocondriaAnsiedadPorLaSalud from './hipocondria-ansiedad-por-la-salud';
 import pensamientosIntrusivos from './pensamientos-intrusivos';
+import psicologoOPsicoanalista from './psicologo-o-psicoanalista';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 // Publicación programada: un artículo con `date` futura no aparece en la web
@@ -56,6 +57,7 @@ const ALL_POSTS: LocalPost[] = [
     agorafobia,
     hipocondriaAnsiedadPorLaSalud,
     pensamientosIntrusivos,
+    psicologoOPsicoanalista,
 ];
 
 function todayInMadrid(): string {

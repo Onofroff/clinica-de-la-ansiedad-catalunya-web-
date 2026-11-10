@@ -12,6 +12,7 @@ const post: LocalPost = {
         'cómo parar los pensamientos intrusivos',
         'pensamientos obsesivos',
         'pensamientos que no puedo controlar',
+        "psicólogo pensamientos intrusivos",
     ],
     category: 'Ansiedad',
     date: '2026-11-21',
@@ -89,13 +90,18 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             answer:
                 'Sí. La terapia por videollamada funciona para los pensamientos intrusivos y a muchas personas les resulta más fácil hablar de ellos desde casa.',
         },
+        {
+            question: "¿Debo contarle mis pensamientos intrusivos a un psicólogo?",
+            answer:
+                "Sí. Quien trabaja en psicoterapia (psicólogo, psicoterapeuta o psicoanalista) escucha este tipo de pensamientos a menudo y sabe que no te definen. Decirlos en voz alta, ante alguien que no se alarma, ya les quita parte de su fuerza.",
+        },
     ],
     ca: {
         title: 'Pensaments intrusius: què són, per què apareixen i per què intentar no pensar-hi els empitjora',
         seoTitle: 'Pensaments intrusius: què són i com aturar-los',
         description:
             "Què són els pensaments intrusius, per què espanten tant, per què no volen dir que faràs el que penses i què ajuda de debò que perdin força.",
-        keywords: ['pensaments intrusius', 'pensaments intrusius ansietat', 'com aturar els pensaments intrusius', 'pensaments obsessius'],
+        keywords: ['pensaments intrusius', 'pensaments intrusius ansietat', 'com aturar els pensaments intrusius', 'pensaments obsessius', 'psicòleg pensaments intrusius'],
         category: 'Ansietat',
         image: '/images/blog/pensaments-intrusius.webp',
         imageAlt: "Il·lustració d'una persona amb un núvol de pensament ple de línies embolicades — Clínica de l'Ansietat Catalunya",
@@ -169,6 +175,11 @@ Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot
                 question: 'Es poden tractar en línia?',
                 answer:
                     "Sí. La teràpia per videotrucada funciona per als pensaments intrusius i a moltes persones els resulta més fàcil parlar-ne des de casa.",
+            },
+            {
+                question: "He d'explicar els meus pensaments intrusius a un psicòleg?",
+                answer:
+                    "Sí. Qui treballa en psicoteràpia (psicòleg, psicoterapeuta o psicoanalista) escolta sovint aquest tipus de pensaments i sap que no et defineixen. Dir-los en veu alta, davant d'algú que no s'alarma, ja els treu part de la força.",
             },
         ],
     },

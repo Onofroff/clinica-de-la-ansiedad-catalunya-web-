@@ -12,6 +12,7 @@ const post: LocalPost = {
         'sensación de inestabilidad ansiedad',
         'mareos por estrés',
         'cuánto duran los mareos por ansiedad',
+        "mareos por ansiedad tratamiento",
     ],
     category: 'Ansiedad',
     date: '2026-11-15',
@@ -80,13 +81,18 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             answer:
                 'Sí. Una vez descartadas otras causas, la terapia por videollamada trabaja la ansiedad que los produce y evita desplazamientos a quien teme marearse fuera de casa.',
         },
+        {
+            question: "¿Quién trata los mareos por ansiedad: el médico o el psicólogo?",
+            answer:
+                "Primero el médico, para descartar causas físicas como problemas de oído, de tensión o anemia. Si se descartan y el mareo va ligado a la ansiedad, lo que lo resuelve es la psicoterapia con un profesional especializado en ansiedad: psicólogo clínico, psicoterapeuta o psicoanalista.",
+        },
     ],
     ca: {
         title: "Marejos per ansietat: com són, per què apareixen i com distingir-los d'altres causes",
         seoTitle: 'Marejos per ansietat: com són i per què apareixen',
         description:
             "Com són els marejos per ansietat, per què l'ansietat provoca inestabilitat i sensació de surar, quant duren, quan consultar el metge i què fer perquè deixin de tornar.",
-        keywords: ['marejos per ansietat', 'mareig ansietat símptomes', 'sensació d\'inestabilitat ansietat', 'marejos per estrès'],
+        keywords: ['marejos per ansietat', 'mareig ansietat símptomes', 'sensació d\'inestabilitat ansietat', 'marejos per estrès', 'marejos per ansietat tractament'],
         category: 'Ansietat',
         image: '/images/blog/marejos-per-ansietat.webp',
         imageAlt: "Il·lustració d'una persona sota una espiral que representa el mareig — Clínica de l'Ansietat Catalunya",
@@ -151,6 +157,11 @@ Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot
                 question: 'Es poden tractar els marejos per ansietat en línia?',
                 answer:
                     "Sí. Un cop descartades altres causes, la teràpia per videotrucada treballa l'ansietat que els produeix i estalvia desplaçaments a qui té por de marejar-se fora de casa.",
+            },
+            {
+                question: "Qui tracta els marejos per ansietat: el metge o el psicòleg?",
+                answer:
+                    "Primer el metge, per descartar causes físiques com problemes d'oïda, de tensió o anèmia. Si es descarten i el mareig va lligat a l'ansietat, el que el resol és la psicoteràpia amb un professional especialitzat en ansietat: psicòleg clínic, psicoterapeuta o psicoanalista.",
             },
         ],
     },

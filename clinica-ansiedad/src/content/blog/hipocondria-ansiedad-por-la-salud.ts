@@ -12,6 +12,7 @@ const post: LocalPost = {
         'cibercondría',
         'miedo a estar enfermo',
         'buscar síntomas en internet',
+        "psicólogo hipocondría",
     ],
     category: 'Ansiedad',
     date: '2026-11-19',
@@ -86,13 +87,18 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             answer:
                 'Sí. La terapia por videollamada es eficaz para la ansiedad por la salud y permite empezar desde cualquier ciudad de España.',
         },
+        {
+            question: "¿Qué profesional trata la hipocondría: psicólogo o psiquiatra?",
+            answer:
+                "El tratamiento de fondo es la psicoterapia, que puede llevar un psicólogo clínico, un psicoterapeuta o un psicoanalista. El psiquiatra interviene si hace falta medicación. Lo que no ayuda es seguir haciéndose pruebas médicas para tranquilizarse.",
+        },
     ],
     ca: {
         title: "Hipocondria i ansietat per la salut: quan buscar símptomes a internet empitjora la por",
         seoTitle: 'Hipocondria: ansietat per la salut i Dr. Google',
         description:
             "Què és la hipocondria o ansietat per la salut, per què buscar símptomes a internet (cibercondria) augmenta la por, com sortir del cercle de comprovació i quan demanar ajuda.",
-        keywords: ['hipocondria', 'ansietat per la salut', 'cibercondria', 'por de estar malalt', 'buscar símptomes a internet'],
+        keywords: ['hipocondria', 'ansietat per la salut', 'cibercondria', 'por de estar malalt', 'buscar símptomes a internet', 'psicòleg hipocondria'],
         category: 'Ansietat',
         image: '/images/blog/hipocondria-ansietat-per-la-salut.webp',
         imageAlt: "Il·lustració d'un mòbil amb resultats de cerca i una lupa amb un interrogant — Clínica de l'Ansietat Catalunya",
@@ -163,6 +169,11 @@ Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot
                 question: "Puc tractar l'ansietat per la salut en línia?",
                 answer:
                     "Sí. La teràpia per videotrucada és eficaç per a l'ansietat per la salut i permet començar des de qualsevol ciutat.",
+            },
+            {
+                question: "Quin professional tracta la hipocondria: psicòleg o psiquiatre?",
+                answer:
+                    "El tractament de fons és la psicoteràpia, que pot portar un psicòleg clínic, un psicoterapeuta o un psicoanalista. El psiquiatre hi intervé si cal medicació. El que no ajuda és continuar fent-se proves mèdiques per tranquil·litzar-se.",
             },
         ],
     },

@@ -12,6 +12,7 @@ const post: LocalPost = {
         'ansiedad social síntomas',
         'ansiedad social tratamiento',
         'timidez o ansiedad social',
+        "psicólogo ansiedad social",
     ],
     category: 'Ansiedad',
     date: '2026-11-13',
@@ -88,13 +89,18 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda 
             answer:
                 'Suele aparecer en la adolescencia, aunque muchas personas no piden ayuda hasta años después, cuando el problema ya limita su trabajo o sus relaciones.',
         },
+        {
+            question: "¿Qué profesional me puede ayudar con la ansiedad social?",
+            answer:
+                "Un profesional de la psicoterapia con experiencia en ansiedad: psicólogo clínico, psicoterapeuta o psicoanalista. Más que el título, cuenta que conozca bien la ansiedad y que te sientas cómodo hablando con esa persona, algo clave cuando el problema es precisamente el miedo a ser juzgado.",
+        },
     ],
     ca: {
         title: "Ansietat social: quan la por de ser jutjat et limita (i per què la teràpia en línia ajuda a començar)",
         seoTitle: 'Ansietat social: símptomes, causes i tractament',
         description:
             "Què és l'ansietat social o fòbia social, en què es diferencia de la timidesa, els símptomes i per què la teràpia en línia és una bona manera de fer el primer pas.",
-        keywords: ['ansietat social', 'fòbia social', 'ansietat social símptomes', 'ansietat social tractament'],
+        keywords: ['ansietat social', 'fòbia social', 'ansietat social símptomes', 'ansietat social tractament', 'psicòleg ansietat social'],
         category: 'Ansietat',
         image: '/images/blog/ansietat-social.webp',
         imageAlt: "Il·lustració d'un grup de persones conversant i una persona apartada — Clínica de l'Ansietat Catalunya",
@@ -167,6 +173,11 @@ Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot
                 question: "A quina edat comença l'ansietat social?",
                 answer:
                     "Sol aparèixer a l'adolescència, tot i que moltes persones no demanen ajuda fins anys després, quan el problema ja limita la feina o les relacions.",
+            },
+            {
+                question: "Quin professional em pot ajudar amb l'ansietat social?",
+                answer:
+                    "Un professional de la psicoteràpia amb experiència en ansietat: psicòleg clínic, psicoterapeuta o psicoanalista. Més que el títol, compta que conegui bé l'ansietat i que et sentis còmode parlant amb aquesta persona, una cosa clau quan el problema és precisament la por de ser jutjat.",
             },
         ],
     },
