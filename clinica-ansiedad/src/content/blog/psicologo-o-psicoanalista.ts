@@ -59,7 +59,7 @@ Más que el título, importan tres cosas: que el profesional tenga **experiencia
 
 ## Cómo trabajamos en la Clínica de la Ansiedad Catalunya
 
-Soy psicoanalista y psicoterapeuta, con más de 30 años de práctica clínica. No soy psicólogo ni psiquiatra, y no receto medicación: si en algún caso hace falta, trabajo en coordinación con el médico. La clínica es un centro inscrito en el Registre de Centres Sanitaris de Catalunya (código 9319).
+Soy psicoanalista y psicoterapeuta, con más de 30 años de práctica clínica. No soy psicólogo ni psiquiatra, y no receto medicación: cuando hace falta, trabajo en coordinación con un psiquiatra. La clínica es un centro inscrito en el Registre de Centres Sanitaris de Catalunya (código 9319).
 
 Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
 
@@ -139,7 +139,7 @@ Més que el títol, importen tres coses: que el professional tingui **experiènc
 
 ## Com treballem a la Clínica de l'Ansietat Catalunya
 
-Soc psicoanalista i psicoterapeuta, amb més de 30 anys de pràctica clínica. No soc psicòleg ni psiquiatre, i no recepto medicació: si en algun cas cal, treballo en coordinació amb el metge. La clínica és un centre inscrit al Registre de Centres Sanitaris de Catalunya (codi 9319).
+Soc psicoanalista i psicoterapeuta, amb més de 30 anys de pràctica clínica. No soc psicòleg ni psiquiatre, i no recepto medicació: quan cal, treballo en coordinació amb un psiquiatre. La clínica és un centre inscrit al Registre de Centres Sanitaris de Catalunya (codi 9319).
 
 Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
 
