@@ -9,15 +9,43 @@ export default function PublicationsSection() {
   const locale = useLocale();
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
   // Solo apariciones verificadas (10/11/2026), con enlace cuando existe.
-  // HuffPost: enlace facilitado por Joan Ramon (10/11/2026). Pendientes de confirmar: Vogue, Grupo Cero.
+  // Prensa: enlaces enviados por el equipo de prensa de MundoPsicólogos (correos 2020-2021). Pendiente: Grupo Cero.
   const MP_PROFILE = "https://www.mundopsicologos.com/procard/joan-ramon-soto-cifuentes?therapytype=0";
   const publications: { title: string; year: string; source: string; category: string; url?: string }[] = [
+      {
+          title: t("Ansiedad anticipatoria: cómo controlarla y sus síntomas", "Ansietat anticipatòria: com controlar-la i els símptomes"),
+          year: "2021",
+          source: "Vogue España",
+          category: t("Entrevista en prensa", "Entrevista a la premsa"),
+          url: "https://www.vogue.es/belleza/articulos/ansiedad-anticipatoria-como-controlarla-sintomas",
+      },
+      {
+          title: t("Cómo diferenciar el cotilleo sano del patológico", "Com diferenciar el xafardeig sa del patològic"),
+          year: "2021",
+          source: "ABC",
+          category: t("Entrevista en prensa", "Entrevista a la premsa"),
+          url: "https://www.abc.es/bienestar/psicologia-sexo/psicologia/abci-como-diferenciar-cotilleo-sano-patologico-202102150231_noticia.html",
+      },
       {
           title: t("Por qué los españoles acatan tan bien las órdenes e ignoran los consejos", "Per què els espanyols acaten tan bé les ordres i ignoren els consells"),
           year: "2020",
           source: "El HuffPost",
-          category: t("Artículo de opinión", "Article d'opinió"),
+          category: t("Entrevista en prensa", "Entrevista a la premsa"),
           url: "https://www.huffingtonpost.es/entry/por-que-los-espanoles-acatan-tan-bien-las-ordenes-e-ignoran-los-consejos_es_5f4549e5c5b60c7ec416dde2.html",
+      },
+      {
+          title: t("Efectos del confinamiento en los adolescentes", "Efectes del confinament en els adolescents"),
+          year: "2020",
+          source: "¡Hola!",
+          category: t("Entrevista en prensa", "Entrevista a la premsa"),
+          url: "https://www.hola.com/ninos/galeria/20201111178984/efectos-confinamiento-adolescentes-psicologia/1/",
+      },
+      {
+          title: t("Cómo diferenciar el cotilleo sano del patológico", "Com diferenciar el xafardeig sa del patològic"),
+          year: "2021",
+          source: "El Matinal",
+          category: t("Entrevista en prensa", "Entrevista a la premsa"),
+          url: "https://www.elmatinal.com/bienestar/como-diferenciar-el-cotilleo-sano-del-patologico/",
       },
       {
           title: t("Los famosos y temidos gatillazos: ¿por qué se producen y cómo evitarlos?", "Els famosos i temuts gatillassos: per què es produeixen i com evitar-los?"),
