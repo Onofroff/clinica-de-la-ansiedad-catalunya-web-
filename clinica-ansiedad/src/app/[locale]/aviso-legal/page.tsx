@@ -36,7 +36,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Datos profesionales',
                 items: [
                     'Profesión: psicoanalista / psicoterapeuta.',
-                    "Colegio profesional: Col·legi Oficial de Psicòlegs de Catalunya (COPC), número de colegiado 3852.",
+                    "Colegio profesional: Col·legi Oficial de Psicòlegs de Catalunya (COPC), número de colegiado 9319.",
                     'Normas profesionales aplicables: Código Deontológico del COPC, disponible en la web del Colegio (copc.cat).',
                 ],
             },
@@ -97,7 +97,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; sections: Lega
                 h2: 'Dades professionals',
                 items: [
                     'Professió: psicoanalista / psicoterapeuta.',
-                    "Col·legi professional: Col·legi Oficial de Psicòlegs de Catalunya (COPC), número de col·legiat 3852.",
+                    "Col·legi professional: Col·legi Oficial de Psicòlegs de Catalunya (COPC), número de col·legiat 9319.",
                     "Normes professionals aplicables: Codi Deontològic del COPC, disponible al web del Col·legi (copc.cat).",
                 ],
             },

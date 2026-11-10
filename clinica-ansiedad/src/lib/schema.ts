@@ -49,11 +49,11 @@ export const medicalClinicSchema = {
             "Terapia individual",
             "Análisis personal"
         ],
-        // Sin licenciatura universitaria: no la tiene. Colegiado en el COPC (nº 3852).
+        // Sin licenciatura universitaria: no la tiene. Colegiado en el COPC (nº 9319).
         "memberOf": {
             "@type": "Organization",
             "name": "Col·legi Oficial de Psicòlegs de Catalunya (COPC)",
-            "identifier": "3852"
+            "identifier": "9319"
         },
         "yearsOfExperience": YEARS_OF_EXPERIENCE,
         "url": "https://www.clinicadelansiedad.com"
@@ -261,7 +261,7 @@ export const personSchema = {
     "memberOf": {
         "@type": "Organization",
         "name": "Col·legi Oficial de Psicòlegs de Catalunya (COPC)",
-        "identifier": "3852"
+        "identifier": "9319"
     },
     "contactPoint": {
         "@type": "ContactPoint",

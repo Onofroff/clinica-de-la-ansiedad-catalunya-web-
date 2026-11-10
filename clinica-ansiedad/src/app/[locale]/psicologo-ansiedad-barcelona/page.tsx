@@ -5,6 +5,8 @@ import { Link } from '@/i18n/routing';
 import { buildMetadata } from '@/lib/metadata';
 import { bookingUrl, whatsappUrl } from '@/lib/constants';
 
+// OJO: Joan Ramon es PSICOANALISTA, no psicólogo (título protegido): «psicólogo»
+// solo puede ir en el slug y en las keywords, nunca en título ni texto visible.
 // Página para búsquedas de Barcelona ("psicólogo ansiedad barcelona" y variantes:
 // cientos de impresiones en Search Console en posiciones 45-60, sin una página
 // que les respondiera). Honestidad ante todo: la consulta presencial está en
@@ -16,14 +18,14 @@ const PATH = '/psicologo-ansiedad-barcelona';
 
 const CONTENT = {
     es: {
-        metaTitle: 'Psicólogo para la ansiedad en Barcelona: online y presencial',
+        metaTitle: 'Psicoanalista para la ansiedad en Barcelona: online y presencial',
         metaDescription:
             'Psicoanalista especialista en ansiedad, pánico y depresión para pacientes de Barcelona: terapia online por videollamada o presencial en Canet de Mar (R1). Desde 1993.',
         chip: 'Pacientes de Barcelona · Online y presencial',
-        h1: 'Psicólogo para la ansiedad en Barcelona',
+        h1: 'Psicoanalista para la ansiedad en Barcelona',
         h1Accent: 'sin listas de espera, online o presencial.',
         intro:
-            'Si vives en Barcelona y la ansiedad, las crisis de pánico o la tristeza te están quitando la vida que quieres, puedes empezar esta misma semana. Soy Joan Ramon Soto, psicoanalista colegiado (COPC 3852) y llevo desde 1993 tratando la ansiedad desde su origen, no solo sus síntomas.',
+            'Si vives en Barcelona y la ansiedad, las crisis de pánico o la tristeza te están quitando la vida que quieres, puedes empezar esta misma semana. Soy Joan Ramon Soto, psicoanalista colegiado (COPC 9319) y llevo desde 1993 tratando la ansiedad desde su origen, no solo sus síntomas.',
         honest:
             'Mi consulta presencial está en Canet de Mar (Maresme), no en Barcelona. La mayoría de pacientes de Barcelona hacen la terapia online por videollamada; otros prefieren venir a Canet, a aproximadamente una hora en Rodalies R1.',
         optionsTitle: 'Dos formas de hacer la terapia desde Barcelona',
@@ -95,18 +97,18 @@ const CONTENT = {
         ctaBook: 'Reservar primera sesión · 75 €',
         waMessage: 'Hola, vivo en Barcelona y me gustaría información sobre la terapia para la ansiedad.',
         crumbHome: 'Inicio',
-        crumbPage: 'Psicólogo ansiedad Barcelona',
+        crumbPage: 'Ansiedad: pacientes de Barcelona',
         crisis: 'Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (atención a la conducta suicida, gratuita, 24 horas).',
     },
     ca: {
-        metaTitle: "Psicòleg per a l'ansietat a Barcelona: en línia i presencial",
+        metaTitle: "Psicoanalista per a l'ansietat a Barcelona: en línia i presencial",
         metaDescription:
             "Psicoanalista especialista en ansietat, pànic i depressió per a pacients de Barcelona: teràpia en línia per videotrucada o presencial a Canet de Mar (R1). Des de 1993.",
         chip: 'Pacients de Barcelona · En línia i presencial',
-        h1: "Psicòleg per a l'ansietat a Barcelona",
+        h1: "Psicoanalista per a l'ansietat a Barcelona",
         h1Accent: "sense llistes d'espera, en línia o presencial.",
         intro:
-            "Si vius a Barcelona i l'ansietat, les crisis de pànic o la tristesa t'estan prenent la vida que vols, pots començar aquesta mateixa setmana. Soc Joan Ramon Soto, psicoanalista col·legiat (COPC 3852) i des de 1993 tracto l'ansietat des del seu origen, no només els símptomes.",
+            "Si vius a Barcelona i l'ansietat, les crisis de pànic o la tristesa t'estan prenent la vida que vols, pots començar aquesta mateixa setmana. Soc Joan Ramon Soto, psicoanalista col·legiat (COPC 9319) i des de 1993 tracto l'ansietat des del seu origen, no només els símptomes.",
         honest:
             "La meva consulta presencial és a Canet de Mar (Maresme), no a Barcelona. La majoria de pacients de Barcelona fan la teràpia en línia per videotrucada; d'altres prefereixen venir a Canet, a aproximadament una hora amb Rodalies R1.",
         optionsTitle: 'Dues maneres de fer la teràpia des de Barcelona',
@@ -178,7 +180,7 @@ const CONTENT = {
         ctaBook: 'Reservar primera sessió · 75 €',
         waMessage: "Hola, visc a Barcelona i m'agradaria informació sobre la teràpia per a l'ansietat.",
         crumbHome: 'Inici',
-        crumbPage: 'Psicòleg ansietat Barcelona',
+        crumbPage: 'Ansietat: pacients de Barcelona',
         crisis: "Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (atenció a la conducta suïcida, gratuïta, 24 hores).",
     },
 };

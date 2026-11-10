@@ -21,7 +21,7 @@ export default function ExpertBio() {
                 <div className="flex flex-wrap gap-2">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-gold/10 text-navy border border-gold/20">
                         <BadgeCheck className="w-3 h-3 text-gold" />
-                        Col·legiat COPC nº 3852
+                        Col·legiat COPC nº 9319
                     </span>
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-navy/5 text-navy border border-navy/10">
                         <GraduationCap className="w-3 h-3" />
