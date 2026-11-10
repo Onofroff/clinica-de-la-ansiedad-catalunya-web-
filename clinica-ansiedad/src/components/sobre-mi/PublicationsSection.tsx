@@ -9,9 +9,16 @@ export default function PublicationsSection() {
   const locale = useLocale();
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
   // Solo apariciones verificadas (10/11/2026), con enlace cuando existe.
-  // Pendiente de confirmar con Joan Ramon antes de añadir: HuffPost, Vogue, Grupo Cero.
+  // HuffPost: enlace facilitado por Joan Ramon (10/11/2026). Pendientes de confirmar: Vogue, Grupo Cero.
   const MP_PROFILE = "https://www.mundopsicologos.com/procard/joan-ramon-soto-cifuentes?therapytype=0";
   const publications: { title: string; year: string; source: string; category: string; url?: string }[] = [
+      {
+          title: t("Por qué los españoles acatan tan bien las órdenes e ignoran los consejos", "Per què els espanyols acaten tan bé les ordres i ignoren els consells"),
+          year: "2020",
+          source: "El HuffPost",
+          category: t("Artículo de opinión", "Article d'opinió"),
+          url: "https://www.huffingtonpost.es/entry/por-que-los-espanoles-acatan-tan-bien-las-ordenes-e-ignoran-los-consejos_es_5f4549e5c5b60c7ec416dde2.html",
+      },
       {
           title: t("Los famosos y temidos gatillazos: ¿por qué se producen y cómo evitarlos?", "Els famosos i temuts gatillassos: per què es produeixen i com evitar-los?"),
           year: "2020",
