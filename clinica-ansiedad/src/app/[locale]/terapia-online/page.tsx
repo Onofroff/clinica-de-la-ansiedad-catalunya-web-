@@ -333,7 +333,10 @@ export default function TerapiaOnlinePage() {
               <LocaleLink href="/ludopatia" className={footLinkClass}>{c.gambling}</LocaleLink>
               {c.related3}
               <LocaleLink href="/psicologo-maresme" className={footLinkClass}>{c.local}</LocaleLink>
-              {c.related4}
+              {c.related4}{" "}
+              <LocaleLink href="/psicologo-ansiedad-barcelona" className={footLinkClass}>
+                {locale === "ca" ? "Si vius a Barcelona, mira com treballem amb pacients de la ciutat." : "Si vives en Barcelona, mira cómo trabajamos con pacientes de la ciudad."}
+              </LocaleLink>
             </p>
             {/* Artículos que responden a dudas sobre el formato online (enlazado interno hacia el blog). */}
             <p className="text-navy/50 text-sm leading-relaxed mt-4">

@@ -9,7 +9,7 @@ export default function CrisisPanicoHero() {
     <EspecialidadHero
       chip="Tractament especialitzat · Canet de Mar i en línia"
       chipIcon={<Zap className="w-3.5 h-3.5" />}
-      title="Crisis de pànic a Canet de Mar:"
+      title="Crisis de pànic i atacs d'ansietat:"
       titleAccent="tenen causes i tenen solució."
       description="El cor que s'accelera. L'aire que no arriba. Si coneixes aquesta seqüència, has de saber una cosa: no és una fallada del teu cos. És un missatge que podem desxifrar. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia per a tot Catalunya."
       ctaText="Reservar cita · 75 €"
@@ -24,7 +24,7 @@ export default function CrisisPanicoHero() {
     <EspecialidadHero
       chip="Tratamiento Especializado · Canet de Mar & Online"
       chipIcon={<Zap className="w-3.5 h-3.5" />}
-      title="Crisis de pánico en Canet de Mar:"
+      title="Crisis de pánico y ataques de ansiedad:"
       titleAccent="tienen causas y tienen solución."
       description="El corazón que se acelera. El aire que no llega. Si conoces esa secuencia, necesitas saber algo: no es un fallo de tu cuerpo. Es un mensaje que podemos descifrar. Consulta presencial en Canet de Mar (Maresme) y terapia online."
       ctaText="Reservar cita · 75 €"

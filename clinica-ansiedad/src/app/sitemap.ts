@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/terapia-online', freq: 'monthly', priority: 0.9 },
         { path: '/taller-gestion-estres-empresas', freq: 'monthly', priority: 0.9 },
         { path: '/psicologo-maresme', freq: 'monthly', priority: 0.9 },
+        { path: '/psicologo-ansiedad-barcelona', freq: 'monthly', priority: 0.9 },
         { path: '/servicios/terapia-individual', freq: 'monthly', priority: 0.85 },
         { path: '/servicios/terapia-de-pareja', freq: 'monthly', priority: 0.75 },
         { path: '/servicios/dimension-familiar', freq: 'monthly', priority: 0.7 },
@@ -38,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Las demás /ca/... canonizan a /es (ver buildMetadata) y no deben ir aquí.
     const CATALAN_PAGES = new Set([
         '', '/ansiedad', '/servicios', '/crisis-de-panico', '/depresion', '/celos', '/ludopatia',
-        '/enfoque', '/terapia-online', '/taller-gestion-estres-empresas', '/psicologo-maresme',
+        '/enfoque', '/terapia-online', '/taller-gestion-estres-empresas', '/psicologo-maresme', '/psicologo-ansiedad-barcelona',
         '/servicios/terapia-individual', '/servicios/terapia-de-pareja', '/servicios/dimension-familiar',
         '/sobre-mi', '/blog', '/politica-de-cookies', '/privacidad', '/aviso-legal',
     ]);

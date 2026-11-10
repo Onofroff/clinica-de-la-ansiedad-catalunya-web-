@@ -9,7 +9,7 @@ export default function DepresionHero() {
     <EspecialidadHero
       chip="Depressió i ansietat · Canet de Mar i en línia"
       chipIcon={<Brain className="w-3.5 h-3.5" />}
-      title="Depressió a Canet de Mar (Maresme):"
+      title="Tractament de la depressió:"
       titleAccent="quan la vida deixa d'interessar-te."
       description="No és mandra. No és falta de voluntat. És un crit silenciós del psiquisme que demana ser escoltat. Des de 1993 ajudem persones com tu a recuperar el desig de viure, des de l'arrel. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia."
       ctaText="Reservar cita · 75 €"
@@ -24,7 +24,7 @@ export default function DepresionHero() {
     <EspecialidadHero
       chip="Depresión & Ansiedad · Canet de Mar & Online"
       chipIcon={<Brain className="w-3.5 h-3.5" />}
-      title="Depresión en Canet de Mar (Maresme):"
+      title="Tratamiento de la depresión:"
       titleAccent="cuando la vida deja de interesarte."
       description="No es pereza. No es falta de voluntad. Es un grito silencioso del psiquismo que pide ser escuchado. Desde 1993 ayudamos a personas como tú a recuperar el deseo de vivir —desde la raíz. Consulta presencial en Canet de Mar (Maresme) y terapia online."
       ctaText="Reservar cita · 75 €"

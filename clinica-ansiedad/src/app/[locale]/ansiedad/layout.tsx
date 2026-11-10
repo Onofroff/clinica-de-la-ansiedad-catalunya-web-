@@ -8,8 +8,8 @@ export async function generateMetadata({
   const { locale } = await params;
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Ansietat a Canet de Mar (Maresme) | Clínica de l'Ansietat",
-      description: "Tractament de l'ansietat des de l'arrel amb un psicoanalista especialista. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia per a tot Catalunya.",
+      title: "Tractament de l'ansietat amb psicoanalista, presencial i en línia",
+      description: "Tractament de l'ansietat des de l'arrel amb un psicoanalista especialista. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia per a tot Catalunya i Espanya.",
       path: '/ansiedad',
       keywords: [
         "símptomes d'ansietat", 'ansietat símptomes', "què és l'ansietat",
@@ -31,8 +31,8 @@ export async function generateMetadata({
     // OJO: Joan Ramon es PSICOANALISTA, no psicólogo (título protegido) — ni el
     // title ni el texto visible pueden autodenominarse psicólogo; ese término
     // solo vive en el slug /psicologo-maresme y en las keywords.
-    title: 'Ansiedad en Canet de Mar (Maresme) | Clínica de la Ansiedad',
-    description: 'Tratamiento de la ansiedad de raíz con un psicoanalista especialista. Consulta presencial en Canet de Mar (Maresme) y terapia online para toda Catalunya.',
+    title: 'Tratamiento de la ansiedad con psicoanalista, presencial y online',
+    description: 'Tratamiento de la ansiedad de raíz con un psicoanalista especialista. Consulta presencial en Canet de Mar (Maresme) y terapia online para toda España.',
     path: '/ansiedad',
     keywords: [
       'sintomas de ansiedad', 'ansiedad sintomas', 'que es ansiedad',

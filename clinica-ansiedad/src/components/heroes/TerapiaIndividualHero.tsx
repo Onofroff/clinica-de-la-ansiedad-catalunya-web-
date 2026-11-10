@@ -14,8 +14,8 @@ export default function TerapiaIndividualHero() {
       bg="cream"
       chip={t("Psicoterapia Especializada · Desde 1993", "Psicoteràpia especialitzada · Des de 1993")}
       chipIcon={<ShieldCheck className="w-3.5 h-3.5" />}
-      title={t("Terapia Individual en", "Teràpia individual a")}
-      titleAccent={t("Canet de Mar.", "Canet de Mar.")}
+      title={t("Terapia individual", "Teràpia individual")}
+      titleAccent={t("presencial y online.", "presencial i en línia.")}
       description={t("Un espacio confidencial para explorar tus angustias, entender la raíz de tus síntomas y construir recursos emocionales que duren. No parches. Comprensión real.", "Un espai confidencial per explorar les teves angoixes, entendre l'arrel dels teus símptomes i construir recursos emocionals que durin. No pegats. Comprensió real.")}
       trust={[
         t("Primera sesión sin cuestionarios fríos", "Primera sessió sense qüestionaris freds"),

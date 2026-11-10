@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Depressió a Canet de Mar (Maresme) | Clínica de l'Ansietat",
+      title: "Tractament de la depressió amb psicoanalista, presencial i en línia",
       description: "Tractament de la depressió i l'ansietat des del seu origen inconscient. Psicoanalista a Canet de Mar (Maresme), presencial i en línia per a tot Catalunya.",
       path: '/depresion',
       keywords: ["depressió", "símptomes de la depressió", "depressió i ansietat", "teràpia depressió", "tractament depressió Barcelona", "teràpia depressió Maresme", "psicoanalista depressió", "depressió Girona"],
@@ -18,8 +18,8 @@ export async function generateMetadata({
   }
   return buildMetadata({
     catalan: true,
-    title: 'Depresión en Canet de Mar (Maresme) | Clínica de la Ansiedad',
-    description: 'Tratamiento de la depresión y la ansiedad desde su origen inconsciente. Psicoanalista en Canet de Mar (Maresme), presencial y online.',
+    title: 'Tratamiento de la depresión con psicoanalista, presencial y online',
+    description: 'Tratamiento de la depresión y la ansiedad desde su origen inconsciente. Psicoanalista en Canet de Mar (Maresme), presencial y online para toda España.',
     path: '/depresion',
     keywords: [
       'depresion ansiedad', 'ansiedad y depresion', 'tratamiento depresión Barcelona',

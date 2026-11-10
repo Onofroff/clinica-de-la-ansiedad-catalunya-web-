@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Crisis de pànic a Canet de Mar (Maresme) | Psicoanalista",
+      title: "Crisis de pànic i atacs d'ansietat: tractament en línia i presencial",
       description: "Reconeix els símptomes de les crisis d'ansietat i els atacs de pànic. Tractament psicoanalític presencial a Canet de Mar (Maresme) i en línia per a tot Catalunya.",
       path: '/crisis-de-panico',
       keywords: ["crisi d'ansietat símptomes", "atacs de pànic símptomes", "crisis de pànic", "palpitacions per ansietat", "hiperventilació", "tractament atacs de pànic Barcelona", "pànic tractament Maresme", "atacs de pànic Girona", "teràpia pànic psicoanalítica"],
@@ -18,8 +18,8 @@ export async function generateMetadata({
   }
   return buildMetadata({
     catalan: true,
-    title: 'Crisis de Pánico en Canet de Mar (Maresme) | Psicoanalista',
-    description: 'Reconoce los síntomas de crisis de ansiedad y ataques de pánico. Tratamiento psicoanalítico presencial en Canet de Mar (Maresme) y online para toda Catalunya.',
+    title: 'Crisis de pánico y ataques de ansiedad: tratamiento online y presencial',
+    description: 'Reconoce los síntomas de crisis de ansiedad y ataques de pánico. Tratamiento psicoanalítico presencial en Canet de Mar (Maresme) y online para toda España.',
     path: '/crisis-de-panico',
     keywords: [
       'crisis de ansiedad sintomas', 'ataques de panico sintomas', 'crisis de pánico',

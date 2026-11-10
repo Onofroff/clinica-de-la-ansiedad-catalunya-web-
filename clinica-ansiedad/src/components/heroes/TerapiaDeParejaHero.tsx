@@ -14,8 +14,8 @@ export default function TerapiaDeParejaHero() {
       bg="white"
       chip={t("Resolución de Conflictos · Desde 1993", "Resolució de conflictes · Des de 1993")}
       chipIcon={<HeartHandshake className="w-3.5 h-3.5" />}
-      title={t("Terapia de Pareja en", "Teràpia de parella a")}
-      titleAccent={t("Canet de Mar.", "Canet de Mar.")}
+      title={t("Terapia de pareja", "Teràpia de parella")}
+      titleAccent={t("presencial y online.", "presencial i en línia.")}
       description={t("Acompañamiento especializado para resolver dinámicas de conflicto, bloqueos en la comunicación y desconexión afectiva. Antes de que el silencio sea irreversible.", "Acompanyament especialitzat per resoldre dinàmiques de conflicte, bloquejos en la comunicació i desconnexió afectiva. Abans que el silenci sigui irreversible.")}
       trust={[
         t("Neutralidad clínica absoluta — sin alianzas", "Neutralitat clínica absoluta, sense aliances"),

@@ -74,6 +74,7 @@ export default function Footer() {
                             <li><Link href="/enfoque" className="text-white/80 hover:text-gold transition-colors">{t('approach')}</Link></li>
                             <li><Link href="/sobre-mi" className="text-white/80 hover:text-gold transition-colors">Joan Ramon Soto</Link></li>
                             <li><Link href={"/psicologo-maresme" as any} className="text-white/80 hover:text-gold transition-colors">{t('maresme')}</Link></li>
+                            <li><Link href="/psicologo-ansiedad-barcelona" className="text-white/80 hover:text-gold transition-colors">{t('barcelona')}</Link></li>
                             <li><Link href={"/#faq" as any} className="text-white/80 hover:text-gold transition-colors">{t('faq')}</Link></li>
                             <li><Link href={"/#contacto" as any} className="text-white/80 hover:text-gold transition-colors font-bold flex items-center gap-2 group">{t('contact_title')} <ArrowUpRight className="w-4 h-4 text-gold group-hover:translate-x-1 transition-transform" /></Link></li>
                         </ul>

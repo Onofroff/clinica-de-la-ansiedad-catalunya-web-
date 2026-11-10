@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Gelosia patològica a Canet de Mar (Maresme) | Psicoanalista",
+      title: "Gelosia patològica: tractament psicoanalític presencial i en línia",
       description: "Tractament psicoanalític de la gelosia patològica a Canet de Mar (Maresme), presencial i en línia. La gelosia té un origen profund, i té solució.",
       path: '/celos',
       keywords: ["gelosia patològica", "gelosia en la parella", "tractament gelosia", "gelosia obsessiva", "teràpia gelosia Catalunya", "teràpia gelosia Maresme"],
@@ -18,7 +18,7 @@ export async function generateMetadata({
   }
   return buildMetadata({
     catalan: true,
-    title: 'Celos Patológicos en Canet de Mar (Maresme) | Psicoanalista',
+    title: 'Celos patológicos: tratamiento psicoanalítico presencial y online',
     description: 'Tratamiento psicoanalítico de los celos patológicos en Canet de Mar (Maresme), presencial y online. Los celos tienen un origen profundo —y tienen solución.',
     path: '/celos',
     keywords: [

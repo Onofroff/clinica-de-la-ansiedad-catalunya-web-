@@ -9,7 +9,7 @@ export default function CelosHero() {
     <EspecialidadHero
       chip="Especialistes en gelosia · Canet de Mar i en línia"
       chipIcon={<Heart className="w-3.5 h-3.5" />}
-      title="Gelosia patològica a Canet de Mar:"
+      title="Gelosia patològica:"
       titleAccent="la que no pots controlar."
       description="La gelosia és un estat afectiu que tots hem experimentat. Quan es torna patològica, destrueix vincles i genera un patiment continu. Té un origen, i té tractament. Consulta presencial a Canet de Mar (Maresme) i teràpia en línia."
       ctaText="Reservar cita · 75 €"
@@ -24,7 +24,7 @@ export default function CelosHero() {
     <EspecialidadHero
       chip="Especialistas en Celos · Canet de Mar & Online"
       chipIcon={<Heart className="w-3.5 h-3.5" />}
-      title="Celos patológicos en Canet de Mar:"
+      title="Celos patológicos:"
       titleAccent="los que no puedes controlar."
       description="Los celos son estados afectivos que todos hemos experimentado. Cuando se vuelven patológicos, destruyen vínculos y generan un sufrimiento continuo. Hay un origen —y tiene tratamiento. Consulta presencial en Canet de Mar (Maresme) y terapia online."
       ctaText="Reservar cita · 75 €"

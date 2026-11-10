@@ -10,7 +10,7 @@ export default function AnsiedadHero() {
     <EspecialidadHero
       chip="Especialistes en ansietat · Canet de Mar i en línia"
       chipIcon={<ShieldCheck className="w-3.5 h-3.5" />}
-      title="Tractar l'ansietat a Canet de Mar"
+      title="Tractament de l'ansietat, presencial i en línia,"
       titleAccent="per deixar de patir-la."
       description="Palpitacions. Hiperventilació. El cap que no para. Si has arribat fins aquí és perquè alguna cosa en tu ja sap que necessites respostes reals —no tècniques de respiració, sinó entendre què et passa. Psicoanalista especialista en ansietat a Canet de Mar (Maresme), presencial i en línia per a tot Catalunya."
       ctaText="Reservar cita · 75 €"
@@ -25,7 +25,7 @@ export default function AnsiedadHero() {
     <EspecialidadHero
       chip="Especialistas en Ansiedad · Canet de Mar & Online"
       chipIcon={<ShieldCheck className="w-3.5 h-3.5" />}
-      title="Tratar la ansiedad en Canet de Mar"
+      title="Tratamiento de la ansiedad, presencial y online,"
       titleAccent="para dejar de sufrirla."
       description="Palpitaciones. Hiperventilación. La mente que no para. Si has llegado aquí es porque algo en ti ya sabe que necesitas respuestas reales —no técnicas de respiración, sino la comprensión de lo que te pasa. Psicoanalista especialista en ansiedad en Canet de Mar (Maresme), presencial y online."
       ctaText="Reservar cita · 75 €"

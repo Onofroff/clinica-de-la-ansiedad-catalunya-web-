@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (locale === 'ca') {
     return buildMetadata({
-      title: "Teràpia de parella a Canet de Mar (Maresme) | Psicoanalista",
+      title: "Teràpia de parella presencial i en línia | Psicoanalista",
       description: "Teràpia de parella per a crisis, problemes de comunicació, infidelitat i desconnexió. Consulta a Canet de Mar (Maresme) i en línia per a tot Catalunya.",
       path: '/servicios/terapia-de-pareja',
       keywords: ["teràpia de parella", "crisi de parella", "teràpia de parella Maresme", "teràpia de parella Barcelona", "teràpia de parella en línia", "infidelitat"],
@@ -18,8 +18,8 @@ export async function generateMetadata({
   }
   return buildMetadata({
     catalan: true,
-    title: 'Terapia de pareja en Canet de Mar y el Maresme',
-    description: 'Terapia de pareja psicoanalítica para conflictos y desconexión afectiva. Sesiones presenciales en Canet de Mar (Maresme) y terapia online.',
+    title: 'Terapia de pareja presencial y online | Psicoanalista',
+    description: 'Terapia de pareja psicoanalítica para conflictos y desconexión afectiva. Sesiones presenciales en Canet de Mar (Maresme) y terapia online para toda España.',
     path: '/servicios/terapia-de-pareja',
     keywords: [
       'terapia pareja', 'terapia de pareja Barcelona', 'psicoterapeuta pareja',
