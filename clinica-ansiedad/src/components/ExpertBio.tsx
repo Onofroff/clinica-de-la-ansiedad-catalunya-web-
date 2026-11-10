@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BadgeCheck, GraduationCap } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 
 export default function ExpertBio() {
     return (
@@ -19,10 +19,6 @@ export default function ExpertBio() {
                     Fundador de la Clínica de la Ansiedad Catalunya en 1993. Más de 30 años de experiencia clínica especializada en el tratamiento profundo de la ansiedad, depresión y malestar emocional mediante el psicoanálisis directo.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-gold/10 text-navy border border-gold/20">
-                        <BadgeCheck className="w-3 h-3 text-gold" />
-                        Col·legiat COPC nº 9319
-                    </span>
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-navy/5 text-navy border border-navy/10">
                         <GraduationCap className="w-3 h-3" />
                         Psicoanálisis Directo

@@ -25,7 +25,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; intro: string;
             {
                 h2: 'Responsable del tratamiento',
                 items: [
-                    'Joan Ramon Soto Cifuentes («Clínica de la Ansiedad Catalunya»), psicoanalista / psicoterapeuta, COPC nº 9319. NIF: 77606911N.',
+                    'Joan Ramon Soto Cifuentes («Clínica de la Ansiedad Catalunya»), psicoanalista / psicoterapeuta. NIF: 77606911N.',
                     'Ronda Doctor Anglès 74, 08360 Canet de Mar (Barcelona).',
                     'contacto@clinicadelansiedad.com · 613 91 60 79',
                 ],
@@ -94,7 +94,7 @@ const content: Record<'es' | 'ca', { h1: string; updated: string; intro: string;
             {
                 h2: 'Responsable del tractament',
                 items: [
-                    'Joan Ramon Soto Cifuentes («Clínica de la Ansiedad Catalunya»), psicoanalista / psicoterapeuta, COPC núm. 9319. NIF: 77606911N.',
+                    'Joan Ramon Soto Cifuentes («Clínica de la Ansiedad Catalunya»), psicoanalista / psicoterapeuta. NIF: 77606911N.',
                     'Ronda Doctor Anglès 74, 08360 Canet de Mar (Barcelona).',
                     'contacto@clinicadelansiedad.com · 613 91 60 79',
                 ],

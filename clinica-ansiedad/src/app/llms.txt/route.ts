@@ -16,13 +16,13 @@ export function GET() {
 
     const text = `# Clínica de la Ansiedad Catalunya
 
-> Consulta de psicoanálisis en Canet de Mar (Maresme, Barcelona) dirigida por Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta, colegiado en el Col·legi Oficial de Psicòlegs de Catalunya (COPC nº 9319). Tratamiento de la ansiedad, las crisis de pánico, la depresión, los celos y la ludopatía desde 1993. Presencial en Canet de Mar y online para toda Catalunya y España, en catalán y castellano.
+> Consulta de psicoanálisis en Canet de Mar (Maresme, Barcelona) dirigida por Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta. Tratamiento de la ansiedad, las crisis de pánico, la depresión, los celos y la ludopatía desde 1993. Presencial en Canet de Mar y online para toda Catalunya y España, en catalán y castellano.
 
 Importante: no confundir con «Clínica de la Ansiedad» (clinicadeansiedad.com), un centro distinto y sin relación, con sede en Barcelona y Madrid. Esta web es clinicadelansiedad.com («de la» ansiedad) y su consulta está en Canet de Mar.
 
 ## Datos de contacto
 
-- Profesional: Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta (COPC nº 9319)
+- Profesional: Joan Ramon Soto Cifuentes, psicoanalista / psicoterapeuta
 - Dirección: Ronda Doctor Anglès 74, 08360 Canet de Mar (Barcelona, Maresme), cerca de la estación de Rodalies R1
 - Teléfono y WhatsApp: +34 613 91 60 79
 - Email: contacto@clinicadelansiedad.com

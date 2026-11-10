@@ -171,10 +171,6 @@ export default async function BlogPostPage({ params }: PageProps) {
             name: 'Joan Ramon Soto',
             jobTitle: 'Psicoanalista / Psicoterapeuta',
             url: `${SITE}/es/sobre-mi`,
-            memberOf: {
-                '@type': 'Organization',
-                name: "Col·legi Oficial de Psicòlegs de Catalunya",
-            },
         },
         ...(local ? {
             keywords: local.keywords.join(', '),
@@ -380,8 +376,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                                     {locale === 'ca' ? 'Escrit i revisat per ' : 'Escrito y revisado por '}
                                     <Link href="/sobre-mi" className="text-navy font-medium hover:text-gold">Joan Ramon Soto</Link>
                                     {locale === 'ca'
-                                        ? ', psicoanalista / psicoterapeuta col·legiat al COPC (núm. 9319), amb consulta a Canet de Mar i teràpia en línia per a tot Espanya.'
-                                        : ', psicoanalista / psicoterapeuta colegiado en el COPC (nº 9319), con consulta en Canet de Mar y terapia online para toda España.'}
+                                        ? ', psicoanalista / psicoterapeuta, amb consulta a Canet de Mar i teràpia en línia per a tot Espanya.'
+                                        : ', psicoanalista / psicoterapeuta, con consulta en Canet de Mar y terapia online para toda España.'}
                                     {locale === 'ca' ? ' Darrera revisió: ' : ' Última revisión: '}
                                     {new Date(post.modified).toLocaleDateString(locale === 'ca' ? 'ca-ES' : 'es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}.
                                     {locale === 'ca'

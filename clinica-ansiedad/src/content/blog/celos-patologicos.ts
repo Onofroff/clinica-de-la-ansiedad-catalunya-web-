@@ -101,7 +101,7 @@ La primera visita es una conversación clínica real, sin cuestionarios ni tests
 
 Pedir ayuda por celos patológicos no es reconocer un defecto de carácter. Es hacer caso a un síntoma que insiste porque tiene algo que decir. La ansiedad y los celos no son enemigos: son la solución desesperada que el psiquismo encontró cuando no tenía otros recursos. Si se lleva tiempo viviendo así, se puede consultar sin compromiso y con la tranquilidad de que hay un camino clínico serio para tratarlo.
 
-Joan Ramon Soto Cifuentes, psicoanalista, colegiado COPC nº 9319, fundador y director de la Clínica de la Ansiedad Catalunya (Canet de Mar, Barcelona), en funcionamiento desde 1993. Consulta presencial y online.
+Joan Ramon Soto Cifuentes, psicoanalista, fundador y director de la Clínica de la Ansiedad Catalunya (Canet de Mar, Barcelona), en funcionamiento desde 1993. Consulta presencial y online.
 
 ## Sigue leyendo
 
@@ -239,7 +239,7 @@ La primera visita és una conversa clínica real, sense qüestionaris ni tests m
 
 Demanar ajuda per gelosia patològica no és reconèixer un defecte de caràcter. És fer cas a un símptoma que insisteix perquè té alguna cosa a dir. L'ansietat i la gelosia no són enemigues: són la solució desesperada que el psiquisme va trobar quan no tenia altres recursos. Si fa temps que es viu així, es pot consultar sense compromís i amb la tranquil·litat que hi ha un camí clínic seriós per tractar-ho.
 
-Joan Ramon Soto Cifuentes, psicoanalista, col·legiat COPC núm. 9319, fundador i director de la Clínica de l'Ansietat Catalunya (Canet de Mar, Barcelona), en funcionament des del 1993. Consulta presencial i en línia.
+Joan Ramon Soto Cifuentes, psicoanalista, fundador i director de la Clínica de l'Ansietat Catalunya (Canet de Mar, Barcelona), en funcionament des del 1993. Consulta presencial i en línia.
 
 ## Continua llegint
 

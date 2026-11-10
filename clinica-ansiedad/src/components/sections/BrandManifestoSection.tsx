@@ -89,7 +89,6 @@ export default function BrandManifestoSection() {
                             Terapia personalizada": cuatro cosas que cualquiera puede decir
                             de sí mismo y que por tanto no acreditan nada. */}
                         {[
-                            "Col·legiat COPC nº 9319",
                             t("Ejerciendo desde 1993", "Exercint des de 1993"),
                             t(`${GOOGLE_REVIEWS.rating} en Google (${GOOGLE_REVIEWS.count} reseñas)`, `${GOOGLE_REVIEWS.rating} a Google (${GOOGLE_REVIEWS.count} ressenyes)`),
                             t("Psicoanálisis Directo", "Psicoanàlisi directa"),

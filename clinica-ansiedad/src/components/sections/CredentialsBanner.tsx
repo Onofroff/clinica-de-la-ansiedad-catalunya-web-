@@ -7,7 +7,6 @@ export default function CredentialsBanner() {
   const locale = useLocale();
   const t = (es: string, ca: string) => (locale === "ca" ? ca : es);
     const credentials = [
-        { label: "COPC", sublabel: "Col·legi Oficial de Psicòlegs de Catalunya" },
         { label: `${GOOGLE_REVIEWS.rating} ★`, sublabel: `${GOOGLE_REVIEWS.count} ${t("reseñas en Google", "ressenyes a Google")}` },
         { label: "1993 →", sublabel: t("Más de 30 años de trayectoria clínica", "Més de 30 anys de trajectòria clínica") },
         { label: "Online", sublabel: t("Terapia para toda España y Catalunya", "Teràpia per a tot Catalunya i Espanya") },

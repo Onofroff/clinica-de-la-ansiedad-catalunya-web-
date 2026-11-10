@@ -25,7 +25,7 @@ const CONTENT = {
         h1: 'Psicoanalista para la ansiedad en Barcelona',
         h1Accent: 'sin listas de espera, online o presencial.',
         intro:
-            'Si vives en Barcelona y la ansiedad, las crisis de pánico o la tristeza te están quitando la vida que quieres, puedes empezar esta misma semana. Soy Joan Ramon Soto, psicoanalista colegiado (COPC 9319) y llevo desde 1993 tratando la ansiedad desde su origen, no solo sus síntomas.',
+            'Si vives en Barcelona y la ansiedad, las crisis de pánico o la tristeza te están quitando la vida que quieres, puedes empezar esta misma semana. Soy Joan Ramon Soto, psicoanalista y llevo desde 1993 tratando la ansiedad desde su origen, no solo sus síntomas.',
         honest:
             'Mi consulta presencial está en Canet de Mar (Maresme), no en Barcelona. La mayoría de pacientes de Barcelona hacen la terapia online por videollamada; otros prefieren venir a Canet, a aproximadamente una hora en Rodalies R1.',
         optionsTitle: 'Dos formas de hacer la terapia desde Barcelona',
@@ -108,7 +108,7 @@ const CONTENT = {
         h1: "Psicoanalista per a l'ansietat a Barcelona",
         h1Accent: "sense llistes d'espera, en línia o presencial.",
         intro:
-            "Si vius a Barcelona i l'ansietat, les crisis de pànic o la tristesa t'estan prenent la vida que vols, pots començar aquesta mateixa setmana. Soc Joan Ramon Soto, psicoanalista col·legiat (COPC 9319) i des de 1993 tracto l'ansietat des del seu origen, no només els símptomes.",
+            "Si vius a Barcelona i l'ansietat, les crisis de pànic o la tristesa t'estan prenent la vida que vols, pots començar aquesta mateixa setmana. Soc Joan Ramon Soto, psicoanalista i des de 1993 tracto l'ansietat des del seu origen, no només els símptomes.",
         honest:
             "La meva consulta presencial és a Canet de Mar (Maresme), no a Barcelona. La majoria de pacients de Barcelona fan la teràpia en línia per videotrucada; d'altres prefereixen venir a Canet, a aproximadament una hora amb Rodalies R1.",
         optionsTitle: 'Dues maneres de fer la teràpia des de Barcelona',
