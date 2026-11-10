@@ -94,7 +94,14 @@ export default function PublicationsSection() {
           year: "2020",
           source: "MundoPsicólogos",
           category: t("Artículo", "Article"),
-          url: MP_PROFILE,
+          url: "https://www.mundopsicologos.com/articulos/el-miedo-ante-un-contagio-de-covid-19",
+      },
+      {
+          title: t("¿Si soy muy sensible significa que soy una persona altamente sensible?", "Si soc molt sensible, vol dir que soc una persona altament sensible?"),
+          year: "2020",
+          source: "MundoPsicólogos",
+          category: t("Artículo", "Article"),
+          url: "https://www.mundopsicologos.com/articulos/si-soy-muy-sensible-significa-que-soy-una-persona-altamente-sensible",
       },
       {
           title: t("Entrevista con Sílvia Cóppulo", "Entrevista amb Sílvia Cóppulo"),
