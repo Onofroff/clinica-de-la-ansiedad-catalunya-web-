@@ -42,7 +42,7 @@ export default function CredentialsSection() {
                         viewport={{ once: true }}
                         className="text-gold font-black text-[10px] tracking-[0.3em] uppercase mb-4 block"
                     >
-                        {t("Autorización & Rigor", "Acreditació i rigor")}
+                        {t("Formación y rigor", "Formació i rigor")}
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export default function CredentialsSection() {
                         viewport={{ once: true }}
                         className="font-serif text-4xl md:text-6xl text-navy font-bold mb-6"
                     >
-                        {t("Licencias y", "Títols i")} <span className="text-gold italic font-light">{t("Certificados", "certificats")}</span>
+                        {t("Formación y", "Formació i")} <span className="text-gold italic font-light">{t("certificados", "certificats")}</span>
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -85,10 +85,10 @@ export default function CredentialsSection() {
                                 <h3 className="font-serif text-2xl text-navy font-bold mb-4 leading-tight group-hover:text-gold transition-colors duration-300">
                                     {cred.title}
                                 </h3>
-                                <p className="text-sm text-navy/40 font-bold uppercase tracking-widest mb-4">
+                                <p className="text-sm text-navy/60 font-bold uppercase tracking-widest mb-4">
                                     {cred.org}
                                 </p>
-                                <p className="text-navy/60 text-sm italic font-light">
+                                <p className="text-navy/75 text-sm italic">
                                     {cred.detail}
                                 </p>
                             </div>

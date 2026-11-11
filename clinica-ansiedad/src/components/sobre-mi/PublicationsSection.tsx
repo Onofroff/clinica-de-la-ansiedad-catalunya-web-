@@ -177,8 +177,8 @@ export default function PublicationsSection() {
 
                                 <div className="mt-auto pt-8 border-t border-white/10 flex items-center justify-between">
                                     <div className="flex flex-col">
-                                        <span className="text-white/40 text-[9px] font-bold uppercase tracking-widest">{item.category}</span>
-                                        <span className="text-white/20 text-xs font-serif italic mt-1">{item.year}</span>
+                                        <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">{item.category}</span>
+                                        <span className="text-white/50 text-xs font-serif italic mt-1">{item.year}</span>
                                     </div>
                                     {item.url && (
                                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-gold group-hover:text-navy transition-all duration-300">
