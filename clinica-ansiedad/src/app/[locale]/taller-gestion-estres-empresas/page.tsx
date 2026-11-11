@@ -51,11 +51,11 @@ const content = {
     waMessage:
       "Hola, me gustaría solicitar una propuesta del taller de gestión del estrés y la ansiedad para nuestra empresa.",
     hero: {
-      eyebrow: "Programa presencial para empresas",
+      eyebrow: "Programa presencial y online para empresas",
       title: "Taller práctico de gestión del estrés y la ansiedad",
       titleAccent: "para empresas",
       description:
-        "Un programa presencial y práctico: tus equipos entrenan herramientas concretas para reconocer y gestionar el estrés y la ansiedad.",
+        "Un programa práctico, presencial o por videollamada: tus equipos entrenan herramientas concretas para reconocer y gestionar el estrés y la ansiedad.",
       ctaPrimary: "Solicita una propuesta",
       ctaSecondary: "Ver el programa",
       programLabel: "El programa, de un vistazo",
@@ -75,7 +75,7 @@ const content = {
       chip: "El enfoque",
       h2: "Una intervención práctica, no una charla puntual",
       p1: "El estrés sostenido y la ansiedad pueden afectar al bienestar de las personas y también a la concentración, la toma de decisiones, las relaciones profesionales y la capacidad para afrontar situaciones de presión.",
-      p2: "Proponemos un programa presencial, práctico y estructurado en tres sesiones. El objetivo es que los participantes aprendan herramientas que puedan utilizar durante el taller, practicar entre sesiones e incorporar después a su vida cotidiana. El formato reducido (entre 4 y 10 participantes) facilita una dinámica activa, cercana y participativa, lejos del modelo de conferencia generalista.",
+      p2: "Proponemos un programa práctico, presencial o por videollamada, y estructurado en tres sesiones. El objetivo es que los participantes aprendan herramientas que puedan utilizar durante el taller, practicar entre sesiones e incorporar después a su vida cotidiana. El formato reducido (entre 4 y 10 participantes) facilita una dinámica activa, cercana y participativa, lejos del modelo de conferencia generalista.",
     },
     objectives: {
       chip: "Objetivos",
@@ -93,9 +93,9 @@ const content = {
       chip: "Formato del programa",
       h2: "Cómo se organiza el taller",
       subtitle:
-        "Las sesiones se realizan presencialmente en las instalaciones de la empresa, en el Maresme y Barcelona. Si la plantilla es más amplia, pueden organizarse diferentes grupos para mantener el carácter práctico del taller.",
+        "Las sesiones se realizan presencialmente en las instalaciones de la empresa, en el Maresme y Barcelona, o por videollamada para equipos de cualquier punto de España o en remoto. Si la plantilla es más amplia, pueden organizarse diferentes grupos para mantener el carácter práctico del taller.",
       rows: [
-        { Icon: Building2, label: "Modalidad", value: "Presencial, en las instalaciones de la empresa" },
+        { Icon: Building2, label: "Modalidad", value: "Presencial en la empresa (Maresme y Barcelona) u online por videollamada" },
         { Icon: CalendarDays, label: "Duración", value: "3 sesiones de 1 hora y 30 minutos" },
         { Icon: Repeat, label: "Periodicidad", value: "Una sesión cada 15 días" },
         { Icon: Users, label: "Participantes", value: "Grupos reducidos de 4 a 10 personas" },
@@ -190,11 +190,11 @@ const content = {
       list: [
         {
           q: "¿En qué consiste el taller de gestión del estrés y la ansiedad para empresas?",
-          a: "Es un programa presencial de tres sesiones de 1 hora y 30 minutos, con una periodicidad de 15 días, dirigido a grupos reducidos de 4 a 10 participantes. Es eminentemente práctico: los asistentes entrenan herramientas concretas para reconocer y gestionar el estrés y la ansiedad y las practican entre sesiones.",
+          a: "Es un programa práctico, presencial u online, de tres sesiones de 1 hora y 30 minutos, con una periodicidad de 15 días, dirigido a grupos reducidos de 4 a 10 participantes. Es eminentemente práctico: los asistentes entrenan herramientas concretas para reconocer y gestionar el estrés y la ansiedad y las practican entre sesiones.",
         },
         {
           q: "¿Dónde se realizan las sesiones?",
-          a: "Las sesiones se realizan presencialmente en las instalaciones de la empresa. Si la plantilla es más amplia, pueden organizarse diferentes grupos reducidos para mantener el carácter práctico y participativo del taller.",
+          a: "Presencialmente en las instalaciones de la empresa, en el Maresme y Barcelona, o por videollamada, con el mismo programa, para equipos de cualquier punto de España o que trabajan en remoto. Si la plantilla es más amplia, pueden organizarse diferentes grupos reducidos para mantener el carácter práctico y participativo del taller.",
         },
         {
           q: "¿Cuántas personas pueden participar?",
@@ -224,11 +224,11 @@ const content = {
     waMessage:
       "Hola, m'agradaria sol·licitar una proposta del taller de gestió de l'estrès i l'ansietat per a la nostra empresa.",
     hero: {
-      eyebrow: "Programa presencial per a empreses",
+      eyebrow: "Programa presencial i en línia per a empreses",
       title: "Taller pràctic de gestió de l'estrès i l'ansietat",
       titleAccent: "per a empreses",
       description:
-        "Un programa presencial i pràctic: els teus equips entrenen eines concretes per reconèixer i gestionar l'estrès i l'ansietat.",
+        "Un programa pràctic, presencial o per videotrucada: els teus equips entrenen eines concretes per reconèixer i gestionar l'estrès i l'ansietat.",
       ctaPrimary: "Sol·licita una proposta",
       ctaSecondary: "Veure el programa",
       programLabel: "El programa, d'un cop d'ull",
@@ -248,7 +248,7 @@ const content = {
       chip: "L'enfocament",
       h2: "Una intervenció pràctica, no una xerrada puntual",
       p1: "L'estrès sostingut i l'ansietat poden afectar el benestar de les persones i també la concentració, la presa de decisions, les relacions professionals i la capacitat per afrontar situacions de pressió.",
-      p2: "Proposem un programa presencial, pràctic i estructurat en tres sessions. L'objectiu és que els participants aprenguin eines que puguin utilitzar durant el taller, practicar entre sessions i incorporar després a la seva vida quotidiana. El format reduït (entre 4 i 10 participants) facilita una dinàmica activa, propera i participativa, lluny del model de conferència generalista.",
+      p2: "Proposem un programa pràctic, presencial o per videotrucada, i estructurat en tres sessions. L'objectiu és que els participants aprenguin eines que puguin utilitzar durant el taller, practicar entre sessions i incorporar després a la seva vida quotidiana. El format reduït (entre 4 i 10 participants) facilita una dinàmica activa, propera i participativa, lluny del model de conferència generalista.",
     },
     objectives: {
       chip: "Objectius",
@@ -266,9 +266,9 @@ const content = {
       chip: "Format del programa",
       h2: "Com s'organitza el taller",
       subtitle:
-        "Les sessions es fan presencialment a les instal·lacions de l'empresa, al Maresme i a Barcelona. Si la plantilla és més àmplia, es poden organitzar diferents grups per mantenir el caràcter pràctic del taller.",
+        "Les sessions es fan presencialment a les instal·lacions de l'empresa, al Maresme i a Barcelona, o per videotrucada per a equips de qualsevol punt d'Espanya o en remot. Si la plantilla és més àmplia, es poden organitzar diferents grups per mantenir el caràcter pràctic del taller.",
       rows: [
-        { Icon: Building2, label: "Modalitat", value: "Presencial, a les instal·lacions de l'empresa" },
+        { Icon: Building2, label: "Modalitat", value: "Presencial a l'empresa (Maresme i Barcelona) o en línia per videotrucada" },
         { Icon: CalendarDays, label: "Durada", value: "3 sessions d'1 hora i 30 minuts" },
         { Icon: Repeat, label: "Periodicitat", value: "Una sessió cada 15 dies" },
         { Icon: Users, label: "Participants", value: "Grups reduïts de 4 a 10 persones" },
@@ -363,11 +363,11 @@ const content = {
       list: [
         {
           q: "En què consisteix el taller de gestió de l'estrès i l'ansietat per a empreses?",
-          a: "És un programa presencial de tres sessions d'1 hora i 30 minuts, amb una periodicitat de 15 dies, dirigit a grups reduïts de 4 a 10 participants. És eminentment pràctic: els assistents entrenen eines concretes per reconèixer i gestionar l'estrès i l'ansietat i les practiquen entre sessions.",
+          a: "És un programa pràctic, presencial o en línia, de tres sessions d'1 hora i 30 minuts, amb una periodicitat de 15 dies, dirigit a grups reduïts de 4 a 10 participants. És eminentment pràctic: els assistents entrenen eines concretes per reconèixer i gestionar l'estrès i l'ansietat i les practiquen entre sessions.",
         },
         {
           q: "On es fan les sessions?",
-          a: "Les sessions es fan presencialment a les instal·lacions de l'empresa. Si la plantilla és més àmplia, es poden organitzar diferents grups reduïts per mantenir el caràcter pràctic i participatiu del taller.",
+          a: "Presencialment a les instal·lacions de l'empresa, al Maresme i a Barcelona, o per videotrucada, amb el mateix programa, per a equips de qualsevol punt d'Espanya o que treballen en remot. Si la plantilla és més àmplia, es poden organitzar diferents grups reduïts per mantenir el caràcter pràctic i participatiu del taller.",
         },
         {
           q: "Quantes persones poden participar?",
