@@ -11,20 +11,20 @@ export default function PublicationsSection() {
   // Solo apariciones verificadas (10/11/2026), con enlace cuando existe.
   // Prensa: enlaces enviados por el equipo de prensa de MundoPsicólogos (correos 2020-2021). Pendiente: Grupo Cero.
   const MP_PROFILE = "https://www.mundopsicologos.com/procard/joan-ramon-soto-cifuentes?therapytype=0";
+  // 11/11/2026: sin enlace a Vogue y ABC, que presentan a Joan Ramon como «psicólogo»
+  // y «Dr.» (vía MundoPsicólogos). Volver a enlazar solo si corrigen el título.
   const publications: { title: string; year: string; source: string; category: string; url?: string }[] = [
       {
           title: t("Ansiedad anticipatoria: cómo controlarla y sus síntomas", "Ansietat anticipatòria: com controlar-la i els símptomes"),
           year: "2021",
           source: "Vogue España",
           category: t("Entrevista en prensa", "Entrevista a la premsa"),
-          url: "https://www.vogue.es/belleza/articulos/ansiedad-anticipatoria-como-controlarla-sintomas",
       },
       {
           title: t("Cómo diferenciar el cotilleo sano del patológico", "Com diferenciar el xafardeig sa del patològic"),
           year: "2021",
           source: "ABC",
           category: t("Entrevista en prensa", "Entrevista a la premsa"),
-          url: "https://www.abc.es/bienestar/psicologia-sexo/psicologia/abci-como-diferenciar-cotilleo-sano-patologico-202102150231_noticia.html",
       },
       {
           title: t("Por qué los españoles acatan tan bien las órdenes e ignoran los consejos", "Per què els espanyols acaten tan bé les ordres i ignoren els consells"),
