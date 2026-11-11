@@ -62,7 +62,7 @@ La ansiedad por la salud suele aparecer tras la enfermedad o la muerte de alguie
 - Si buscas síntomas a diario o evitas ir al médico por miedo.
 - Si afecta a tu trabajo, tu sueño o tu pareja.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -145,7 +145,7 @@ L'ansietat per la salut sol aparèixer després de la malaltia o la mort d'algú
 - Si busques símptomes cada dia o evites anar al metge per por.
 - Si afecta la feina, el son o la parella.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

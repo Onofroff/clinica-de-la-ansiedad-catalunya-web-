@@ -82,7 +82,7 @@ Conviene consultar con un profesional si el dolor en el pecho se repite, si has 
 
 En la terapia no nos quedamos solo en el síntoma. Buscamos entender qué lo mantiene: qué está pasando en tu vida cuando aparece, qué se intenta controlar y qué no se puede decir de otra manera. Cuando eso se aclara, el cuerpo deja de necesitar dar la alarma con tanta fuerza.
 
-Atiendo la ansiedad de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano. Si te reconoces en lo que has leído, puedes escribirme por WhatsApp o pedir cita desde la web.
+Atiendo la ansiedad de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano. Si te reconoces en lo que has leído, puedes escribirme por WhatsApp o pedir cita desde la web.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -188,7 +188,7 @@ Convé consultar un professional si el dolor al pit es repeteix, si has anat div
 
 A la teràpia no ens quedem només en el símptoma. Busquem entendre què el manté: què està passant a la teva vida quan apareix, què s'intenta controlar i què no es pot dir d'una altra manera. Quan això s'aclareix, el cos deixa de necessitar donar l'alarma amb tanta força.
 
-Atenc l'ansietat de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et reconeixes en el que has llegit, pots escriure'm per WhatsApp o demanar cita des de la web.
+Atenc l'ansietat de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et reconeixes en el que has llegit, pots escriure'm per WhatsApp o demanar cita des de la web.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

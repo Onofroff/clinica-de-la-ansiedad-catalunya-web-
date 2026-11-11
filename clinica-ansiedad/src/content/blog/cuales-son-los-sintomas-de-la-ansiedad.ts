@@ -71,7 +71,7 @@ No tienes que acostumbrarte a vivir con miedo o agotamiento. Pedir ayuda profesi
 - [Dolor en el pecho por ansiedad o infarto: cómo distinguirlos](/es/blog/dolor-pecho-ansiedad-o-infarto)
 - [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo por videollamada ([terapia online](/es/terapia-online)), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 
 **¿Sientes que la ansiedad está limitando tu vida?** No esperes a que los síntomas empeoren. [**Reserva aquí tu primera consulta**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) y comencemos a trabajar juntos para que recuperes tu tranquilidad.
 `,
@@ -163,7 +163,7 @@ No t'has d'acostumar a viure amb por o esgotament. Demanar ajuda professional et
 - [Dolor al pit per ansietat o infart: com distingir-los](/ca/blog/dolor-pecho-ansiedad-o-infarto)
 - [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi per videotrucada ([teràpia en línia](/ca/terapia-online)), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 
 **Sents que l'ansietat t'està limitant la vida?** No esperis que els símptomes empitjorin. [**Reserva aquí la teva primera consulta**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) i comencem a treballar junts perquè recuperis la tranquil·litat.
 `,

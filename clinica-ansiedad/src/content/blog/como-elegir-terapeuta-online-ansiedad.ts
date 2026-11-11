@@ -67,7 +67,7 @@ No hace falta salir aliviado: a veces hablar de lo que duele remueve. La pregunt
 
 ## Mi forma de trabajar online
 
-Soy Joan Ramon Soto, psicoanalista y psicoterapeuta, y llevo más de treinta años tratando la ansiedad, las crisis de pánico y la depresión. Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Puedes ver las opiniones de pacientes en mi ficha de Google.
+Soy Joan Ramon Soto, psicoanalista y psicoterapeuta, y llevo más de treinta años tratando la ansiedad, las crisis de pánico y la depresión. Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Puedes ver las opiniones de pacientes en mi ficha de Google.
 
 Si quieres saber cómo es el formato por videollamada, lee [terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad). Y si aún no tienes claro si lo que sientes es ansiedad, empieza por [cuáles son los síntomas de la ansiedad](/es/blog/cuales-son-los-sintomas-de-la-ansiedad).
 
@@ -161,7 +161,7 @@ No cal sortir-ne alleujat: de vegades parlar del que fa mal remou. La pregunta �
 
 ## La meva manera de treballar en línia
 
-Soc Joan Ramon Soto, psicoanalista i psicoterapeuta, i fa més de trenta anys que tracto l'ansietat, les crisis de pànic i la depressió. Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots veure les opinions de pacients a la meva fitxa de Google.
+Soc Joan Ramon Soto, psicoanalista i psicoterapeuta, i fa més de trenta anys que tracto l'ansietat, les crisis de pànic i la depressió. Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots veure les opinions de pacients a la meva fitxa de Google.
 
 Si vols saber com és el format per videotrucada, llegeix [teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad). I si encara no tens clar si el que sents és ansietat, comença per [quins són els símptomes de l'ansietat](/ca/blog/cuales-son-los-sintomas-de-la-ansiedad).
 

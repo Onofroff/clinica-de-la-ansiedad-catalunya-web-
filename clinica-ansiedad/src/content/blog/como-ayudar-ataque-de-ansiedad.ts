@@ -65,7 +65,7 @@ Si se repiten, lo más útil que puedes hacer es **animarle a pedir ayuda profes
 
 Y cuídate tú también: acompañar la ansiedad de alguien cercano cansa.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. También puedes escribirme si eres familiar o pareja y no sabes cómo ayudar.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. También puedes escribirme si eres familiar o pareja y no sabes cómo ayudar.
 
 *Si estás en crisis o alguien tiene pensamientos de hacerse daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -153,7 +153,7 @@ Si es repeteixen, el més útil que pots fer és **animar-la a demanar ajuda pro
 
 I cuida't tu també: acompanyar l'ansietat d'algú proper cansa.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. També em pots escriure si ets familiar o parella i no saps com ajudar.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. També em pots escriure si ets familiar o parella i no saps com ajudar.
 
 *Si estàs en crisi o algú té pensaments de fer-se mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

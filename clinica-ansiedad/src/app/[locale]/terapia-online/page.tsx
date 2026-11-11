@@ -80,6 +80,27 @@ const CONTENT = {
     related3: " online. Terapia online para pacientes de Barcelona y toda Catalunya —Girona, Lleida, Tarragona, el Maresme— y del resto de España. Si prefieres la consulta presencial, atendemos también como ",
     local: "psicoanalista en el Maresme",
     related4: ", en Canet de Mar.",
+    practicalChip: "Precio y formato",
+    practicalTitle: "Cómo es la terapia online, en concreto",
+    practical: [
+      { label: "Terapia individual", value: "Sesiones de 50 minutos · 75 €" },
+      { label: "Terapia de pareja", value: "Sesiones de 1 hora · 100 €" },
+      { label: "Plataforma", value: "Videollamada por Google Meet. Recibes el enlace al reservar; no hace falta instalar nada en el ordenador." },
+      { label: "Pago", value: "Bizum o transferencia." },
+      { label: "Idioma", value: "Castellano o catalán, como prefieras." },
+      { label: "Horario", value: "De lunes a viernes, de 9:00 a 20:00 (hora peninsular)." },
+    ],
+    practicalNote: "El precio es el mismo que en la consulta presencial de Canet de Mar. Puedes reservar online en un minuto o escribirme por WhatsApp si antes quieres resolver alguna duda.",
+    faqTitle: "Preguntas frecuentes sobre la terapia online",
+    faq: [
+      { title: "¿Cuánto cuesta la terapia online para la ansiedad?", content: "La sesión individual de 50 minutos cuesta 75 € y la de pareja, de 1 hora, 100 €. Es el mismo precio que la consulta presencial en Canet de Mar." },
+      { title: "¿La terapia online es igual de eficaz que la presencial?", content: "Para la ansiedad, las crisis de pánico y la depresión, la investigación muestra resultados comparables. Lo decisivo es la calidad del vínculo terapéutico, no la presencia física en la misma sala." },
+      { title: "¿Qué necesito para hacer terapia online?", content: "Un móvil, tablet u ordenador con cámara, una conexión estable y un lugar tranquilo donde puedas hablar con libertad. Las sesiones se hacen por Google Meet: al reservar recibes el enlace." },
+      { title: "¿Cómo se paga la sesión online?", content: "Por Bizum o por transferencia bancaria." },
+      { title: "¿Puedo hacer terapia online si vivo fuera de España?", content: "Sí. Atiendo a pacientes de toda España y a personas que viven en el extranjero, en castellano o en catalán. Solo hay que ajustar el horario a la hora peninsular." },
+      { title: "¿Es confidencial la terapia por videollamada?", content: "Sí. La sesión es privada, solo entre tú y el terapeuta, con el mismo secreto profesional que en consulta. Te recomiendo conectarte desde un espacio donde nadie pueda escucharte." },
+      { title: "¿Cuánto dura un tratamiento para la ansiedad?", content: "Depende de lo que te pase y de lo que haya detrás de la ansiedad. En la primera sesión valoramos tu situación y acordamos la frecuencia de las sesiones." },
+    ],
   },
   ca: {
     reasons: [
@@ -131,6 +152,27 @@ const CONTENT = {
     related3: " en línia. Teràpia en línia per a pacients de Barcelona i de tot Catalunya —Girona, Lleida, Tarragona, el Maresme— i de la resta d'Espanya. Si prefereixes la consulta presencial, també atenem com a ",
     local: "psicoanalista al Maresme",
     related4: ", a Canet de Mar.",
+    practicalChip: "Preu i format",
+    practicalTitle: "Com és la teràpia en línia, en concret",
+    practical: [
+      { label: "Teràpia individual", value: "Sessions de 50 minuts · 75 €" },
+      { label: "Teràpia de parella", value: "Sessions d'1 hora · 100 €" },
+      { label: "Plataforma", value: "Videotrucada per Google Meet. Reps l'enllaç en reservar; no cal instal·lar res a l'ordinador." },
+      { label: "Pagament", value: "Bizum o transferència." },
+      { label: "Idioma", value: "Català o castellà, com prefereixis." },
+      { label: "Horari", value: "De dilluns a divendres, de 9:00 a 20:00." },
+    ],
+    practicalNote: "El preu és el mateix que a la consulta presencial de Canet de Mar. Pots reservar en línia en un minut o escriure'm per WhatsApp si abans vols resoldre algun dubte.",
+    faqTitle: "Preguntes freqüents sobre la teràpia en línia",
+    faq: [
+      { title: "Quant costa la teràpia en línia per a l'ansietat?", content: "La sessió individual de 50 minuts costa 75 € i la de parella, d'1 hora, 100 €. És el mateix preu que la consulta presencial a Canet de Mar." },
+      { title: "La teràpia en línia és igual d'eficaç que la presencial?", content: "Per a l'ansietat, les crisis de pànic i la depressió, la recerca mostra resultats comparables. El decisiu és la qualitat del vincle terapèutic, no la presència física a la mateixa sala." },
+      { title: "Què necessito per fer teràpia en línia?", content: "Un mòbil, tauleta o ordinador amb càmera, una connexió estable i un lloc tranquil on puguis parlar amb llibertat. Les sessions es fan per Google Meet: en reservar reps l'enllaç." },
+      { title: "Com es paga la sessió en línia?", content: "Per Bizum o per transferència bancària." },
+      { title: "Puc fer teràpia en línia si visc fora d'Espanya?", content: "Sí. Atenc pacients de tot l'Estat i persones que viuen a l'estranger, en català o en castellà. Només cal ajustar l'horari a l'hora peninsular." },
+      { title: "És confidencial la teràpia per videotrucada?", content: "Sí. La sessió és privada, només entre tu i el terapeuta, amb el mateix secret professional que a la consulta. Et recomano connectar-te des d'un espai on ningú no et pugui sentir." },
+      { title: "Quant dura un tractament per a l'ansietat?", content: "Depèn del que et passi i del que hi hagi darrere l'ansietat. A la primera sessió valorem la teva situació i acordem la freqüència de les sessions." },
+    ],
   },
 };
 
@@ -318,6 +360,29 @@ export default function TerapiaOnlinePage() {
           </div>
         </section>
 
+        {/* ===== PRECIO Y FORMATO ===== */}
+        <section className="py-20 md:py-24 px-4 md:px-8 bg-white">
+          <div className="container mx-auto max-w-4xl">
+            <motion.div variants={inView} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }}>
+              <Chip size="sm" className="bg-gold/10 text-gold border border-gold/20 text-[10px] font-bold uppercase tracking-widest mb-6">
+                {c.practicalChip}
+              </Chip>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-10">
+                {c.practicalTitle}
+              </h2>
+            </motion.div>
+            <dl className="divide-y divide-navy/5 border-y border-navy/5">
+              {c.practical.map((row, i) => (
+                <div key={i} className="grid sm:grid-cols-[200px_1fr] gap-1 sm:gap-6 py-4">
+                  <dt className="font-semibold text-navy">{row.label}</dt>
+                  <dd className="text-navy/70">{row.value}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="text-navy/60 mt-8 leading-relaxed">{c.practicalNote}</p>
+          </div>
+        </section>
+
         {/* ===== CONDICIONES RELACIONADAS ===== */}
         <section className="py-12 px-4 md:px-8 border-t border-navy/5">
           <div className="container mx-auto max-w-4xl">
@@ -354,7 +419,22 @@ export default function TerapiaOnlinePage() {
         </section>
 
         <BookingOptions />
-        <FAQSection />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              inLanguage: locale === "ca" ? "ca" : "es",
+              mainEntity: c.faq.map((f) => ({
+                "@type": "Question",
+                name: f.title,
+                acceptedAnswer: { "@type": "Answer", text: f.content },
+              })),
+            }).replace(/</g, "\\u003c"),
+          }}
+        />
+        <FAQSection items={c.faq} heading={c.faqTitle} />
         <StickyBookingButton />
       </main>
       <Footer />

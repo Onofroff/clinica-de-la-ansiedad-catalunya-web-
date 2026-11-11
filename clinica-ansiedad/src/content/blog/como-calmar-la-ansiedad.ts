@@ -56,7 +56,7 @@ En terapia no se trata solo de bajar la ansiedad, sino de entender qué está di
 
 ## Terapia online para la ansiedad
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. La terapia por videollamada te permite empezar desde casa, sin desplazamientos ni listas de espera. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. La terapia por videollamada te permite empezar desde casa, sin desplazamientos ni listas de espera. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -139,7 +139,7 @@ En teràpia no es tracta només d'abaixar l'ansietat, sinó d'entendre què est�
 
 ## Teràpia en línia per a l'ansietat
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. La teràpia per videotrucada et permet començar des de casa, sense desplaçaments ni llistes d'espera. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. La teràpia per videotrucada et permet començar des de casa, sense desplaçaments ni llistes d'espera. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

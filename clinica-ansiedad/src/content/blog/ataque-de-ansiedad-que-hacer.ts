@@ -24,6 +24,8 @@ const post: LocalPost = {
 
 Muchas personas me describen su primer ataque casi con las mismas palabras: «pensé que me moría». El corazón se dispara, falta el aire, las manos hormiguean y aparece la certeza de que algo grave está ocurriendo. Después llega el agotamiento y, casi siempre, el miedo a que vuelva a pasar.
 
+> **¿Te pasa a menudo?** Si los ataques se repiten, no tienes por qué limitarte a aguantarlos: tienen tratamiento. Puedes empezar desde casa con [terapia online para la ansiedad](/es/terapia-online) o en la consulta de Canet de Mar.
+
 ## Qué es un ataque de ansiedad
 
 Un ataque de ansiedad, también llamado crisis de ansiedad o ataque de pánico, es un episodio de miedo intenso que aparece de forma brusca y alcanza su punto máximo en pocos minutos. El Instituto Nacional de Salud Mental de Estados Unidos (NIMH) explica que [puede durar desde unos minutos hasta una hora, o a veces más](https://www.nimh.nih.gov/health/publications/espanol/trastorno-de-panico-cuando-el-miedo-agobia/index.shtml), y que, aunque las sensaciones se viven como si fuera un ataque al corazón, el ataque en sí no pone en peligro la vida.
@@ -74,7 +76,7 @@ Las técnicas para el momento ayudan, pero si solo se trabaja la superficie, los
 
 Conviene consultar si los ataques se repiten, si has empezado a evitar sitios o situaciones por miedo a que aparezcan, si vives pendiente de tu cuerpo o si la ansiedad está limitando tu trabajo, tus relaciones o tu descanso.
 
-Atiendo la ansiedad y las crisis de pánico desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano. La primera visita es una conversación clínica, sin tests: me cuentas qué te pasa y valoramos juntos cómo trabajarlo.
+Atiendo la ansiedad y las crisis de pánico desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano. La primera visita es una conversación clínica, sin tests: me cuentas qué te pasa y valoramos juntos cómo trabajarlo.
 `,
     faq: [
         {
@@ -117,6 +119,8 @@ Atiendo la ansiedad y las crisis de pánico desde 1993, de forma **presencial en
 **Resposta breu:** durant un atac d'ansietat el més útil és no lluitar contra les sensacions: seu, allarga l'expiració, posa nom al que t'està passant («és ansietat, és molt desagradable però no és perillosa») i deixa que l'onada baixi sola, cosa que sol passar en minuts. Si és la primera vegada, tens dolor al pit que no cedeix o dubtes que sigui ansietat, truca al 112. I quan hagi passat, la pregunta important no és com tallar-lo, sinó per què ha aparegut.
 
 Moltes persones em descriuen el primer atac gairebé amb les mateixes paraules: «vaig pensar que em moria». El cor es dispara, falta l'aire, les mans fan pessigolles i apareix la certesa que està passant alguna cosa greu. Després arriba l'esgotament i, gairebé sempre, la por que torni a passar.
+
+> **Et passa sovint?** Si els atacs es repeteixen, no t'has de limitar a aguantar-los: tenen tractament. Pots començar des de casa amb [teràpia en línia per a l'ansietat](/ca/terapia-online) o a la consulta de Canet de Mar.
 
 ## Què és un atac d'ansietat
 
@@ -168,7 +172,7 @@ Les tècniques per al moment ajuden, però si només es treballa la superfície,
 
 Convé consultar si els atacs es repeteixen, si has començat a evitar llocs o situacions per por que apareguin, si vius pendent del teu cos o si l'ansietat t'està limitant la feina, les relacions o el descans.
 
-Atenc l'ansietat i les crisis de pànic des del 1993, de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot Espanya**](/ca/terapia-online), en català i castellà. La primera visita és una conversa clínica, sense tests: m'expliques què et passa i valorem junts com treballar-ho.
+Atenc l'ansietat i les crisis de pànic des del 1993, de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot Espanya**](/ca/terapia-online), en català i castellà. La primera visita és una conversa clínica, sense tests: m'expliques què et passa i valorem junts com treballar-ho.
 `,
         faq: [
             {

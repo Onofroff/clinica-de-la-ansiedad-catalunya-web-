@@ -99,7 +99,7 @@ Si toda la familia gira alrededor del síntoma de uno, ¿el problema está en es
 - [Causas de la ansiedad: por qué aparece y qué la mantiene](/es/blog/causas-de-la-ansiedad)
 - [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse [por videollamada](/es/terapia-online), en castellano o catalán.
+**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse por videollamada ([terapia online](/es/terapia-online)), en castellano o catalán.
 `,
     faq: [
         {
@@ -217,7 +217,7 @@ Si tota la família gira al voltant del símptoma d'un, el problema és en aquel
 - [Causes de l'ansietat: per què apareix i què la manté](/ca/blog/causas-de-la-ansiedad)
 - [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer [per videotrucada](/ca/terapia-online), en català o castellà.
+**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer per videotrucada ([teràpia en línia](/ca/terapia-online)), en català o castellà.
 `,
         faq: [
             {

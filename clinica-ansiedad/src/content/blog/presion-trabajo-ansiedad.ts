@@ -52,7 +52,7 @@ En consulta trabajamos para entender de dónde viene esa exigencia y qué proteg
 
 La normativa de prevención de riesgos laborales incluye los riesgos psicosociales, como el estrés, entre los que las empresas deben evaluar y prevenir ([guía de la Inspección de Trabajo](${ITSS})). Para dar herramientas concretas a los equipos ofrecemos un [taller práctico de gestión del estrés y la ansiedad para empresas](/es/taller-gestion-estres-empresas) en el Maresme y Barcelona.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024.*
 `,
@@ -109,7 +109,7 @@ A la consulta treballem per entendre d'on ve aquesta exigència i què protegeix
 
 La normativa de prevenció de riscos laborals inclou els riscos psicosocials, com l'estrès, entre els que les empreses han d'avaluar i prevenir ([guia de la Inspecció de Treball](${ITSS})). Per donar eines concretes als equips oferim un [taller pràctic de gestió de l'estrès i l'ansietat per a empreses](/ca/taller-gestion-estres-empresas) al Maresme i Barcelona.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024.*
 `,

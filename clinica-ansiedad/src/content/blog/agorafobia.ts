@@ -61,7 +61,7 @@ Sí. Con tratamiento, la mayoría de personas recupera su autonomía. El trabajo
 - Has dejado trabajo, estudios o actividades por miedo.
 - Aparecen tristeza o desesperanza por la situación.
 
-Atiendo [**online para toda España**](/es/terapia-online) y de forma presencial en Canet de Mar (Maresme), en castellano y catalán. Puedes escribirme por WhatsApp y empezar sin salir de casa.
+Atiendo [**con terapia online para toda España**](/es/terapia-online) y de forma presencial en Canet de Mar (Maresme), en castellano y catalán. Puedes escribirme por WhatsApp y empezar sin salir de casa.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -143,7 +143,7 @@ Sí. Amb tractament, la majoria de persones recupera la seva autonomia. La feina
 - Has deixat feina, estudis o activitats per por.
 - Apareixen tristesa o desesperança per la situació.
 
-Atenc [**en línia per a tot l'Estat**](/ca/terapia-online) i de manera presencial a Canet de Mar (Maresme), en català i castellà. Pots escriure'm per WhatsApp i començar sense sortir de casa.
+Atenc [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online) i de manera presencial a Canet de Mar (Maresme), en català i castellà. Pots escriure'm per WhatsApp i començar sense sortir de casa.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

@@ -8,9 +8,13 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function FAQSection() {
+type FaqItem = { title: string; content: string };
+
+// Sin props muestra las preguntas generales (messages: faq). Una página puede pasar
+// las suyas propias para no repetir en todas partes las mismas preguntas.
+export default function FAQSection({ items, heading }: { items?: FaqItem[]; heading?: string } = {}) {
     const t = useTranslations('faq');
-    const faqs = t.raw('list') as Array<{ title: string, content: string }>;
+    const faqs = items ?? (t.raw('list') as FaqItem[]);
 
     return (
         <section id="faq" className="bg-cream py-24 px-6 relative z-10">
@@ -22,7 +26,7 @@ export default function FAQSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="text-3xl md:text-5xl font-serif text-navy font-bold mb-4"
                     >
-                        {t('title')}
+                        {heading ?? t('title')}
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}

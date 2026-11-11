@@ -114,7 +114,7 @@ Si en algún momento tienes pensamientos de hacerte daño, no esperes: llama al 
 
 ## Cómo trabajamos la ansiedad en la clínica
 
-Atiendo la ansiedad desde la psicoterapia psicoanalítica desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online). La primera consulta sirve para escuchar tu historia, situar qué tipo de ansiedad estás viviendo y qué la sostiene, y valorar juntos si este espacio es el adecuado para ti.
+Atiendo la ansiedad desde la psicoterapia psicoanalítica desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online). La primera consulta sirve para escuchar tu historia, situar qué tipo de ansiedad estás viviendo y qué la sostiene, y valorar juntos si este espacio es el adecuado para ti.
 
 Si quieres saber más, puedes leer [qué es la ansiedad y por qué se produce](/es/blog/que-es-la-ansiedad-y-por-que-se-produce) o conocer [cómo tratamos la ansiedad](/es/ansiedad).
 `,
@@ -260,7 +260,7 @@ Si en algun moment tens pensaments de fer-te mal, no esperis: truca al **024** (
 
 ## Com treballem l'ansietat a la clínica
 
-Atenc l'ansietat des de la psicoteràpia psicoanalítica des de 1993, de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot Espanya**](/ca/terapia-online). La primera consulta serveix per escoltar la teva història, situar quin tipus d'ansietat estàs vivint i què la sosté, i valorar junts si aquest espai és l'adequat per a tu.
+Atenc l'ansietat des de la psicoteràpia psicoanalítica des de 1993, de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot Espanya**](/ca/terapia-online). La primera consulta serveix per escoltar la teva història, situar quin tipus d'ansietat estàs vivint i què la sosté, i valorar junts si aquest espai és l'adequat per a tu.
 
 Si vols saber-ne més, pots llegir [què és l'ansietat i per què es produeix](/ca/blog/que-es-la-ansiedad-y-por-que-se-produce) o conèixer [com tractem l'ansietat](/ca/ansiedad).
 `,

@@ -62,7 +62,7 @@ En España, la Ley de Prevención de Riesgos Laborales obliga a las empresas a e
 
 Para esto último ofrecemos un [taller práctico de gestión del estrés y la ansiedad para empresas](/es/taller-gestion-estres-empresas): tres sesiones presenciales de 1 h 30 en grupos de 4 a 10 personas, en las instalaciones de la empresa, en el Maresme y Barcelona.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024.*
 `,
@@ -130,7 +130,7 @@ A Espanya, la Llei de prevenció de riscos laborals obliga les empreses a avalua
 
 Per a això darrer oferim un [taller pràctic de gestió de l'estrès i l'ansietat per a empreses](/ca/taller-gestion-estres-empresas): tres sessions presencials d'1 h 30 en grups de 4 a 10 persones, a les instal·lacions de l'empresa, al Maresme i Barcelona.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024.*
 `,

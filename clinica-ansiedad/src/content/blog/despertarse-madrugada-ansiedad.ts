@@ -60,7 +60,7 @@ En la consulta no nos quedamos solo en el insomnio. Intentamos entender qué es 
 
 Conviene consultar si los despertares se repiten durante varias semanas, si te afectan al ánimo, la concentración o el trabajo, si empiezas a temer la hora de acostarte o si notas tristeza persistente, pérdida de interés o pensamientos muy negativos al despertar. En ese caso, además de la ansiedad, puede haber un estado depresivo que merece atención: lo explico en [qué es la depresión](/es/blog/que-es-la-depresion). Comenta también los problemas de sueño con tu médico, para descartar otras causas.
 
-Atiendo la ansiedad de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano. Si te reconoces en lo que has leído, puedes escribirme por WhatsApp o pedir cita desde la web.
+Atiendo la ansiedad de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano. Si te reconoces en lo que has leído, puedes escribirme por WhatsApp o pedir cita desde la web.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -144,7 +144,7 @@ A la consulta no ens quedem només en l'insomni. Intentem entendre què és all�
 
 Convé consultar si els despertars es repeteixen durant diverses setmanes, si t'afecten l'ànim, la concentració o la feina, si comences a témer l'hora d'anar a dormir o si notes tristesa persistent, pèrdua d'interès o pensaments molt negatius en despertar. En aquest cas, a més de l'ansietat, hi pot haver un estat depressiu que mereix atenció: ho explico a [què és la depressió](/ca/blog/que-es-la-depresion). Comenta també els problemes de son amb el teu metge, per descartar altres causes.
 
-Atenc l'ansietat de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et reconeixes en el que has llegit, pots escriure'm per WhatsApp o demanar cita des de la web.
+Atenc l'ansietat de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et reconeixes en el que has llegit, pots escriure'm per WhatsApp o demanar cita des de la web.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

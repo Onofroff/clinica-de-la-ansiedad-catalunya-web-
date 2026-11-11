@@ -80,7 +80,7 @@ Desde el psicoanálisis no buscamos solo apagar la alarma, sino entender qué la
 - Si has empezado a evitar sitios o situaciones.
 - Si los ataques te despiertan por la noche ([lee más sobre la ansiedad de madrugada](/es/blog/despertarse-madrugada-ansiedad)).
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp o reservar tu primera sesión desde la web.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -187,7 +187,7 @@ Des de la psicoanàlisi no busquem només apagar l'alarma, sinó entendre què l
 - Si has començat a evitar llocs o situacions.
 - Si els atacs et desperten a la nit ([llegeix més sobre l'ansietat de matinada](/ca/blog/despertarse-madrugada-ansiedad)).
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp o reservar la primera sessió des de la web.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

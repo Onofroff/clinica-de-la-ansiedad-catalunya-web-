@@ -56,7 +56,7 @@ Pide valoración médica si el mareo es **nuevo, intenso o persistente**, si not
 
 Los mareos por ansiedad desaparecen cuando baja la ansiedad de fondo. Ayudan los hábitos de [cómo calmar la ansiedad](/es/blog/como-calmar-la-ansiedad), pero si se repiten durante semanas conviene trabajar qué está generando esa tensión. En terapia se aborda tanto el miedo al síntoma como lo que hay detrás.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Si los mareos te hacen difícil salir de casa, la videollamada te permite empezar sin desplazarte.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Si los mareos te hacen difícil salir de casa, la videollamada te permite empezar sin desplazarte.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -133,7 +133,7 @@ Demana valoració mèdica si el mareig és **nou, intens o persistent**, si note
 
 Els marejos per ansietat desapareixen quan baixa l'ansietat de fons. Hi ajuden els hàbits de [com calmar l'ansietat](/ca/blog/como-calmar-la-ansiedad), però si es repeteixen durant setmanes convé treballar què està generant aquesta tensió. En teràpia s'aborda tant la por al símptoma com el que hi ha darrere.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si els marejos et fan difícil sortir de casa, la videotrucada et permet començar sense desplaçar-te.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si els marejos et fan difícil sortir de casa, la videotrucada et permet començar sense desplaçar-te.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

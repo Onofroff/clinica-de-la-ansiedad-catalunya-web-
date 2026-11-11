@@ -95,7 +95,7 @@ Conviene consultar si llevas más de dos semanas con el ánimo bajo o sin ganas 
 
 **Si tienes pensamientos de muerte o de suicidio, no esperes:** llama al **024** (línea de atención a la conducta suicida, gratuita y disponible las 24 horas) o al **112**.
 
-Atiendo la depresión y la ansiedad desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en catalán y castellano. La primera visita es una conversación clínica, sin tests: me cuentas qué te pasa y valoramos juntos cómo trabajarlo.
+Atiendo la depresión y la ansiedad desde 1993, de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en catalán y castellano. La primera visita es una conversación clínica, sin tests: me cuentas qué te pasa y valoramos juntos cómo trabajarlo.
 `,
     faq: [
         {
@@ -213,7 +213,7 @@ Convé consultar si fa més de dues setmanes que tens l'ànim baix o no tens gan
 
 **Si tens pensaments de mort o de suïcidi, no esperis:** truca al **024** (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores) o al **112**.
 
-Atenc la depressió i l'ansietat des de 1993, de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. La primera visita és una conversa clínica, sense tests: m'expliques què et passa i valorem junts com treballar-ho.
+Atenc la depressió i l'ansietat des de 1993, de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. La primera visita és una conversa clínica, sense tests: m'expliques què et passa i valorem junts com treballar-ho.
 `,
         faq: [
             {

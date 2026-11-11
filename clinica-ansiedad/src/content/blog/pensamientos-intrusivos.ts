@@ -65,7 +65,7 @@ Todo eso calma un momento y le confirma a la mente que el pensamiento era peligr
 
 En terapia se puede hablar de ellos sin miedo a ser juzgado, que ya es la mitad del alivio. Y se trabaja qué está expresando esa angustia, para que deje de necesitar esa forma.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Si te resulta difícil contarlo cara a cara, la videollamada desde casa puede hacértelo más fácil.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Si te resulta difícil contarlo cara a cara, la videollamada desde casa puede hacértelo más fácil.
 
 *Si tienes pensamientos de hacerte daño y sientes que podrías actuar, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -151,7 +151,7 @@ Tot això calma un moment i confirma a la ment que el pensament era perillós.
 
 En teràpia se'n pot parlar sense por de ser jutjat, que ja és la meitat de l'alleujament. I es treballa què està expressant aquesta angoixa, perquè deixi de necessitar aquesta forma.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et resulta difícil explicar-ho cara a cara, la videotrucada des de casa t'ho pot fer més fàcil.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Si et resulta difícil explicar-ho cara a cara, la videotrucada des de casa t'ho pot fer més fàcil.
 
 *Si tens pensaments de fer-te mal i sents que podries actuar, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

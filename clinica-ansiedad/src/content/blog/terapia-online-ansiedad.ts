@@ -67,7 +67,7 @@ En la primera visita no hay cuestionarios ni tests mecánicos. Es una conversaci
 
 ## Terapia online con Joan Ramon Soto
 
-Soy psicoanalista y psicoterapeuta, y llevo más de treinta años tratando la ansiedad, las crisis de pánico y la depresión. Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán, de lunes a viernes.
+Soy psicoanalista y psicoterapeuta, y llevo más de treinta años tratando la ansiedad, las crisis de pánico y la depresión. Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán, de lunes a viernes.
 
 El trabajo online es el mismo que en la consulta: no nos quedamos solo en calmar los síntomas, sino que buscamos entender qué sostiene la ansiedad para que deje de ser necesaria. Si quieres saber más sobre el origen de la ansiedad, lee [causas de la ansiedad](/es/blog/causas-de-la-ansiedad) o [cuáles son los síntomas de la ansiedad](/es/blog/cuales-son-los-sintomas-de-la-ansiedad). Y si estás valorando con quién empezar, te puede servir [cómo elegir terapeuta online para la ansiedad](/es/blog/como-elegir-terapeuta-online-ansiedad).
 
@@ -166,7 +166,7 @@ A la primera visita no hi ha qüestionaris ni tests mecànics. És una conversa 
 
 ## Teràpia en línia amb Joan Ramon Soto
 
-Soc psicoanalista i psicoterapeuta, i fa més de trenta anys que tracto l'ansietat, les crisis de pànic i la depressió. Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà, de dilluns a divendres.
+Soc psicoanalista i psicoterapeuta, i fa més de trenta anys que tracto l'ansietat, les crisis de pànic i la depressió. Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà, de dilluns a divendres.
 
 La feina en línia és la mateixa que a la consulta: no ens quedem només a calmar els símptomes, sinó que busquem entendre què sosté l'ansietat perquè deixi de ser necessària. Si vols saber-ne més, llegeix [causes de l'ansietat](/ca/blog/causas-de-la-ansiedad) o [quins són els símptomes de l'ansietat](/ca/blog/cuales-son-los-sintomas-de-la-ansiedad). I si estàs valorant amb qui començar, et pot servir [com triar terapeuta en línia per a l'ansietat](/ca/blog/como-elegir-terapeuta-online-ansiedad).
 

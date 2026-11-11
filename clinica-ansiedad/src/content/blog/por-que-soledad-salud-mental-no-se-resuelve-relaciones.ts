@@ -51,7 +51,7 @@ El problema con muchos enfoques actuales es que intentan intervenir directamente
 - [¿Qué es la ansiedad y por qué se produce?](/es/blog/que-es-la-ansiedad-y-por-que-se-produce)
 - [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo [por videollamada](/es/terapia-online), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
+**Terapia online desde cualquier ciudad.** Si vives fuera del Maresme —en Barcelona, Madrid, Valencia, Sevilla o cualquier otro lugar de España—, puedes hacer el tratamiento conmigo por videollamada ([terapia online](/es/terapia-online)), en castellano o catalán, con el mismo enfoque que en la consulta de Canet de Mar.
 `,
     faq: [
         {
@@ -135,7 +135,7 @@ La pregunta real és: si envoltar-te de persones no ha resolt la soledat… quin
 - [Què és l'ansietat i per què es produeix?](/ca/blog/que-es-la-ansiedad-y-por-que-se-produce)
 - [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi [per videotrucada](/ca/terapia-online), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
+**Teràpia en línia des de qualsevol ciutat.** Si vius fora del Maresme —a Barcelona, Girona, Lleida, Tarragona, Madrid o qualsevol altre lloc—, pots fer el tractament amb mi per videotrucada ([teràpia en línia](/ca/terapia-online)), en català o castellà, amb el mateix enfocament que a la consulta de Canet de Mar.
 `,
         faq: [
             {

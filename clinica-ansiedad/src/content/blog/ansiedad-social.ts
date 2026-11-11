@@ -64,7 +64,7 @@ Si dudas de cómo funciona, lo explico en [terapia online para la ansiedad: cóm
 - Si necesitas alcohol para afrontar reuniones o citas.
 - Si además aparecen [ataques de pánico](/es/blog/ataque-de-panico) o tristeza persistente.
 
-Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp si te resulta más fácil que llamar.
+Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia online para toda España**](/es/terapia-online), en castellano y catalán. Puedes escribirme por WhatsApp si te resulta más fácil que llamar.
 
 *Si estás en crisis o tienes pensamientos de hacerte daño, llama al 112 o al 024 (línea de atención a la conducta suicida, gratuita y disponible las 24 horas).*
 `,
@@ -149,7 +149,7 @@ Si dubtes de com funciona, ho explico a [teràpia en línia per a l'ansietat: co
 - Si necessites alcohol per afrontar reunions o cites.
 - Si a més apareixen [atacs de pànic](/ca/blog/ataque-de-panico) o tristesa persistent.
 
-Atenc de manera **presencial a Canet de Mar (Maresme)** i [**en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp si et resulta més fàcil que trucar.
+Atenc de manera **presencial a Canet de Mar (Maresme)** i [**amb teràpia en línia per a tot l'Estat**](/ca/terapia-online), en català i castellà. Pots escriure'm per WhatsApp si et resulta més fàcil que trucar.
 
 *Si estàs en crisi o tens pensaments de fer-te mal, truca al 112 o al 024 (línia d'atenció a la conducta suïcida, gratuïta i disponible les 24 hores).*
 `,

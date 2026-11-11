@@ -58,7 +58,7 @@ No esperéis a que la distancia sea insalvable. A veces, unas pocas sesiones son
 - [Terapia familiar](/es/blog/terapia-familiar)
 - [Terapia online para la ansiedad: cómo funciona y si es eficaz](/es/blog/terapia-online-ansiedad)
 
-**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse [por videollamada](/es/terapia-online), en castellano o catalán.
+**Terapia online desde cualquier ciudad.** Si vivís fuera del Maresme —en Barcelona, Madrid, Valencia o cualquier otro lugar de España—, las sesiones también pueden hacerse por videollamada ([terapia online](/es/terapia-online)), en castellano o catalán.
 
 **¿Os reconocéis en alguna de estas señales?** En consulta os escucharé sin juicios. [**Reserva vuestra primera visita aquí**](https://clinicadelaansiedad.setmore.com/) y dad el primer paso para recuperar el bienestar en vuestra relación.
 `,
@@ -137,7 +137,7 @@ No espereu que la distància sigui insalvable. De vegades, unes poques sessions 
 - [Teràpia familiar](/ca/blog/terapia-familiar)
 - [Teràpia en línia per a l'ansietat: com funciona i si és eficaç](/ca/blog/terapia-online-ansiedad)
 
-**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer [per videotrucada](/ca/terapia-online), en català o castellà.
+**Teràpia en línia des de qualsevol ciutat.** Si viviu fora del Maresme —a Barcelona, Girona, Madrid o qualsevol altre lloc—, les sessions també es poden fer per videotrucada ([teràpia en línia](/ca/terapia-online)), en català o castellà.
 
 **Us reconeixeu en algun d'aquests senyals?** A la consulta us escoltaré sense judicis. [**Reserveu aquí la vostra primera visita**](https://clinicadelaansiedad.setmore.com/?utm_source=qr-code&utm_medium=more-share-bp) i feu el primer pas per recuperar el benestar en la vostra relació.
 `,
