@@ -33,6 +33,8 @@ Es uno de los síntomas que más asustan, porque hace dudar del propio cuerpo: �
 - A menudo van con tensión en el cuello, visión borrosa momentánea u hormigueo.
 - Suelen ser más leves cuando estás distraído y peores cuando te fijas en ellos.
 
+Si el mareo llega de golpe junto con palpitaciones, falta de aire o miedo intenso, probablemente es un ataque de ansiedad: aquí tienes [qué hacer en un ataque de ansiedad](/es/blog/ataque-de-ansiedad-que-hacer).
+
 ## Por qué la ansiedad marea
 
 1. **Respiración acelerada.** Respirar deprisa y por encima, aunque no lo notes, altera el equilibrio de gases en la sangre y produce mareo y hormigueo.
@@ -109,6 +111,8 @@ Atiendo de forma **presencial en Canet de Mar (Maresme)** y [**con terapia onlin
 - Empitjoren en llocs amb molta gent, supermercats, conduint o estant dret molta estona.
 - Sovint van amb tensió al coll, visió borrosa momentània o formigueig.
 - Solen ser més lleus quan estàs distret i pitjors quan t'hi fixes.
+
+Si el mareig arriba de cop amb palpitacions, falta d'aire o por intensa, probablement és un atac d'ansietat: aquí tens [què fer en un atac d'ansietat](/ca/blog/ataque-de-ansiedad-que-hacer).
 
 ## Per què l'ansietat mareja
 

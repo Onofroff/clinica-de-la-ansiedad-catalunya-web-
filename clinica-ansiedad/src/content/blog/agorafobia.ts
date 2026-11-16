@@ -36,6 +36,8 @@ No es miedo a los espacios abiertos, como suele creerse. Es miedo a **no poder s
 
 La persona evita esas situaciones, las afronta con mucha angustia o solo las hace acompañada.
 
+Si estás en plena crisis fuera de casa, aquí tienes [qué hacer en un ataque de ansiedad](/es/blog/ataque-de-ansiedad-que-hacer) paso a paso.
+
 ## Cómo se relaciona con el pánico
 
 Lo habitual es que todo empiece con un ataque de pánico en un sitio concreto. Desde entonces, la mente asocia ese lugar con el peligro y aparece el **miedo al miedo**: «¿y si me vuelve a pasar aquí?». Se evita el lugar, el alivio refuerza la evitación, y la lista de sitios prohibidos crece.
@@ -117,6 +119,8 @@ No és por dels espais oberts, com se sol creure. És por de **no poder sortir**
 - Sortir sol de casa.
 
 La persona evita aquestes situacions, les afronta amb molta angoixa o només les fa acompanyada.
+
+Si estàs en plena crisi fora de casa, aquí tens [què fer en un atac d'ansietat](/ca/blog/ataque-de-ansiedad-que-hacer) pas a pas.
 
 ## Com es relaciona amb el pànic
 

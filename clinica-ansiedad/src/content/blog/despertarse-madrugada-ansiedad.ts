@@ -34,6 +34,8 @@ Despertarse de madrugada con angustia es una de las formas más habituales en qu
 
 **El miedo a no dormir mantiene el problema.** Después de varias noches así, aparece un temor nuevo: «¿y si esta noche vuelve a pasar?». Esa anticipación hace que el cuerpo se acueste ya en alerta, y el despertar se repite.
 
+Si te despiertas con el corazón disparado, falta de aire o miedo intenso, puede ser un ataque de ansiedad nocturno: aquí tienes [qué hacer en un ataque de ansiedad](/es/blog/ataque-de-ansiedad-que-hacer).
+
 ## Qué hacer cuando te despiertas con ansiedad
 
 1. **No mires la hora.** Calcular cuánto te queda para que suene el despertador añade presión y te despierta más.
@@ -117,6 +119,8 @@ Despertar-se de matinada amb angoixa és una de les maneres més habituals en qu
 **A aquella hora tot sembla més greu.** Amb el cansament i sense la possibilitat de fer-hi res, qualsevol problema es fa més gran. El que a les onze del matí seria «ja ho resoldré», a les quatre de la matinada es viu com una catàstrofe.
 
 **La por de no dormir manté el problema.** Després de diverses nits així, apareix un temor nou: «i si aquesta nit torna a passar?». Aquesta anticipació fa que el cos ja s'enllitï en alerta, i el despertar es repeteix.
+
+Si et despertes amb el cor disparat, falta d'aire o por intensa, pot ser un atac d'ansietat nocturn: aquí tens [què fer en un atac d'ansietat](/ca/blog/ataque-de-ansiedad-que-hacer).
 
 ## Què fer quan et despertes amb ansietat
 
