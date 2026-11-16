@@ -72,6 +72,9 @@ const nextConfig: NextConfig = {
             { source: '/psicoanalisis-canet-de-mar', destination: '/es/psicologo-maresme', statusCode: 301 },
             { source: '/psicologia-canet-de-mar', destination: '/es/psicologo-maresme', statusCode: 301 },
             { source: '/psicologo-maresme', destination: '/es/psicologo-maresme', statusCode: 301 },
+            { source: '/psicologo-maresme/:slug', destination: '/es/psicologo-maresme/:slug', statusCode: 301 },
+            // Artículo del blog antiguo en la raíz (con o sin barra final).
+            { source: '/cuales-son-los-sintomas-de-la-ansiedad', destination: '/es/blog/cuales-son-los-sintomas-de-la-ansiedad', statusCode: 301 },
             { source: '/psicologo-canet-de-mar', destination: '/es/psicologo-maresme', statusCode: 301 },
             { source: '/formacion-academica', destination: '/es/sobre-mi', statusCode: 301 },
             // Artículo del WordPress antiguo que hoy daba 404. No hay equivalente
