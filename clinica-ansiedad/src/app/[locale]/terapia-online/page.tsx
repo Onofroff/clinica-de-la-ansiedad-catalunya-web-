@@ -40,7 +40,7 @@ const CONTENT = {
       "Sin desplazamientos, sin esperas, sin excusas.",
     ],
     steps: [
-      { num: "01", title: "Contacta", desc: "Escríbenos o llámanos para agendar tu primera sesión. Resolveremos cualquier duda sobre el proceso, la duración y el enfoque terapéutico." },
+      { num: "01", title: "Contacta", desc: "Empieza, si quieres, con una entrevista gratuita de 15 minutos por videollamada de WhatsApp: nos cuentas por encima qué te pasa y vemos si podemos ayudarte. Después agendamos tu primera sesión y resolveremos cualquier duda sobre el proceso, la duración y el enfoque terapéutico." },
       { num: "02", title: "Conéctate", desc: "Solo necesitas un dispositivo con cámara y conexión estable. Te enviamos las instrucciones y el enlace de acceso con antelación. Sin complicaciones." },
       { num: "03", title: "Trabaja", desc: "Cada sesión tiene la misma duración y estructura que una consulta presencial. Misma profundidad. Mismo compromiso. La pantalla no reduce la calidad del tratamiento." },
       { num: "04", title: "Avanza", desc: "Entre sesiones, mantenemos disponibilidad para consultas breves si surge una crisis. Tu proceso no se detiene al cerrar la videollamada." },
@@ -112,7 +112,7 @@ const CONTENT = {
       "Sense desplaçaments, sense esperes, sense excuses.",
     ],
     steps: [
-      { num: "01", title: "Contacta", desc: "Escriu-nos o truca'ns per concertar la primera sessió. Resoldrem qualsevol dubte sobre el procés, la durada i l'enfocament terapèutic." },
+      { num: "01", title: "Contacta", desc: "Comença, si vols, amb una entrevista gratuïta de 15 minuts per videotrucada de WhatsApp: ens expliques per sobre què et passa i veiem si et podem ajudar. Després concertem la primera sessió i resoldrem qualsevol dubte sobre el procés, la durada i l'enfocament terapèutic." },
       { num: "02", title: "Connecta't", desc: "Només necessites un dispositiu amb càmera i una connexió estable. T'enviem les instruccions i l'enllaç d'accés amb antelació. Sense complicacions." },
       { num: "03", title: "Treballa", desc: "Cada sessió té la mateixa durada i estructura que una consulta presencial. La mateixa profunditat. El mateix compromís. La pantalla no redueix la qualitat del tractament." },
       { num: "04", title: "Avança", desc: "Entre sessions mantenim disponibilitat per a consultes breus si sorgeix una crisi. El teu procés no s'atura en tancar la videotrucada." },
