@@ -25,6 +25,10 @@ import agorafobia from './agorafobia';
 import hipocondriaAnsiedadPorLaSalud from './hipocondria-ansiedad-por-la-salud';
 import pensamientosIntrusivos from './pensamientos-intrusivos';
 import psicologoOPsicoanalista from './psicologo-o-psicoanalista';
+import dependenciaEmocional from './dependencia-emocional';
+import comoSuperarUnaRuptura from './como-superar-una-ruptura';
+import porQueTeAtraeQuienNoEstaDisponible from './por-que-te-atrae-quien-no-esta-disponible';
+import discutirSiemprePorLoMismo from './discutir-siempre-por-lo-mismo';
 
 // Para añadir un artículo: crear su archivo en esta carpeta e importarlo aquí.
 // Publicación programada: un artículo con `date` futura no aparece en la web
@@ -58,6 +62,11 @@ const ALL_POSTS: LocalPost[] = [
     hipocondriaAnsiedadPorLaSalud,
     pensamientosIntrusivos,
     psicologoOPsicoanalista,
+    // Serie de pareja (programados: 23, 25, 27 y 29 de noviembre)
+    dependenciaEmocional,
+    comoSuperarUnaRuptura,
+    porQueTeAtraeQuienNoEstaDisponible,
+    discutirSiemprePorLoMismo,
 ];
 
 function todayInMadrid(): string {
