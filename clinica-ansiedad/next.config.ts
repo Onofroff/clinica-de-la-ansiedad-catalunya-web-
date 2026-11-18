@@ -47,6 +47,9 @@ const nextConfig: NextConfig = {
             { source: '/enfoque', destination: '/es/enfoque', statusCode: 301 },
             { source: '/terapia-online', destination: '/es/terapia-online', statusCode: 301 },
             { source: '/taller-gestion-estres-empresas', destination: '/es/taller-gestion-estres-empresas', statusCode: 301 },
+            // Enlace corto para la bio de TikTok/Instagram: abre WhatsApp con el mensaje
+            // de la entrevista gratuita ya escrito. Temporal (307) para poder cambiar el destino.
+            { source: '/cita', destination: 'https://wa.me/34613916079?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20la%20entrevista%20online%20gratuita%20de%2015%20minutos', permanent: false },
             // Slugs cortos alternativos que se pueden compartir en comunicación comercial.
             { source: '/taller-empresas', destination: '/es/taller-gestion-estres-empresas', statusCode: 301 },
             { source: '/es/taller-empresas', destination: '/es/taller-gestion-estres-empresas', statusCode: 301 },
